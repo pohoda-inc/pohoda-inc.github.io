@@ -1,0 +1,198 @@
+/* Pohoda Inc. — shared site styles
+   Quiet luxury. Warm charcoal + champagne gold. No external fonts or scripts,
+   in keeping with the local-first, no-tracking ethos of the apps. */
+
+:root {
+  --bg: #15130f;          /* warm near-black */
+  --bg-2: #1b1813;        /* raised surface */
+  --card: #1f1c16;
+  --card-2: #262219;
+  --ink: #efe9dc;         /* warm off-white */
+  --ink-2: #b3a991;       /* muted */
+  --muted: #8b8270;
+  --line: #322c22;        /* hairline */
+  --line-2: #3c3527;
+  --gold: #cdb07a;        /* champagne */
+  --gold-deep: #b8995f;
+  --gold-soft: rgba(205, 176, 122, .12);
+  --amber: #d59a63;       /* KIT warm accent */
+  --radius: 16px;
+  --radius-lg: 22px;
+  --maxw: 820px;
+  --serif: "Hoefler Text", Georgia, "Times New Roman", "Hiragino Mincho ProN", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+          "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+.narrow { max-width: 700px; }
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Header / nav ---- */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  backdrop-filter: saturate(140%) blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .wrap {
+  display: flex; align-items: center; justify-content: space-between; height: 62px;
+}
+.brand {
+  font-family: var(--serif); font-size: 22px; letter-spacing: .03em;
+  color: var(--ink); font-weight: 400;
+}
+.brand:hover { text-decoration: none; color: var(--gold); }
+.nav { display: flex; gap: 24px; font-size: 14px; }
+.nav a { color: var(--ink-2); }
+.nav a:hover { color: var(--gold); text-decoration: none; }
+
+/* ---- Sections ---- */
+section { padding: 72px 0; }
+.eyebrow {
+  font-size: 11.5px; letter-spacing: .26em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 18px;
+}
+h1 {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(34px, 6.5vw, 56px); line-height: 1.18;
+  letter-spacing: .005em; margin-bottom: 22px;
+}
+h2 {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(24px, 4vw, 32px); line-height: 1.3; margin-bottom: 16px;
+}
+h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
+.lead { font-size: 17px; color: var(--ink-2); }
+.lead.tight { max-width: 36em; }
+.section-label {
+  font-size: 11.5px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 26px;
+}
+
+/* ---- Hero ---- */
+.hero { padding: 110px 0 80px; }
+.hero h1 { max-width: 14em; }
+.hero .lead { max-width: 34em; }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-block; font-size: 14.5px; font-weight: 600;
+  padding: 13px 28px; border-radius: 999px; cursor: pointer;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn-primary { background: var(--gold); color: #1a1712; }
+.btn-primary:hover { background: var(--gold-deep); }
+.btn-ghost { border: 1px solid var(--line-2); color: var(--ink); background: transparent; }
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+/* ---- Product cards (landing) ---- */
+.products { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 700px) { .products { grid-template-columns: 1fr; } }
+.product-card {
+  display: block; position: relative; overflow: hidden;
+  border-radius: var(--radius-lg); border: 1px solid var(--line);
+  background: linear-gradient(180deg, var(--card-2), var(--card));
+  padding: 32px 30px 28px; color: var(--ink);
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.product-card:hover {
+  text-decoration: none; transform: translateY(-3px);
+  border-color: var(--line-2); box-shadow: 0 22px 50px rgba(0,0,0,.35);
+}
+.product-card .kicker { font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.product-card.kit .kicker { color: var(--amber); }
+.product-card .name { font-family: var(--serif); font-size: 28px; margin-bottom: 10px; letter-spacing: .01em; }
+.product-card .desc { font-size: 14.5px; color: var(--ink-2); }
+.product-card .more { display: inline-block; margin-top: 20px; font-size: 13px; font-weight: 600; color: var(--gold); }
+.product-card.kit .more { color: var(--amber); }
+.product-mark { width: 46px; height: 46px; margin-bottom: 20px; display: block; }
+.app-icon { border-radius: 22%; border: 1px solid var(--line-2); display: block; }
+
+/* ---- Feature grid ---- */
+.features { display: grid; gap: 30px 36px; grid-template-columns: 1fr 1fr; margin-top: 8px; }
+@media (max-width: 700px) { .features { grid-template-columns: 1fr; } }
+.feature h3 { display: flex; align-items: center; gap: 10px; }
+.feature p { font-size: 14.5px; color: var(--ink-2); }
+.dot { width: 6px; height: 6px; border-radius: 999px; background: var(--gold); flex: none; }
+
+/* ---- Badge ---- */
+.badge {
+  display: inline-block; font-size: 12px; font-weight: 600; color: var(--gold);
+  border: 1px solid var(--gold-deep); border-radius: 999px; padding: 4px 14px;
+}
+
+/* ---- Pricing ---- */
+.price-grid { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; margin-top: 8px; }
+@media (max-width: 700px) { .price-grid { grid-template-columns: 1fr; } }
+.price-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); padding: 26px; }
+.price-card.feature-on { border-color: var(--gold-deep); }
+.price-card .plan { font-size: 13px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.price-card .amount { font-family: var(--serif); font-size: 38px; margin: 8px 0 2px; color: var(--ink); }
+.price-card .amount small { font-size: 15px; color: var(--ink-2); font-family: var(--sans); }
+.price-card .note { font-size: 13px; color: var(--ink-2); margin-top: 4px; }
+
+/* ---- Hero ring (KATACHI product page) ---- */
+.ring-hero { text-align: center; }
+.ring-hero .ring { width: 92px; height: 92px; margin: 0 auto 30px; display: block; }
+.ring-hero .lead { margin-left: auto; margin-right: auto; }
+.ring-hero .btn-row { justify-content: center; }
+
+/* ---- Prose (legal pages) ---- */
+.prose { padding: 60px 0 90px; }
+.prose .back { display: inline-block; margin-bottom: 26px; font-size: 13px; color: var(--ink-2); }
+.prose .back:hover { color: var(--gold); text-decoration: none; }
+.prose h1 { font-size: clamp(26px, 5vw, 36px); margin-bottom: 8px; }
+.prose .updated { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.prose .app-tag { display: inline-block; font-size: 11.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.prose h2 { font-family: var(--sans); font-weight: 700; font-size: 18px; margin: 40px 0 12px; padding-top: 24px; border-top: 1px solid var(--line); }
+.prose h3 { font-size: 15px; font-weight: 600; margin: 22px 0 6px; }
+.prose p, .prose li { font-size: 15px; color: var(--ink-2); }
+.prose .lede { color: var(--ink); margin-bottom: 8px; }
+.prose strong { color: var(--ink); font-weight: 600; }
+.prose ul, .prose ol { margin: 10px 0 10px 22px; }
+.prose li { margin-bottom: 7px; }
+.prose table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14.5px; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 12px 14px; border: 1px solid var(--line); }
+.prose th { width: 32%; background: var(--card); color: var(--ink); font-weight: 600; }
+.prose td { color: var(--ink-2); }
+.app-block { border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 22px 18px; margin: 16px 0 26px; background: var(--bg-2); }
+.app-block > .app-head { font-family: var(--serif); font-size: 19px; color: var(--ink); margin: 20px 0 4px; }
+.callout { background: var(--gold-soft); border: 1px solid var(--line-2); border-radius: 12px; padding: 14px 16px; font-size: 13.5px; color: var(--ink-2); margin: 18px 0; }
+.ph { background: var(--gold-soft); color: var(--gold); padding: 1px 8px; border-radius: 5px; font-weight: 600; }
+
+/* ---- Footer ---- */
+.site-footer { border-top: 1px solid var(--line); padding: 50px 0 64px; margin-top: 28px; }
+.footer-cols { display: flex; flex-wrap: wrap; gap: 36px 72px; }
+.footer-col h4 { font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+.footer-col a { display: block; font-size: 14px; color: var(--ink-2); margin-bottom: 10px; }
+.footer-col a:hover { color: var(--gold); text-decoration: none; }
+.copyright { margin-top: 40px; font-size: 12.5px; color: var(--muted); }
+
+hr.divider { height: 1px; background: var(--line); border: 0; }
+
+/* ---- Marketing pages: centered editorial layout ---- */
+.marketing section { text-align: center; }
+.marketing .btn-row { justify-content: center; }
+.marketing h1, .marketing h2, .marketing .lead { margin-left: auto; margin-right: auto; }
+.marketing .hero h1 { max-width: 16em; }
+.marketing .lead { max-width: 40em; }
+/* Cards keep their content left-aligned for readability */
+.marketing .feature, .marketing .product-card, .marketing .price-card { text-align: left; }
+.marketing .feature h3 { justify-content: flex-start; }
