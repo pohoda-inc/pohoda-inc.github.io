@@ -197,6 +197,15 @@ hr.divider { height: 1px; background: var(--line); border: 0; }
 .marketing .feature, .marketing .product-card, .marketing .price-card { text-align: left; }
 .marketing .feature h3 { justify-content: flex-start; }
 
+/* ---- Screenshot gallery (product pages) ---- */
+.screens-row { display: flex; gap: 28px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+.shot { flex: 0 0 auto; width: 288px; max-width: 86vw; }
+.shot img {
+  width: 100%; display: block; border-radius: 34px;
+  border: 1px solid var(--line-2); box-shadow: 0 24px 60px rgba(0,0,0,.55);
+}
+.shot .cap { margin-top: 14px; font-size: 13px; color: var(--muted); }
+
 /* ---- Mobile header ----
    Six nav items overflow the narrow header, so on phones the top bar is just the
    Pohoda logo; full navigation lives in the footer. */
