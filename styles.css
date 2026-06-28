@@ -196,3 +196,16 @@ hr.divider { height: 1px; background: var(--line); border: 0; }
 /* Cards keep their content left-aligned for readability */
 .marketing .feature, .marketing .product-card, .marketing .price-card { text-align: left; }
 .marketing .feature h3 { justify-content: flex-start; }
+
+/* ---- Mobile header / nav ----
+   Six nav items overflow a single 62px row on phones, so on narrow screens the
+   header stacks (brand over a centered, wrapping nav) and stops being sticky so
+   the taller header scrolls away instead of eating the viewport. */
+@media (max-width: 700px) {
+  .site-header { position: static; }
+  .site-header .wrap {
+    flex-direction: column; height: auto; gap: 10px;
+    padding-top: 14px; padding-bottom: 14px;
+  }
+  .nav { flex-wrap: wrap; justify-content: center; gap: 12px 16px; font-size: 13px; }
+}
