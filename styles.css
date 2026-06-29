@@ -137,6 +137,11 @@ h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
   display: inline-block; font-size: 12px; font-weight: 600; color: var(--gold);
   border: 1px solid var(--gold-deep); border-radius: 999px; padding: 4px 14px;
 }
+.beta-chip {
+  display: inline-block; vertical-align: middle; margin-left: 8px;
+  font-size: 10px; font-weight: 700; letter-spacing: .12em; color: var(--gold);
+  border: 1px solid var(--gold-deep); border-radius: 999px; padding: 2px 8px;
+}
 
 /* ---- Pricing ---- */
 .price-grid { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; margin-top: 8px; }
