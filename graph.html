@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-graph.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="./styles.css?v=3">
+<link rel="stylesheet" href="./styles.css?v=7">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -37,6 +37,12 @@
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
   "author": { "@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/" }
 }
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Graph はどんなアプリですか？", "acceptedAnswer": {"@type": "Answer", "text": "資産・収入・体重・学習時間など、暮らしのあらゆる数字を「ひと言」で記録すると、自動で推移グラフに整える iOS アプリです。"}}, {"@type": "Question", "name": "無料で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "基本の記録とグラフは無料です。項目やデータをたくさん残したくなったら、サポータープラン（買い切り ¥980／年額 ¥300）で上限を解放できます。"}}, {"@type": "Question", "name": "データは外部に送られますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。記録はすべて端末内（SwiftData）に保存され、AI も通信も広告もありません。CSV で書き出すこともできます。"}}, {"@type": "Question", "name": "日付以外のグラフは作れますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。横軸・縦軸を自由に定義でき、「商品別の売上」のような任意のグラフも作れます。折れ線・棒の両方に対応します。"}}, {"@type": "Question", "name": "自然文での入力とは？", "acceptedAnswer": {"@type": "Answer", "text": "「6 月の総資産 528 万円」のような文を書くだけで、項目・数字・単位を端末内で解析して保存します。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "Graph", "item": "https://pohoda.jp/graph.html"}]}
 </script>
 </head>
 <body>
@@ -153,6 +159,21 @@
       <div class="section-label">プライバシー</div>
       <h2>あなたの数字は、あなたのもの。</h2>
       <p class="lead">記録はすべてあなたの端末の中（SwiftData）に保存されます。私たちのサーバーには送信されず、AI や外部サービス、広告・追跡も一切使っていません。詳しくは <a href="./legal/privacy.html">プライバシーポリシー</a> をご覧ください。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap narrow">
+      <div class="section-label">よくある質問</div>
+      <div class="faq">
+        <details><summary>Graph はどんなアプリですか？</summary><p>資産・収入・体重・学習時間など、暮らしのあらゆる数字を「ひと言」で記録すると、自動で推移グラフに整える iOS アプリです。</p></details>
+        <details><summary>無料で使えますか？</summary><p>基本の記録とグラフは無料です。項目やデータをたくさん残したくなったら、サポータープラン（買い切り ¥980／年額 ¥300）で上限を解放できます。</p></details>
+        <details><summary>データは外部に送られますか？</summary><p>いいえ。記録はすべて端末内（SwiftData）に保存され、AI も通信も広告もありません。CSV で書き出すこともできます。</p></details>
+        <details><summary>日付以外のグラフは作れますか？</summary><p>はい。横軸・縦軸を自由に定義でき、「商品別の売上」のような任意のグラフも作れます。折れ線・棒の両方に対応します。</p></details>
+        <details><summary>自然文での入力とは？</summary><p>「6 月の総資産 528 万円」のような文を書くだけで、項目・数字・単位を端末内で解析して保存します。</p></details>
+      </div>
     </div>
   </section>
 </main>

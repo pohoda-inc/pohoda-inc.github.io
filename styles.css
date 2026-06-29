@@ -272,3 +272,17 @@ hr.divider { height: 1px; background: var(--line); border: 0; }
 @media (max-width: 700px) {
   .nav { display: none; }
 }
+
+/* ---- FAQ（よくある質問・構造化対応） ---- */
+.faq { max-width: 720px; margin: 8px auto 0; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+  cursor: pointer; list-style: none; padding: 20px 4px; text-align: left;
+  font-family: var(--serif); font-size: 17px; color: var(--ink);
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "＋"; color: var(--gold); font-size: 18px; flex: none; transition: transform .18s ease; }
+.faq details[open] summary::after { content: "−"; }
+.faq details > p { padding: 0 4px 22px; margin: 0; font-size: 14.5px; line-height: 1.9; color: var(--ink-2); text-align: left; }
+.faq details > p a { color: var(--gold); }
