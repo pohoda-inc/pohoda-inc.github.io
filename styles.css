@@ -286,3 +286,18 @@ hr.divider { height: 1px; background: var(--line); border: 0; }
 .faq details[open] summary::after { content: "−"; }
 .faq details > p { padding: 0 4px 22px; margin: 0; font-size: 14.5px; line-height: 1.9; color: var(--ink-2); text-align: left; }
 .faq details > p a { color: var(--gold); }
+
+/* ---- Journal（読みもの・記事） ---- */
+.article-fig { margin: 28px auto; max-width: 320px; }
+.article-fig img { width: 100%; height: auto; border-radius: 22px; border: 1px solid var(--line-2); box-shadow: 0 16px 40px rgba(0,0,0,.42); display: block; }
+.article-fig figcaption { text-align: center; font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+.prose .app-block .btn { margin-top: 8px; }
+.prose .app-block .app-sub { font-size: 13.5px; color: var(--ink-2); margin-bottom: 14px; }
+.jlist { max-width: 760px; margin: 8px auto 0; }
+.jcard { display: block; padding: 28px 4px; border-bottom: 1px solid var(--line); color: var(--ink); text-align: left; }
+.jcard:first-child { border-top: 1px solid var(--line); }
+.jcard .jtag { font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.jcard h2 { font-family: var(--serif); font-weight: 400; font-size: 22px; color: var(--ink); margin: 8px 0 9px; border: 0; padding: 0; }
+.jcard p { font-size: 14px; color: var(--ink-2); margin: 0; line-height: 1.8; }
+a.jcard:hover { text-decoration: none; border-color: var(--line-2); }
+a.jcard:hover h2 { color: var(--gold); }

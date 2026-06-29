@@ -104,6 +104,43 @@
     <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-explore.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/journal/</loc>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/job-change-agent-management.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-glidwell.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/glidwell-story-home.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/glidwell-story-detail.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/workout-log-that-lasts.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-story-share.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-story-exercises.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/stay-in-touch.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-keep-in-touch.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/kit-story-map.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/one-line-number-log.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/graph-story-record.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/graph-story-detail.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/legal/support.html</loc>
     <lastmod>2026-06-30</lastmod>
     <priority>0.3</priority>

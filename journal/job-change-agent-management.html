@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>複数の転職エージェントの選考管理に、私はこうして詰んだ｜Pohoda 読みもの</title>
+<meta name="description" content="複数の転職エージェントを併用すると、選考状況の管理が破綻しがち。スプレッドシートで挫折した個人開発者が、フェーズ・ボールの所在・次の一手を一画面で管理する iOS アプリ Glidwell を作るまでの話。">
+<link rel="canonical" href="https://pohoda.jp/journal/job-change-agent-management.html">
+<meta name="theme-color" content="#15130f">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="複数の転職エージェントの選考管理に、私はこうして詰んだ">
+<meta property="og:description" content="フェーズ・ボールの所在・次の一手を一画面で。複数エージェント併用の選考管理アプリ Glidwell を作るまで。">
+<meta property="og:url" content="https://pohoda.jp/journal/job-change-agent-management.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="複数の転職エージェントの選考管理に、私はこうして詰んだ">
+<meta name="twitter:description" content="フェーズ・ボールの所在・次の一手を一画面で。選考管理アプリ Glidwell の話。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css?v=8">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"複数の転職エージェントの選考管理に、私はこうして詰んだ","description":"複数の転職エージェントを併用すると選考管理が破綻しがち。フェーズ・ボールの所在・次の一手を一画面で管理する iOS アプリ Glidwell を作るまで。","image":"https://pohoda.jp/assets/og/og-glidwell.png","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"ja","about":"Glidwell","author":{"@type":"Person","name":"杉本 啓輔"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/job-change-agent-management.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"複数の転職エージェントの選考管理に、私はこうして詰んだ","item":"https://pohoda.jp/journal/job-change-agent-management.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Pohoda</a>
+    <nav class="nav">
+      <a href="/katachi.html">KATACHI</a>
+      <a href="/keep-in-touch.html">Keep In Touch</a>
+      <a href="/glidwell.html">Glidwell</a>
+      <a href="/graph.html">Graph</a>
+      <a href="/insight.html">Insight</a>
+      <a href="/drivescape.html">DriveScape</a>
+      <a href="/journal/" style="color:var(--gold)">読みもの</a>
+    </nav>
+  </div>
+</header>
+
+<main class="marketing">
+  <article class="wrap narrow prose">
+    <a class="back" href="/journal/">← 読みもの一覧へ</a>
+    <div class="app-tag">Glidwell ・ 転職</div>
+    <h1>複数の転職エージェントの選考管理に、私はこうして詰んだ</h1>
+    <div class="updated">2026年6月30日</div>
+
+    <p class="lede">転職活動でエージェントを複数使うのは、悪くない戦略だと思う。求人の幅が広がるし、見える景色も増える。ただ、ひとつだけ落とし穴がある——自分で管理しないと、どの企業がどこまで進んでいて、いま誰の返事待ちなのかを、すぐ見失う。私はそれで一度、ある会社への返信を一週間放置してしまった。</p>
+
+    <h2>なぜ複数併用で「ボールの所在」を見失うのか</h2>
+    <p>整理すると、原因ははっきりしていた。</p>
+    <ul>
+      <li>窓口がバラバラ（メール・電話・各社のマイページに情報が散る）</li>
+      <li>「次に動くのは自分か、エージェントか、企業か」が案件ごとに違う</li>
+      <li>面接の期日、書類の提出、お礼の連絡——細かいタスクが各社にまたがる</li>
+    </ul>
+    <p>結果、「あれ、この会社どうなってたっけ」が定期的に起きる。見落としは、そのまま機会損失になる。</p>
+
+    <h2>スプレッドシートで管理しようとして、挫折した</h2>
+    <p>最初は表計算ソフトで十分だと思っていた。企業名・フェーズ・次にやること・期日……列を作って埋めた。でも続かなかった。理由は3つ。</p>
+    <ul>
+      <li>スマホで開いて編集するのが面倒だった（移動中にこそ確認したいのに）</li>
+      <li>「いま誰の番か」を色やメモで管理しても、ひと目では分からない</li>
+      <li>通知が出ないので、結局こちらから見に行かないと忘れる</li>
+    </ul>
+
+    <h2>欲しかったのは「フェーズ × ボールの所在 × 次の一手」</h2>
+    <p>突き詰めると、選考管理に本当に必要なのは次の3つだけだった。<strong>いまどのフェーズか</strong>、<strong>いま誰の番か</strong>、<strong>次の一手と、その期日</strong>。これが一画面で見渡せて、期日が近いものを通知してくれれば、放置は防げる。欲しい道具が無かったので、自分で作ることにした。それが Glidwell だ。</p>
+
+    <figure class="article-fig">
+      <img src="/assets/screens/glidwell-story-home.png" alt="Glidwell のホーム画面（今日対応したい案件のまとめ）" width="880" height="1912" loading="lazy">
+      <figcaption>朝ひらくと、今日対応すべき案件がまとまっている。</figcaption>
+    </figure>
+
+    <h2>Glidwell をどう設計したか</h2>
+    <ul>
+      <li><strong>ホーム</strong>：今日対応したい案件、進行中・内定・今週の動きをひと目で</li>
+      <li><strong>案件詳細</strong>：フェーズ・担当エージェント・ボールの所在・次の一手・期日を一枚に</li>
+      <li><strong>停滞アラート</strong>：「12日間動きがありません」とそっと教える</li>
+      <li><strong>書類</strong>：職務経歴書・履歴書・求人票を案件に紐づけて保存</li>
+      <li><strong>AI アシスタント</strong>：状況サマリー・次の一手に加え、求人票と職務経歴書の適合診断、想定質問、模擬面接まで。送信前に企業名や氏名は伏字に置き換える</li>
+    </ul>
+
+    <figure class="article-fig">
+      <img src="/assets/screens/glidwell-story-detail.png" alt="Glidwell の案件詳細（次の一手とボールの所在）" width="880" height="1912" loading="lazy">
+      <figcaption>「次の一手」と「いま誰の番か」を、案件ごとに。</figcaption>
+    </figure>
+
+    <h2>データは、原則あなたの端末の中に</h2>
+    <p>転職活動の情報は機微だ。だから Glidwell の中核機能は通信を行わず、選考状況も書類も原則あなたの端末の中に保存する。AI を使うときだけ、伏字化した内容を送る仕組みにした。</p>
+
+    <h2>正直なところ</h2>
+    <p>iPhone（iOS）専用で、いまのところ Android には対応していない。AI 機能は有料プランの機能で、無料では選考管理・通知・書類・バックアップが使える。それでも「複数エージェントの選考を、ひとつに見渡したい」人には、ちゃんと効くはずだ。</p>
+
+    <div class="app-block">
+      <div class="app-head">Glidwell</div>
+      <p class="app-sub">複数エージェントの転職選考を、ひとつに見渡す iOS アプリ。</p>
+      <a class="btn btn-primary" href="/glidwell.html">Glidwell を詳しく見る</a>
+      <a class="btn btn-ghost" href="/glidwell-story.html">画面で知る →</a>
+    </div>
+
+    <p>転職は、目的地に着くまでの不安が長い。せめて「現在地」だけは、いつでもはっきり見えるように。そう思って作った道具です。</p>
+
+    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
