@@ -110,6 +110,12 @@
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/journal/self-disclosure-ai-era.html</loc>
+    <lastmod>2026-06-30</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/journal/job-change-agent-management.html</loc>
     <lastmod>2026-06-30</lastmod>
     <priority>0.6</priority>
