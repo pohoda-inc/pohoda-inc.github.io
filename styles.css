@@ -301,3 +301,9 @@ hr.divider { height: 1px; background: var(--line); border: 0; }
 .jcard p { font-size: 14px; color: var(--ink-2); margin: 0; line-height: 1.8; }
 a.jcard:hover { text-decoration: none; border-color: var(--line-2); }
 a.jcard:hover h2 { color: var(--gold); }
+
+/* ---- 日本語見出しの改行（文節の境目でだけ折る） ---- */
+/* word-break:keep-all で日本語の途中改行を抑え、見出しに入れた <wbr>（文節の境目）
+   だけで折る。「直してほし／いを」のような句の途中改行を防ぐ。
+   overflow-wrap:anywhere は、ごく狭い端末で文節が画面幅を超えたときの保険。 */
+h1 { word-break: keep-all; overflow-wrap: anywhere; }
