@@ -23,7 +23,7 @@
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="./styles.css?v=9">
+<link rel="stylesheet" href="./styles.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,6 +82,18 @@
   </section>
 
   <hr class="divider">
+
+  <section class="news-highlight" id="newsHighlight" hidden>
+    <div class="wrap">
+      <div class="nh-head">
+        <div class="section-label">お知らせ</div>
+        <a class="nh-all" href="./news.html">すべて見る →</a>
+      </div>
+      <div class="news-list" id="nhList"></div>
+    </div>
+  </section>
+
+  <hr class="divider" id="nhDivider" hidden>
 
   <section>
     <div class="wrap">
@@ -260,6 +272,27 @@
     <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
   </div>
 </footer>
+
+<!-- お知らせハイライト: news.html から最新3件を読み込み、更新に自動追従 -->
+<script>
+(function () {
+  fetch('./news.html', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+    .then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var items = Array.prototype.slice
+        .call(doc.querySelectorAll('.news-list .news-item'))
+        .slice(0, 3);
+      if (!items.length) return;
+      var list = document.getElementById('nhList');
+      items.forEach(function (it) { list.appendChild(document.importNode(it, true)); });
+      document.getElementById('newsHighlight').hidden = false;
+      var divider = document.getElementById('nhDivider');
+      if (divider) divider.hidden = false;
+    })
+    .catch(function () { /* お知らせが読めなければ、ハイライトは静かに非表示のまま */ });
+})();
+</script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
