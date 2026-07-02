@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-katachi.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="./styles.css?v=11">
+<link rel="stylesheet" href="./styles.css?v=12">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,9 +83,26 @@
   <section>
     <div class="wrap">
       <div class="section-label">画面</div>
-      <div class="shots">
-        <img src="./assets/screens/katachi-home.png?v=2" alt="KATACHI ホーム画面" width="880" height="1912" loading="lazy">
-        <img src="./assets/screens/katachi-record.png?v=2" alt="KATACHI 記録画面" width="880" height="1912" loading="lazy">
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="cslide">
+            <div class="shot-pair">
+              <figure><img src="./assets/screens/katachi-home-dark.png" alt="KATACHI ホーム（ダーク）" width="880" height="1912" loading="lazy"><figcaption>ダーク</figcaption></figure>
+              <figure><img src="./assets/screens/katachi-home-light.png" alt="KATACHI ホーム（ライト）" width="880" height="1912" loading="lazy"><figcaption>ライト</figcaption></figure>
+            </div>
+            <div class="cslide-title">ホーム</div>
+          </div>
+          <div class="cslide">
+            <div class="shot-pair">
+              <figure><img src="./assets/screens/katachi-record-dark.png" alt="KATACHI 記録（ダーク）" width="880" height="1912" loading="lazy"><figcaption>ダーク</figcaption></figure>
+              <figure><img src="./assets/screens/katachi-record-light.png" alt="KATACHI 記録（ライト）" width="880" height="1912" loading="lazy"><figcaption>ライト</figcaption></figure>
+            </div>
+            <div class="cslide-title">記録</div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-prev" aria-label="前の画面">‹</button>
+        <button class="carousel-btn carousel-next" aria-label="次の画面">›</button>
+        <div class="carousel-dots"></div>
       </div>
       <div style="text-align:center;margin-top:34px;">
         <a class="btn btn-ghost" href="./katachi-story.html">各画面の特徴を詳しく見る →</a>
@@ -244,6 +261,7 @@
   </div>
 </footer>
 
+<script defer src="/carousel.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="stylesheet" href="./styles.css?v=11">
+  <link rel="stylesheet" href="./styles.css?v=12">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -82,9 +82,26 @@
   <section>
     <div class="wrap">
       <div class="section-label">画面</div>
-      <div class="shots">
-        <img src="./assets/screens/glidwell-home.png?v=2" alt="Glidwell ホーム画面" width="880" height="1912" loading="lazy">
-        <img src="./assets/screens/glidwell-detail.png?v=2" alt="Glidwell 案件詳細画面" width="880" height="1912" loading="lazy">
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="cslide">
+            <div class="shot-pair">
+              <figure><img src="./assets/screens/glidwell-home-dark.png" alt="Glidwell ホーム（ダーク）" width="880" height="1912" loading="lazy"><figcaption>ダーク</figcaption></figure>
+              <figure><img src="./assets/screens/glidwell-home-light.png" alt="Glidwell ホーム（ライト）" width="880" height="1912" loading="lazy"><figcaption>ライト</figcaption></figure>
+            </div>
+            <div class="cslide-title">ホーム</div>
+          </div>
+          <div class="cslide">
+            <div class="shot-pair">
+              <figure><img src="./assets/screens/glidwell-detail-dark.png" alt="Glidwell 案件詳細（ダーク）" width="880" height="1912" loading="lazy"><figcaption>ダーク</figcaption></figure>
+              <figure><img src="./assets/screens/glidwell-detail-light.png" alt="Glidwell 案件詳細（ライト）" width="880" height="1912" loading="lazy"><figcaption>ライト</figcaption></figure>
+            </div>
+            <div class="cslide-title">案件詳細</div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-prev" aria-label="前の画面">‹</button>
+        <button class="carousel-btn carousel-next" aria-label="次の画面">›</button>
+        <div class="carousel-dots"></div>
       </div>
       <div style="text-align:center;margin-top:34px;">
         <a class="btn btn-ghost" href="./glidwell-story.html">各画面の特徴を詳しく見る →</a>
@@ -227,6 +244,7 @@
   </div>
 </footer>
 
+<script defer src="/carousel.js"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
