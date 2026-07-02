@@ -326,6 +326,12 @@ a.jcard:hover h2 { color: var(--gold); }
   font-size: 13px; color: var(--ink); font-weight: 600;
   letter-spacing: .04em; margin-top: 18px;
 }
+/* Single screen (no light counterpart) */
+.cslide-solo img {
+  width: 250px; max-width: 66vw; height: auto; display: block;
+  border-radius: 28px; border: 1px solid var(--line-2);
+  box-shadow: 0 16px 40px rgba(28,20,14,.12);
+}
 .cslide figcaption { font-size: 12.5px; color: var(--muted); margin-top: 12px; letter-spacing: .05em; }
 .carousel-btn {
   position: absolute; top: 44%; transform: translateY(-50%);
