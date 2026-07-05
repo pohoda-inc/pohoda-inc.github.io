@@ -373,3 +373,68 @@ a.jcard:hover h2 { color: var(--gold); }
    だけで折る。「直してほし／いを」のような句の途中改行を防ぐ。
    overflow-wrap:anywhere は、ごく狭い端末で文節が画面幅を超えたときの保険。 */
 h1 { word-break: keep-all; overflow-wrap: anywhere; }
+
+/* ============================================================
+   全デバイス対応・日本語改行の共通基盤（2026-07-05）
+   新しいページは styles.css を読み込むだけで以下すべてが適用される。
+   ページ側での個別対応は不要（見出しの <wbr> は入れればより確実、無くても可）。
+   ============================================================ */
+
+/* 画像・動画・SVG は親幅を超えない（どのページでも横はみ出しを起こさない保険） */
+img, svg, video { max-width: 100%; height: auto; }
+
+/* 折り返しの安全網: 長い URL・英単語・メールアドレスがはみ出さない */
+body { overflow-wrap: break-word; line-break: strict; }
+.prose a, .footer-col a { overflow-wrap: anywhere; }
+
+/* ---- 日本語の改行最適化 ----
+   ・見出し: 行のバランスを取り（text-wrap:balance）、対応ブラウザでは
+     文節単位で折る（word-break:auto-phrase = BudouX）。「直してほし／い」の
+     ような不自然な途中改行を自動で防ぐ。非対応ブラウザは従来どおり
+     keep-all + <wbr>（h1）／通常折返し（h2以下）で劣化なし。
+   ・本文: 行末の1文字孤立などを避ける（text-wrap:pretty・対応環境のみ） */
+h1, h2, h3, .news-title, .jcard h2, .cslide-title { text-wrap: balance; }
+p, .lead, li, .desc, figcaption { text-wrap: pretty; }
+@supports (word-break: auto-phrase) {
+  h1, h2, h3, .lead, .news-title, .jcard h2, .story-text h2,
+  .faq summary, .product-card .desc, .news-empty .big {
+    word-break: auto-phrase;
+  }
+}
+
+/* 表（特商法など）は狭い画面で崩さず横スクロール */
+.prose table { display: block; overflow-x: auto; }
+
+/* セーフエリア（ノッチ／Dynamic Island の横持ち）対応 */
+.wrap {
+  padding-left: max(24px, env(safe-area-inset-left));
+  padding-right: max(24px, env(safe-area-inset-right));
+}
+
+/* ---- モバイルのナビ ----
+   従来はスマホでナビを非表示（フッターのみ）にしていたが、
+   横スクロールできる形で常時表示に変更。全ページへ1タップで移動できる。 */
+@media (max-width: 700px) {
+  .nav {
+    display: flex; flex: 1; min-width: 0; justify-content: flex-start;
+    overflow-x: auto; gap: 18px; font-size: 13px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(to right, #000 92%, transparent);
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { white-space: nowrap; padding: 8px 0; }
+  .site-header .wrap { gap: 18px; }
+}
+
+/* ごく小さい端末（iPhone SE など ~375px 未満）: 余白を圧縮して1行の文字数を確保 */
+@media (max-width: 380px) {
+  .wrap {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+  section { padding: 56px 0; }
+  .hero { padding: 84px 0 64px; }
+}
+
+/* 大画面（タブレット横・PC）: 読み物の行長は既存の --maxw で最適化済み。
+   ここでは触れない（1行が長すぎない=可読性の担保がこのサイトの設計）。 */
