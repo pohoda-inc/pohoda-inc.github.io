@@ -393,7 +393,10 @@ body { overflow-wrap: break-word; line-break: strict; }
      ような不自然な途中改行を自動で防ぐ。非対応ブラウザは従来どおり
      keep-all + <wbr>（h1）／通常折返し（h2以下）で劣化なし。
    ・本文: 行末の1文字孤立などを避ける（text-wrap:pretty・対応環境のみ） */
-h1, h2, h3, .news-title, .jcard h2, .cslide-title { text-wrap: balance; }
+/* h1 は balance を適用しない: keep-all との併用で行を詰めすぎ横はみ出しする
+   既知問題があるため（2026-06-30 の検証済み知見）。h1 は keep-all + <wbr> +
+   auto-phrase（対応ブラウザ）で折る。 */
+h2, h3, .news-title, .jcard h2, .cslide-title { text-wrap: balance; }
 p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 @supports (word-break: auto-phrase) {
   h1, h2, h3, .lead, .news-title, .jcard h2, .story-text h2,
