@@ -3,28 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>記録アプリが続かないのは、入力が重いから。「ひと言」で記録するという解｜Pohoda 読みもの</title>
-<meta name="description" content="家計簿も体重も学習時間も、記録アプリはたいてい入力の摩擦で挫折する。「6月の総資産 528万円」のように、ひと言書くだけで自動でグラフ化する——数字記録アプリ Graph の設計の話。資産・体重・学習・売上まで。">
+<title>記録アプリが続かないのは、入力が重いから。打つのは数字だけ、という解｜Pohoda 読みもの</title>
+<meta name="description" content="家計簿も体重も学習時間も、記録アプリはたいてい入力の摩擦で挫折する。ホームの「＋」から数字を打つだけ——単位も日付も選ばず、2タップで記録して自動でグラフ化する数字記録アプリ Graph の設計の話。資産・体重・学習・売上まで。">
 <link rel="canonical" href="https://pohoda.jp/journal/one-line-number-log.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="記録アプリが続かないのは、入力が重いから">
-<meta property="og:description" content="「ひと言」書くだけで自動グラフ化。数字記録アプリ Graph の設計の話。">
+<meta property="og:description" content="数字を打つだけで自動グラフ化。数字記録アプリ Graph の設計の話。">
 <meta property="og:url" content="https://pohoda.jp/journal/one-line-number-log.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-graph.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="記録アプリが続かないのは、入力が重いから">
-<meta name="twitter:description" content="「ひと言」書くだけで自動グラフ化。Graph の設計の話。">
+<meta name="twitter:description" content="数字を打つだけで自動グラフ化。Graph の設計の話。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-graph.png">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/styles.css?v=13">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"記録アプリが続かないのは、入力が重いから。「ひと言」で記録するという解","description":"記録アプリはたいてい入力の摩擦で挫折する。「6月の総資産 528万円」のようにひと言書くだけで自動グラフ化する数字記録アプリ Graph の設計の話。","image":"https://pohoda.jp/assets/og/og-graph.png","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"ja","about":"Graph","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/one-line-number-log.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"記録アプリが続かないのは、入力が重いから。打つのは数字だけ、という解","description":"記録アプリはたいてい入力の摩擦で挫折する。ホームの「＋」から数字を打つだけ——単位も日付も選ばず、2タップで記録して自動グラフ化する数字記録アプリ Graph の設計の話。","image":"https://pohoda.jp/assets/og/og-graph.png","datePublished":"2026-06-30","dateModified":"2026-07-17","inLanguage":"ja","about":"Graph","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/one-line-number-log.html"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"記録アプリが続かないのは、入力が重いから","item":"https://pohoda.jp/journal/one-line-number-log.html"}]}
@@ -52,19 +52,19 @@
     <a class="back" href="/journal/">← 読みもの一覧へ</a>
     <div class="app-tag">Graph ・ 記録</div>
     <h1>記録アプリが<wbr>続かないのは、<wbr>入力が重いから</h1>
-    <div class="updated">2026年6月30日</div>
+    <div class="updated">2026年6月30日 ・ 2026年7月17日 更新</div>
 
     <p class="lede">家計簿、体重、勉強時間、副業の売上。「ちゃんと記録しよう」と意気込んでアプリを入れては、数日でやめてしまう。これを何度も繰り返して、ようやく腑に落ちた。続かない原因のほとんどは、<strong>入力の摩擦</strong>だ。</p>
 
     <h2>「正しく入力させようとする」と、続かない</h2>
     <p>多くの記録アプリは、丁寧に作られているほど入力項目が多い。カテゴリを選び、日付を選び、金額や数値を入れて、メモを書く。一回ずつは数十秒でも、その「数十秒」が毎日となると、人はやめる。記録は、続けてはじめて意味を持つのに、続けるための設計が一番おろそかになりがちだ。</p>
 
-    <h2>「ひと言」で書けたら、続くんじゃないか</h2>
-    <p>そこで逆に振り切ってみた。フォームをやめて、<strong>一文だけ</strong>書く。たとえば「6月の総資産 528万円」「今日の体重 71.2kg」「学習時間 32時間」。項目・数字・単位を端末の中で解析して、そのまま保存する。思いついたときに、ひと言。入力の手数を限界まで削ったら、記録がようやく続くようになった。</p>
+    <h2>打つのは数字だけにしたら、続くんじゃないか</h2>
+    <p>そこで逆に振り切ってみた。選ぶ手間をやめて、<strong>打つのは数字だけ</strong>にする。ホームに並ぶグラフのカードから「＋」を押すと、数値パッドがそのまま開く。単位はそのグラフから自動で決まり、日付も「今月」や「今年」といったそのグラフの期間にあらかじめ合っている。だから多くの場合、開いて数字を打つ——それだけ。2タップで記録が終わる。入力の手数を限界まで削ったら、記録がようやく続くようになった。</p>
 
     <figure class="article-fig">
-      <img src="/assets/screens/graph-story-record.png" alt="Graph の記録画面（自然な文をひと言入力）" width="880" height="1912" loading="lazy">
-      <figcaption>「6月の総資産 528万円」とひと言。フォームは要らない。</figcaption>
+      <img src="/assets/screens/graph-story-record.png" alt="Graph の記録画面（カードの＋から数値パッドで入力）" width="880" height="1912" loading="lazy">
+      <figcaption>カードの「＋」を押すと数値パッド。単位も日付も、選ばなくていい。</figcaption>
     </figure>
 
     <h2>入力したら、勝手にグラフになる</h2>
@@ -83,12 +83,12 @@
 
     <div class="app-block">
       <div class="app-head">Graph</div>
-      <p class="app-sub">あらゆる数字を「ひと言」で記録し、自動でグラフ化する iOS アプリ。</p>
+      <p class="app-sub">あらゆる数字を「＋」から2タップで記録し、自動でグラフ化する iOS アプリ。</p>
       <a class="btn btn-primary" href="/graph.html">Graph を詳しく見る</a>
       <a class="btn btn-ghost" href="/graph-story.html">画面で知る →</a>
     </div>
 
-    <p>続けるコツは、気合いではなく摩擦を減らすこと。ひと言で済むなら、記録はちゃんと続きます。</p>
+    <p>続けるコツは、気合いではなく摩擦を減らすこと。数字を打つだけで済むなら、記録はちゃんと続きます。</p>
 
     <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
   </article>
