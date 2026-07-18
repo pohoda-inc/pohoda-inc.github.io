@@ -111,7 +111,19 @@
   </url>
   <url>
     <loc>https://pohoda.jp/journal/self-disclosure-ai-era.html</loc>
-    <lastmod>2026-07-11</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/jibun-bunseki-yarikata.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/seikaku-shindan-muryo.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
   </url>
