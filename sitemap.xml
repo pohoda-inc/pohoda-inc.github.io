@@ -105,13 +105,13 @@
   </url>
   <url>
     <loc>https://pohoda.jp/journal/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pohoda.jp/journal/self-disclosure-ai-era.html</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
   </url>
@@ -123,7 +123,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/journal/seikaku-shindan-muryo.html</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
   </url>
@@ -157,6 +157,66 @@
     <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/graph-story-record.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/graph-story-detail.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kachikan-shindan.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/jiko-rikai-fukameru.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/shukatsu-jibun-bunseki-tool.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/strengths-finder-muryo.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kakeibo-shisan-mieruka.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/benkyo-jikan-suji-shukan.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/taiju-kiroku-teitaiki.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kintore-diet-kiroku-hoho.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/renraku-reminder-app.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-keep-in-touch.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/taisetsu-na-hi-wasurenai.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-keep-in-touch.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pohoda.jp/request.html</loc>
