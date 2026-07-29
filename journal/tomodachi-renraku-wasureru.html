@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>友達への連絡を忘れる瞬間を、記録で減らす</title>
+<meta name="description" content="友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。">
+<link rel="canonical" href="https://pohoda.jp/journal/tomodachi-renraku-wasureru.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="友達への連絡を忘れる瞬間を、記録で減らす">
+<meta property="og:description" content="友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。">
+<meta property="og:url" content="https://pohoda.jp/journal/tomodachi-renraku-wasureru.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="友達への連絡を忘れる瞬間を、記録で減らす">
+<meta name="twitter:description" content="友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css?v=13">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"友達への連絡を忘れる瞬間を、記録で減らす","description":"友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。","image":"https://pohoda.jp/assets/og/og-keep-in-touch.png","datePublished":"2026-07-29","dateModified":"2026-07-29","inLanguage":"ja","about":"Keep In Touch","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/tomodachi-renraku-wasureru.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"友達への連絡を忘れる瞬間を、記録で減らす","item":"https://pohoda.jp/journal/tomodachi-renraku-wasureru.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Pohoda</a>
+    <nav class="nav">
+      <a href="/katachi.html">KATACHI</a>
+      <a href="/keep-in-touch.html">Keep In Touch</a>
+      <a href="/glidwell.html">Glidwell</a>
+      <a href="/graph.html">Graph</a>
+      <a href="/insight.html">Insight</a>
+      <a href="/drivescape.html">DriveScape</a>
+      <a href="/journal/" style="color:var(--gold)">読みもの</a>
+    </nav>
+  </div>
+</header>
+
+<main class="marketing">
+  <article class="wrap narrow prose">
+    <a class="back" href="/journal/">← 読みもの一覧へ</a>
+    <div class="app-tag">Keep In Touch ・ 人間関係</div>
+    <h1>友達への<wbr>連絡を<wbr>忘れる瞬間を<wbr>、<wbr>記録で減らす</h1>
+    <div class="updated">2026年7月29日</div>
+
+    <p class="lede">「そろそろ連絡しなきゃ」と思いながら、日々の予定に押し流されて時間だけが過ぎていく。多くの場合、それは相手への関心が薄れたからではなく、連絡のきっかけを忘れてしまうだけだ。Keep In Touchは、この「忘れる」という一点だけを設計の対象にしている。</p>
+
+    <h2>友達との連絡を忘れるのは、薄情だからではない</h2>
+    <p>連絡が途切れる理由の多くは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないからだ。カレンダーやメモアプリに『友達に連絡する』とだけ書いても、いつ・誰に・何のために連絡するかが曖昧なままでは、結局は後回しにされる。Keep In Touchは、人ごとに最後に会った日・連絡した日を記録し、そこからの経過日数だけを基準にして『そろそろ』のタイミングを知らせる。</p>
+
+    <h2>経過日数を数える設計にした理由</h2>
+    <p>重要度や親密さを数値化しようとすると、判断が主観的になり、結局続かない。Keep In Touchが採用したのは、もっと単純な『最後の記録からの経過日数』という一つの軸だけだ。特別な人か、久しぶりの相手かを判定させるのではなく、時間の経過という誰にでも同じ意味を持つ数字だけを見せる設計にした。</p>
+    <p>通知は、無理に何かをさせるためのものではない。『前回の記録から日にちが経っている』という事実を、そっと知らせるだけに留めている。行動を強制する演出や煽る文言を避けたのは、連絡を義務にしたくないからだ。連絡するかどうかは、常に受け取った側の判断に委ねている。</p>
+
+    <h2>写真とメモを人ごとに残す、という選択</h2>
+    <p>会った日の写真や会話の内容を、人ごとのページに残せるようにしている。次に連絡する時、前回の話題を思い出せれば、連絡そのものへの心理的なハードルが下がる。この記録と写真は端末の中だけに保存され、外部のサーバーには送られない。広告表示のための情報収集も行っていない。</p>
+
+    <div class="app-block">
+      <div class="app-head">Keep In Touch</div>
+      <p class="app-sub">友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。</p>
+      <a class="btn btn-primary" href="/keep-in-touch.html">Keep In Touch を詳しく見る</a>
+      <a class="btn btn-ghost" href="/keep-in-touch-story.html">画面で知る →</a>
+    </div>
+
+    <p>連絡を忘れてしまうことは、意志の弱さの問題ではなく、思い出す仕組みが無いだけだと考えている。Keep In Touchは、その仕組みを一つだけ、静かに用意した道具だ。派手な通知や煽る文言で連絡を急かすのではなく、経過日数という事実を淡々と伝えることに留めている。連絡するかどうかは、いつでも受け取った側が決めればいい。</p>
+
+    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
