@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>体重・体温・血圧を記録するなら、数字よりグラフで見る理由｜Pohoda 読みもの</title>
+<meta name="description" content="体重・体温・血圧・血糖値・睡眠時間など、気になる健康の数字はひとつではありません。数字を並べて記録するだけでなく、グラフで見える化することで増減がひと目でわかります。数字記録アプリ Graph の設計を紹介します。">
+<link rel="canonical" href="https://pohoda.jp/journal/taiju-taion-ketsuatsu-kiroku.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="体重・体温・血圧の記録は、グラフで見るとわかることがある">
+<meta property="og:description" content="健康の数字は、並べるだけでは増減が伝わりません。グラフで見える化する記録のしかたを、数字記録アプリ Graph の設計から紹介します。">
+<meta property="og:url" content="https://pohoda.jp/journal/taiju-taion-ketsuatsu-kiroku.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-graph.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="体重・体温・血圧の記録は、グラフで見るとわかることがある">
+<meta name="twitter:description" content="健康の数字は、並べるだけでは増減が伝わりません。グラフで見える化する記録のしかたを、数字記録アプリ Graph の設計から紹介します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-graph.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/styles.css?v=13">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"体重・体温・血圧を記録するなら、数字よりグラフで見る理由","description":"体重・体温・血圧・血糖値・睡眠時間など、気になる健康の数字はひとつではありません。数字を並べて記録するだけでなく、グラフで見える化することで増減がひと目でわかります。数字記録アプリ Graph の設計を紹介します。","image":"https://pohoda.jp/assets/og/og-graph.png","datePublished":"2026-08-07","dateModified":"2026-08-07","inLanguage":"ja","about":"Graph","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/taiju-taion-ketsuatsu-kiroku.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"体重・体温・血圧の記録は、数字の並びよりグラフで見るとわかることがある","item":"https://pohoda.jp/journal/taiju-taion-ketsuatsu-kiroku.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Pohoda</a>
+    <nav class="nav">
+      <a href="/katachi.html">KATACHI</a>
+      <a href="/keep-in-touch.html">Keep In Touch</a>
+      <a href="/glidwell.html">Glidwell</a>
+      <a href="/graph.html">Graph</a>
+      <a href="/insight.html">Insight</a>
+      <a href="/drivescape.html">DriveScape</a>
+      <a href="/journal/" style="color:var(--gold)">読みもの</a>
+    </nav>
+  </div>
+</header>
+
+<main class="marketing">
+  <article class="wrap narrow prose">
+    <a class="back" href="/journal/">← 読みもの一覧へ</a>
+    <div class="app-tag">Graph ・ Graph ・ 数字の記録</div>
+    <h1>体重・体温・血圧の<wbr>記録は<wbr>、<wbr>数字の<wbr>並びよりグラフで見るとわかることがある</h1>
+    <div class="updated">2026年8月7日</div>
+
+    <p class="lede">体重だけを記録している人でも、実際に気になる数字はひとつではないことが多い。体温、血圧、血糖値、睡眠時間——日々の暮らしのなかで確認したい数字は、人によっていくつも並ぶ。それぞれ別のアプリやメモに記録していると、あとから見返す手間が増え、静かに続かなくなっていく。</p>
+
+    <h2>体重を記録するなら、数字よりグラフで見るとわかること</h2>
+    <p>体重だけを記録している人でも、実際に気になる数字はひとつではないことが多い。体温や血圧、血糖値、睡眠時間など、日々の暮らしのなかで確認したい数字は人によっていくつも並ぶ。季節や体調の変化に気づくためには、そのつど数字を見返せる状態にしておくことが助けになる。</p>
+    <p>数字がいくつもあると、記録先も分かれやすい。体重は体重計のアプリ、血圧は血圧計のアプリ、それ以外は紙のメモ――というように別々の場所に散らばると、あとから見返す手間が増えていく。見返すのが面倒になった記録は、静かに更新されなくなり、結局どれも続かなくなってしまう。</p>
+
+    <h2>数字は並べるだけでは、増減が伝わらない</h2>
+    <p>手帳やメモに数字を書き並べるだけでは、増えているのか減っているのかが直感的には伝わらない。先週より上がったのか下がったのか、月単位でどちら向きに動いているのかを知るには、数字を並びとしてではなく、線として見る必要がある。線になったときにはじめて、変化の方向が伝わる。</p>
+    <p>数字記録アプリ Graph は、入力した数字をそのままグラフの線として積み上げていく。推移・前回比・サマリー（最高・最安・平均）を自動で整えるので、体重や血圧のような数字も、並べて眺めるだけでなく、動きとして確認できるようになる。入力するたびに、線のかたちが少しずつ更新されていく。</p>
+
+    <h2>Graph では、気になる数字をひとつずつグラフとして持てる</h2>
+    <p>使い方は、ホームに並ぶグラフのカードから「＋」を押して数値パッドを開き、数字を打つだけ。単位はそのグラフに合わせて自動で決まり、日付もあらかじめ「今日」に合っているため、多くの場合は数字を打つだけで、その場で記録が終わる。項目を選び直す手間がないぶん、続けやすくなる。</p>
+    <p>体重・体温・血圧・血糖値・睡眠時間のように、追いたい数字が複数あるなら、それぞれを別のグラフとして持てばいい。ひとつのアプリの中に、自分がいま気になっている数字だけを選んで並べて持っておける、という考え方でつくっている。数字を増やしても、記録の手数はそれほど増えない。</p>
+
+    <h2>健康の数字ほど、端末の中だけに</h2>
+    <p>体重や血圧のような数字は、とても私的なデータだ。Graph は記録をすべて端末の中に保存し、サーバーには送らない。行動の追跡も広告表示もない。必要ならCSVで書き出して、自分の手元に持ち出すこともできる。なお本アプリは医療機器ではなく、あくまで数字を記録するための道具として設計している。</p>
+
+    <div class="app-block">
+      <div class="app-head">Graph</div>
+      <p class="app-sub">健康の数字は、並べるだけでは増減が伝わりません。グラフで見える化する記録のしかたを、数字記録アプリ Graph の設計から紹介します。</p>
+      <a class="btn btn-primary" href="/graph.html">Graph を詳しく見る</a>
+      <a class="btn btn-ghost" href="/graph-story.html">画面で知る →</a>
+    </div>
+
+    <p>体重も血圧も、書き並べるだけでは変化が見えてこない。数字が線になった瞬間、増えているか減っているかがひと目でわかるようになる。<a href="/graph.html">Graph（気になる数字をグラフで残す iOS アプリ）を見る →</a></p>
+
+    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
