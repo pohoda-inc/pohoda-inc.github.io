@@ -122,6 +122,12 @@
     <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/journal/seikaku-shindan-fukusuu-shiten.html</loc>
+    <lastmod>2026-08-09</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-insight.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/journal/seikaku-shindan-muryo.html</loc>
     <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
