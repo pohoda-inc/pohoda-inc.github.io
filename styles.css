@@ -217,6 +217,16 @@ a.news-item:hover .news-title { color: var(--gold); }
 .ring-hero .lead { margin-left: auto; margin-right: auto; }
 .ring-hero .btn-row { justify-content: center; }
 
+/* ---- Promo video (15–25s narrated app ad, product pages) ---- */
+.promo-video-section { text-align: center; }
+.promo-video-wrap { display: flex; justify-content: center; }
+.promo-video {
+  width: 280px; max-width: 72vw; aspect-ratio: 9 / 16; height: auto;
+  display: block; border-radius: 28px; border: 1px solid var(--line-2);
+  box-shadow: 0 16px 40px rgba(28,20,14,.12); background: #000;
+}
+.promo-video-caption { font-size: 12.5px; color: var(--muted); margin-top: 14px; letter-spacing: .05em; }
+
 /* ---- Prose (legal pages) ---- */
 .prose { padding: 60px 0 90px; }
 .prose .back { display: inline-block; margin-bottom: 26px; font-size: 13px; color: var(--ink-2); }
