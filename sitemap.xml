@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/katachi.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <priority>0.9</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-home.png</image:loc></image:image>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/katachi-story.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-story-home.png</image:loc></image:image>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/keep-in-touch-story.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-keep-in-touch.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/kit-story-home.png</image:loc></image:image>
@@ -60,7 +60,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/glidwell-story.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-glidwell.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/glidwell-story-home.png</image:loc></image:image>
@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/graph-story.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/graph-story-home.png</image:loc></image:image>
@@ -231,22 +231,22 @@
   </url>
   <url>
     <loc>https://pohoda.jp/legal/support.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://pohoda.jp/legal/privacy.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://pohoda.jp/legal/terms.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://pohoda.jp/legal/tokushoho.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
