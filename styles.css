@@ -203,7 +203,10 @@ a.news-item:hover .news-title { color: var(--gold); }
 
 /* ---- Pricing ---- */
 .price-grid { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; margin-top: 8px; }
-@media (max-width: 700px) { .price-grid { grid-template-columns: 1fr; } }
+.price-grid.three { grid-template-columns: repeat(3, 1fr); }
+.price-grid.three .amount { white-space: nowrap; }
+.price-grid.three .amount small { display: block; margin-top: 4px; }
+@media (max-width: 700px) { .price-grid, .price-grid.three { grid-template-columns: 1fr; } }
 .price-card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); padding: 26px; }
 .price-card.feature-on { border-color: var(--gold-deep); }
 .price-card .plan { font-size: 13px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
