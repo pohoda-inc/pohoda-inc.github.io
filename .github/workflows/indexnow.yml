@@ -1,0 +1,33 @@
+# main への push で、変更された HTML を IndexNow（Bing など）へ通知する。
+name: IndexNow
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Notify changed pages
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          sleep 90  # GitHub Pages の反映を待つ
+          KEY=5246f54f733abaca9d39b5192465dcb9
+          git diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" -- '*.html' \
+            | sed -e 's#index\.html$##' -e 's#^#https://pohoda.jp/#' > urls.txt || true
+          [ -s urls.txt ] || { echo "no html changes"; exit 0; }
+          python3 - "$KEY" <<'PY'
+          import json, sys, urllib.request
+          key = sys.argv[1]
+          urls = [u.strip() for u in open('urls.txt') if u.strip()]
+          body = json.dumps({"host": "pohoda.jp", "key": key,
+                             "keyLocation": f"https://pohoda.jp/{key}.txt", "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                       headers={"Content-Type": "application/json; charset=utf-8"})
+          print(urllib.request.urlopen(req, timeout=30).status, len(urls), "urls")
+          PY
