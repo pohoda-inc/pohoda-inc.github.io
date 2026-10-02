@@ -104,6 +104,12 @@
     <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-explore.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/yane.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-yane.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/journal/</loc>
     <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>

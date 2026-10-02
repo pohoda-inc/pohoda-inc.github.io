@@ -50,15 +50,15 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--line);
 }
 .site-header .wrap {
-  display: flex; align-items: center; justify-content: space-between; height: 62px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 62px;
 }
 .brand {
   font-family: var(--serif); font-size: 24px; letter-spacing: .01em;
   color: var(--ink); font-weight: 400;
 }
 .brand:hover { text-decoration: none; color: var(--gold); }
-.nav { display: flex; gap: 24px; font-size: 14px; }
-.nav a { color: var(--ink-2); }
+.nav { display: flex; gap: 16px; font-size: 13.5px; }
+.nav a { color: var(--ink-2); white-space: nowrap; }
 .nav a:hover { color: var(--gold); text-decoration: none; }
 
 /* ---- Sections ---- */
