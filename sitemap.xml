@@ -305,4 +305,14 @@
     <image:image><image:loc>https://pohoda.jp/assets/screens/onecrm-home-light.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/onecrm-list.png</image:loc></image:image>
   </url>
+  <url>
+    <loc>https://pohoda.jp/utility.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-utility.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/utility-memo-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/utility-task-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/utility-calendar-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/utility-health-light.png</image:loc></image:image>
+  </url>
 </urlset>
