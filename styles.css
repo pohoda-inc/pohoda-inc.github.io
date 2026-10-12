@@ -51,13 +51,15 @@ a:hover { text-decoration: underline; }
 }
 .site-header .wrap {
   display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 62px;
+  max-width: 1120px; /* ナビ11項目＋ロゴが本文幅(820px)に収まらないため、ヘッダーだけ広げる */
 }
-.brand {
-  font-family: var(--serif); font-size: 24px; letter-spacing: .01em;
-  color: var(--ink); font-weight: 400;
-}
-.brand:hover { text-decoration: none; color: var(--gold); }
-.nav { display: flex; gap: 16px; font-size: 13.5px; }
+/* Logo: Pinyon Script の文字を輪郭化した SVG（assets/brand/pohoda-logo.svg） */
+.brand { display: block; flex: none; line-height: 0; }
+.brand img { display: block; height: 34px; width: auto; }
+.brand:hover { text-decoration: none; opacity: .7; }
+.nav { display: flex; gap: 16px; font-size: 13.5px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.nav::-webkit-scrollbar { display: none; }
+@media (max-width: 960px) { .nav { mask-image: linear-gradient(to right, #000 92%, transparent); } }
 .nav a { color: var(--ink-2); white-space: nowrap; }
 .nav a:hover { color: var(--gold); text-decoration: none; }
 
