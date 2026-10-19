@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KATACHI + の使い方｜店舗の作成・スタッフ招待・顧客カルテとセッション記録 - Pohoda</title>
+<meta name="description" content="パーソナルトレーナー向け顧客管理アプリ KATACHI + の使い方ガイド。店舗の作り方、スタッフの招待と参加、顧客カルテと同意書、セッションの記録、予約台帳、顧客へのレポート、書き出しとバックアップ、うまくいかないときの対処まで、手順で説明します。">
+<link rel="canonical" href="https://pohoda.jp/katachi-plus-guide.html">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-itunes-app" content="app-id=6815231799">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="KATACHI + の使い方ガイド">
+<meta property="og:description" content="店舗を作ってスタッフを招待し、カルテとセッションを記録するまでを手順で。">
+<meta property="og:url" content="https://pohoda.jp/katachi-plus-guide.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-katachi-plus.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KATACHI + の使い方ガイド">
+<meta name="twitter:description" content="店舗を作ってスタッフを招待し、カルテとセッションを記録するまでを手順で。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-katachi-plus.png">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=2" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="./styles.css?v=16">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "TechArticle", "headline": "KATACHI + の使い方", "description": "パーソナルトレーナー向け顧客管理アプリ KATACHI + の使い方。店舗の作成、スタッフの招待と参加、顧客カルテと同意書、セッションの記録、予約台帳、レポート、書き出しとバックアップまで。", "url": "https://pohoda.jp/katachi-plus-guide.html", "image": "https://pohoda.jp/assets/og/og-katachi-plus.png", "inLanguage": "ja", "datePublished": "2026-10-20", "dateModified": "2026-10-20", "about": {"@type": "MobileApplication", "name": "KATACHI +", "url": "https://pohoda.jp/katachi-plus.html"}, "author": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "「このリンクに招待されていません」と出ます", "acceptedAnswer": {"@type": "Answer", "text": "オーナーが招待に使ったメールアドレスが、あなたの Apple アカウントのものと違う可能性があります。iPhone の設定アプリ上部の Apple アカウントでメールアドレスを確かめ、そのアドレスでオーナーに招待し直してもらってください。"}}, {"@type": "Question", "name": "招待のリンクを開いてもアプリが開きません", "acceptedAnswer": {"@type": "Answer", "text": "Mac などでは、リンクを開いてもアプリが開かないことがあります。リンクをコピーしてから、アプリの「招待されて参加する」で貼り付けボタンを押してください。"}}, {"@type": "Question", "name": "登録した顧客が一覧に出てきません", "acceptedAnswer": {"@type": "Answer", "text": "顧客一覧の上の担当の並びが「自分」になっていると、自分が担当の顧客だけが表示されます。「全員」を選ぶか、顧客の「担当トレーナー」に自分の名前を設定してください。"}}, {"@type": "Question", "name": "購入したのに店舗を作れません", "acceptedAnswer": {"@type": "Answer", "text": "購入が終わると、プランの画面は自動で閉じます。もう一度「店舗を作る」（または「招待されて参加する」）を押してください。それでも未契約と表示されるときは、設定の「ご契約」で「購入を復元」を押してください。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "KATACHI +", "item": "https://pohoda.jp/katachi-plus.html"}, {"@type": "ListItem", "position": 3, "name": "使い方ガイド", "item": "https://pohoda.jp/katachi-plus-guide.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="/assets/brand/pohoda-logo.svg" alt="Pohoda" width="117" height="34"></a>
+    <nav class="nav">
+      <a href="./katachi.html">KATACHI</a>
+      <a href="./katachi-plus.html" style="color:var(--gold)">KATACHI +</a>
+      <a href="./keep-in-touch.html">Keep In Touch</a>
+      <a href="./glidwell.html">Glidwell</a>
+      <a href="./graph.html">Graph</a>
+      <a href="./one-crm.html">One CRM</a>
+      <a href="./utility.html">Utility</a>
+      <a href="./pre-interview.html">Pre Interview</a>
+      <a href="./insight.html">Insight</a>
+      <a href="./drivescape.html">DriveScape</a>
+      <a href="./yane.html">YANE</a>
+      <a href="./news.html">お知らせ</a>
+      <a href="./katachi-plus.html#pricing">料金</a>
+    </nav>
+  </div>
+</header>
+
+<main class="marketing">
+  <article class="wrap narrow prose">
+    <a class="back" href="./katachi-plus.html">← KATACHI + の紹介へ</a>
+    <div class="app-tag">使い方ガイド</div>
+    <h1>KATACHI + の<wbr>使い方</h1>
+    <div class="updated">2026年10月20日</div>
+
+    <p class="lede">はじめて使う方に向けて、店舗を作るところから、毎日の記録、店舗の管理までを順に説明します。アプリの中でも、「設定」タブの「使い方」からいつでも使い方ガイドを開けます。</p>
+
+    <ol>
+      <li><a href="#before">はじめる前に</a></li>
+      <li><a href="#first">最初の設定</a></li>
+      <li><a href="#shop">店舗を作る（オーナー）</a></li>
+      <li><a href="#invite">スタッフを招待する（オーナー）</a></li>
+      <li><a href="#join">招待されて参加する（スタッフ）</a></li>
+      <li><a href="#client">顧客を登録する</a></li>
+      <li><a href="#consent">同意書に署名してもらう</a></li>
+      <li><a href="#session">セッションを記録する</a></li>
+      <li><a href="#booking">予約台帳を使う</a></li>
+      <li><a href="#progress">体の変化を残す・見る</a></li>
+      <li><a href="#report">顧客へのレポートを送る</a></li>
+      <li><a href="#analytics">分析を見る</a></li>
+      <li><a href="#export">書き出しとバックアップ（オーナー）</a></li>
+      <li><a href="#device">アプリロックと端末ごとの設定</a></li>
+      <li><a href="#remove">スタッフを外す・店舗から抜ける</a></li>
+      <li><a href="#plan">ご契約について</a></li>
+      <li><a href="#mac">Mac で使うとき</a></li>
+      <li><a href="#trouble">うまくいかないとき</a></li>
+    </ol>
+
+    <h2 id="before">1. はじめる前に</h2>
+    <p>用意するものは次の3つです。</p>
+    <ul>
+      <li><strong>iPhone・iPad（iOS 18 以上）か Mac（macOS 15 以上）</strong></li>
+      <li><strong>iCloud にサインインした Apple アカウント</strong>。店舗をスタッフと共有するときに使います。店舗のデータは、オーナーの iCloud 容量を使います。</li>
+      <li><strong>サブスクリプション</strong>（月額1,000円・年額10,000円）。オーナーもスタッフも、使う人それぞれに必要です。</li>
+    </ul>
+    <div class="callout">ご契約がないあいだは、閲覧と書き出しだけを使えます。店舗を作る・店舗に参加する・顧客やセッションを記録するには、ご契約が必要です。</div>
+
+    <h2 id="first">2. 最初の設定</h2>
+    <p>はじめてアプリを開くと、案内の画面が順に出ます。</p>
+    <ol>
+      <li><strong>ようこそ</strong>：できることを確かめて「次へ」を押します。</li>
+      <li><strong>同意</strong>：「利用規約を読む」「プライバシーポリシーを読む」で内容を確かめ、4つの項目すべてにチェックを入れて「同意して始める」を押します。</li>
+      <li><strong>iCloud の確認</strong>：「iCloud を使えます」と出れば準備はできています。「iCloud にサインインしていません」と出たら、設定アプリの上部の Apple アカウントでサインインし、「iCloud」をオンにしてから「もう一度確認」を押します。</li>
+      <li><strong>使い方を選ぶ</strong>：自分で店舗を開くなら「自分の店舗を作る（持ち主）」、オーナーから招待されたなら「招待されて参加する（スタッフ）」を選びます。続きは <a href="#shop">3</a> と <a href="#join">5</a> で説明します。</li>
+      <li><strong>ご契約のご案内</strong>：プランを選んで購入します。「あとで（見るだけで使う）」で先に進むこともできます。</li>
+      <li>「準備ができました」と出たら「はじめる」を押します。</li>
+    </ol>
+    <p>iCloud が使えなくても先へ進めますが、店舗の共有はできません。この案内は、設定の「使い方」にある「オンボーディングをもう一度」で見直せます。</p>
+
+    <h2 id="shop">3. 店舗を作る（オーナー）</h2>
+    <ol>
+      <li>「店舗を作る」を選びます。最初の設定のほか、「顧客」タブ上部の店舗名のメニューにある「新しい店舗を作る」からも作れます。</li>
+      <li>業種を選びます。業種によって、種目、記録の入力欄、カウンセリングの質問が変わります。</li>
+      <li>「店舗名」を入れて「店舗を作る」を押します。</li>
+    </ol>
+    <table>
+      <tr><th>業種</th><td>記録すること</td></tr>
+      <tr><th>筋トレ（パーソナルジム）</th><td>重量×回数でセットを記録します。体組成や推定1RMのグラフも見られます。</td></tr>
+      <tr><th>ピラティス</th><td>マシン・スプリング・回数を記録します。姿勢の変化を写真で見比べられます。</td></tr>
+      <tr><th>ヨガ</th><td>ポーズごとに呼吸数・左右・バリエーションを記録します。</td></tr>
+      <tr><th>ストレッチ</th><td>部位ごとに保持時間と強さ、前後の柔軟性（cm）を記録します。</td></tr>
+    </table>
+    <p>店舗を作ると、その業種でよく使う種目と、同意書のひな形が最初から入っています。業種はあとから設定の「業種」で変えられ、変えてもこれまでの記録や種目はそのまま残ります。</p>
+
+    <h3>店舗を切り替える</h3>
+    <p>「顧客」タブ上部の店舗名をタップすると、店舗の一覧が出ます。いくつかの店舗を持っている・参加しているときは、ここで切り替えます。「予約台帳」「分析」「設定」の各タブは、ここで選んだ店舗の内容になります。</p>
+
+    <h2 id="invite">4. スタッフを招待する（オーナー）</h2>
+    <ol>
+      <li>「設定」タブを開きます（Mac は左の「店舗設定」）。「店舗情報」の下に、招待の欄があります。</li>
+      <li>「メールアドレス」に、スタッフの <strong>Apple アカウントのメールアドレス</strong>を入れて「招待する」を押します。</li>
+      <li>「招待しました」と出たら、「招待を送る（LINE・メールなど）」で招待のリンクをスタッフに送ります。「リンクをコピー」でコピーして、自分で貼り付けて送ることもできます。</li>
+      <li>スタッフが参加すると、「メンバー」の一覧で「参加済み」と表示されます。</li>
+    </ol>
+    <div class="callout">参加できるのは、招待したメールアドレスの Apple アカウントだけです。リンクを転送されただけの人は参加できません。スタッフはオーナーと同じように、顧客・セッション・予約を見て記録できます。CSV の書き出しと取り込み、バックアップ、スタッフの招待と外す操作は、オーナーだけが行えます。</div>
+
+    <h2 id="join">5. 招待されて参加する（スタッフ）</h2>
+    <ol>
+      <li>App Store で KATACHI + を入れ、最初の設定を進めます。使い方は「招待されて参加する（スタッフ）」を選びます。</li>
+      <li><strong>iPhone・iPad</strong>：オーナーから届いたリンクをタップすると、そのまま参加できます。</li>
+      <li><strong>リンクを開いてもアプリが開かないとき（Mac など）</strong>：リンクをコピーしてから、アプリの「招待されて参加する」で貼り付けボタンを押します。「リンクを入力する」から手で入れることもできます。</li>
+      <li>「（店舗名）に参加しました」と出れば完了です。参加した店舗が開きます。</li>
+    </ol>
+    <p>参加するには、スタッフ自身のご契約が必要です。ご契約の前にリンクを開いたときはプランの画面が出て、購入が済むと自動で参加します。</p>
+
+    <h2 id="client">6. 顧客を登録する</h2>
+    <ol>
+      <li>「顧客」タブの「顧客を追加」を押します。</li>
+      <li>はじめてのときは、「自分の担当名」を入れて「設定して使う」を押しておきます。顧客一覧を自分の担当だけに絞り込めるようになります。</li>
+      <li>「氏名」を入れます。必須はこれだけで、ほかの項目はあとから入れても構いません。</li>
+      <li>右上の「追加」で保存します。</li>
+    </ol>
+    <h3>入れられる項目</h3>
+    <table>
+      <tr><th>基本情報</th><td>顔写真、氏名、ふりがな、担当トレーナー、性別、生年月日、電話、メール</td></tr>
+      <tr><th>目的・指導方針</th><td>目的（業種ごとの候補から選べます）、指導方針（基本プラン）</td></tr>
+      <tr><th>カウンセリング</th><td>数値目標、気になる部位（人体図）、普段の運動、運動歴、食生活の概要。ピラティス・ヨガ・ストレッチの店舗では、業種ごとの質問も加わります。</td></tr>
+      <tr><th>次回予定（メモ）</th><td>次回予定日と次回担当のメモです。予約台帳とは別のものです。</td></tr>
+      <tr><th>配慮事項・メモ</th><td>自由に書けます。</td></tr>
+    </table>
+    <p>「気になる部位」は、正面と背面の人体図で部位をタップして選びます。もう一度タップすると外れます。</p>
+
+    <h3>カルテ（顧客の詳細）の見方</h3>
+    <p>一覧の顧客をタップすると、カルテが開きます。いちばん上に「指導方針（基本プラン）」、その下に「引き継ぎメモ」が並ぶので、担当が替わっても方針がすぐに分かります。引き継ぎメモは「次の担当への申し送りを書く」に書いて「追加」を押します。書いた人と日時が残り、店舗のスタッフ全員が見られます。</p>
+    <figure class="article-fig">
+      <img src="./assets/screens/katachi-plus-karte.png" alt="KATACHI + の顧客カルテ（指導方針と引き継ぎメモが上に並ぶ）" width="880" height="1912" loading="lazy">
+      <figcaption>カルテ。指導方針と引き継ぎメモが、いちばん上に。</figcaption>
+    </figure>
+
+    <h2 id="consent">7. 同意書に署名してもらう</h2>
+    <ol>
+      <li>カルテの「同意書」で「同意書に署名」を押します。</li>
+      <li>同意書の内容を顧客に確かめてもらい、署名欄に指か Apple Pencil で署名してもらいます。「1画戻す」「書き直す」でやり直せます。</li>
+      <li>「確定」を押すと PDF になり、カルテに保存されます。</li>
+    </ol>
+    <p>保存した同意書はタップすると開き、「共有」から送ったり保存したりできます（Mac は「印刷」「書き出す」）。署名は iPhone か iPad で行ってください。</p>
+    <p>同意書の文面は、設定の「同意書」にある「同意書テンプレート」で、店舗に合わせて直せます。最初に入っているのはひな形なので、使う前に一度目を通してください。本文の {店舗名} と {店舗の連絡先} は、署名のときに自動で差し込まれます。連絡先は、設定の店舗情報で入れておきます。</p>
+
+    <h2 id="session">8. セッションを記録する</h2>
+    <ol>
+      <li>カルテの「セッション」で「記録を追加」を押します。メニューの型を作ってあれば、「型から始める」も使えます。</li>
+      <li>「種目を追加」で種目を選びます。前に同じ種目を記録していれば、「前回：60kg×10 ・ 60kg×8」のように前回の内容が出ます。</li>
+      <li>「セットを追加」でセットを足します。直前のセットと同じ値が入った状態で増えるので、同じ重量・回数なら数字を直す必要はありません。</li>
+      <li>終わったら「完了」を押します。入力するたびに自動で保存されるので、保存ボタンはありません。</li>
+    </ol>
+    <figure class="article-fig">
+      <img src="./assets/screens/katachi-plus-record.png" alt="KATACHI + のセッション記録画面（種目ごとに前回の記録とセットが並ぶ）" width="880" height="1912" loading="lazy">
+      <figcaption>セッション記録。前回の内容を見ながら、セットを足していく。</figcaption>
+    </figure>
+    <p>記録の日付は、記録を始めた日になります。過去の分を入れるときは、記録画面の上の「日付」を変えてください。</p>
+
+    <h3>業種ごとの入力欄</h3>
+    <table>
+      <tr><th>筋トレ</th><td>重量（kg）・回数・補助。有酸素の種目は km/h・分・% を入れます。</td></tr>
+      <tr><th>ピラティス</th><td>回数、スプリング（メーカーと色）、左右、調整</td></tr>
+      <tr><th>ヨガ</th><td>呼吸数（または秒）、左右、バリエーション・プロップス</td></tr>
+      <tr><th>ストレッチ</th><td>保持（秒）、方法（静的・動的・PNF・パートナー）、左右、強さ（0〜10）</td></tr>
+    </table>
+    <p>ピラティス・ヨガ・ストレッチでは、種目を追加すると1行目が入り、「記録を追加」で行を足します。</p>
+
+    <h3>当日のコンディション</h3>
+    <p>記録画面の下の「当日のコンディション（任意）」で、睡眠・疲労・痛みと、ひとことを残せます。入れた項目は、顧客へのレポートにも載ります。</p>
+
+    <h3>メニューの型と種目を整える</h3>
+    <p>よく行うメニューは、設定の「記録・担当の設定」にある「メニューの型」で、「追加」から型にしておけます。型の名前を付け、種目を行う順にタップして選びます。型に入るのは種目の並びだけで、重量や回数はその日に入れます。</p>
+    <p>種目の追加・並べ替え・非表示は、同じ「記録・担当の設定」の「種目ライブラリ」で行えます。</p>
+
+    <h2 id="booking">9. 予約台帳を使う</h2>
+    <p>LINE や電話、外部の予約サービスで受けた予約を、店舗のみんなで記録する台帳です。顧客が自分で予約する機能や、顧客への通知はありません。</p>
+    <ol>
+      <li>「予約台帳」タブで「予約を追加」を押します。</li>
+      <li>「顧客を選ぶ」で顧客を選び、開始の日時と所要時間（30分〜120分、または「その他」）を選びます。担当には、顧客の担当トレーナーが自動で入ります。</li>
+      <li>必要ならメモ（例：LINE で受付・初回体験）を入れて、「追加」を押します。</li>
+    </ol>
+    <p>上部で「日」「週」の表示を切り替え、担当の並びで「全員」や担当者ごとに絞り込めます。同じ担当の予約と時間が重なると知らせますが、そのまま保存することもできます。</p>
+    <figure class="article-fig">
+      <img src="./assets/screens/katachi-plus-yoyaku.png" alt="KATACHI + の予約台帳（日ごとの予約が担当者つきで並ぶ）" width="880" height="1912" loading="lazy">
+      <figcaption>予約台帳。日・週で、担当者ごとに。</figcaption>
+    </figure>
+
+    <h3>予約からセッションを記録する</h3>
+    <p>予約をタップして開き、「セッションを記録」を押すと、予約の日時でセッションが作られ、予約が「実施済み」になって記録画面が開きます。予約を長押しして選ぶこともできます。予約の状態は「予定」「実施済み」「キャンセル」「無断キャンセル」から選べ、分析の実施率に使われます。</p>
+
+    <h3>予約ページのリンクを顧客に送る</h3>
+    <p>Google カレンダーの予約ページ・STORES 予約・RESERVA などを使っているときは、設定の店舗情報にある「予約ページのリンク（任意）」に登録しておくと、予約台帳の上部に送るボタンが出て、顧客にリンクを送れます。</p>
+
+    <h2 id="progress">10. 体の変化を残す・見る</h2>
+    <h3>体組成・周径</h3>
+    <p>カルテの「体組成・周径」で「測定を追加」を押し、体重・体脂肪率、周径（胸・ウエスト・ヒップ・太もも・二の腕）を入れます。セッションの前と後に柔軟性（cm）を測って残すこともできます。入力欄の横には、前回の値が出ます。</p>
+    <p>ヨガ・ストレッチの店舗では、最初は体組成・周径が表示されず、「柔軟性チェック」になっています。使いたいときは、設定の「業種」で「体組成・周径を表示する」をオンにします。</p>
+    <h3>姿勢写真</h3>
+    <p>カルテの「姿勢写真」で「写真を追加」を押し、向き（正面・側面・背面）を選んで、撮影するかライブラリから選びます。写真が2枚以上になると「比較」が出て、同じ向きの写真を前と後で並べ、格子線を重ねて見比べられます。</p>
+    <h3>グラフ</h3>
+    <p>カルテ右上のグラフのボタン（Mac はカルテの中の「グラフ」）で、推移を見られます。体重・体脂肪率のほか、筋トレは種目別の推定1RMとボリューム、ピラティスは回数、ヨガ・ストレッチは保持の推移、柔軟性の記録があればその推移も出ます。推定値は目安です。</p>
+
+    <h2 id="report">11. 顧客へのレポートを送る</h2>
+    <ol>
+      <li>セッション記録の右上の「レポート」を押します。カルテのセッションを長押しして「顧客へのレポートを作成」を選んでも開けます。</li>
+      <li>必要なら「トレーナーからのコメント（任意）」を書きます。下に、できあがりの PDF が表示されます。</li>
+      <li>「共有」から、LINE・メール・AirDrop などで顧客に送ります（Mac は「印刷」「書き出す」）。</li>
+    </ol>
+    <p>レポートには、その日の記録、当日のコンディション、最近の推移が入ります。コメントは保存されず、そのレポートにだけ入ります。レポートはご契約がないあいだも作れます。</p>
+
+    <h2 id="analytics">12. 分析を見る</h2>
+    <p>「分析」タブで、顧客数、セッション数、予約数と実施率・キャンセルを、月ごとに見られます。上部で「店舗全体」と担当者を切り替え、期間は「6か月」「12か月」から選べます。店舗全体のときは、「担当者ごと」の表も出ます。</p>
+    <p>実施率は、実施済み ÷（実施済み＋無断キャンセル）で計算しています。</p>
+    <figure class="article-fig">
+      <img src="./assets/screens/katachi-plus-bunseki.png" alt="KATACHI + の分析画面（顧客数・セッション数・予約の推移）" width="880" height="1912" loading="lazy">
+      <figcaption>分析。店舗全体と、担当者ごとに。</figcaption>
+    </figure>
+
+    <h2 id="export">13. 書き出しとバックアップ（オーナー）</h2>
+    <p>どれも設定の「データの書き出し」と、その下のバックアップの欄から行います。</p>
+    <ul>
+      <li><strong>CSV で書き出す</strong>：「顧客を CSV で書き出す」「セッションを CSV で書き出す」。Excel で開けます。</li>
+      <li><strong>CSV から取り込む</strong>：「取り込み用のひな形（CSV）」に記入して、「顧客を CSV から取り込む」を押します。取り込む前に、件数と先頭の5行を確かめられます。追加のみで、いまいる顧客は上書きしません。氏名と電話が同じ人は、重複として飛ばします。UTF-8 と Shift_JIS の CSV を読めます。ひな形の1行目は見本なので、消してから使ってください。</li>
+      <li><strong>自動バックアップ</strong>：自分がオーナーの店舗は、この端末に1日1回まで自動で控えを残します（新しい7つまで）。iCloud の同期とは別の控えです。</li>
+      <li><strong>ファイルに書き出す</strong>：「バックアップを書き出す」で、好きな場所に保存できます。自動バックアップは端末の中にあるので、別の場所にも残しておくと安心です。</li>
+      <li><strong>復元</strong>：「バックアップから復元」でファイルを選ぶか、自動バックアップの一覧の「復元」を押します。復元は「店舗名（復元 日付）」という新しい店舗として作られ、いまの店舗には手を加えません。</li>
+      <li><strong>書き出し履歴</strong>：CSV・PDF・バックアップを書き出した記録です。スタッフの書き出しも残ります。</li>
+    </ul>
+    <div class="callout">写真や PDF は、容量が大きいとバックアップに入らないことがあります。入らなかったものがあるときは、復元の確認画面でお知らせします。</div>
+
+    <h2 id="device">14. アプリロックと端末ごとの設定</h2>
+    <p>アプリロックは最初からオンです。アプリを開くときと、アプリから離れて設定した時間（すぐに・1分・5分・15分）が過ぎたあとに、Face ID・Touch ID・パスコードで確かめます。設定の「この端末」で変えられます。</p>
+    <p>同じ「この端末」で、自分の担当名と表示（システム・ライト・ダーク）も変えられます。担当名は、顧客一覧の「自分」の絞り込み、記録した人、予約の担当に使われます。Mac では、これらは「設定」ウインドウ（⌘,）にあります。</p>
+
+    <h2 id="remove">15. スタッフを外す・店舗から抜ける</h2>
+    <ul>
+      <li><strong>オーナー</strong>：設定の「メンバー」で、外す人の「外す」を押します。確認なしですぐに外れるので、押す前に相手を確かめてください。外れたスタッフの端末からは、次にアプリを開いたときに店舗の記録が消えます。すでに書き出した PDF などは残ります。</li>
+      <li><strong>スタッフ</strong>：設定の下の「この店舗から抜ける」を押します。この端末から店舗のデータが消えます。オーナー側のデータは消えません。</li>
+    </ul>
+
+    <h2 id="plan">16. ご契約について</h2>
+    <ul>
+      <li>設定の「ご契約」で、状態の確認、「プランを見る」「購入を復元」「サブスクリプションを管理」ができます。機種を変えたときは「購入を復元」を押してください。</li>
+      <li>解約は「サブスクリプションを管理」か、App Store のアカウント設定から行います。期間が終わる24時間以上前に解約しない限り、自動で更新されます。</li>
+      <li>ご契約が終わっても、閲覧と書き出し（CSV、顧客へのレポート、同意書の PDF、バックアップ）は続けて使えます。記録や編集、予約の追加、スタッフの招待などは止まります。</li>
+    </ul>
+
+    <h2 id="mac">17. Mac で使うとき</h2>
+    <p>左の列に「顧客」「予約台帳」「分析」「店舗設定」が並びます。ご契約や「この端末」の設定は、「設定」ウインドウ（⌘,）にあります。</p>
+    <table>
+      <tr><th>⌘N</th><td>顧客を追加</td></tr>
+      <tr><th>⇧⌘N</th><td>セッションを始める</td></tr>
+      <tr><th>⌘E</th><td>顧客を編集</td></tr>
+      <tr><th>⌘F</th><td>検索</td></tr>
+      <tr><th>⌘1〜⌘4</th><td>左の列の切り替え</td></tr>
+    </table>
+    <p>セッション記録では、Return か Tab で 重量 → 回数 → 次のセット と進み、最後の回数で Return を押すと新しいセットが足されます。写真は Finder からドロップして入れられます。同意書の署名は、iPhone か iPad で行ってください。</p>
+
+    <h2 id="trouble">18. うまくいかないとき</h2>
+    <div class="faq">
+      <details><summary>「このリンクに招待されていません」と出ます</summary><p>オーナーが招待に使ったメールアドレスが、あなたの Apple アカウントのものと違う可能性があります。iPhone の設定アプリ上部の Apple アカウントでメールアドレスを確かめ、そのアドレスでオーナーに招待し直してもらってください。</p></details>
+      <details><summary>招待のリンクを開いてもアプリが開きません</summary><p>Mac などでは、リンクを開いてもアプリが開かないことがあります。リンクをコピーしてから、アプリの「招待されて参加する」で貼り付けボタンを押してください。</p></details>
+      <details><summary>ほかの端末に変更がすぐ反映されません</summary><p>数十秒待つか、アプリを開き直してください。両方の端末で iCloud にサインインしているかも確かめてください。</p></details>
+      <details><summary>2台目の端末に店舗が出てきません</summary><p>1台目と同じ Apple アカウントで iCloud にサインインしているかを確かめ、少し待ってからアプリを開き直してください。店舗がないと思って新しく作ると、店舗が二つになってしまいます。</p></details>
+      <details><summary>登録した顧客が一覧に出てきません</summary><p>顧客一覧の上の担当の並びが「自分」になっていると、自分が担当の顧客だけが表示されます。「全員」を選ぶか、顧客の「担当トレーナー」に自分の名前を設定してください。</p></details>
+      <details><summary>購入したのに店舗を作れません</summary><p>購入が終わると、プランの画面は自動で閉じます。もう一度「店舗を作る」（または「招待されて参加する」）を押してください。それでも未契約と表示されるときは、設定の「ご契約」で「購入を復元」を押してください。</p></details>
+      <details><summary>iCloud にサインインしていないと出ます</summary><p>設定アプリを開き、上部の Apple アカウントでサインインして、「iCloud」をオンにしてください。iCloud が使えないと、店舗の共有はできません。</p></details>
+    </div>
+    <p>解決しないときは、<a href="./legal/support.html">サポート</a> か <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a> までお知らせください。</p>
+
+    <p class="lede" style="margin-top:34px;">料金やプライバシーについては <a href="./katachi-plus.html">KATACHI + の紹介ページ</a> をご覧ください。</p>
+    <div class="btn-row" style="margin-top:18px;">
+      <a class="btn btn-primary" href="https://apps.apple.com/jp/app/id6815231799">App Store で入手</a>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="./katachi.html">KATACHI</a>
+        <a href="./katachi-plus.html">KATACHI +</a>
+        <a href="./keep-in-touch.html">Keep In Touch</a>
+        <a href="./glidwell.html">Glidwell</a>
+        <a href="./graph.html">Graph</a>
+        <a href="./one-crm.html">One CRM</a>
+        <a href="./utility.html">Utility</a>
+        <a href="./pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="./insight.html">Insight</a>
+        <a href="./drivescape.html">DriveScape</a>
+        <a href="./yane.html">YANE</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="./news.html">お知らせ</a>
+        <a href="./journal/">読みもの</a>
+        <a href="./request.html">要望箱</a>
+        <a href="./legal/support.html">サポート</a>
+        <a href="./legal/privacy.html">プライバシーポリシー</a>
+        <a href="./legal/terms.html">利用規約</a>
+        <a href="./legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

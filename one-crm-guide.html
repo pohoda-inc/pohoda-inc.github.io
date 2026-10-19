@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One CRM の使い方｜顧客の登録・記録・自動計算・項目のカスタマイズ - Pohoda</title>
+<meta name="description" content="顧客管理アプリ One CRM の使い方ガイド。出発点（プリセット）の選び方、顧客の登録と記録、最後に連絡した日や売上の自動計算、項目とホームのカスタマイズ、法人営業の案件管理、通知、Apple Intelligence、チームでの共有、バックアップと CSV まで、手順で説明します。">
+<link rel="canonical" href="https://pohoda.jp/one-crm-guide.html">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-itunes-app" content="app-id=6813791048">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="One CRM の使い方ガイド">
+<meta property="og:description" content="顧客を登録して、会ったことを記録する。自動計算と項目の作り替えまでを手順で。">
+<meta property="og:url" content="https://pohoda.jp/one-crm-guide.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-one-crm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="One CRM の使い方ガイド">
+<meta name="twitter:description" content="顧客を登録して、会ったことを記録する。自動計算と項目の作り替えまでを手順で。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-one-crm.png">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=2" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="./styles.css?v=16">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "TechArticle", "headline": "One CRM の使い方", "description": "顧客管理アプリ One CRM の使い方。出発点の選び方、顧客の登録と記録、自動計算、項目とホームのカスタマイズ、法人営業の案件管理、通知、Apple Intelligence、チームでの共有、バックアップと CSV まで。", "url": "https://pohoda.jp/one-crm-guide.html", "image": "https://pohoda.jp/assets/og/og-one-crm.png", "inLanguage": "ja", "datePublished": "2026-10-20", "dateModified": "2026-10-20", "about": {"@type": "MobileApplication", "name": "One CRM", "url": "https://pohoda.jp/one-crm.html"}, "author": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "「分析」のタブが見当たりません", "acceptedAnswer": {"@type": "Answer", "text": "「分析」のタブは、最初は隠れています。「カスタマイズ」の「タブ」で、「分析」の目のアイコンを押すと表示されます。"}}, {"@type": "Question", "name": "11人目からの顧客が開けません", "acceptedAnswer": {"@type": "Answer", "text": "無料で使えるのは、全ビジネス合計で10人までです。登録の古い順に10人が開けて、それより後の顧客は鍵の印が付きます。顧客を「保管する」か削除すると枠が空きます。Pro にすると上限がなくなります。"}}, {"@type": "Question", "name": "最後に会った日や回数が変わりません", "acceptedAnswer": {"@type": "Answer", "text": "自動計算は、顧客につながった来店や注文などの記録から数えます。先の日付の記録（予定）は、その日が来るまで数えません。CSV で取り込んだ来店や注文は顧客につながらないため、自動計算に入りません。「ゼロから作る」で始めた場合は、来店などの記録の種類と自動計算の項目を自分で作る必要があります。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "One CRM", "item": "https://pohoda.jp/one-crm.html"}, {"@type": "ListItem", "position": 3, "name": "使い方ガイド", "item": "https://pohoda.jp/one-crm-guide.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="/assets/brand/pohoda-logo.svg" alt="Pohoda" width="117" height="34"></a>
+    <nav class="nav">
+      <a href="./katachi.html">KATACHI</a>
+      <a href="./katachi-plus.html">KATACHI +</a>
+      <a href="./keep-in-touch.html">Keep In Touch</a>
+      <a href="./glidwell.html">Glidwell</a>
+      <a href="./graph.html">Graph</a>
+      <a href="./one-crm.html" style="color:var(--gold)">One CRM</a>
+      <a href="./utility.html">Utility</a>
+      <a href="./pre-interview.html">Pre Interview</a>
+      <a href="./insight.html">Insight</a>
+      <a href="./drivescape.html">DriveScape</a>
+      <a href="./yane.html">YANE</a>
+      <a href="./news.html">お知らせ</a>
+      <a href="./one-crm.html#pricing">料金</a>
+    </nav>
+  </div>
+</header>
+
+<main class="marketing">
+  <article class="wrap narrow prose">
+    <a class="back" href="./one-crm.html">← One CRM の紹介へ</a>
+    <div class="app-tag">使い方ガイド</div>
+    <h1>One CRM の<wbr>使い方</h1>
+    <div class="updated">2026年10月20日</div>
+
+    <p class="lede">One CRM は、顧客の名前と会ったことを記録すると、最後に連絡した日・回数・売上が自動で計算される顧客台帳です。項目も呼び名も自分の商売に合わせて作り替えられる分、最初はどこから触ればよいか迷うかもしれません。このページでは、始め方から順に説明します。</p>
+
+    <ol>
+      <li><a href="#before">はじめる前に</a></li>
+      <li><a href="#start">出発点を選んで始める</a></li>
+      <li><a href="#screens">画面の見方</a></li>
+      <li><a href="#customer">顧客を登録する</a></li>
+      <li><a href="#log">会ったことを記録する</a></li>
+      <li><a href="#home">ホームを使う</a></li>
+      <li><a href="#list">一覧で探す・整理する</a></li>
+      <li><a href="#fields">項目を作り替える</a></li>
+      <li><a href="#rollup">自動計算の項目を作る</a></li>
+      <li><a href="#collection">コレクションとビジネス</a></li>
+      <li><a href="#b2b">法人営業で使う</a></li>
+      <li><a href="#notify">通知を受け取る</a></li>
+      <li><a href="#ai">Apple Intelligence で話しかける</a></li>
+      <li><a href="#team">チームで使う（Pro）</a></li>
+      <li><a href="#data">同期・ロック・バックアップ・CSV</a></li>
+      <li><a href="#plan">無料でできることと Pro</a></li>
+      <li><a href="#mac">iPad・Mac で使うとき</a></li>
+      <li><a href="#trouble">うまくいかないとき</a></li>
+    </ol>
+
+    <h2 id="before">1. はじめる前に</h2>
+    <ul>
+      <li><strong>iPhone・iPad（iOS 26 以上）か Mac（macOS 26 以上）</strong>で使えます。</li>
+      <li><strong>アカウント登録は不要</strong>です。入れたデータは、この端末と、iCloud 同期がオン（初期設定）のときはご自身の iCloud に保存されます。開発元の Pohoda には送信されません。</li>
+      <li><strong>顧客は全ビジネス合計で10人まで無料</strong>です。記録・通知・バックアップ・CSV・アプリロックは、無料のまま使えます。</li>
+    </ul>
+
+    <h2 id="start">2. 出発点を選んで始める</h2>
+    <ol>
+      <li>はじめて開くと「どんなお仕事ですか？」と出ます。自分の商売に近い出発点を選び、「はじめる」を押します。</li>
+      <li>「最初の顧客を登録しましょう」（出発点によっては「取引先」）と出たら、名前を入れて「はじめる」を押します。「連絡先から取り込む」で、iPhone の連絡先からまとめて入れることもできます。あとで登録するなら「あとで登録する」を押します。</li>
+    </ol>
+    <table>
+      <tr><th>ゼロから作る</th><td>顧客・取引・タスク・ノートだけの最小構成です。来店などの記録の種類と自動計算は、自分で作ります。</td></tr>
+      <tr><th>個人事業主・フリーランス</th><td>取引先・案件・やりとり。案件は「問い合わせ」から「入金済」までの進み具合で管理し、最終連絡と累計の売上を自動で計算します。</td></tr>
+      <tr><th>接客・ナイト</th><td>顧客と来店。指名・同伴・誕生日を記録し、最終来店・来店回数・今月売上・累計を自動で計算します。</td></tr>
+      <tr><th>物販・ハンドメイド</th><td>顧客・注文・在庫。販売経路（minne・Creema など）やお届け先を残し、最終注文と累計を自動で計算します。</td></tr>
+      <tr><th>法人営業</th><td>取引先・担当者・案件・活動履歴。案件をパイプラインで管理し、最終接触と活動回数を自動で計算します。</td></tr>
+    </table>
+    <p>どの出発点も初期値です。項目も呼び名も、あとから自由に変えられます。商売が複数あるときは、あとで別の「ビジネス」として足せます（<a href="#collection">10</a>）。</p>
+    <div class="callout">iCloud 同期がオンの端末を新しく使い始めると、「iCloud のデータを確認しています…」と出ます。ほかの端末で使っていたデータがあれば、そのまま読み込まれます。はじめて使う場合は「新しく始める」を押してください。</div>
+
+    <h2 id="screens">3. 画面の見方</h2>
+    <p>iPhone では、画面の下に次のタブが並びます。</p>
+    <ul>
+      <li><strong>ホーム</strong>：しばらく会えていない人や、近い予定・期限のタスクなど、いま気にかけるものが並びます。</li>
+      <li><strong>顧客・来店・案件などのタブ</strong>：記録している種類（コレクション）ごとの一覧です。5つ以上あると、4つ目からは「その他」にまとまります。</li>
+      <li><strong>記録</strong>：会ったことをすぐに残すボタンです。</li>
+      <li><strong>カスタマイズ</strong>：ビジネスの切り替え、コレクションやタブ、同期・通知・ロック・バックアップ、プランなどの設定です。</li>
+    </ul>
+    <p>「分析」のタブは、最初は隠れています。使うときは、「カスタマイズ」の「タブ」で、「分析」の目のアイコンを押して表示します。タブの並べ替えも同じ場所でできます。</p>
+    <figure class="article-fig">
+      <img src="./assets/screens/onecrm-home-light.png" alt="One CRM のホーム画面（記録ボタン、今日・明日の来店、しばらく会えていない方が並ぶ）" width="880" height="1912" loading="lazy">
+      <figcaption>ホーム。近い予定と、しばらく会えていない方が並ぶ。</figcaption>
+    </figure>
+
+    <h2 id="customer">4. 顧客を登録する</h2>
+    <ol>
+      <li>「顧客」のタブで、右上の「＋」を押します。</li>
+      <li>名前を入れます。先頭の丸い部分を押すと写真も登録できます。</li>
+      <li>ほかに入れたい項目は「項目を追加」から足します。足した項目は、次からは最初から並んで開きます。</li>
+      <li>「保存」を押します。</li>
+    </ol>
+    <p>iPhone の連絡先からまとめて入れるときは、一覧の並べ替えボタンのメニューにある「連絡先から取り込む」を使います。名前・よみ・電話・メール・顔写真が入り、同じ名前の人は取り込みません。</p>
+    <h3>顧客の詳細でできること</h3>
+    <ul>
+      <li>項目をタップすると、その場で書き換えられます。</li>
+      <li>電話番号やメールの項目からは、そのまま電話・SMS・メールを開けます。電話やメールのあとには「連絡したことを記録しますか？」と聞かれ、「記録する」を押すと今日の日付で1件残ります。</li>
+      <li>右上のメニューから「保管する」「複製」「削除」ができます。もう来ない人は、削除せずに「保管する」と一覧から隠せます。</li>
+    </ul>
+
+    <h2 id="log">5. 会ったことを記録する</h2>
+    <ol>
+      <li>タブの真ん中の「記録」を押します。</li>
+      <li>顧客を選びます。最近やりとりした顧客が並ぶので、タップするだけです。並んでいない人は「探す」、はじめての人は「新規」から選びます。</li>
+      <li>金額があれば入れます。過去に使った金額がボタンで出るので、同じ金額ならタップするだけです。</li>
+      <li>日付と時刻は、いまの時刻が入っています。必要なら変えて「保存」を押します。</li>
+    </ol>
+    <figure class="article-fig">
+      <img src="./assets/screens/onecrm-record.png" alt="One CRM の記録画面（顧客を選び、金額と日付を入れて保存する）" width="880" height="1912" loading="lazy">
+      <figcaption>記録。顧客を選んで、金額と日付を入れて保存。</figcaption>
+    </figure>
+    <p>保存すると、その顧客の最後に会った日・回数・今月の売上・累計が自動で更新されます（項目の名前は出発点によって「最終来店」「来店回数」などになります）。記録の削除や付け替えをしたときも計算し直します。</p>
+    <p>記録の画面で入れるのは、顧客・金額・日付だけです。粗利・同伴・メモなどは、保存したあとに記録を開いて足します。顧客の詳細にある「＋ 来店」のようなボタンから、その顧客を選んだ状態で記録することもできます。</p>
+    <h3>予定（予約）を入れる</h3>
+    <p>日付を先の日にすると、「予定」として保存されます。「毎週」「隔週」「毎月」の繰り返しも選べます。同じ時間帯にほかの予定があると知らせます。予定は、その日が来るまで最後に会った日や回数には数えません。</p>
+    <div class="callout">「ゼロから作る」で始めた場合は、来店などの記録の種類がないため、「記録」を押すと新しい顧客の登録が開きます。会ったことを残したいときは、<a href="#collection">10</a> のとおり「出来事」のコレクションを作り、<a href="#rollup">9</a> のとおり自動計算の項目を足してください。</div>
+
+    <h2 id="home">6. ホームを使う</h2>
+    <p>ホームには、出発点に合わせたものが最初から置いてあります。中身があるものだけが表示されるので、記録が少ないうちは空に見えることがあります。いちばん下には、最近の記録が5件並びます。</p>
+    <ul>
+      <li><strong>しばらく連絡していない・会えていない人</strong>：最後に会った日から30日以上たった人が出ます。長押しで、14日・21日・30日・60日から選べます。</li>
+      <li><strong>今日・明日の予定</strong>：今日と明日の予定が並びます。</li>
+      <li><strong>近い次回アクション・期限のタスク</strong>：期限が近いもの、過ぎたものが並びます。</li>
+      <li><strong>動きが無い案件</strong>：しばらく更新していない案件が並びます。受注・失注など、終わった案件は出ません。</li>
+      <li><strong>在庫わずか</strong>（物販）：残りが少ない在庫が並びます。</li>
+    </ul>
+    <p>右上の「ホームを編集」で、置くものを足したり、ドラッグで並べ替えたり、左にスワイプして外したりできます。足せる候補は、自分の項目名から自動で作られます。無料では、最初から置いてあるものに加えて2つまで足せます。</p>
+
+    <h2 id="list">7. 一覧で探す・整理する</h2>
+    <ul>
+      <li>上の検索欄で、名前・よみ・メモから探せます。</li>
+      <li>状況やタグのボタンで絞り込めます。件数も出ます。</li>
+      <li>並べ替えボタンのメニューで、並び順を変えたり、「保管したものを見る」「まとめて操作」を選んだりできます。まとめて操作では、選んだ人にまとめてタグを付けたり保管したりできます。</li>
+      <li>行を長押しすると、「保管する」「複製」「削除」が出ます。</li>
+    </ul>
+    <figure class="article-fig">
+      <img src="./assets/screens/onecrm-list.png" alt="One CRM の顧客一覧" width="880" height="1912" loading="lazy">
+      <figcaption>顧客の一覧。検索と絞り込みで探す。</figcaption>
+    </figure>
+
+    <h2 id="fields">8. 項目を作り替える</h2>
+    <p>項目の編集は、各一覧の右上にあるスライダーのアイコンから開きます。「呼び名とアイコン」「項目」「カードの見せ方」の3つがあります。</p>
+    <ol>
+      <li>「項目」を開き、「項目を追加」を押します。</li>
+      <li>「名前」（例：好きなお酒）を入れ、種類を選んで追加します。</li>
+      <li>各項目の「カードに表示」をオンにすると一覧のカードに出て、「並べ替えに使う」をオンにすると並べ替えや絞り込みに使えます。ドラッグで並べ替えもできます。</li>
+    </ol>
+    <table>
+      <tr><th>テキスト</th><td>名前や短い文章。電話番号・メール・リンク・住所として扱うと、そこから電話やメールを開けます。</td></tr>
+      <tr><th>メモ</th><td>長い文章</td></tr>
+      <tr><th>数値</th><td>件数や回数。単位と小数の桁を決められます。</td></tr>
+      <tr><th>金額</th><td>金額。税率と税込・税抜の入力を決められます。</td></tr>
+      <tr><th>日付</th><td>経過日数や記念日に使えます。</td></tr>
+      <tr><th>選択</th><td>決まった選択肢から1つ。色を付けられます。</td></tr>
+      <tr><th>タグ</th><td>決まった選択肢からいくつでも</td></tr>
+      <tr><th>評価</th><td>★5段階</td></tr>
+      <tr><th>画像</th><td>写真を1枚</td></tr>
+      <tr><th>ON/OFF</th><td>はい・いいえ</td></tr>
+      <tr><th>関連</th><td>ほかの記録とつなぎます（例：案件と取引先）。</td></tr>
+    </table>
+    <p>選択やタグの選択肢は、項目の「選択肢を編集」で名前・色・並び順を変えたり、追加・削除したりできます。入力中に選択肢を選ぶ画面からも開けます。使わない項目は、左にスワイプして「非表示」にできます。非表示にしても、入力済みの内容は消えません。</p>
+    <p>「カードの見せ方」では、一覧のカードのタイトル・バッジ・補足・数値の枠に、どの項目を出すかを決めます。コレクションの呼び名とアイコンは「呼び名とアイコン」で変えられます。呼び名を変えても、入力済みの内容も自動計算も変わりません。</p>
+    <figure class="article-fig">
+      <img src="./assets/screens/onecrm-fields.png" alt="One CRM の項目の編集画面（カードに表示・並べ替えに使うの切り替え）" width="880" height="1912" loading="lazy">
+      <figcaption>項目の編集。カードに出すもの、並べ替えに使うものを選ぶ。</figcaption>
+    </figure>
+
+    <h2 id="rollup">9. 自動計算の項目を作る</h2>
+    <p>「最終来店」や「今月売上」のような自動計算の項目は、顧客や案件の「項目」画面にある「自動計算の項目を追加」で作れます。</p>
+    <ol>
+      <li>「呼び名」を入れます（例：最終来店・来店回数・今月売上）。</li>
+      <li>「何から数えるか」で、来店や注文などの記録の種類を選びます。</li>
+      <li>「数え方」を選びます。「最後の日付」はいちばん新しい記録の日付、「件数」は記録の数、「合計」は金額などの足し算です。合計のときは「何を足すか」も選びます。</li>
+      <li>件数と合計は、「期間」を「全期間」か「今月」から選びます。今月は、月が替わると0から数え直します。</li>
+    </ol>
+    <p>作るとすぐに計算されます。数えるもとの記録に、その顧客につなぐ「関連」の項目があることが必要です。</p>
+
+    <h2 id="collection">10. コレクションとビジネス</h2>
+    <h3>コレクション（記録する種類）</h3>
+    <p>顧客・来店・注文・在庫のように、記録したいものの種類を「コレクション」と呼びます。「カスタマイズ」の「コレクション」で「コレクションを追加」を押し、呼び名・アイコン・種類を選んで作ります。作ったコレクションは、自動でタブに並びます。</p>
+    <table>
+      <tr><th>相手</th><td>顧客・取引先など。最後に連絡した日や合計を自動で計算できます。</td></tr>
+      <tr><th>出来事</th><td>来店・注文・セッションなど。相手につなげて記録します。</td></tr>
+      <tr><th>取引</th><td>案件・契約など。進み具合を段階で管理します。</td></tr>
+      <tr><th>やること</th><td>期限のあるもの</td></tr>
+      <tr><th>ノート</th><td>文章を残すだけのもの</td></tr>
+      <tr><th>その他</th><td>在庫・商品・場所など</td></tr>
+    </table>
+    <p>種類は作るときにだけ選べます。無料では、出発点で用意されたものに加えて、ビジネスごとに1つまで作れます。</p>
+    <h3>ビジネス（商売ごとの台帳）</h3>
+    <p>商売が複数あるときは、「ビジネス」を分けて使えます。ビジネスごとに顧客も項目もホームも分かれます。「カスタマイズ」の「ビジネス」で「ビジネスを追加」を押し、名前と出発点を選びます。ビジネスが2つ以上になると、ホームの右上にビジネスの切り替えボタンが出ます。</p>
+
+    <h2 id="b2b">11. 法人営業で使う</h2>
+    <p>「法人営業」の出発点では、取引先・担当者・案件・活動履歴をつなげて管理します。</p>
+    <ol>
+      <li>「取引先」のタブで会社を登録します。</li>
+      <li>「担当者」のタブの「＋」で担当者を登録し、「取引先」で会社を選びます。1社に何人でもつなげられます。</li>
+      <li>「案件」のタブで案件を登録し、取引先と担当者を選びます。</li>
+      <li>商談や訪問をしたら、「記録」から活動履歴を残します。最終接触と活動回数が自動で更新されます。</li>
+    </ol>
+    <p>案件の一覧は、ステータス（案件化・見積提示・確度50%・コミット・受注・失注）ごとにまとまり、段階ごとの件数と金額の小計が出ます。上のボタンで段階ごとに絞り込めます。段階を進めるときは、案件を開いて「ステータス」を選び直します。</p>
+    <p>段階の名前や数は、「ステータス」の「選択肢を編集」で自分のやり方に合わせて作り替えられます。「終了した案件として扱う」をオンにした段階の案件は、ホームの「動きが無い案件」や通知から外れます。</p>
+
+    <h2 id="notify">12. 通知を受け取る</h2>
+    <p>「カスタマイズ」の「通知」で「お知らせを受け取る」をオンにします。先の日付の予定やタスクを初めて保存したときにも、通知を許可するか聞かれます。ビジネスごとに、通知のオン・オフも選べます。</p>
+    <ul>
+      <li>予定：前日の18時と当日の8時</li>
+      <li>記念日（誕生日など）：3日前の9時</li>
+      <li>タスクの期限、案件の次回アクションの期限：当日の9時</li>
+      <li>しばらく会えていない方：最後に会った日から30日以上たった人がいる日の9時</li>
+    </ul>
+    <p>通知は端末の中だけで組み立てています。届かないときは、iPhone の設定アプリで One CRM の通知が許可されているかを確かめてください。</p>
+
+    <h2 id="ai">13. Apple Intelligence で話しかける</h2>
+    <p>Apple Intelligence に対応した端末で、設定の Apple Intelligence がオンのときに使えます。ホームの左上か、記録の画面の右上にある Apple Intelligence のボタンを押し、話しかけるように入力します。処理はすべて端末の中で行われます。</p>
+    <ul>
+      <li><strong>探す</strong>：「先月来た製造業の顧客」「100万円以上の案件」のように書くと、当てはまる記録の一覧が出ます。</li>
+      <li><strong>記録の下書き</strong>：「田中さんと商談、来月見積」のように書くと、項目が埋まった登録画面が開きます。内容を確かめて「保存」を押すと保存されます。</li>
+      <li><strong>数字を聞く</strong>：「今週やることをまとめて」のように聞くと、今月や先月の件数・金額、期限の近いタスク、案件の段階ごとの件数などから答えます。</li>
+    </ul>
+    <p>使えない端末でも、手で入れればすべての機能を使えます。</p>
+
+    <h2 id="team">14. チームで使う（Pro）</h2>
+    <p>ビジネスをほかの人と共有して、同じ顧客台帳を一緒に使えます。日本の App Store で Pro を登録していて、iCloud 同期がオンのときに使えます。共有に参加する人も、それぞれ Pro の登録が必要です。</p>
+    <ol>
+      <li>共有したいビジネスを選んだ状態で、「カスタマイズ」の「ビジネス」にある「チームで使う」を開きます。</li>
+      <li>「メンバーを招待する」を押し、招待を送ります。招待した人だけが参加でき、読み書きができます。</li>
+      <li>招待された人は、届いたリンクを開くと参加できます。参加すると、そのビジネスに自動で切り替わります。</li>
+    </ol>
+    <p>オーナーは「チームで使う」の画面で、参加者を「外す」ことや「共有をやめる」ことができます。参加した人は、「カスタマイズ」の「チーム」にある「チームから抜ける」で抜けられます。抜けると、その端末からビジネスが消えます。オーナーのデータは残ります。</p>
+
+    <h2 id="data">15. 同期・ロック・バックアップ・CSV</h2>
+    <h3>iCloud 同期</h3>
+    <p>「カスタマイズ」の「iCloud 同期」にある「iCloud で同期する」は、最初からオンです。同じ Apple アカウントの iPhone・iPad・Mac で同じ内容になります。オフにすると、この端末のデータはそのまま残り、ほかの端末とは同じ内容でなくなります。タブの並びと表示は端末ごとの設定で、同期しません。</p>
+    <h3>アプリロック</h3>
+    <p>「カスタマイズ」の「プライバシー」で、「Face ID でロック」（端末によって Touch ID・パスコード）をオンにします。アプリを切り替えたときの画面も隠れます。端末にパスコードが設定されていないと、オンにできません。</p>
+    <figure class="article-fig">
+      <img src="./assets/screens/onecrm-settings.png" alt="One CRM のカスタマイズ画面（同期・通知・プライバシーなどの設定）" width="880" height="1912" loading="lazy">
+      <figcaption>カスタマイズ。同期・通知・ロック・データの設定はここに。</figcaption>
+    </figure>
+    <h3>バックアップ</h3>
+    <p>「カスタマイズ」の「データ」にある「バックアップ・CSV」を開きます。「バックアップを書き出す」で、写真も含めたデータを1つのファイルに保存できます。機種変更や、念のための控えに使えます。書き出しはずっと無料です。</p>
+    <p>「バックアップから復元」では、「いまのデータに足す」か「いまのデータを置き換える」を選べます。復元の前に、いまのデータは自動で控えられます。</p>
+    <h3>CSV</h3>
+    <p>同じ画面の「CSV」で、コレクションごとに「書き出す」「取り込む」ができます。1行目が項目名になり、Excel で開けます。</p>
+    <ul>
+      <li>取り込めるのは UTF-8 の CSV です。1行目の項目名と同じ名前の項目に、自動で割り当てます。</li>
+      <li>取り込むときは、「取り込む（同じ名前は飛ばす）」「同じ名前は上書きする」「対応する列だけ・そのまま足す」から選べます。対応する項目がない列は、前の2つを選ぶと新しい項目として作られます。</li>
+      <li>関連（来店の顧客など）は取り込まれません。来店や注文を CSV で取り込んでも顧客にはつながらないため、自動計算には入りません。</li>
+    </ul>
+
+    <h2 id="plan">16. 無料でできることと Pro</h2>
+    <table>
+      <tr><th>顧客の登録</th><td>無料：全ビジネス合計で10人まで（保管した人は数えません）／Pro：無制限</td></tr>
+      <tr><th>コレクションの追加</th><td>無料：ビジネスごとに1つ／Pro：無制限</td></tr>
+      <tr><th>項目の追加</th><td>無料：コレクションごとに3つ／Pro：無制限</td></tr>
+      <tr><th>自動計算の追加</th><td>無料：コレクションごとに1つ／Pro：無制限</td></tr>
+      <tr><th>ホームへの追加</th><td>無料：2つ／Pro：無制限</td></tr>
+      <tr><th>顧客ごとの分析</th><td>Pro のみ（全体の分析は無料）</td></tr>
+      <tr><th>チームで使う</th><td>Pro のみ（日本の App Store）</td></tr>
+      <tr><th>記録・通知・バックアップ・CSV・ロック・Apple Intelligence・iCloud 同期</th><td>無料</td></tr>
+    </table>
+    <p>出発点で用意された項目やコレクションは、無料の数に入りません。Pro は「カスタマイズ」の「プラン」から、月額1,000円・年額10,000円・買い切り14,800円で登録できます。機種を変えたときは、同じ画面の「購入を復元」を押してください。</p>
+
+    <h2 id="mac">17. iPad・Mac で使うとき</h2>
+    <p>iPad（通常の幅）と Mac では、左から「サイドバー・一覧・詳細」の3列で表示されます。一覧の行を選ぶと右の列に詳細が出て、離れるときに自動で保存されます。</p>
+    <table>
+      <tr><th>⌘N</th><td>記録</td></tr>
+      <tr><th>⌘F</th><td>一覧の検索</td></tr>
+      <tr><th>↑ ↓</th><td>一覧で前後の記録へ移る</td></tr>
+      <tr><th>⌘⌫</th><td>開いている記録を削除（確認が出ます）</td></tr>
+      <tr><th>⌘1〜⌘9</th><td>タブの切り替え</td></tr>
+    </table>
+    <p>Mac では、画面のスリープや、アプリを隠したときにもロックがかかります（ロックがオンのとき）。</p>
+
+    <h2 id="trouble">18. うまくいかないとき</h2>
+    <div class="faq">
+      <details><summary>「分析」のタブが見当たりません</summary><p>「分析」のタブは、最初は隠れています。「カスタマイズ」の「タブ」で、「分析」の目のアイコンを押すと表示されます。</p></details>
+      <details><summary>11人目からの顧客が開けません</summary><p>無料で使えるのは、全ビジネス合計で10人までです。登録の古い順に10人が開けて、それより後の顧客は鍵の印が付きます。顧客を「保管する」か削除すると枠が空きます。Pro にすると上限がなくなります。</p></details>
+      <details><summary>最後に会った日や回数が変わりません</summary><p>自動計算は、顧客につながった来店や注文などの記録から数えます。先の日付の記録（予定）は、その日が来るまで数えません。CSV で取り込んだ来店や注文は顧客につながらないため、自動計算に入りません。「ゼロから作る」で始めた場合は、<a href="#collection">出来事のコレクション</a>と<a href="#rollup">自動計算の項目</a>を自分で作る必要があります。</p></details>
+      <details><summary>ホームに何も出ません</summary><p>ホームに置いたものは、当てはまる記録があるときだけ表示されます。たとえば「しばらく会えていない方」は、最後に会った日から30日以上たった人がいるときに出ます。記録が増えると並ぶようになります。</p></details>
+      <details><summary>ほかの端末に同じ内容が出ません</summary><p>「カスタマイズ」の「iCloud 同期」がオンになっているか、両方の端末で同じ Apple アカウントの iCloud にサインインしているかを確かめてください。「iCloud のアカウントが変わったか…同期を止めています」と出ているときは、「いまの iCloud で同期を再開する」を押します。</p></details>
+      <details><summary>通知が届きません</summary><p>「カスタマイズ」の「通知」で「お知らせを受け取る」と「このビジネスのお知らせ」がオンになっているか、iPhone の設定アプリで One CRM の通知が許可されているかを確かめてください。</p></details>
+      <details><summary>「データを開けませんでした」と出ます</summary><p>記録が消えたわけではありません。「もう一度開く」を押すか、アプリを開き直してください。念のため、「控えを書き出す」でデータを保存しておくと安心です。</p></details>
+    </div>
+    <p>解決しないときは、<a href="./legal/support.html">サポート</a> か <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a> までお知らせください。</p>
+
+    <p class="lede" style="margin-top:34px;">料金やプライバシーについては <a href="./one-crm.html">One CRM の紹介ページ</a> をご覧ください。</p>
+    <div class="btn-row" style="margin-top:18px;">
+      <a class="btn btn-primary" href="https://apps.apple.com/jp/app/id6813791048">App Store で入手</a>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="./katachi.html">KATACHI</a>
+        <a href="./katachi-plus.html">KATACHI +</a>
+        <a href="./keep-in-touch.html">Keep In Touch</a>
+        <a href="./glidwell.html">Glidwell</a>
+        <a href="./graph.html">Graph</a>
+        <a href="./one-crm.html">One CRM</a>
+        <a href="./utility.html">Utility</a>
+        <a href="./pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="./insight.html">Insight</a>
+        <a href="./drivescape.html">DriveScape</a>
+        <a href="./yane.html">YANE</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="./news.html">お知らせ</a>
+        <a href="./journal/">読みもの</a>
+        <a href="./request.html">要望箱</a>
+        <a href="./legal/support.html">サポート</a>
+        <a href="./legal/privacy.html">プライバシーポリシー</a>
+        <a href="./legal/terms.html">利用規約</a>
+        <a href="./legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
