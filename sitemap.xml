@@ -9,7 +9,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/news.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
@@ -224,6 +224,16 @@
     <image:image><image:loc>https://pohoda.jp/assets/screens/utility-task-light.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/utility-calendar-light.png</image:loc></image:image>
     <image:image><image:loc>https://pohoda.jp/assets/screens/utility-health-light.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/katachi-plus.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi-plus.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-plus-karte.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-plus-record.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-plus-yoyaku.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/katachi-plus-bunseki.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pohoda.jp/pre-interview.html</loc>
