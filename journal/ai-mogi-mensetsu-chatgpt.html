@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIで模擬面接をする方法｜ChatGPTのプロンプト例と、声で練習するときのコツ</title>
+<meta name="description" content="対話型AIで模擬面接をする方法。そのまま使える面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習の限界、声に出して練習するコツを解説します。">
+<link rel="canonical" href="https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="AIで模擬面接をする方法｜ChatGPTのプロンプト例と、声で練習するときのコツ">
+<meta property="og:description" content="対話型AIで模擬面接をする方法。そのまま使える面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習の限界、声に出して練習するコツを解説します。">
+<meta property="og:url" content="https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-pre-interview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AIで模擬面接をする方法｜ChatGPTのプロンプト例と、声で練習するときのコツ">
+<meta name="twitter:description" content="対話型AIで模擬面接をする方法。そのまま使える面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習の限界、声に出して練習するコツを解説します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-pre-interview.png">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=2" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="/styles.css?v=16">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"AIで模擬面接をする方法｜ChatGPTのプロンプト例と、声で練習するときのコツ","description":"対話型AIで模擬面接をする方法。そのまま使える面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習の限界、声に出して練習するコツを解説します。","image":"https://pohoda.jp/assets/og/og-pre-interview.png","datePublished":"2026-10-21","dateModified":"2026-10-21","inLanguage":"ja","about":"Pre Interview","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"AIで模擬面接をする方法｜ChatGPTのプロンプト例と、声で練習するときのコツ","item":"https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-logo.svg" alt="Pohoda" width="117" height="34"></a>
+    <nav class="nav">
+      <a href="/katachi.html">KATACHI</a>
+      <a href="/keep-in-touch.html">Keep In Touch</a>
+      <a href="/glidwell.html">Glidwell</a>
+      <a href="/graph.html">Graph</a>
+      <a href="/one-crm.html">One CRM</a>
+      <a href="/utility.html">Utility</a>
+      <a href="/insight.html">Insight</a>
+      <a href="/drivescape.html">DriveScape</a>
+      <a href="/yane.html">YANE</a>
+      <a href="/journal/" style="color:var(--gold)">読みもの</a>
+    </nav>
+  </div>
+</header>
+
+<main class="marketing">
+  <article class="wrap narrow prose">
+    <a class="back" href="/journal/">← 読みもの一覧へ</a>
+    <div class="app-tag">Pre Interview ・ 面接練習</div>
+    <h1>AIで<wbr>模擬面接を<wbr>する方法｜ChatGPTの<wbr>プロンプト例と、<wbr>声で練習する<wbr>ときのコツ</h1>
+    <div class="updated">2026年10月21日</div>
+
+    <p class="lede">面接の練習相手がいない。キャリアセンターや転職エージェントの予約は先まで埋まっている。そんなとき、ChatGPT のような対話型 AI を面接官役にして、模擬面接をしてみる人が増えています。この記事では、そのまま貼って使えるプロンプト例と、文字だけの練習で見落としやすい点、声に出して練習するときのコツをまとめます。アプリを使わなくても試せる内容です。</p>
+
+    <h2>AI で模擬面接をすると、何ができるのか</h2>
+    <p>対話型 AI は、聞かれたことに文章で答える使い方が基本です。ChatGPT のアプリには、声で会話できる機能もあります（使える範囲はプランや時期で変わることがあります）。いずれにしても、無料で始められる手軽さは大きな利点です。面接の練習に使うと、次のようなことができます。</p>
+    <ul>
+      <li>求人の内容や職種に合わせた想定質問を、いくつも出してもらう</li>
+      <li>自分の回答に対して、深掘りの質問をしてもらう</li>
+      <li>回答を読んでもらい、分かりにくい点や言い換えの案を挙げてもらう</li>
+      <li>夜中でも、何回でも、相手に気兼ねなく繰り返せる</li>
+    </ul>
+    <p>一方で、AI は「あなたの志望先の実際の面接官」ではありません。質問の傾向や評価の基準は、あくまで一般的な推測です。出てきた講評は参考として受け取り、鵜呑みにしないのが前提です。</p>
+
+    <h2>始める前に決めておくこと</h2>
+    <p>プロンプトを書く前に、次の3点をメモにしておくと、AI の質問が具体的になります。</p>
+    <ol>
+      <li><strong>応募する職種と会社の種類</strong>（例：法人営業、IT系の中途採用、など）</li>
+      <li><strong>面接の段階</strong>（一次・二次・最終のどれか）</li>
+      <li><strong>自分の経歴の要点</strong>（直近の仕事、実績、転職の理由を数行で）</li>
+    </ol>
+    <p>注意したいのは個人情報です。氏名、住所、電話番号、メールアドレス、勤務先の社名や取引先名、社外秘の数字は、入力しないか、「A社」「ある取引先」のように置き換えてから貼ってください。入力した内容の扱いは、使うサービスの規約や設定によって異なります。</p>
+
+    <h2>プロンプト例1：面接官役になってもらう</h2>
+    <p>最初の一手は、役割と進め方をはっきり伝えることです。次の文面の【　】を自分の内容に置き換えて貼ります。</p>
+    <pre style="white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:13.5px;line-height:1.75;color:var(--ink-2);font-family:inherit;overflow-wrap:anywhere;margin:12px 0;">あなたは【業界・職種】の中途採用の面接官です。これから私の模擬面接を行ってください。
+
+【条件】
+・面接の段階は【一次面接】です。
+・質問は1回に1つだけ。私が答えてから次の質問に進んでください。
+・全部で【8問】、最初は自己紹介と転職理由から始めてください。
+・私が答えるまで、模範解答やアドバイスは言わないでください。
+・8問が終わったら、「終了です」と伝えてください。
+
+【私の経歴の要点】
+・【直近の仕事：例）法人営業を4年、新規開拓が中心】
+・【実績：例）担当エリアの新規契約数を前年の1.3倍に】
+・【転職の理由：例）提案の範囲を広げたい】
+
+準備ができたら、最初の質問をお願いします。</pre>
+    <p>ポイントは「質問は1回に1つ」「答えるまでアドバイスしない」の2つです。これを入れないと、AI が質問と模範解答をまとめて返してしまい、実際の面接の緊張感がなくなります。</p>
+
+    <h2>プロンプト例2：回答を深掘りしてもらう</h2>
+    <p>実際の面接では、最初の回答より、そのあとの深掘りで答えに詰まることが多いものです。面接官役の途中で、次の指示を足してみてください。</p>
+    <pre style="white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:13.5px;line-height:1.75;color:var(--ink-2);font-family:inherit;overflow-wrap:anywhere;margin:12px 0;">これから私の回答に対して、必ず1回は深掘りの質問をしてください。
+深掘りは次のどれかの観点で行ってください。
+・具体的にどんな場面か（数字・期間・人数）
+・自分が実際にやったことは何か（チームではなく自分の役割）
+・うまくいかなかった点と、そこからどう変えたか
+・なぜそう判断したのか
+深掘りが終わったら、次の質問に進んでください。</pre>
+    <p>この指示で、「頑張りました」「工夫しました」で終わる回答は、すぐに「何をどう工夫したのですか」と聞き返されるようになります。答えにくかった質問は、本番でも詰まりやすい箇所です。メモしておきましょう。</p>
+
+    <h2>プロンプト例3：終わったあとにフィードバックをもらう</h2>
+    <p>模擬面接が終わったら、面接官役を外して、講評を依頼します。</p>
+    <pre style="white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:13.5px;line-height:1.75;color:var(--ink-2);font-family:inherit;overflow-wrap:anywhere;margin:12px 0;">模擬面接はここまでです。面接官の役を終えて、これまでの私の回答を振り返ってください。
+次の形式でお願いします。
+1. 良かった点を2つ（私の発言を引用して）
+2. 分かりにくかった・弱かった点を2つ（私の発言を引用して）
+3. 弱かった回答を1つ選び、結論から始まる言い換えの例を示してください
+4. 次の練習で意識するとよいことを1つ
+ただし、私の経歴にない事実や数字は付け加えないでください。</pre>
+    <p>「発言を引用して」と頼むのがコツです。引用があると、どの回答のどこが課題なのかが分かり、直す箇所が絞れます。最後の「経歴にない事実を付け加えない」も大切です。AI は、頼まなくても話を盛った言い換えを作ることがあるためです。</p>
+
+    <h2>文字だけの練習で、見落としやすいこと</h2>
+    <p>ここまでのやり方で、答えの「中身」はかなり整理できます。ただ、文字で打つ練習には限界があります。</p>
+    <ul>
+      <li><strong>書く答えは、話す答えより整っている。</strong>打ちながら考え直せるので、実際に話すと同じ内容がうまく出てこないことがあります。</li>
+      <li><strong>時間の感覚がつかめない。</strong>1分の自己紹介が、話すと2分半かかる、というのは珍しくありません。</li>
+      <li><strong>言い淀みや「えーと」が分からない。</strong>文字には残らないので、癖に気づけません。</li>
+      <li><strong>間の取り方と緊張を再現しにくい。</strong>質問されてから答え始めるまでの数秒の間は、実際に声を出さないと練習になりません。</li>
+    </ul>
+    <p>面接は話し言葉のやりとりです。だからこそ、最終的には「声に出して答える練習」を足したほうが、本番に近づきます。</p>
+
+    <h2>声に出す練習を足す方法</h2>
+    <p>AI の音声会話機能が使える環境なら、プロンプト例1の内容を話しかけて、声でやりとりする方法があります。使えない場合も、次のやり方で声を足せます。</p>
+    <ol>
+      <li>AI が出した質問を、画面を見ながら読み上げる</li>
+      <li>スマホの録音アプリを回して、その質問に声で答える（制限時間は1分〜1分半が目安）</li>
+      <li>録音を聞き返し、気になった点をメモする</li>
+      <li>必要なら、自分の回答を文字にして AI に貼り、プロンプト例3の形式で講評を頼む</li>
+    </ol>
+    <p>録音を聞き返すのは、最初は気恥ずかしいものです。それでも、結論までに時間がかかっていないか、同じ言葉を繰り返していないか、語尾が曖昧になっていないかは、聞き返さないと気づけません。</p>
+
+    <h2>練習のあとの振り返り方</h2>
+    <p>1回の練習で直すのは、<strong>1〜2点だけ</strong>に絞ってください。あれもこれも直そうとすると、次の練習で何も変わりません。目安は次のとおりです。</p>
+    <ul>
+      <li>1回目：想定質問に最後まで答える。詰まった質問に印をつける</li>
+      <li>2回目：印をつけた質問だけ、結論から話す形に作り直して話す</li>
+      <li>3回目：本番と同じ順序で通しで話す。時間を計る</li>
+    </ul>
+    <p>講評が「具体性が足りない」と指摘してきたら、直す対象は「数字」と「自分の役割」の2つです。いつ、どのくらいの規模で、自分は何をしたか。これを1文足すだけで、回答の印象は変わります。</p>
+
+    <h2>AI の使い方で気をつけたいこと</h2>
+    <ul>
+      <li><strong>講評は参考情報です。</strong>AI の評価は、面接の結果を保証するものではありません。「良い」と言われても、本番で通るとは限りません。</li>
+      <li><strong>事実を盛らない。</strong>AI が作った言い換えに、経歴にない内容が混ざっていたら削ってください。面接で深掘りされたときに答えられなくなります。</li>
+      <li><strong>志望先の傾向を断定しない。</strong>「この会社ではこう聞かれる」という AI の説明は推測です。会社の公式情報と照らして確認してください。</li>
+      <li><strong>入力する情報を選ぶ。</strong>個人情報や社外秘は入れない、という原則は最後まで守ってください。</li>
+    </ul>
+
+    <h2>声での練習に特化した、選択肢のひとつ</h2>
+    <p>ここまで紹介した方法は、無料の範囲でも始められます。一方で、毎回プロンプトを貼り直す手間や、録音と講評を自分で組み合わせる手間が負担になる人もいます。声での模擬面接に絞ったアプリも、選択肢のひとつです。</p>
+    <p>私たちが作っている「AI面接練習 Pre Interview」は、AI の面接官と声で模擬面接をする iPhone アプリです。話し終えると面接官がすぐ声で返し、回答をもとに深掘りします。面接のあとには、発言を引用した講評（総合と観点ごとの短評、強み・課題・言い換えの例。PDF で保存できます）が届きます。面接官は AI で、講評は AI による参考の評価です。合否を保証するものではありません。</p>
+    <p>講評の質問に何度でも答えて練習できる「道場」は無料で、声と回答は iPhone の中だけで扱います。面接15分と講評、講評をもとに AI のコーチと答えを磨く15分のレッスンのセットは、通常1,500円（初回限定800円）です。月額課金はなく、有効期限もありません。対応しているのは、転職（一次・二次・最終）、新卒の就職面接、英語面接、小学校受験の保護者面接で、iOS 17 以上の iPhone、18歳以上の方が対象です。</p>
+
+    <div class="app-block">
+      <div class="app-head">AI面接練習 Pre Interview</div>
+      <p class="app-sub">AI の面接官と、声で模擬面接。講評をもとに答えを磨くレッスン付き。</p>
+      <a class="btn btn-primary" href="../pre-interview.html">Pre Interview を詳しく見る</a>
+      <a class="btn btn-ghost" href="https://apps.apple.com/jp/app/id6818479447">App Store で入手</a>
+    </div>
+
+    <div class="app-block">
+      <div class="app-head">キャリア支援・転職エージェントの方へ</div>
+      <p class="app-sub">求職者の面接練習の回数を増やしたい方向けに、10セット分のコード（税込13,200円）をまとめて購入し、1つずつ配れます。購入者に見えるのは、各コードが使われたかどうかだけです。</p>
+      <a class="btn btn-ghost" href="../pre-interview-business.html">法人・団体向けのご案内</a>
+    </div>
+
+    <p style="font-size:14px;">関連する読みもの：<a href="../journal/ai-mensetsu-renshu-yarikata.html">一人でできる面接練習のやり方</a> ／ <a href="../journal/mogi-mensetsu-yarikata-shiensha.html">模擬面接のやり方（キャリア支援者向け）</a></p>
+
+    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
