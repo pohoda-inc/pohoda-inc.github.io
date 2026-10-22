@@ -22,7 +22,7 @@
     if (dotsWrap) {
       slides.forEach(function (_, i) {
         var b = document.createElement('button');
-        b.setAttribute('aria-label', (i + 1) + '枚目へ');
+        b.setAttribute('aria-label', document.documentElement.lang.startsWith('ja') ? (i + 1) + '枚目へ' : 'Go to screen ' + (i + 1));
         b.addEventListener('click', function () { centerOn(track, slides[i]); });
         dotsWrap.appendChild(b);
       });
