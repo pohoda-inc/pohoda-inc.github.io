@@ -55,9 +55,14 @@ a:hover { text-decoration: underline; }
   display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 62px;
   max-width: 1120px; /* ナビ11項目＋ロゴが本文幅(820px)に収まらないため、ヘッダーだけ広げる */
 }
-/* Logo: Pinyon Script の文字を輪郭化した SVG（assets/brand/pohoda-logo.svg） */
-.brand { display: block; flex: none; line-height: 0; }
-.brand img { display: block; height: 34px; width: auto; }
+/* Logo: タブのアイコンと同じマーク（assets/brand/pohoda-mark.svg）＋ゴシックの「Pohoda」。
+   筆記体のロゴ（pohoda-logo.svg）は OGP 画像などで引き続き使う */
+.brand { display: flex; align-items: center; gap: 10px; flex: none; color: var(--ink); }
+.brand img { display: block; width: 30px; height: 30px; }
+.brand-word {
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-weight: 600; font-size: 21px; line-height: 1; letter-spacing: -.01em;
+}
 .brand:hover { text-decoration: none; opacity: .7; }
 .nav { display: flex; gap: 16px; font-size: 13.5px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
 .nav::-webkit-scrollbar { display: none; }
@@ -682,7 +687,8 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 }
 @media (max-width: 700px) {
   .site-header .wrap:has(.nav-cta) { gap: 16px; }
-  .site-header .wrap:has(.nav-cta) .brand img { height: 28px; }
+  .site-header .wrap:has(.nav-cta) .brand img { width: 28px; height: 28px; }
+  .site-header .wrap:has(.nav-cta) .brand-word { font-size: 19px; }
   .site-header .wrap:has(.nav-cta) .nav { gap: 14px; font-size: 13px; mask-image: none; }
   .nav-cta, .nav .nav-sub { display: none; } /* 読みものは本文とフッターから辿れる */
   .story-row, .story-row.alt { text-align: left; align-items: flex-start; }
