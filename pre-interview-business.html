@@ -24,7 +24,7 @@
 <link rel="icon" href="/favicon.ico?v=2" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=2" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
-<link rel="stylesheet" href="./styles.css?v=16">
+<link rel="stylesheet" href="./styles.css?v=17">
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "請求書払いや銀行振込はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "できます。メールでご依頼いただくと、Stripe の請求書をお送りします。入金を確認したあと、コードをメールでお送りします。カード払いなら、Webの購入ページからすぐに購入でき、請求書（PDF）がメールで届きます。"}}, {"@type": "Question", "name": "コードに有効期限はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "ありません。配ったコードは、求職者の方が使いたいときに入力できます。月額・年額の課金や自動更新もありません。"}}, {"@type": "Question", "name": "返金はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "Webで購入したコードは、コードの表示後は、当社に原因がある場合を除き返金できません。アプリ内で購入したコードの返金は、Apple の定める手続きによります。どちらも、返金された購入のコードのうち、未使用のものは使えなくなります。"}}, {"@type": "Question", "name": "10セット分を、繰り返し購入できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。何セットでも、何回でも購入できます。Webの購入ページでは、1回に最大100セット（10セット×10）まで購入できます。"}}, {"@type": "Question", "name": "どんな面接に対応していますか？", "acceptedAnswer": {"@type": "Answer", "text": "転職の面接（一次・二次・最終）、新卒の就職面接（一次・二次・最終）、英語面接（面接は英語、講評は日本語）、小学校受験の保護者面接に対応しています。書類は任意で、なしでも練習できます。"}}, {"@type": "Question", "name": "コードを受け取った方は、何が必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "iOS 17以上の iPhone と、Apple でのサインインが必要です（お名前・メールアドレスは受け取りません）。18歳以上の方が対象で、利用規約への同意をお願いしています。アプリをインストールしてサインインしたあと、Webで購入したコードは届いた引き換えリンクを開いて Apple でサインインするだけで、アプリ内で購入したコードはアプリのチケット画面「コードを使う」で入力すると、1セットを受け取れます。"}}, {"@type": "Question", "name": "コードの転売や、有償での譲渡はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "できません。コードの転売、現金その他の財産との交換、有償での譲渡は、利用規約で禁止しています。求職者の方に配ることは問題ありません。"}}, {"@type": "Question", "name": "面接の合格は保証されますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。面接官はAIで、講評はAIによる参考の評価です。面接や入試の結果、合否を保証するものではなく、誤りを含むことがあります。担当者の方の面談やアドバイスを置き換えるものではなく、練習の機会を増やすためのものです。"}}]}
 </script>
@@ -42,37 +42,31 @@
   <div class="wrap">
     <a class="brand" href="/"><img src="/assets/brand/pohoda-logo.svg" alt="Pohoda" width="117" height="34"></a>
     <nav class="nav">
-      <a href="/katachi.html">KATACHI</a>
-      <a href="/katachi-plus.html">KATACHI +</a>
-      <a href="/keep-in-touch.html">Keep In Touch</a>
-      <a href="/glidwell.html">Glidwell</a>
-      <a href="/graph.html">Graph</a>
-      <a href="/one-crm.html">One CRM</a>
-      <a href="/utility.html">Utility</a>
-      <a href="/costs.html">Costs</a>
-      <a href="/pre-interview.html">Pre Interview</a>
-      <a href="/insight.html">Insight</a>
-      <a href="/drivescape.html">DriveScape</a>
-      <a href="/yane.html">YANE</a>
-      <a href="/journal/">読みもの</a>
+      <a href="/#apps">アプリ</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
       <a href="/news.html">お知らせ</a>
-      <a href="#pricing">料金</a>
+      <a href="/#about">Pohodaについて</a>
     </nav>
+    <a class="nav-cta" href="https://apps.apple.com/jp/app/id6818479447?ppid=0c2f95f9-5d1a-42bb-944f-f911aab646db">App Store で入手</a>
   </div>
 </header>
 
 <main class="marketing">
-  <section class="hero ring-hero">
+  <section class="hero ring-hero app-hero">
     <div class="wrap">
-      <img class="ring app-icon" src="./assets/pre-interview-icon.png" alt="Pre Interview アイコン" width="92" height="92">
-
-      <div class="eyebrow">エージェント・キャリア支援の方へ</div>
-      <h1>求職者の面接練習を、<wbr>AIに任せる。</h1>
-      <p class="lead">転職エージェント、キャリア支援、学校のキャリアセンター、就活塾の方へ。10セット分のコードを求職者に配ると、受け取った方がAIの面接官と声で模擬面接をし、講評とレッスンまで自分のペースで受けられます。面接官はAIです。</p>
-      <div class="btn-row">
+      <div class="cat-copy">
+        <div class="app-id"><img class="app-icon" src="./assets/pre-interview-icon.png" alt="Pre Interview アイコン" width="44" height="44"><span>エージェント・キャリア支援の方へ</span></div>
+        <h1>求職者の面接練習を、<wbr>AIに任せる。</h1>
+        <p class="lead">転職エージェント、キャリア支援、学校のキャリアセンター、就活塾の方へ。10セット分のコードを求職者に配ると、受け取った方がAIの面接官と声で模擬面接をし、講評とレッスンまで自分のペースで受けられます。面接官はAIです。</p>
+        <div class="btn-row">
         <a class="btn btn-primary" href="https://interview-api.pohoda.jp/buy">Webで購入する（カード）</a>
         <a class="btn btn-ghost" href="https://apps.apple.com/jp/app/id6818479447?ppid=0c2f95f9-5d1a-42bb-944f-f911aab646db">App Store で入手</a>
       </div>
+      </div>
+      <figure class="cat-stage">
+        <span class="cat-phone p2"><img src="./assets/home/pre-interview-2.jpg" alt="Pre Interview の画面" width="500" height="1086"></span>
+        <span class="cat-phone p1"><img src="./assets/home/pre-interview-3.jpg" alt="Pre Interview の画面" width="500" height="1086" fetchpriority="high"></span>
+      </figure>
     </div>
   </section>
 

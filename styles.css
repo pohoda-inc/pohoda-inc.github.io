@@ -502,3 +502,190 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 .jlist.compact .jcard { padding: 18px 4px; }
 .jlist.compact .jcard h2 { font-size: 17px; margin: 6px 0 0; }
 .jlist.compact .jcard p { display: none; }
+
+
+/* ============================================================
+   カタログの世界（2026-10）: 全ページ共通
+   実際の画面を製品写真のように見せ、仕様は表に、区切りは罫線つきの見出しに。
+   記事（.prose）は読みやすい1段組のまま、紹介ページ（.marketing）は左揃えの広い幅。
+   ============================================================ */
+:root {
+  --studio-top: #f3f2ef; --studio-mid: #ebe9e5; --studio-floor: #dedbd5;
+  --paper: #f6f5f2; --bezel: #1c1814; --wide: 1120px;
+}
+
+/* ---- ヘッダー ---- */
+.site-header .wrap { max-width: var(--wide); }
+.site-header .wrap:has(.nav-cta) .nav { margin-left: auto; }
+.nav-cta {
+  flex: none; font-size: 13px; font-weight: 600; color: #fff; background: var(--ink);
+  padding: 8px 16px; border-radius: 999px; white-space: nowrap;
+}
+.nav-cta:hover { text-decoration: none; background: var(--gold-deep); }
+
+/* ---- 紹介ページの骨組み ---- */
+.marketing .wrap:not(.prose) { max-width: var(--wide); }
+.marketing section { text-align: left; }
+.marketing h1, .marketing h2, .marketing .lead, .marketing .story-intro { margin-left: 0; margin-right: 0; text-align: left; }
+.marketing .btn-row { justify-content: flex-start; }
+.marketing .story-list, .marketing .carousel { max-width: none; }
+.marketing .faq, .marketing .jlist, .marketing .news-list, .marketing .nh-head { margin-left: 0; margin-right: 0; }
+.marketing .lead { max-width: 36em; }
+/* 旧ヒーロー（.app-hero なしの ring-hero）が残っていても中央揃えで崩れないように */
+.marketing .ring-hero:not(.app-hero), .marketing .ring-hero:not(.app-hero) h1, .marketing .ring-hero:not(.app-hero) .lead { text-align: center; margin-left: auto; margin-right: auto; }
+.marketing .ring-hero:not(.app-hero) .btn-row { justify-content: center; }
+
+/* 区切りは線ではなく面の色で（白と紙色を交互に） */
+.marketing hr.divider { display: none; }
+.marketing > section { padding: 88px 0; }
+.marketing > section:nth-of-type(even) { background: var(--paper); }
+
+/* 区切りの見出し: 小さな大文字ラベルをやめ、上罫線つきの見出しに */
+.section-label {
+  font-size: 15px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--ink);
+  text-align: left; border-top: 1px solid var(--ink); padding-top: 14px; margin-bottom: 36px;
+}
+.eyebrow { font-size: 14px; font-weight: 600; letter-spacing: .02em; text-transform: none; color: var(--ink); }
+
+/* ---- ページの頭: 撮影スタジオのホリゾント（壁と床の継ぎ目が見えない背景） ---- */
+.cat-hero, .marketing > section.hero:first-child {
+  background: linear-gradient(180deg, var(--studio-top) 0%, var(--studio-mid) 60%, var(--studio-floor) 100%);
+}
+.marketing > section.hero:first-child:not(.app-hero) { padding: 112px 0 96px; }
+.marketing > section.hero:first-child:not(.app-hero) h1 { font-size: clamp(36px, 5.4vw, 64px); line-height: 1.18; letter-spacing: -.01em; }
+
+/* 製品写真のヒーロー（トップ .cat-hero ／ 各紹介ページ .app-hero） */
+.cat-hero { padding: 0; overflow: hidden; }
+.marketing > section.app-hero { padding: 0; overflow: hidden; text-align: left; }
+.cat-hero .wrap, .app-hero .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 48px; min-height: 760px; padding-top: 72px; padding-bottom: 72px; }
+.cat-copy h1 { font-size: clamp(40px, 6vw, 76px); line-height: 1.16; letter-spacing: -.01em; margin-bottom: 0; }
+.app-hero .cat-copy h1 { font-size: clamp(32px, 4.4vw, 56px); line-height: 1.2; }
+.cat-copy .lead { margin-top: 28px; max-width: 28em; line-height: 2; }
+.cat-copy .btn-row { margin-top: 36px; }
+.app-id { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; font-size: 15px; font-weight: 600; color: var(--ink); }
+.app-id .app-icon { width: 44px; height: 44px; }
+.app-hero .biz-pill { margin-bottom: 24px; }
+.app-hero .cat-spec { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line-2); max-width: 420px; }
+.cat-stage { position: relative; height: 640px; margin: 0; }
+.cat-phone {
+  position: absolute; bottom: 70px; display: block; aspect-ratio: 500 / 1086;
+  padding: 8px; border-radius: 42px; background: var(--bezel);
+  box-shadow: 0 1px 0 rgba(255,255,255,.08) inset, 0 40px 70px -30px rgba(28,24,20,.5), 0 16px 30px -16px rgba(28,24,20,.3);
+}
+.cat-phone img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 34px; }
+.cat-phone.p1 { left: 6%; width: 250px; transform: rotate(-4deg); z-index: 1; }
+.cat-phone.p2 { left: 47%; width: 228px; bottom: 110px; transform: rotate(3deg); }
+.cat-stage.solo .cat-phone.p1 { left: calc(50% - 125px); transform: rotate(-2deg); }
+.cat-stage::after { /* 床に落ちる影 */
+  content: ""; position: absolute; left: 0; right: 0; bottom: 40px; height: 60px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(28,24,20,.2), transparent 70%);
+}
+.cat-stage figcaption { position: absolute; right: 0; bottom: 16px; font-size: 12px; color: var(--ink-2); }
+
+/* 仕様表（トップの一覧と紹介ページのヒーローで共通） */
+.cat-spec { display: grid; row-gap: 8px; font-size: 13.5px; line-height: 1.6; }
+.cat-spec div { display: grid; grid-template-columns: 112px 1fr; }
+.cat-spec dt { color: var(--ink-2); }
+
+/* ---- 画面写真: 枠線の付いた画像ではなく、端末の黒い縁で見せる ---- */
+.shot-pair img, .cslide-solo img, .story-shot, .shots img, .article-fig img {
+  border: 7px solid var(--bezel); border-radius: 32px;
+  box-shadow: 0 30px 50px -28px rgba(28,24,20,.45), 0 12px 24px -14px rgba(28,24,20,.22);
+}
+.story-row .shot-pair img { border-width: 6px; border-radius: 26px; }
+.promo-video { border: 7px solid var(--bezel); border-radius: 34px; box-shadow: 0 30px 50px -28px rgba(28,24,20,.45); }
+
+/* 画面ごとの使い方 */
+.story-row { gap: 72px; padding: 56px 0; border-bottom-color: var(--line-2); }
+.story-text { max-width: 34em; }
+.story-row.alt .story-text { margin-right: auto; }
+.promo-video-caption { text-align: center; }
+.story-kicker { border: 0; padding: 0; border-radius: 0; letter-spacing: 0; text-transform: none; color: var(--ink-2); font-size: 13px; font-weight: 600; margin-bottom: 10px; }
+.story-text h2 { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.35; margin-bottom: 16px; }
+
+/* できること: 点のついた2段組から、上罫線の3段組へ */
+.features { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 40px; }
+.feature { border-top: 1px solid var(--line-2); padding: 22px 0 34px; }
+.feature .dot { display: none; }
+.feature h3 { font-size: 17px; margin-bottom: 8px; }
+@media (max-width: 900px) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* 料金 */
+.price-card { border-radius: 20px; border-color: var(--line-2); background: #fff; }
+.price-card.feature-on { border-color: var(--ink); }
+.price-card .plan { letter-spacing: 0; text-transform: none; color: var(--ink-2); font-weight: 600; }
+
+/* ラベル類: 大文字＋字間の飾りをやめる */
+.news-tag, .jcard .jtag, .prose .app-tag { letter-spacing: .02em; text-transform: none; }
+.news-tag { color: var(--ink-2); border-color: var(--line-2); }
+
+/* ---- フッター ---- */
+.site-footer { margin-top: 0; padding: 64px 0 72px; }
+.site-footer .wrap { max-width: var(--wide); }
+.footer-col h4 { font-size: 13px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--ink); }
+
+/* ---- トップ: カタログ一覧 ---- */
+.home section.cat { background: var(--paper); padding: 88px 0 96px; }
+.cat-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 24px; }
+.cat-head h2 { font-size: clamp(28px, 4vw, 40px); margin: 0; }
+.cat-head p { font-size: 14px; color: var(--ink-2); }
+.cat-head.sub { margin-top: 88px; }
+.cat-list { list-style: none; border-top: 1px solid var(--line-2); }
+.cat-item {
+  display: grid; grid-template-columns: 168px minmax(0, 1fr) 330px 88px; align-items: center; column-gap: 44px;
+  padding: 36px 0; border-bottom: 1px solid var(--line-2);
+}
+.cat-main { display: contents; color: var(--ink); }
+.cat-main:hover { text-decoration: none; }
+.cat-thumb { display: block; height: 148px; overflow: hidden; padding: 6px 6px 0; border-radius: 26px 26px 0 0; background: var(--bezel); }
+.cat-thumb img { display: block; width: 100%; height: auto; border-radius: 20px 20px 0 0; transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+.cat-item:hover .cat-thumb img { transform: translateY(-6px); }
+.cat-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.cat-name { font-size: clamp(22px, 2.6vw, 30px); font-weight: 600; line-height: 1.25; }
+.cat-item:hover .cat-name { color: var(--ink-2); }
+.cat-line { font-size: 15px; color: var(--ink-2); line-height: 1.7; word-break: auto-phrase; }
+.cat-get { justify-self: end; font-size: 13.5px; font-weight: 700; color: #fff; background: var(--ink); padding: 8px 20px; border-radius: 999px; white-space: nowrap; }
+.cat-get:hover { text-decoration: none; background: var(--gold-deep); }
+.cat-get.is-soon { color: var(--ink-2); background: transparent; border: 1px solid var(--line-2); font-weight: 600; }
+.cat-note a { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding: 18px 0; border-bottom: 1px solid var(--line-2); color: var(--ink); font-size: 14px; }
+.cat-note b { font-weight: 600; }
+.cat-note span { color: var(--ink-2); }
+.cat-note a:hover { text-decoration: none; }
+.cat-note a:hover b { text-decoration: underline; text-underline-offset: 4px; }
+.home #about .lead { max-width: 40em; }
+
+@media (max-width: 860px) {
+  .cat-hero .wrap, .app-hero .wrap { grid-template-columns: 1fr; min-height: 0; padding-top: 64px; gap: 8px; }
+  .cat-stage { height: 470px; }
+  .cat-phone.p1 { left: calc(50% - 170px); width: 180px; }
+  .cat-phone.p2 { left: calc(50% + 10px); width: 164px; bottom: 100px; }
+  .cat-stage.solo .cat-phone.p1 { left: calc(50% - 90px); }
+  .cat-phone { border-radius: 32px; padding: 6px; }
+  .cat-phone img { border-radius: 26px; }
+  .cat-stage figcaption { right: auto; left: 0; }
+  .marketing > section { padding: 64px 0; }
+  .home section.cat { padding: 64px 0 72px; }
+  .story-row, .story-row.alt { gap: 32px; }
+  .cat-item {
+    grid-template-columns: 92px minmax(0, 1fr); grid-template-areas: "thumb text" "thumb spec" "thumb get";
+    column-gap: 18px; row-gap: 12px; padding: 24px 0; align-items: start;
+  }
+  .cat-thumb { grid-area: thumb; height: 150px; border-radius: 18px 18px 0 0; padding: 4px 4px 0; }
+  .cat-thumb img { border-radius: 14px 14px 0 0; }
+  .cat-text { grid-area: text; }
+  .cat-spec { font-size: 12.5px; row-gap: 2px; }
+  .cat-item .cat-spec { grid-area: spec; }
+  .cat-spec div { grid-template-columns: 96px 1fr; }
+  .cat-get { grid-area: get; justify-self: start; padding: 6px 16px; font-size: 13px; }
+  .cat-head { flex-direction: column; gap: 4px; }
+  .cat-head.sub { margin-top: 56px; }
+}
+@media (max-width: 700px) {
+  .site-header .wrap:has(.nav-cta) { gap: 16px; }
+  .site-header .wrap:has(.nav-cta) .brand img { height: 28px; }
+  .site-header .wrap:has(.nav-cta) .nav { gap: 14px; font-size: 13px; mask-image: none; }
+  .nav-cta, .nav .nav-sub { display: none; } /* 読みものは本文とフッターから辿れる */
+  .story-row, .story-row.alt { text-align: left; align-items: flex-start; }
+  .features { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .cat-thumb img { transition: none; } }

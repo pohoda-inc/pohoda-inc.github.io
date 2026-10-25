@@ -27,7 +27,7 @@
 <link rel="icon" href="/favicon.ico?v=2" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=2" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
-<link rel="stylesheet" href="./styles.css?v=16">
+<link rel="stylesheet" href="./styles.css?v=17">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -71,127 +71,136 @@
   <div class="wrap">
     <a class="brand" href="/"><img src="/assets/brand/pohoda-logo.svg" alt="Pohoda" width="117" height="34"></a>
     <nav class="nav">
-      <a href="/katachi.html">KATACHI</a>
-      <a href="/katachi-plus.html">KATACHI +</a>
-      <a href="/keep-in-touch.html">Keep In Touch</a>
-      <a href="/glidwell.html">Glidwell</a>
-      <a href="/graph.html">Graph</a>
-      <a href="/one-crm.html">One CRM</a>
-      <a href="/utility.html">Utility</a>
-      <a href="/costs.html">Costs</a>
-      <a href="/pre-interview.html">Pre Interview</a>
-      <a href="/insight.html">Insight</a>
-      <a href="/drivescape.html">DriveScape</a>
-      <a href="/yane.html">YANE</a>
-      <a href="/journal/">読みもの</a>
+      <a href="#apps">アプリ</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
       <a href="/news.html">お知らせ</a>
-      <a href="#about">会社情報</a>
+      <a href="#about">Pohodaについて</a>
     </nav>
+    <a class="nav-cta" href="https://apps.apple.com/jp/developer/keisuke-sugimoto/id6776073638">App Store で見る</a>
   </div>
 </header>
 
 <main class="marketing home">
-  <section class="hero">
+  <section class="cat-hero">
     <div class="wrap">
-      <h1>整った世界を<wbr>アプリで作る</h1>
-      <p class="lead">体づくり、つながり、転職、数字の記録。日々のための iOS アプリと Web サービスです。</p>
-      <div class="btn-row"><a class="btn btn-primary" href="https://apps.apple.com/jp/developer/keisuke-sugimoto/id6776073638">App Store でアプリを見る</a></div>
+      <div class="cat-copy">
+        <h1>整った世界を<br>アプリで作る</h1>
+        <p class="lead">体づくり、数字の記録、人とのつながり、転職活動。暮らしの一部を受け持つ道具を、ひとつずつ作っています。</p>
+        <div class="btn-row"><a class="btn btn-primary" href="#apps">アプリを見る</a></div>
+      </div>
+      <figure class="cat-stage">
+        <span class="cat-phone p2"><img src="./assets/home/graph.jpg" alt="Graph のホーム画面" width="500" height="1086" fetchpriority="high"></span>
+        <span class="cat-phone p1"><img src="./assets/home/katachi.jpg" alt="KATACHI のホーム画面" width="500" height="1086" fetchpriority="high"></span>
+        <figcaption>KATACHI と Graph のホーム画面</figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="apps" id="apps">
+  <section class="cat" id="apps">
     <div class="wrap">
-      <div class="section-label">アプリ</div>
-      <div class="app-list">
-        <div class="app-row">
-          <a class="app-main" href="./katachi.html">
-            <img class="app-icon" src="./assets/katachi-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">KATACHI</span><span class="app-line">筋トレ・体重・体型写真をひとつに記録</span></span>
+      <div class="cat-head"><h2>アプリ</h2><p>iPhone・iPad・Mac のアプリ</p></div>
+      <ul class="cat-list">
+        <li class="cat-item">
+          <a class="cat-main" href="./katachi.html">
+            <span class="cat-thumb"><img src="./assets/home/katachi.jpg" alt="KATACHI の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">KATACHI</span><span class="cat-line">筋トレ・体重・体型写真をひとつに記録</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/katachi-pohoda/id6784926716" aria-label="KATACHI をApp Store で入手">入手</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./katachi-plus.html">
-            <img class="app-icon" src="./assets/katachi-plus-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">KATACHI +</span><span class="app-line">パーソナルトレーナーの顧客カルテを、店舗で共有</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>体づくり</dd></div><div><dt>使える端末</dt><dd>iPhone</dd></div><div><dt>記録の置き場所</dt><dd>この端末の中</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/katachi-pohoda/id6784926716" aria-label="KATACHI をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./katachi-plus.html">
+            <span class="cat-thumb"><img src="./assets/home/katachi-plus.jpg" alt="KATACHI + の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">KATACHI +</span><span class="cat-line">パーソナルトレーナーの顧客カルテを、店舗で共有</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/id6815231799" aria-label="KATACHI + をApp Store で入手">入手</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./keep-in-touch.html">
-            <img class="app-icon" src="./assets/keep-in-touch-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">Keep In Touch</span><span class="app-line">大切な人への連絡を、忘れないうちに</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>トレーナーの顧客管理</dd></div><div><dt>使える端末</dt><dd>iPhone・iPad・Mac</dd></div><div><dt>記録の置き場所</dt><dd>端末と自分の iCloud</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/id6815231799" aria-label="KATACHI + をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./keep-in-touch.html">
+            <span class="cat-thumb"><img src="./assets/home/keep-in-touch.jpg" alt="Keep In Touch の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">Keep In Touch</span><span class="cat-line">大切な人への連絡を、忘れないうちに</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/keep-in-touch-pohoda/id6776073636" aria-label="Keep In Touch をApp Store で入手">入手</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./glidwell.html">
-            <img class="app-icon" src="./assets/glidwell-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">Glidwell</span><span class="app-line">転職活動の選考を、ひと目で管理</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>人とのつながり</dd></div><div><dt>使える端末</dt><dd>iPhone</dd></div><div><dt>記録の置き場所</dt><dd>この端末の中</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/keep-in-touch-pohoda/id6776073636" aria-label="Keep In Touch をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./glidwell.html">
+            <span class="cat-thumb"><img src="./assets/home/glidwell.jpg" alt="Glidwell の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">Glidwell</span><span class="cat-line">転職活動の選考を、ひと目で管理</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/glidwell/id6785211683" aria-label="Glidwell をApp Store で入手">入手</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./graph.html">
-            <img class="app-icon" src="./assets/graph-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">Graph</span><span class="app-line">あらゆる数字を2タップで記録・グラフ化</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>転職活動</dd></div><div><dt>使える端末</dt><dd>iPhone</dd></div><div><dt>記録の置き場所</dt><dd>この端末の中</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/glidwell/id6785211683" aria-label="Glidwell をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./graph.html">
+            <span class="cat-thumb"><img src="./assets/home/graph.jpg" alt="Graph の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">Graph</span><span class="cat-line">あらゆる数字を2タップで記録・グラフ化</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/graph/id6785250301" aria-label="Graph をApp Store で入手">入手</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./one-crm.html">
-            <img class="app-icon" src="./assets/onecrm-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">One CRM</span><span class="app-line">顧客・商談・案件を、スマホひとつで</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>数字の記録</dd></div><div><dt>使える端末</dt><dd>iPhone</dd></div><div><dt>記録の置き場所</dt><dd>この端末の中</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/graph/id6785250301" aria-label="Graph をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./one-crm.html">
+            <span class="cat-thumb"><img src="./assets/home/one-crm.jpg" alt="One CRM の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">One CRM</span><span class="cat-line">顧客・商談・案件を、スマホひとつで</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/id6813791048" aria-label="One CRM をApp Store で入手">入手</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./utility.html">
-            <img class="app-icon" src="./assets/utility-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">Utility</span><span class="app-line">メモ・ToDo・カレンダー・体重をひとつに</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>顧客・案件の管理</dd></div><div><dt>使える端末</dt><dd>iPhone・iPad・Mac</dd></div><div><dt>記録の置き場所</dt><dd>端末と自分の iCloud</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/id6813791048" aria-label="One CRM をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./utility.html">
+            <span class="cat-thumb"><img src="./assets/home/utility.jpg" alt="Utility の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">Utility</span><span class="cat-line">メモ・ToDo・カレンダー・体重をひとつに</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/id6815232764" aria-label="Utility をApp Store で入手">入手</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./costs.html">
-            <img class="app-icon" src="./assets/costs-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">Costs</span><span class="app-line">毎月の固定費を、ひと目でゆるく把握</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>毎日のメモと予定</dd></div><div><dt>使える端末</dt><dd>iPhone・iPad・Mac</dd></div><div><dt>記録の置き場所</dt><dd>端末と自分の iCloud</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/id6815232764" aria-label="Utility をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./costs.html">
+            <span class="cat-thumb"><img src="./assets/home/costs.jpg" alt="Costs の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">Costs</span><span class="cat-line">毎月の固定費を、ひと目でゆるく把握</span></span>
           </a>
-          <span class="badge">準備中</span>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./pre-interview.html">
-            <img class="app-icon" src="./assets/pre-interview-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">Pre Interview</span><span class="app-line">AIの面接官と、声で模擬面接</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>固定費の把握</dd></div><div><dt>使える端末</dt><dd>iPhone</dd></div><div><dt>記録の置き場所</dt><dd>この端末の中</dd></div></dl>
+          <span class="cat-get is-soon">準備中</span>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./pre-interview.html">
+            <span class="cat-thumb"><img src="./assets/home/pre-interview.jpg" alt="Pre Interview の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">Pre Interview</span><span class="cat-line">AIの面接官と、声で模擬面接</span></span>
           </a>
-          <a class="btn-get" href="https://apps.apple.com/jp/app/id6818479447" aria-label="Pre Interview をApp Store で入手">入手</a>
-        </div>
-        <a href="./pre-interview-business.html" style="grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:14px 0 0;padding:12px 18px;border:1px solid var(--line-2);border-radius:12px;background:var(--bg-2);color:var(--ink);font-size:13px;line-height:1.4"><span><span style="color:var(--ink-2)">Pre Interview ｜ </span><b style="font-weight:600">法人・エージェントの方へ</b><span style="color:var(--ink-2)">　求職者に配れる10セット分のコード</span></span><span aria-hidden="true" style="color:var(--ink-2)">→</span></a>
-      </div>
-      <div class="section-label sub">Web サービス</div>
-      <div class="app-list">
-        <div class="app-row">
-          <a class="app-main" href="./insight.html">
-            <img class="app-icon" src="./assets/insight-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">Insight</span><span class="app-line">性格・価値観を整理する自己理解レポート</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>面接の練習</dd></div><div><dt>使える端末</dt><dd>iPhone</dd></div><div><dt>記録の置き場所</dt><dd>講評はこの端末の中</dd></div></dl>
+          <a class="cat-get" href="https://apps.apple.com/jp/app/id6818479447" aria-label="Pre Interview をApp Store で入手">入手</a>
+        </li>
+        <li class="cat-note"><a href="./pre-interview-business.html"><b>Pre Interview を法人・エージェントで使う</b><span>求職者に配れる10セット分のコード</span></a></li>
+      </ul>
+      <div class="cat-head sub"><h2>Web サービス</h2><p>ブラウザで使えます</p></div>
+      <ul class="cat-list">
+        <li class="cat-item">
+          <a class="cat-main" href="./insight.html">
+            <span class="cat-thumb"><img src="./assets/home/insight.jpg" alt="Insight の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">Insight</span><span class="cat-line">性格・価値観を整理する自己理解レポート</span></span>
           </a>
-          <a class="btn-get" href="https://insight.pohoda.jp/" aria-label="Insight を開く">開く</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./drivescape.html">
-            <img class="app-icon" src="./assets/drivescape-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">DriveScape</span><span class="app-line">全国の絶景ドライブを、地図から</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>自己理解</dd></div><div><dt>使える端末</dt><dd>ブラウザ</dd></div><div><dt>記録の置き場所</dt><dd>回答はブラウザの中</dd></div></dl>
+          <a class="cat-get" href="https://insight.pohoda.jp/" aria-label="Insight を開く">開く</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./drivescape.html">
+            <span class="cat-thumb"><img src="./assets/home/drivescape.jpg" alt="DriveScape の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">DriveScape</span><span class="cat-line">全国の絶景ドライブを、地図から</span></span>
           </a>
-          <a class="btn-get" href="https://drivescape.pohoda.jp/" aria-label="DriveScape を開く">開く</a>
-        </div>
-        <div class="app-row">
-          <a class="app-main" href="./yane.html">
-            <img class="app-icon" src="./assets/yane-icon.png" alt="" width="60" height="60">
-            <span class="app-text"><span class="app-name">YANE</span><span class="app-line">物件の災害リスクと相場を、住所から比較</span></span>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>週末のドライブ</dd></div><div><dt>使える端末</dt><dd>ブラウザ</dd></div><div><dt>記録の置き場所</dt><dd>保存はブラウザの中</dd></div></dl>
+          <a class="cat-get" href="https://drivescape.pohoda.jp/" aria-label="DriveScape を開く">開く</a>
+        </li>
+        <li class="cat-item">
+          <a class="cat-main" href="./yane.html">
+            <span class="cat-thumb"><img src="./assets/home/yane.jpg" alt="YANE の画面" width="500" height="1086" loading="lazy" decoding="async"></span>
+            <span class="cat-text"><span class="cat-name">YANE</span><span class="cat-line">物件の災害リスクと相場を、住所から比較</span></span>
           </a>
-          <a class="btn-get" href="https://yane.pohoda.jp/" aria-label="YANE を開く">開く</a>
-        </div>
-      </div>
+          <dl class="cat-spec"><div><dt>使う場面</dt><dd>住まい選び</dd></div><div><dt>使える端末</dt><dd>ブラウザ・iPhone</dd></div><div><dt>記録の置き場所</dt><dd>物件はブラウザの中</dd></div></dl>
+          <a class="cat-get" href="https://yane.pohoda.jp/" aria-label="YANE を開く">開く</a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -229,7 +238,7 @@
           <p>続かない理由を分解して、記録の摩擦を減らす設計に落とすまで。これも意志ではなく仕組みの話。</p>
         </a>
       </div>
-      <p style="text-align:center;margin-top:32px;"><a class="btn btn-ghost" href="./journal/">読みものをすべて見る →</a></p>
+      <p style="margin-top:32px;"><a class="btn btn-ghost" href="./journal/">読みものをすべて見る →</a></p>
     </div>
   </section>
 
@@ -237,8 +246,7 @@
 
   <section id="about">
     <div class="wrap narrow">
-      <div class="section-label">会社情報</div>
-      <h2>Pohoda</h2>
+      <h2 class="section-label">Pohodaについて</h2>
       <p class="lead">個人事業主（屋号：Pohoda）／提供者：杉本 啓輔／開業：2026年5月（東京都）<br>
       「Pohoda（ポホダ）」は、チェコ語で “心地よい安らぎ” を表す言葉です。</p>
       <p class="lead" style="margin-top:16px;">自社で企画・開発した iOS アプリと Web サービスを、アプリ内課金（サブスクリプション・買い切り）と Web の有料プランで提供しています。受託開発・コンサルティングは行っていません。<a href="./about.html" lang="en">About Pohoda (English)</a></p>
