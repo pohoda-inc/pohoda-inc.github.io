@@ -26,7 +26,7 @@ BEACON = ("<!-- Cloudflare Web Analytics --><script defer src='https://static.cl
 # ---- 日本語
 APPS = [("/katachi.html", "KATACHI"), ("/katachi-plus.html", "KATACHI +"), ("/keep-in-touch.html", "Keep In Touch"),
         ("/glidwell.html", "Glidwell"), ("/graph.html", "Graph"), ("/one-crm.html", "One CRM"),
-        ("/utility.html", "Utility"), ("/pre-interview.html", "Pre Interview")]
+        ("/utility.html", "Utility"), ("/costs.html", "Costs"), ("/pre-interview.html", "Pre Interview")]
 WEB = [("/insight.html", "Insight"), ("/drivescape.html", "DriveScape"), ("/yane.html", "YANE")]
 JA_NAV = APPS + WEB + [("/journal/", "読みもの"), ("/news.html", "お知らせ")]
 JA_SUPPORT = [("/news.html", "お知らせ"), ("/journal/", "読みもの"), ("/request.html", "要望箱"),
@@ -35,13 +35,14 @@ JA_SUPPORT = [("/news.html", "お知らせ"), ("/journal/", "読みもの"), ("/
 
 # ---- 英語（海外でも配信しているアプリだけ）
 EN_APPS = [("/en/graph.html", "Graph"), ("/en/katachi.html", "KATACHI"),
-           ("/en/keep-in-touch.html", "Keep In Touch"), ("/en/utility.html", "Utility")]
+           ("/en/keep-in-touch.html", "Keep In Touch"), ("/en/utility.html", "Utility"),
+           ("/en/costs.html", "Costs")]
 EN_NAV = EN_APPS + [("/about.html", "About"), ("/en/legal/support.html", "Support"), ("/", "日本語")]
 EN_SUPPORT = [("/en/legal/support.html", "Support"), ("/en/legal/privacy.html", "Privacy Policy"),
               ("/en/legal/terms.html", "Terms of Use")]
 # 日本語ページ ⇔ 英語ページ（hreflang で互いに指す）
 EN_PAIRS = {"/": "/en/", "/graph.html": "/en/graph.html", "/katachi.html": "/en/katachi.html",
-            "/keep-in-touch.html": "/en/keep-in-touch.html", "/utility.html": "/en/utility.html"}
+            "/keep-in-touch.html": "/en/keep-in-touch.html", "/utility.html": "/en/utility.html", "/costs.html": "/en/costs.html"}
 INTL_LEGAL = ("ko", "zh-hant", "es", "pt-br", "fr")
 
 

@@ -417,4 +417,21 @@
     <loc>https://pohoda.jp/legal/katachi-plus-terms.html</loc>
     <lastmod>2026-10-22</lastmod>
   </url>
+  <url>
+    <loc>https://pohoda.jp/costs.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-costs.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/costs-home-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/costs-graph-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/costs-add-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/costs-edit-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/costs-variable-light.png</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/costs-settings-light.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/en/costs.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <image:image><image:loc>https://pohoda.jp/assets/og/en/og-costs.png</image:loc></image:image>
+  </url>
 </urlset>
