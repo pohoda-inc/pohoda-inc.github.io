@@ -102,9 +102,9 @@ h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
 .btn {
   display: inline-block; font-size: 14.5px; font-weight: 600;
   padding: 13px 28px; border-radius: 999px; cursor: pointer;
-  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+  transition: background .15s ease, border-color .15s ease;
 }
-.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn:hover { text-decoration: none; }
 .btn-primary { background: var(--gold); color: #ffffff; }
 .btn-primary:hover { background: var(--gold-deep); }
 .btn-ghost { border: 1px solid var(--line-2); color: var(--ink); background: transparent; }
@@ -120,10 +120,10 @@ h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: var(--ink); }
   background: linear-gradient(180deg, var(--card-2), var(--card));
   padding: 32px 30px 28px; color: var(--ink);
   box-shadow: 0 1px 3px rgba(28,20,14,.04);
-  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  transition: border-color .18s ease, box-shadow .18s ease;
 }
 .product-card:hover {
-  text-decoration: none; transform: translateY(-3px);
+  text-decoration: none;
   border-color: var(--line-2); box-shadow: 0 18px 40px rgba(28,20,14,.10);
 }
 .product-card .kicker { font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 16px; }
@@ -631,8 +631,7 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 .cat-main { display: contents; color: var(--ink); }
 .cat-main:hover { text-decoration: none; }
 .cat-thumb { display: block; height: 148px; overflow: hidden; padding: 6px 6px 0; border-radius: 26px 26px 0 0; background: var(--bezel); }
-.cat-thumb img { display: block; width: 100%; height: auto; border-radius: 20px 20px 0 0; transition: transform .4s cubic-bezier(.2,.7,.2,1); }
-.cat-item:hover .cat-thumb img { transform: translateY(-6px); }
+.cat-thumb img { display: block; width: 100%; height: auto; border-radius: 20px 20px 0 0; }
 .cat-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
 .cat-name { font-size: clamp(22px, 2.6vw, 30px); font-weight: 600; line-height: 1.25; }
 .cat-item:hover .cat-name { color: var(--ink-2); }
@@ -682,4 +681,3 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
   .story-row, .story-row.alt { text-align: left; align-items: flex-start; }
   .features { grid-template-columns: 1fr; }
 }
-@media (prefers-reduced-motion: reduce) { .cat-thumb img { transition: none; } }
