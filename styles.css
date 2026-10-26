@@ -523,6 +523,7 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 .marketing section { text-align: left; }
 .marketing h1, .marketing h2, .marketing .lead, .marketing .story-intro { margin-left: 0; margin-right: 0; text-align: left; }
 .marketing .btn-row { justify-content: flex-start; }
+.marketing .story-cta { text-align: left; }
 .marketing .story-list, .marketing .carousel { max-width: none; }
 .marketing .faq, .marketing .jlist, .marketing .news-list, .marketing .nh-head { margin-left: 0; margin-right: 0; }
 .marketing .lead { max-width: 36em; }
