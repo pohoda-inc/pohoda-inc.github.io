@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iPhone App Development for Japan | Pohoda</title>
+<meta name="description" content="Custom iPhone app development for the Japanese market, from design to App Store release. One Tokyo developer with 10 shipped apps. Japanese UI and App Store copy by a native speaker. Prototype from ¥300,000.">
+<link rel="canonical" href="https://pohoda.jp/en/development.html">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/development.html">
+<link rel="alternate" hreflang="en" href="https://pohoda.jp/en/development.html">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/development.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="iPhone App Development for Japan | Pohoda">
+<meta property="og:description" content="iPhone apps for Japan, from idea to the App Store. Native Swift, with Japanese UI text and App Store listings written by a native speaker.">
+<meta property="og:url" content="https://pohoda.jp/en/development.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/en/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="iPhone App Development for Japan | Pohoda">
+<meta name="twitter:description" content="iPhone apps for Japan, from idea to the App Store. Prototype from ¥300,000.">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/en/og-default.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=20">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Service", "name": "iPhone app development for Japan", "serviceType": "Custom iPhone app development", "description": "Custom iPhone app development for the Japanese market, from design to App Store release, handled by one developer.", "url": "https://pohoda.jp/en/development.html", "inLanguage": "en", "provider": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/en/"}, "areaServed": "JP", "offers": [{"@type": "Offer", "name": "Prototype", "description": "A working prototype you can try on TestFlight. About 1 month.", "price": "300000", "priceCurrency": "JPY", "url": "https://pohoda.jp/en/development.html"}, {"@type": "Offer", "name": "Ship to the App Store", "description": "A small iPhone app, designed, built and released on the App Store. 2–3 months. From ¥800,000.", "priceSpecification": {"@type": "PriceSpecification", "minPrice": 800000, "priceCurrency": "JPY"}, "price": "800000", "priceCurrency": "JPY", "url": "https://pohoda.jp/en/development.html"}, {"@type": "Offer", "name": "Maintenance", "description": "iOS updates, small fixes and App Review support. From ¥30,000 per month.", "priceSpecification": {"@type": "UnitPriceSpecification", "minPrice": 30000, "priceCurrency": "JPY", "unitText": "MONTH"}, "price": "30000", "priceCurrency": "JPY", "url": "https://pohoda.jp/en/development.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pohoda.jp/en/"}, {"@type": "ListItem", "position": 2, "name": "App development", "item": "https://pohoda.jp/en/development.html"}]}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do we pay?", "acceptedAnswer": {"@type": "Answer", "text": "In full, in advance, by card through Stripe. Prices are in JPY."}}, {"@type": "Question", "name": "Is there a contract?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We sign a short written agreement electronically before we start: what we build, the price, the schedule and who owns what."}}, {"@type": "Question", "name": "Who owns the code?", "acceptedAnswer": {"@type": "Answer", "text": "Once the work is accepted, the copyright to the app, including the source code, is transferred to you."}}, {"@type": "Question", "name": "Whose Apple Developer account is used?", "acceptedAnswer": {"@type": "Answer", "text": "Yours. The app is published under your company’s Apple Developer account, so it stays fully yours."}}, {"@type": "Question", "name": "Do you use AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We only handle your information with tools set not to train on it."}}]}</script>
+<style>
+/* Development page only (shared styles.css is not changed) */
+.dev { scroll-padding-top: 70px; }
+.marketing.dev > section { padding: 64px 0; scroll-margin-top: 70px; }
+.marketing.dev > section.hero:first-child:not(.app-hero) { padding: 96px 0 80px; }
+.marketing.dev > section.hero:first-child:not(.app-hero) h1 { font-size: clamp(30px, 4.6vw, 52px); max-width: 15em; text-wrap: balance; }
+.dev .hero-sub { font-size: 17px; line-height: 1.9; color: var(--ink-2); max-width: 34em; }
+.dev .hero .btn-row { margin-top: 28px; }
+.dev .sec-head { border-top: 1px solid var(--ink); padding-top: 20px; margin-bottom: 28px; }
+.dev .sec-head h2 { margin-bottom: 0; text-wrap: balance; }
+.dev .sec-lead { margin-top: 10px; font-size: 15px; color: var(--ink-2); }
+.dev p, .dev li { text-wrap: pretty; }
+.dev a:focus-visible, .dev summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+.dev .btn:focus-visible { border-radius: 999px; }
+
+.dev .grp { font-size: 13px; font-weight: 600; color: var(--ink-2); margin: 24px 0 4px; }
+.dev .grp:first-of-type { margin-top: 0; }
+.dev .works { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; }
+.dev .works a { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-top: 1px solid var(--line-2); color: var(--ink); }
+.dev .works a:hover { text-decoration: none; }
+.dev .works a:hover strong { text-decoration: underline; text-underline-offset: .2em; }
+.dev .works .app-icon { width: 48px; height: 48px; flex: none; }
+.dev .works span { font-size: 13.5px; line-height: 1.6; color: var(--ink-2); }
+.dev .works strong { display: block; font-size: 15.5px; font-weight: 600; color: var(--ink); }
+.dev .works-note { margin-top: 28px; font-size: 15.5px; font-weight: 600; }
+
+.dev .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.dev .plans .price-card { display: flex; flex-direction: column; padding: 24px; }
+.dev .plans .amount { font-variant-numeric: tabular-nums; font-size: 34px; }
+.dev .plans .amount small { display: inline; font-size: 15px; font-weight: 400; margin-left: 2px; }
+.dev .plans .desc { margin-top: 14px; font-size: 14.5px; line-height: 1.85; color: var(--ink); }
+.dev .plan-notes { list-style: none; margin-top: 22px; font-size: 13.5px; line-height: 1.85; color: var(--ink-2); }
+.dev .plan-notes li + li { margin-top: 4px; }
+
+.dev .steps { list-style: none; counter-reset: s; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.dev .steps li { counter-increment: s; border-top: 1px solid var(--line-2); padding-top: 14px; font-size: 14px; line-height: 1.8; color: var(--ink-2); }
+.dev .steps li::before { content: counter(s); display: block; font-size: 13px; font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.dev .steps strong { display: block; font-size: 16.5px; font-weight: 600; color: var(--ink); margin: 2px 0 6px; }
+
+.dev .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.dev .chips li { border: 1px solid var(--line-2); border-radius: 999px; padding: 6px 16px; font-size: 14.5px; background: #fff; }
+.dev .scope-note { margin-top: 16px; font-size: 15px; color: var(--ink-2); }
+
+.dev .faq { max-width: 720px; margin: 0; }
+.dev .faq summary { font-size: 16px; line-height: 1.6; }
+
+.marketing.dev > section.cta-band { background: var(--ink); color: #fff; padding: 56px 0; }
+.dev .cta-band h2 { color: #fff; margin-bottom: 10px; }
+.dev .cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+.dev .cta-band p { color: #d9d5cd; font-size: 15.5px; line-height: 1.85; }
+.dev .cta-actions { flex: none; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.dev .cta-band .btn-primary { background: #fff; color: var(--ink); }
+.dev .cta-band .btn-primary:hover { background: #e9e6df; }
+.dev .cta-band a:focus-visible { outline-color: #fff; }
+.dev .cta-actions small { font-size: 13px; color: #d9d5cd; }
+
+@media (max-width: 900px) {
+  .dev .plans { grid-template-columns: 1fr; }
+  .dev .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .marketing.dev > section { padding: 44px 0; }
+  .marketing.dev > section.hero:first-child:not(.app-hero) { padding: 56px 0 48px; }
+  .dev .works { grid-template-columns: 1fr; }
+  .dev .steps { grid-template-columns: 1fr; gap: 16px; }
+  .dev .steps li { display: grid; grid-template-columns: 28px minmax(0, 1fr); column-gap: 8px; }
+  .dev .steps li::before { grid-row: 1 / span 2; padding-top: 2px; }
+  .dev .cta-inner { flex-direction: column; align-items: flex-start; gap: 22px; }
+  .dev .hero .btn { width: 100%; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/en/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/en/#apps">Apps</a>
+      <a class="nav-sub" href="/en/legal/support.html">Support</a>
+      <a href="/about.html">About</a>
+      <a href="/development.html" lang="ja">日本語</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main class="marketing dev" id="top">
+  <section class="hero">
+    <div class="wrap">
+      <h1>iPhone apps for Japan, from idea to the App Store.</h1>
+      <p class="hero-sub">Pohoda is an independent developer in Tokyo. We have designed, built and shipped 10 iPhone apps of our own in Japan. We can build yours the same way — native Swift, with Japanese UI text and App Store listings written by a native speaker.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Our apps</h2>
+      </div>
+      <p class="grp">iPhone apps</p>
+      <ul class="works">
+        <li><a href="/en/katachi.html"><img class="app-icon" src="/assets/katachi-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>KATACHI</strong>Workouts, body weight and progress photos</span></a></li>
+        <li><a href="/katachi-plus.html" hreflang="ja"><img class="app-icon" src="/assets/katachi-plus-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>KATACHI +</strong>Client records and shared studio data for trainers</span></a></li>
+        <li><a href="/en/keep-in-touch.html"><img class="app-icon" src="/assets/keep-in-touch-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>Keep In Touch</strong>Never forget a birthday or when to get in touch</span></a></li>
+        <li><a href="/en/graph.html"><img class="app-icon" src="/assets/graph-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>Graph</strong>Log numbers in two taps and see them as graphs</span></a></li>
+        <li><a href="/glidwell.html" hreflang="ja"><img class="app-icon" src="/assets/glidwell-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>Glidwell</strong>Schedule tracker for a job search</span></a></li>
+        <li><a href="/one-crm.html" hreflang="ja"><img class="app-icon" src="/assets/onecrm-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>One CRM</strong>Client ledger for solo businesses and salons</span></a></li>
+        <li><a href="/en/utility.html"><img class="app-icon" src="/assets/utility-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>Utility</strong>Notes, to-dos, calendar and weight tracking</span></a></li>
+        <li><a href="/yane.html" hreflang="ja"><img class="app-icon" src="/assets/yane-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>YANE</strong>Look up and compare a home’s disaster risk by address</span></a></li>
+        <li><a href="/pre-interview.html" hreflang="ja"><img class="app-icon" src="/assets/pre-interview-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>Pre Interview</strong>Mock interviews by voice with an AI interviewer</span></a></li>
+        <li><a href="/en/costs.html"><img class="app-icon" src="/assets/costs-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>Costs</strong>A household ledger that shows fixed costs at a glance</span></a></li>
+      </ul>
+      <p class="grp">Web services</p>
+      <ul class="works">
+        <li><a href="/insight.html" hreflang="ja"><img class="app-icon" src="/assets/insight-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>Insight</strong>A self-understanding assessment</span></a></li>
+        <li><a href="/drivescape.html" hreflang="ja"><img class="app-icon" src="/assets/drivescape-icon.png" alt="" width="48" height="48" loading="lazy"><span><strong>DriveScape</strong>Find scenic drives on a map</span></a></li>
+      </ul>
+      <p class="works-note">In-app purchases, iCloud sync, localization into 7 languages, App Review, web payments — all shipped by one developer.</p>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Why work with us</h2>
+      </div>
+      <div class="plans">
+        <div class="price-card">
+          <div class="plan">Japanese-native</div>
+          <p class="desc">UI text and App Store copy are written by a native speaker, so the app reads naturally to Japanese users.</p>
+        </div>
+        <div class="price-card">
+          <div class="plan">Japanese App Store</div>
+          <p class="desc">We have been through App Review and know how to set up listings and keywords for the Japanese store.</p>
+        </div>
+        <div class="price-card">
+          <div class="plan">One developer</div>
+          <p class="desc">One person from design to release, so nothing gets lost in hand-offs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Services and pricing</h2>
+      </div>
+      <div class="plans">
+        <div class="price-card">
+          <div class="plan">1. Prototype</div>
+          <div class="amount">¥300,000</div>
+          <div class="note">About 1 month</div>
+          <p class="desc">A working prototype you can try on TestFlight.</p>
+        </div>
+        <div class="price-card feature-on">
+          <div class="plan">2. Ship to the App Store</div>
+          <div class="amount">¥800,000<small>from</small></div>
+          <div class="note">2–3 months</div>
+          <p class="desc">A small iPhone app, designed, built and released on the App Store.</p>
+        </div>
+        <div class="price-card">
+          <div class="plan">3. Maintenance</div>
+          <div class="amount">¥30,000<small>/month, from</small></div>
+          <div class="note">After release</div>
+          <p class="desc">iOS updates, small fixes and App Review support.</p>
+        </div>
+      </div>
+      <ul class="plan-notes">
+        <li>Prices are in Japanese yen. For our first two projects, we offer the App Store package at ¥600,000 if we may show the app as a case study.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="flow">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>How it works</h2>
+      </div>
+      <ol class="steps">
+        <li><strong>Consultation</strong>Free and online. We hear what you want to build.</li>
+        <li><strong>Quote</strong>Fixed scope and price. We start after the electronic agreement and payment.</li>
+        <li><strong>Development</strong>Weekly updates. Try the app on TestFlight along the way.</li>
+        <li><strong>Release &amp; handover</strong>App Store submission and the full source code.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="scope">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What we don’t take on</h2>
+      </div>
+      <ul class="chips">
+        <li>Android apps</li>
+        <li>Games</li>
+        <li>Long-term staff augmentation</li>
+        <li>Large systems</li>
+      </ul>
+      <p class="scope-note">We take on one project at a time.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq">
+        <details><summary>How do we pay?</summary><p>In full, in advance, by card through Stripe. Prices are in JPY.</p></details>
+        <details><summary>Is there a contract?</summary><p>Yes. We sign a short written agreement electronically before we start: what we build, the price, the schedule and who owns what.</p></details>
+        <details><summary>Who owns the code?</summary><p>Once the work is accepted, the copyright to the app, including the source code, is transferred to you.</p></details>
+        <details><summary>Whose Apple Developer account is used?</summary><p>Yours. The app is published under your company’s Apple Developer account, so it stays fully yours.</p></details>
+        <details><summary>Do you use AI?</summary><p>Yes. We only handle your information with tools set not to train on it.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta-band">
+    <div class="wrap">
+      <div class="cta-inner">
+        <div>
+          <h2>Tell us about your app</h2>
+          <p>A rough idea is enough. We reply within two business days.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:info@pohoda.jp?subject=App%20development%20inquiry&amp;body=What%20you%20want%20to%20build%3A%0APlatform%20%28iPhone%2C%20iPad%2C%20Mac%2C%20Web%29%3A%0ATarget%20timing%3A%0ABudget%20range%3A%0AYour%20company%20and%20name%3A%0A">Email us</a>
+          <small>info@pohoda.jp</small>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Apps</h4>
+        <a href="/en/graph.html">Graph</a>
+        <a href="/en/katachi.html">KATACHI</a>
+        <a href="/en/keep-in-touch.html">Keep In Touch</a>
+        <a href="/en/utility.html">Utility</a>
+        <a href="/en/costs.html">Costs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="/en/legal/support.html">Support</a>
+        <a href="/en/legal/privacy.html">Privacy Policy</a>
+        <a href="/en/legal/terms.html">Terms of Use</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html">About Pohoda</a>
+        <a href="/en/development.html">App development</a>
+        <a href="/development.html" lang="ja">日本語</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda (Keisuke Sugimoto)</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

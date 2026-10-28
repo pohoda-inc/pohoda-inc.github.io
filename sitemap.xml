@@ -301,6 +301,12 @@
     <image:image><image:loc>https://pohoda.jp/assets/og/og-pre-interview.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/en/development.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/en/og-default.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/about.html</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
