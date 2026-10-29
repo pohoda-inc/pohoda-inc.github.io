@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート</title>
+<meta name="description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。">
+<link rel="canonical" href="https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート">
+<meta property="og:description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。">
+<meta property="og:url" content="https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-utility.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート">
+<meta name="twitter:description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-utility.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=20">
+<style>
+.prose .toc { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 18px 0 8px; }
+.prose .toc ol { margin: 6px 0 0 20px; }
+.prose .toc li { margin-bottom: 3px; font-size: 14px; }
+.sheet-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 18px; }
+.sheet-wrap + .sheet-wrap { margin-top: 30px; padding-top: 22px; border-top: 1px dashed var(--line-2); }
+.sheet-title { font-size: 16px; font-weight: 700; color: var(--ink); margin: 18px 0 6px; }
+.sheet-wrap + .sheet-wrap .sheet-title { margin-top: 0; }
+.sheet-fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 18px; margin: 0 0 10px; font-size: 13.5px; color: var(--ink-2); }
+.sheet-fields.c3 { grid-template-columns: repeat(3, 1fr); }
+.sheet-fields span { border-bottom: 1px solid var(--ink-2); padding-bottom: 2px; }
+.sheet-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 6px 0 12px; }
+.prose table.sheet { display: table; width: 100%; min-width: 560px; font-size: 13px; margin: 0; }
+.prose table.sheet th, .prose table.sheet td { width: auto; padding: 6px 8px; vertical-align: middle; }
+.prose table.sheet thead th { background: var(--card); font-size: 12px; text-align: center; white-space: nowrap; padding-left: 4px; padding-right: 4px; }
+.prose table.sheet th.cat { background: var(--card); color: var(--ink); font-size: 13px; }
+.prose table.sheet td { color: var(--ink); height: 30px; }
+.prose table.sheet td.mk { width: 58px; text-align: center; font-size: 16px; line-height: 1; color: var(--ink-2); }
+.prose table.sheet td.ctr { text-align: center; color: var(--ink-2); }
+.prose table.sheet td.hint { font-size: 12.5px; color: var(--ink-2); }
+.prose table.sheet tr.sum td { background: var(--card); font-weight: 600; }
+.prose table.sheet td.off { background: var(--card); }
+.sheet-notes { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; color: var(--ink-2); min-height: 4.2em; margin-bottom: 8px; }
+.sheet-foot { font-size: 11.5px; color: var(--muted); }
+.print-only { display: none; }
+.sheet-graph { display: block; width: 100%; height: auto; margin: 4px 0 8px; }
+.sheet-graph .gl { stroke: var(--line-2); stroke-width: .6; }
+.sheet-graph .gb { stroke: var(--ink-2); stroke-width: .8; }
+.sheet-graph text { font-size: 9px; fill: var(--ink-2); text-anchor: middle; }
+.pair td, .pair th { font-size: 14px; }
+.prose table.pair th { width: 18%; }
+@media (max-width: 600px) {
+  .sheet-fields, .sheet-fields.c3 { grid-template-columns: 1fr; }
+  .prose table.sheet th, .prose table.sheet td { padding-left: 5px; padding-right: 5px; }
+}
+@page { size: A4; margin: 10mm; }
+@media print {
+  body { background: #fff; }
+  .site-header, .site-footer, .prose .back, .prose .app-tag, .prose h1, .prose .updated,
+  .prose > *:not(.sheet-wrap), .sheet-actions { display: none !important; }
+  .prose { padding: 0; }
+  .wrap.narrow { max-width: none; padding: 0; }
+  .sheet-wrap { display: block !important; }
+  .sheet-wrap + .sheet-wrap { break-before: page; margin: 0; padding: 0; border: 0; }
+  .print-only { display: block; }
+  .sheet-title { font-size: 17px; margin: 0 0 8px; }
+  .sheet-fields { font-size: 11.5px; gap: 8px 16px; margin-bottom: 8px; }
+  .sheet-scroll { overflow: visible; margin: 4px 0 8px; }
+  .prose table.sheet { min-width: 0; font-size: 11.5px; }
+  .prose table.sheet th, .prose table.sheet td { padding: 3px 5px; border-color: #666; }
+  .prose table.sheet td { height: var(--rowh, 9mm); }
+  .prose table.sheet td.mk { font-size: 15px; }
+  .prose table.sheet thead th { font-size: 10.5px; padding-left: 2px; padding-right: 2px; }
+  .sheet-notes { min-height: 15mm; font-size: 11px; margin-bottom: 5px; border-color: #666; }
+  .sheet-graph .gl { stroke: #aaa; }
+  .sheet-graph .gb { stroke: #555; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート","description":"体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。","image":"https://pohoda.jp/assets/og/og-utility.png","datePublished":"2026-10-29","dateModified":"2026-10-29","inLanguage":"ja","about":"Utility","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート","item":"https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="https://apps.apple.com/jp/developer/keisuke-sugimoto/id6776073638">App Store で見る</a>
+  </div>
+</header>
+
+<main class="marketing">
+  <article class="wrap narrow prose">
+    <a class="back" href="/journal/">← 読みもの一覧へ</a>
+    <div class="app-tag">Utility ・ 印刷用シートつき</div>
+    <h1>体重の<wbr>記録表<wbr>（印刷用・無料）｜<wbr>1か月分を書き込める<wbr>グラフ付きシート</h1>
+    <div class="updated">2026年10月29日</div>
+
+    <p class="lede">体重は、1回の数字より、続けて並べたときの線の向きに意味があります。この記事では、1か月分の体重と体脂肪率を書き込める記録表と、点を打つだけで折れ線になるグラフ用紙を、A4・1枚の印刷用シートにしました。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理します。</p>
+
+    <h2 style="border-top:0;padding-top:0;margin-top:22px">この記事で分かること</h2>
+    <ul>
+      <li>印刷用の記録表（1か月分・グラフ用紙つき、PDFあり）</li>
+      <li>数字がぶれにくい、測り方のそろえ方</li>
+      <li>グラフで見るときの、見方の目安</li>
+      <li>紙・表計算・アプリの違い</li>
+    </ul>
+    <nav class="toc" aria-label="目次">
+      <strong>目次</strong>
+      <ol>
+        <li><a href="#howto">使い方と、測り方のそろえ方</a></li>
+        <li><a href="#sheet">体重の記録表本体（印刷・PDF）</a></li>
+        <li><a href="#read">グラフの見方</a></li>
+        <li><a href="#tools">紙・表計算・アプリの違い</a></li>
+        <li><a href="#app">アプリで続けたいとき</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="howto">使い方と、測り方のそろえ方</h2>
+    <table>
+      <tr><th>測る時間</th><td>毎日同じ時間帯に。朝、起きてトイレを済ませたあとなど、自分が続けやすい場面を1つ決めます。体重は1日のうちでも、食事や水分、トイレの前後で変わります。</td></tr>
+      <tr><th>測る場所</th><td>同じ体重計を、同じ場所に置いて使います。体重計を変えたら、変えた日をメモ欄に書いておきます。</td></tr>
+      <tr><th>体脂肪率</th><td>体脂肪計の数字は、機種や測るタイミングで変わります。比べるのは、同じ体重計で、同じ条件で測った数字どうしにします。測らない人は、空欄で構いません。</td></tr>
+      <tr><th>書き方</th><td>表に数字を書き、グラフ用紙に点を打って、前の日の点と線でつなぎます。その日にできなかったときは、空けておきます。あとから埋める必要はありません。</td></tr>
+    </table>
+    <h3>グラフ用紙の目盛りの決め方</h3>
+    <ul>
+      <li>縦軸は、1目盛りを0.2kgや0.5kgなど、自分で決めて左の余白に書き込みます。</li>
+      <li>1か月の最小と最大がちょうど収まる幅にします。1目盛りが大きすぎると線が平らになり、小さすぎると小さな上下が目立ちすぎます。</li>
+      <li>横軸は日付です。月が変わるときは、新しい用紙に書き始めます。</li>
+    </ul>
+
+    <h2 id="sheet">体重の記録表本体</h2>
+    <p>上がグラフ用紙、下が1か月分の記録表です。このページの印刷ボタンを押すと、シートだけがA4・1枚で印刷されます。PDFをダウンロードして使うこともできます。</p>
+    <div class="sheet-actions">
+      <button type="button" class="btn btn-primary" onclick="window.print()">このシートを印刷する</button>
+      <a class="btn btn-ghost" href="/assets/taiju-kirokuhyo-insatsu.pdf" download>PDFをダウンロード（A4・1枚）</a>
+    </div>
+    <div class="sheet-wrap" id="sheet-box">
+      <div class="sheet-title">体重の記録表（1か月）</div>
+      <div class="sheet-fields c3"><span>年月：</span><span>測る時間帯：</span><span>体重計・条件：</span></div>
+      <svg class="sheet-graph" viewBox="0 0 620 270" role="img" aria-label="体重グラフ用の方眼。横軸は1日から31日、縦軸は自分で目盛りを書き込む"><line class="gb" x1="34.0" y1="8" x2="34.0" y2="248"/><line class="gl" x1="52.7" y1="8" x2="52.7" y2="248"/><line class="gl" x1="71.4" y1="8" x2="71.4" y2="248"/><line class="gl" x1="90.1" y1="8" x2="90.1" y2="248"/><line class="gl" x1="108.8" y1="8" x2="108.8" y2="248"/><line class="gb" x1="127.5" y1="8" x2="127.5" y2="248"/><line class="gl" x1="146.3" y1="8" x2="146.3" y2="248"/><line class="gl" x1="165.0" y1="8" x2="165.0" y2="248"/><line class="gl" x1="183.7" y1="8" x2="183.7" y2="248"/><line class="gl" x1="202.4" y1="8" x2="202.4" y2="248"/><line class="gb" x1="221.1" y1="8" x2="221.1" y2="248"/><line class="gl" x1="239.8" y1="8" x2="239.8" y2="248"/><line class="gl" x1="258.5" y1="8" x2="258.5" y2="248"/><line class="gl" x1="277.2" y1="8" x2="277.2" y2="248"/><line class="gl" x1="295.9" y1="8" x2="295.9" y2="248"/><line class="gb" x1="314.6" y1="8" x2="314.6" y2="248"/><line class="gl" x1="333.4" y1="8" x2="333.4" y2="248"/><line class="gl" x1="352.1" y1="8" x2="352.1" y2="248"/><line class="gl" x1="370.8" y1="8" x2="370.8" y2="248"/><line class="gl" x1="389.5" y1="8" x2="389.5" y2="248"/><line class="gb" x1="408.2" y1="8" x2="408.2" y2="248"/><line class="gl" x1="426.9" y1="8" x2="426.9" y2="248"/><line class="gl" x1="445.6" y1="8" x2="445.6" y2="248"/><line class="gl" x1="464.3" y1="8" x2="464.3" y2="248"/><line class="gl" x1="483.0" y1="8" x2="483.0" y2="248"/><line class="gb" x1="501.7" y1="8" x2="501.7" y2="248"/><line class="gl" x1="520.5" y1="8" x2="520.5" y2="248"/><line class="gl" x1="539.2" y1="8" x2="539.2" y2="248"/><line class="gl" x1="557.9" y1="8" x2="557.9" y2="248"/><line class="gl" x1="576.6" y1="8" x2="576.6" y2="248"/><line class="gb" x1="595.3" y1="8" x2="595.3" y2="248"/><line class="gb" x1="614.0" y1="8" x2="614.0" y2="248"/><line class="gb" x1="34" y1="8.0" x2="614" y2="8.0"/><line class="gl" x1="34" y1="28.0" x2="614" y2="28.0"/><line class="gl" x1="34" y1="48.0" x2="614" y2="48.0"/><line class="gl" x1="34" y1="68.0" x2="614" y2="68.0"/><line class="gl" x1="34" y1="88.0" x2="614" y2="88.0"/><line class="gl" x1="34" y1="108.0" x2="614" y2="108.0"/><line class="gl" x1="34" y1="128.0" x2="614" y2="128.0"/><line class="gl" x1="34" y1="148.0" x2="614" y2="148.0"/><line class="gl" x1="34" y1="168.0" x2="614" y2="168.0"/><line class="gl" x1="34" y1="188.0" x2="614" y2="188.0"/><line class="gl" x1="34" y1="208.0" x2="614" y2="208.0"/><line class="gl" x1="34" y1="228.0" x2="614" y2="228.0"/><line class="gb" x1="34" y1="248.0" x2="614" y2="248.0"/><text x="43.4" y="262">1</text><text x="62.1" y="262">2</text><text x="80.8" y="262">3</text><text x="99.5" y="262">4</text><text x="118.2" y="262">5</text><text x="136.9" y="262">6</text><text x="155.6" y="262">7</text><text x="174.3" y="262">8</text><text x="193.0" y="262">9</text><text x="211.7" y="262">10</text><text x="230.5" y="262">11</text><text x="249.2" y="262">12</text><text x="267.9" y="262">13</text><text x="286.6" y="262">14</text><text x="305.3" y="262">15</text><text x="324.0" y="262">16</text><text x="342.7" y="262">17</text><text x="361.4" y="262">18</text><text x="380.1" y="262">19</text><text x="398.8" y="262">20</text><text x="417.5" y="262">21</text><text x="436.3" y="262">22</text><text x="455.0" y="262">23</text><text x="473.7" y="262">24</text><text x="492.4" y="262">25</text><text x="511.1" y="262">26</text><text x="529.8" y="262">27</text><text x="548.5" y="262">28</text><text x="567.2" y="262">29</text><text x="585.9" y="262">30</text><text x="604.6" y="262">31</text><text x="31" y="7" style="text-anchor:end;font-size:8px">kg</text></svg>
+      <div class="sheet-scroll">
+      <table class="sheet" style="--rowh:6.6mm;min-width:600px">
+        <thead><tr><th style="width:6%">日</th><th style="width:11%">体重(kg)</th><th style="width:11%">体脂肪(%)</th><th>メモ</th><th style="width:6%">日</th><th style="width:11%">体重(kg)</th><th style="width:11%">体脂肪(%)</th><th>メモ</th></tr></thead>
+        <tbody>
+<tr><td class="ctr">1</td><td></td><td></td><td></td><td class="ctr">17</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">2</td><td></td><td></td><td></td><td class="ctr">18</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">3</td><td></td><td></td><td></td><td class="ctr">19</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">4</td><td></td><td></td><td></td><td class="ctr">20</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">5</td><td></td><td></td><td></td><td class="ctr">21</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">6</td><td></td><td></td><td></td><td class="ctr">22</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">7</td><td></td><td></td><td></td><td class="ctr">23</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">8</td><td></td><td></td><td></td><td class="ctr">24</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">9</td><td></td><td></td><td></td><td class="ctr">25</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">10</td><td></td><td></td><td></td><td class="ctr">26</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">11</td><td></td><td></td><td></td><td class="ctr">27</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">12</td><td></td><td></td><td></td><td class="ctr">28</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">13</td><td></td><td></td><td></td><td class="ctr">29</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">14</td><td></td><td></td><td></td><td class="ctr">30</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">15</td><td></td><td></td><td></td><td class="ctr">31</td><td></td><td></td><td></td></tr>
+<tr><td class="ctr">16</td><td></td><td></td><td></td><td class="off"></td><td class="off"></td><td class="off"></td><td class="off"></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="sheet-notes" style="min-height:11mm;margin-bottom:0">今月の気づき（線の向き・生活の変化）：</div>
+      <div class="sheet-foot print-only" style="margin-top:4px">縦軸の目盛りは自分で書き込みます。体重の変化に不安がある場合は、医療機関に相談してください。 ／ pohoda.jp/journal/taiju-kirokuhyo-insatsu.html</div>
+    </div>
+
+    <h2 id="read">グラフの見方</h2>
+    <ul>
+      <li><strong>1日ごとの上下は気にしすぎない。</strong>前の日より増えた・減った、で一喜一憂すると続きません。点が上下しても、1〜2週間の線の向きを見ます。</li>
+      <li><strong>変化が止まっても、止まったと分かることが記録の役目です。</strong>線が平らになったら、食事や運動、睡眠など、生活のどこが変わったかをメモ欄から振り返れます。</li>
+      <li><strong>大きな変化は、メモ欄の出来事と見比べる。</strong>旅行、飲み会、体調不良、体重計の入れ替えなど、数字の動きの理由が書いてあれば、数字だけを見て焦らずに済みます。</li>
+      <li><strong>数字だけで判断しない。</strong>体重は、体の状態の一部しか表しません。急に大きく増減したときや、体調に不安があるときは、グラフではなく医療機関に相談してください。</li>
+    </ul>
+    <p>体重が変わらない時期の考え方は、<a href="/journal/taiju-kiroku-teitaiki.html">体重の記録が続かない・体重が変わらない停滞期に</a>でも書いています。</p>
+
+    <h2 id="tools">紙・表計算・アプリの違い</h2>
+    <table>
+      <tr><th>紙</th><td>洗面所に貼っておけて、書くまでが早い方法です。グラフは手で打つ必要があり、期間をまたいで比べるには、用紙を並べて見ることになります。</td></tr>
+      <tr><th>表計算</th><td>数字を入れるだけで、グラフが自動で描けます。パソコンかスマホで開く手間があり、毎日続けるには、入口を近くに置く工夫が要ります。</td></tr>
+      <tr><th>アプリ</th><td>開いてすぐ入力でき、グラフも自動です。体重計から読み込めるものもあります。</td></tr>
+    </table>
+    <p>どれが正解ということはなく、続くものが正解です。紙で1か月やってみて、グラフを手で打つのが面倒になったら、表計算かアプリに移すのが自然です。</p>
+
+    <h2 id="app">アプリで続けたいとき</h2>
+    <p>Utility は、メモ・ToDo・カレンダーと、体重・体脂肪率・歩数の記録をひとつにまとめた iPhone・iPad・Mac のアプリです。体重・体脂肪率・歩数は手入力するか、「ヘルスケア」から読み込めます（iPhone・iPad）。身長を入れると BMI が自動で計算され、推移はグラフで見られます。単位は kg/cm と lb/ft-in から選べます。</p>
+    <p>体重・体脂肪率・歩数の手入力記録は、それぞれ10件まで無料で保存できます。10件を超えても、登録済みの記録が消えることはありません（新しい記録の追加だけが制限されます）。健康の記録は、iCloud には保存せず、記録した端末の中だけに残ります。詳しくは<a href="/utility.html">Utility の紹介ページ</a>をご覧ください。</p>
+
+    <p style="font-size:13.5px;">記録表の項目と文言は、Pohoda が独自に作成したものです。印刷して自由にお使いください。この記事は体重の記録のしかたを紹介するもので、診断や治療の助言ではありません。</p>
+
+    <p style="font-size:14px;">関連する読みもの：<a href="/journal/taiju-taion-ketsuatsu-kiroku.html">体重・体温・血圧を記録するなら、数字よりグラフで見る理由</a> ／ <a href="/journal/kintore-diet-kiroku-hoho.html">筋トレ・ダイエットの記録方法。ビフォーアフター写真で続けるやり方</a></p>
+
+    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

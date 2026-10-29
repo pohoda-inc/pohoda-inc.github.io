@@ -84,9 +84,30 @@
   </url>
   <url>
     <loc>https://pohoda.jp/journal/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-utility.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kotei-hi-ichiran-minaoshi-check.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-costs.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kokyaku-daicho-template.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-one-crm.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pohoda.jp/journal/tenshoku-mensetsu-taisaku-yuryo.html</loc>
