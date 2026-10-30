@@ -8,6 +8,11 @@
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/operator.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://pohoda.jp/news.html</loc>
     <lastmod>2026-10-20</lastmod>
     <priority>0.7</priority>
