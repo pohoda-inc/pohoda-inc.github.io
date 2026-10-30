@@ -69,12 +69,13 @@
   </url>
   <url>
     <loc>https://pohoda.jp/drivescape.html</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-drivescape.png</image:loc></image:image>
-    <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-v2-home.jpg</image:loc></image:image>
-    <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-v2-explore.jpg</image:loc></image:image>
-    <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-v2-planner.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-v4-home.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-v4-explore.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-v4-map.jpg</image:loc></image:image>
+    <image:image><image:loc>https://pohoda.jp/assets/screens/drivescape-v4-detail.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://pohoda.jp/yane.html</loc>
