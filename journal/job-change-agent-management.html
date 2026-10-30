@@ -3,32 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>複数の転職エージェントの選考管理に、私はこうして詰んだ｜Pohoda 読みもの</title>
-<meta name="description" content="複数の転職エージェントを併用すると、選考状況の管理が破綻しがち。スプレッドシートで挫折した個人開発者が、フェーズ・ボールの所在・次の一手を一画面で管理する iOS アプリ Glidwell を作るまでの話。">
+<title>転職エージェント複数利用の選考管理｜スプレッドシートで挫折した話</title>
+<meta name="description" content="転職エージェントを複数使うと、どの企業がどこまで進み、いま誰の番かを見失いがち。スプレッドシートで挫折した経験から、フェーズ・ボールの所在・次の一手を一画面で見渡す iOS アプリ Glidwell を作るまでの話です。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/job-change-agent-management.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="複数の転職エージェントの選考管理に、私はこうして詰んだ">
-<meta property="og:description" content="フェーズ・ボールの所在・次の一手を一画面で。複数エージェント併用の選考管理アプリ Glidwell を作るまで。">
+<meta property="og:title" content="転職エージェント複数利用の選考管理｜スプレッドシートで挫折した話">
+<meta property="og:description" content="転職エージェントを複数使うと、どの企業がどこまで進み、いま誰の番かを見失いがち。スプレッドシートで挫折した経験から、フェーズ・ボールの所在・次の一手を一画面で見渡す iOS アプリ Glidwell を作るまでの話です。">
 <meta property="og:url" content="https://pohoda.jp/journal/job-change-agent-management.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-06-30">
+<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:author" content="https://pohoda.jp/about.html">
+<meta property="article:section" content="転職活動の管理">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="複数の転職エージェントの選考管理に、私はこうして詰んだ">
-<meta name="twitter:description" content="フェーズ・ボールの所在・次の一手を一画面で。選考管理アプリ Glidwell の話。">
+<meta name="twitter:title" content="転職エージェント複数利用の選考管理｜スプレッドシートで挫折した話">
+<meta name="twitter:description" content="転職エージェントを複数使うと、どの企業がどこまで進み、いま誰の番かを見失いがち。スプレッドシートで挫折した経験から、フェーズ・ボールの所在・次の一手を一画面で見渡す iOS アプリ Glidwell を作るまでの話です。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"複数の転職エージェントの選考管理に、私はこうして詰んだ","description":"複数の転職エージェントを併用すると選考管理が破綻しがち。フェーズ・ボールの所在・次の一手を一画面で管理する iOS アプリ Glidwell を作るまで。","image":"https://pohoda.jp/assets/og/og-glidwell.png","datePublished":"2026-06-30","dateModified":"2026-06-30","inLanguage":"ja","about":"Glidwell","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/job-change-agent-management.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"複数の転職エージェントの選考管理に、私はこうして詰んだ","description":"転職エージェントを複数使うと、どの企業がどこまで進み、いま誰の番かを見失いがち。スプレッドシートで挫折した経験から、フェーズ・ボールの所在・次の一手を一画面で見渡す iOS アプリ Glidwell を作るまでの話です。","image":["https://pohoda.jp/assets/og/og-glidwell.png"],"datePublished":"2026-06-30","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"転職活動の管理","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/about.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/job-change-agent-management.html"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"複数の転職エージェントの選考管理に、私はこうして詰んだ","item":"https://pohoda.jp/journal/job-change-agent-management.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"転職活動の管理","item":"https://pohoda.jp/journal/#tenshoku"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"転職エージェントを複数使うと、何が困りますか？","acceptedAnswer":{"@type":"Answer","text":"主に3つです。窓口がバラバラ（メール・電話・各社のマイページ）で情報が散る。「次に動くのは自分か、エージェントか、企業か」が案件ごとに違う。面接の期日、書類の提出、お礼の連絡といった細かいタスクが各社にまたがる。見落としは、そのまま機会損失になります。"}},{"@type":"Question","name":"転職の選考管理は、スプレッドシートでもできますか？","acceptedAnswer":{"@type":"Answer","text":"できますが、筆者は続きませんでした。スマホで開いて編集するのが面倒で、「いま誰の番か」を色やメモで管理してもひと目では分からず、通知が出ないのでこちらから見に行かないと忘れます。"}},{"@type":"Question","name":"選考管理に本当に必要な情報は何ですか？","acceptedAnswer":{"@type":"Answer","text":"いまどのフェーズか、いま誰の番か、次の一手とその期日の3つです。これが一画面で見渡せて、期日が近いものを通知してくれれば、放置は防げます。"}},{"@type":"Question","name":"Glidwell は無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"選考管理・通知・書類・バックアップは無料で使えます。AI 機能は有料プランの機能です。iPhone（iOS）専用で、いまのところ Android には対応していません。"}}]}
 </script>
 </head>
 <body>
@@ -46,16 +55,23 @@
   </div>
 </header>
 
-<main class="marketing">
-  <article class="wrap narrow prose">
-    <a class="back" href="/journal/">← 読みもの一覧へ</a>
-    <div class="app-tag">Glidwell ・ 転職</div>
-    <h1>複数の<wbr>転職エージェントの<wbr>選考管理に、<wbr>私はこうして詰んだ</h1>
-    <div class="updated">2026年6月30日</div>
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#tenshoku">転職活動の管理</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/glidwell.html"><img src="/assets/glidwell-icon.png" alt="" width="22" height="22">Glidwell</a><span class="jr-theme">転職活動の管理</span></div>
+      <h1>複数の<wbr>転職エージェントの<wbr>選考管理に、<wbr>私はこうして詰んだ</h1>
+      <p class="jr-lead">転職でエージェントを複数使うのは、悪くない戦略だと思います。ただ、自分で管理しないと、どの企業がどこまで進み、いま誰の返事待ちなのかをすぐ見失います。私はそれで、ある会社への返信を一週間放置してしまいました。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-06-30">2026年6月30日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約3分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
 
-    <p class="lede">転職活動でエージェントを複数使うのは、悪くない戦略だと思う。求人の幅が広がるし、見える景色も増える。ただ、ひとつだけ落とし穴がある——自分で管理しないと、どの企業がどこまで進んでいて、いま誰の返事待ちなのかを、すぐ見失う。私はそれで一度、ある会社への返信を一週間放置してしまった。</p>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>複数併用で見失うのは、窓口がバラバラで、「次に動くのは自分か、エージェントか、企業か」が案件ごとに違うから。</li><li>スプレッドシートは、スマホで編集しづらい・いま誰の番かがひと目で分からない・通知が出ない、の3点で続かなかった。</li><li>必要なのは「いまどのフェーズか」「いま誰の番か」「次の一手と期日」。一画面で見渡せて、期日が近いものが通知されれば放置は防げる。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">なぜ複数併用で「ボールの所在」を見失うのか</a></li><li><a href="#s2">スプレッドシートで管理しようとして、挫折した</a></li><li><a href="#s3">欲しかったのは「フェーズ × ボールの所在 × 次の一手」</a></li><li><a href="#s4">Glidwell をどう設計したか</a></li><li><a href="#s5">データは、原則あなたの端末の中に</a></li><li><a href="#s6">正直なところ</a></li></ol></nav>
 
-    <h2>なぜ複数併用で「ボールの所在」を見失うのか</h2>
+<h2 id="s1">なぜ複数併用で「ボールの所在」を見失うのか</h2>
     <p>整理すると、原因ははっきりしていた。</p>
     <ul>
       <li>窓口がバラバラ（メール・電話・各社のマイページに情報が散る）</li>
@@ -64,7 +80,7 @@
     </ul>
     <p>結果、「あれ、この会社どうなってたっけ」が定期的に起きる。見落としは、そのまま機会損失になる。</p>
 
-    <h2>スプレッドシートで管理しようとして、挫折した</h2>
+    <h2 id="s2">スプレッドシートで管理しようとして、挫折した</h2>
     <p>最初は表計算ソフトで十分だと思っていた。企業名・フェーズ・次にやること・期日……列を作って埋めた。でも続かなかった。理由は3つ。</p>
     <ul>
       <li>スマホで開いて編集するのが面倒だった（移動中にこそ確認したいのに）</li>
@@ -72,7 +88,7 @@
       <li>通知が出ないので、結局こちらから見に行かないと忘れる</li>
     </ul>
 
-    <h2>欲しかったのは「フェーズ × ボールの所在 × 次の一手」</h2>
+    <h2 id="s3">欲しかったのは「フェーズ × ボールの所在 × 次の一手」</h2>
     <p>突き詰めると、選考管理に本当に必要なのは次の3つだけだった。<strong>いまどのフェーズか</strong>、<strong>いま誰の番か</strong>、<strong>次の一手と、その期日</strong>。これが一画面で見渡せて、期日が近いものを通知してくれれば、放置は防げる。欲しい道具が無かったので、自分で作ることにした。それが Glidwell だ。</p>
 
     <figure class="article-fig">
@@ -80,7 +96,7 @@
       <figcaption>朝ひらくと、今日対応すべき案件がまとまっている。</figcaption>
     </figure>
 
-    <h2>Glidwell をどう設計したか</h2>
+    <h2 id="s4">Glidwell をどう設計したか</h2>
     <ul>
       <li><strong>ホーム</strong>：今日対応したい案件、進行中・内定・今週の動きをひと目で</li>
       <li><strong>案件詳細</strong>：フェーズ・担当エージェント・ボールの所在・次の一手・期日を一枚に</li>
@@ -94,25 +110,34 @@
       <figcaption>「次の一手」と「いま誰の番か」を、案件ごとに。</figcaption>
     </figure>
 
-    <h2>データは、原則あなたの端末の中に</h2>
+    <h2 id="s5">データは、原則あなたの端末の中に</h2>
     <p>転職活動の情報は機微だ。だから Glidwell の中核機能は通信を行わず、選考状況も書類も原則あなたの端末の中に保存する。AI を使うときだけ、伏字化した内容を送る仕組みにした。</p>
 
-    <h2>正直なところ</h2>
+    <h2 id="s6">正直なところ</h2>
     <p>iPhone（iOS）専用で、いまのところ Android には対応していない。AI 機能は有料プランの機能で、無料では選考管理・通知・書類・バックアップが使える。それでも「複数エージェントの選考を、ひとつに見渡したい」人には、ちゃんと効くはずだ。</p>
+<p>転職は、目的地に着くまでの不安が長い。せめて「現在地」だけは、いつでもはっきり見えるように。そう思って作った道具です。</p>
 
-    <div class="app-block">
-      <div class="app-head">Glidwell</div>
-      <p class="app-sub">複数エージェントの転職選考を、ひとつに見渡す iOS アプリ。</p>
-      <a class="btn btn-primary" href="/glidwell.html">Glidwell を詳しく見る</a>
-      <a class="btn btn-ghost" href="/glidwell.html#screens-detail">画面で知る →</a>
-    </div>
+<aside class="jr-appcard" aria-label="Glidwellの紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/glidwell-icon.png" alt="Glidwell のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Glidwell</p><p class="jr-appcard-kind">転職活動の選考・面接日程を管理する iOS アプリ</p></div></div>
+    <p class="jr-appcard-benefit">複数エージェントの選考状況と、いま誰の番かが一画面で分かります。期日が近い対応は通知でお知らせ。</p>
+    <ul><li>選考フェーズごとの社数をダッシュボードで一覧</li><li>「次の一手」と、いま誰の番か（自分・エージェント・企業）が常に見える</li><li>期日が近い対応や動きのない案件を、通知でお知らせ。選考状況も書類も原則、端末の中に保存</li></ul>
+    <p class="jr-appcard-price">選考管理・通知・書類・バックアップは無料。AI アシスタントはスタンダード（月 ¥980）／プロ（月 ¥2,980）の月間クレジット内で使えます。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/glidwell/id6785211683" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/glidwell.html">製品ページを見る</a></div>
+  </div>
+  <div class="jr-appcard-shots"><span><img src="/assets/screens/glidwell-v2-home.jpg" alt="Glidwell のホーム画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/glidwell-v2-detail.jpg" alt="Glidwell の案件詳細" width="880" height="1912" loading="lazy"></span></div>
+</aside>
 
-    <p>転職は、目的地に着くまでの不安が長い。せめて「現在地」だけは、いつでもはっきり見えるように。そう思って作った道具です。</p>
-
-    <p style="font-size:14px;">関連する読みもの：<a href="/journal/ai-mensetsu-renshu-yarikata.html">一人でできる面接練習のやり方</a> ／ <a href="/journal/ai-mogi-mensetsu-chatgpt.html">AIで模擬面接をする方法</a></p>
-
-    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
-  </article>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>転職エージェントを複数使うと、何が困りますか？</summary><p>主に3つです。窓口がバラバラ（メール・電話・各社のマイページ）で情報が散る。「次に動くのは自分か、エージェントか、企業か」が案件ごとに違う。面接の期日、書類の提出、お礼の連絡といった細かいタスクが各社にまたがる。見落としは、そのまま機会損失になります。</p></details><details><summary>転職の選考管理は、スプレッドシートでもできますか？</summary><p>できますが、筆者は続きませんでした。スマホで開いて編集するのが面倒で、「いま誰の番か」を色やメモで管理してもひと目では分からず、通知が出ないのでこちらから見に行かないと忘れます。</p></details><details><summary>選考管理に本当に必要な情報は何ですか？</summary><p>いまどのフェーズか、いま誰の番か、次の一手とその期日の3つです。これが一画面で見渡せて、期日が近いものを通知してくれれば、放置は防げます。</p></details><details><summary>Glidwell は無料で使えますか？</summary><p>選考管理・通知・書類・バックアップは無料で使えます。AI 機能は有料プランの機能です。iPhone（iOS）専用で、いまのところ Android には対応していません。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/about.html" lang="en">About Pohoda（English）</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/mensetsu-nittei-senko-shinchoku-kanri.html"><small>Glidwell</small><b>面接日程と選考の進捗管理をアプリでひとつに</b><span>複数社の日程と進捗を、一つの画面にまとめる。</span></a><a href="/journal/tenshoku-mensetsu-taisaku-yuryo.html"><small>AI面接練習 Pre Interview</small><b>転職の面接対策、有料サービスはどう選ぶ？</b><span>模擬面接・コーチング・AIの違いと、費用の目安。</span></a><a href="/journal/ai-mensetsu-renshu-yarikata.html"><small>AI面接練習 Pre Interview</small><b>一人でできる面接練習のやり方</b><span>1週間前から前日までの練習プランと、録音・AIの使い方。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
 </main>
 
 <footer class="site-footer">

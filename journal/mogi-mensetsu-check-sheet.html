@@ -4,85 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>模擬面接のチェックシート（印刷用・無料）｜フィードバックの書き方つき</title>
-<meta name="description" content="模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点を3段階で記録でき、PDFもあります。面接官役の方向けに、伝わるフィードバックの書き方と、よくある失敗も整理しました。">
+<meta name="description" content="模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点16項目を3段階で記録できます。面接官役向けに、伝わるフィードバックの書き方と失敗例も整理しました。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/mogi-mensetsu-check-sheet.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="模擬面接のチェックシート（印刷用・無料）｜フィードバックの書き方つき">
-<meta property="og:description" content="模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点を3段階で記録でき、PDFもあります。面接官役の方向けに、伝わるフィードバックの書き方と、よくある失敗も整理しました。">
+<meta property="og:description" content="模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点16項目を3段階で記録できます。面接官役向けに、伝わるフィードバックの書き方と失敗例も整理しました。">
 <meta property="og:url" content="https://pohoda.jp/journal/mogi-mensetsu-check-sheet.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-pre-interview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-10-27">
+<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:author" content="https://pohoda.jp/about.html">
+<meta property="article:section" content="面接の練習">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="模擬面接のチェックシート（印刷用・無料）｜フィードバックの書き方つき">
-<meta name="twitter:description" content="模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点を3段階で記録でき、PDFもあります。面接官役の方向けに、伝わるフィードバックの書き方と、よくある失敗も整理しました。">
+<meta name="twitter:description" content="模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点16項目を3段階で記録できます。面接官役向けに、伝わるフィードバックの書き方と失敗例も整理しました。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-pre-interview.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=20">
-<style>
-.prose .toc { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 18px 0 8px; }
-.prose .toc ol { margin: 6px 0 0 20px; }
-.prose .toc li { margin-bottom: 3px; font-size: 14px; }
-.sheet-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 18px; }
-.sheet-title { font-size: 16px; font-weight: 700; color: var(--ink); margin: 18px 0 6px; }
-.sheet-fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 18px; margin: 0 0 10px; font-size: 13.5px; color: var(--ink-2); }
-.sheet-fields span { border-bottom: 1px solid var(--ink-2); padding-bottom: 2px; }
-.prose table.sheet { display: table; width: 100%; font-size: 13px; table-layout: fixed; margin: 6px 0 12px; }
-.prose table.sheet th, .prose table.sheet td { width: auto; padding: 6px 8px; vertical-align: middle; }
-.prose table.sheet thead th { background: var(--card); font-size: 10.5px; text-align: center; white-space: nowrap; padding-left: 2px; padding-right: 2px; }
-.prose table.sheet thead th.item, .prose table.sheet thead th.memo { text-align: left; white-space: normal; font-size: 12px; padding-left: 8px; }
-.prose table.sheet th.cat { background: var(--card); color: var(--ink); font-size: 13px; }
-.prose table.sheet thead th.mk { width: 64px; }
-.prose table.sheet thead th.memo { width: 24%; }
-.prose table.sheet td.mk { width: 64px; text-align: center; font-size: 16px; line-height: 1; color: var(--ink-2); }
-.prose table.sheet td.item { color: var(--ink); }
-.prose table.sheet td.memo { width: 24%; }
-.sheet-notes { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; color: var(--ink-2); min-height: 4.2em; margin-bottom: 8px; }
-.sheet-foot { font-size: 11.5px; color: var(--muted); }
-.print-only { display: none; }
-.pair td, .pair th { font-size: 14px; }
-.prose table.pair th { width: 18%; }
-@media (max-width: 600px) {
-  .prose table.sheet thead th.mk, .prose table.sheet td.mk { width: 46px; }
-  .prose table.sheet thead th.mk { font-size: 8.5px; letter-spacing: -.03em; }
-  .prose table.sheet thead th.memo, .prose table.sheet td.memo { width: 14%; }
-  .prose table.sheet thead th.memo { font-size: 10px; }
-  .prose table.sheet th, .prose table.sheet td { padding-left: 5px; padding-right: 5px; }
-  .sheet-fields { grid-template-columns: 1fr; }
-}
-@page { size: A4; margin: 10mm; }
-@media print {
-  body { background: #fff; }
-  .site-header, .site-footer, .prose .back, .prose .app-tag, .prose h1, .prose .updated,
-  .prose > *:not(.sheet-wrap), .sheet-actions, .sheet-wrap > h2, .sheet-wrap > p, .sheet-wrap > .sheet-actions { display: none !important; }
-  .prose { padding: 0; }
-  .wrap.narrow { max-width: none; padding: 0; }
-  .sheet-wrap { display: block !important; }
-  .print-only { display: block; }
-  .sheet-title { font-size: 17px; margin: 0 0 8px; }
-  .sheet-fields { font-size: 11.5px; gap: 8px 16px; margin-bottom: 8px; }
-  .prose table.sheet { font-size: 11.5px; margin: 4px 0 8px; }
-  .prose table.sheet th, .prose table.sheet td { padding: 4px 6px; border-color: #666; }
-  .prose table.sheet td.mk { font-size: 15px; }
-  .prose table.sheet td.item, .prose table.sheet td.mk { padding-top: 5px; padding-bottom: 5px; }
-  .prose table.sheet thead th { font-size: 10px; white-space: nowrap; padding-left: 2px; padding-right: 2px; }
-  .prose table.sheet thead th.item, .prose table.sheet thead th.memo { font-size: 11px; white-space: normal; padding-left: 6px; }
-  .prose table.sheet th.cat { padding-top: 5px; padding-bottom: 5px; }
-  .prose table.sheet td.memo, .prose table.sheet thead th.memo { display: table-cell; }
-  .sheet-notes { min-height: 15mm; font-size: 11px; margin-bottom: 5px; border-color: #666; }
-  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-}
-</style>
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"模擬面接のチェックシート（印刷用・無料）｜フィードバックの書き方つき","description":"模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点を3段階で記録でき、PDFもあります。面接官役の方向けに、伝わるフィードバックの書き方と、よくある失敗も整理しました。","image":"https://pohoda.jp/assets/og/og-pre-interview.png","datePublished":"2026-10-27","dateModified":"2026-10-27","inLanguage":"ja","about":"Pre Interview","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/mogi-mensetsu-check-sheet.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"模擬面接のチェックシート（印刷用・無料）と、伝わるフィードバックの書き方｜面接官役の方へ","description":"模擬面接のチェックシート（A4・1枚・印刷用）を無料で配布。話の中身・話し方・態度・準備の4観点16項目を3段階で記録できます。面接官役向けに、伝わるフィードバックの書き方と失敗例も整理しました。","image":["https://pohoda.jp/assets/og/og-pre-interview.png"],"datePublished":"2026-10-27","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"面接の練習","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/about.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/mogi-mensetsu-check-sheet.html"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"模擬面接のチェックシート（印刷用・無料）｜フィードバックの書き方つき","item":"https://pohoda.jp/journal/mogi-mensetsu-check-sheet.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"面接の練習","item":"https://pohoda.jp/journal/#mensetsu"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"模擬面接のチェックシートは、どこで手に入りますか？","acceptedAnswer":{"@type":"Answer","text":"このページで無料で使えます。印刷ボタンでA4・1枚が印刷でき、PDFのダウンロードもできます。項目と文言は Pohoda が独自に作成したもので、印刷して自由に使えます。"}},{"@type":"Question","name":"模擬面接のフィードバックは、どう書けばいいですか？","acceptedAnswer":{"@type":"Answer","text":"5つの原則で整えます。本人の発言を引用する、良い点を先に伝える、直す点は1〜2つに絞る、言い直しの例を示す、次の練習を行動で決める。「全体的に硬かった」のような感想だけで終わらせないのがコツです。"}},{"@type":"Question","name":"模擬面接で、聞いてはいけないことはありますか？","acceptedAnswer":{"@type":"Answer","text":"厚生労働省は、本籍・出生地、家族に関すること、宗教・支持政党・人生観など、応募者の適性・能力と関係のない事項を面接で尋ねないよう求めています。模擬面接でも、本番と同じ線引きで進めましょう。"}},{"@type":"Question","name":"友人どうしの模擬面接でも、チェックシートは使えますか？","acceptedAnswer":{"@type":"Answer","text":"使えます。面接官役の人は、良かった点を1つ、直す点を1つだけ、本人の発言を引用して伝えます。「なんとなく良かった」を避けるだけで、次の練習の質が変わります。"}}]}
 </script>
 </head>
 <body>
@@ -100,34 +55,24 @@
   </div>
 </header>
 
-<main class="marketing">
-  <article class="wrap narrow prose">
-    <a class="back" href="/journal/">← 読みもの一覧へ</a>
-    <div class="app-tag">面接官役の方向け ・ 印刷用シートつき</div>
-    <h1>模擬面接の<wbr>チェックシート<wbr>（印刷用・無料）と、<wbr>伝わる<wbr>フィードバックの<wbr>書き方｜<wbr>面接官役の方へ</h1>
-    <div class="updated">2026年10月27日</div>
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#mensetsu">面接の練習</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/pre-interview.html"><img src="/assets/pre-interview-icon.png" alt="" width="22" height="22">AI面接練習 Pre Interview</a><span class="jr-theme">面接の練習</span><span class="jr-theme is-sheet">印刷用シートつき</span></div>
+      <h1>模擬面接の<wbr>チェックシート<wbr>（印刷用・無料）と、<wbr>伝わる<wbr>フィードバックの<wbr>書き方｜<wbr>面接官役の方へ</h1>
+      <p class="jr-lead">模擬面接で「何を見て、どう返せばいいのか」が決まっていないと、感想だけで終わってしまいます。A4・1枚で印刷できるチェックシートと、本人に伝わるフィードバックの書き方を紹介します。友人どうしで練習する方も、そのまま使えます。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-10-27">2026年10月27日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約6分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
 
-    <p class="lede">模擬面接で「何を見て、どう返せばいいのか」が決まっていないと、感想だけで終わってしまいます。この記事では、A4・1枚で印刷できるチェックシートと、本人に伝わるフィードバックの書き方を紹介します。転職エージェント、キャリアコンサルタント、就活塾・スクール、学校のキャリアセンターの方はもちろん、友人どうしで練習する学生や求職者の方も、そのまま使えます。</p>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>チェックシートは4観点（話の中身・話し方・態度・準備）に各4項目、計16項目。「できている／もう少し／要練習」の3段階で□をつける。</li><li>迷ったら「もう少し」。要練習が多く並んでも、伝えるのは本番に最も効く1〜2点だけ。</li><li>フィードバックは、本人の発言を引用し、良い点を先に。言い直しの例と、次の練習までの宿題をつける。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#howto">チェックシートの使い方</a></li><li><a href="#sheet">チェックシート本体</a></li><li><a href="#feedback">フィードバックの書き方</a></li><li><a href="#mistakes">面接官役がやりがちな失敗</a></li><li><a href="#no-time">面接官役の時間がとれないときは</a></li><li><a href="#s6">出典</a></li></ol></nav>
 
-    <h2 style="border-top:0;padding-top:0;margin-top:22px">この記事で分かること</h2>
-    <ul>
-      <li>チェックシートの使いどころと、記入のしかた</li>
-      <li>印刷用のチェックシート本体（4観点・16項目、PDFあり）</li>
-      <li>本人に伝わるフィードバックの書き方と、面接官役がやりがちな失敗</li>
-    </ul>
-    <nav class="toc" aria-label="目次">
-      <strong>目次</strong>
-      <ol>
-        <li><a href="#howto">チェックシートの使い方</a></li>
-        <li><a href="#sheet">チェックシート本体（印刷・PDF）</a></li>
-        <li><a href="#feedback">フィードバックの書き方</a></li>
-        <li><a href="#mistakes">面接官役がやりがちな失敗</a></li>
-        <li><a href="#no-time">面接官役の時間がとれないときは</a></li>
-      </ol>
-    </nav>
-
-    <h2 id="howto">チェックシートの使い方</h2>
-    <table>
+<h2 id="howto">チェックシートの使い方</h2>
+    <table class="stack">
       <tr><th>いつ使うか</th><td>模擬面接の最中に、回答を聞きながらチェックします。終わったら、フィードバックの前に2〜3分とって、メモ欄を整えます。</td></tr>
       <tr><th>誰が書くか</th><td>面接官役です。同じシートを本人にも1枚渡して、自己評価を書いてもらうと、ずれた項目がそのまま話し合いの材料になります。</td></tr>
       <tr><th>何をつけるか</th><td>項目ごとに「できている／もう少し／要練習」の1つに□をつけます。メモ欄には、本人の発言をそのまま短く書き留めます。</td></tr>
@@ -140,7 +85,7 @@
       <li>録音をするかどうか。録音する場合は、本人の同意を得てから始めます。</li>
     </ul>
     <h3>3段階の目安</h3>
-    <table>
+    <table class="stack">
       <tr><th>できている</th><td>そのまま本番で使える状態。直す必要はなく、良かった点として本人に伝えます。</td></tr>
       <tr><th>もう少し</th><td>方向は合っていて、1点足せば良くなる状態。「数字を1つ足す」「語尾まで言い切る」など、小さな修正で済むものです。</td></tr>
       <tr><th>要練習</th><td>繰り返しの練習が必要な状態。次の練習までの宿題の候補になります。</td></tr>
@@ -158,7 +103,7 @@
     <div class="sheet-wrap" id="sheet-box">
       <div class="sheet-title">模擬面接チェックシート</div>
       <div class="sheet-fields"><span>日付：</span><span>面接官役：</span><span>応募者：</span><span>応募先・段階：</span></div>
-      <table class="sheet">
+      <table class="sheet chk">
         <thead><tr><th class="item">確認する項目</th><th class="mk">できている</th><th class="mk">もう少し</th><th class="mk">要練習</th><th class="memo">メモ（本人の発言を引用）</th></tr></thead>
         <tbody>
         <tr><th class="cat" colspan="5">話の中身</th></tr>
@@ -202,15 +147,15 @@
     <p>友人どうしで練習するときも同じです。面接官役の人は、良かった点を1つ、直す点を1つだけ、本人の発言を引用して伝えます。「なんとなく良かった」を避けるだけで、次の練習の質が変わります。</p>
     <h3>悪い例と良い例</h3>
     <p>次の3組は、模擬面接でよくある場面を想定した例です。どれも、引用・事実・言い直しのどれかが入っているかどうかで、伝わり方が変わります。</p>
-    <table class="pair">
+    <table class="stack pair">
       <tr><th>悪い例</th><td>「全体的に硬かったです。もっとリラックスして、自信をもって話しましょう。」</td></tr>
       <tr><th>良い例</th><td>「『前職では法人営業を3年担当しました』と最初に言ってくれたので、経歴がすぐ分かりました。2問目は、答えが出るまで40秒ほどかかっていました。『結論は○○です』から始めてみましょう。」</td></tr>
     </table>
-    <table class="pair">
+    <table class="stack pair">
       <tr><th>悪い例</th><td>「志望動機が弱いです。」</td></tr>
       <tr><th>良い例</th><td>「『人と接するのが好きだからです』は、ほかの会社でも言えてしまいます。『御社の○○という取り組みに関わりたい』のように、この会社を選ぶ理由を一文足してみましょう。」</td></tr>
     </table>
-    <table class="pair">
+    <table class="stack pair">
       <tr><th>悪い例</th><td>気になった点を10個、そのまま読み上げる。</td></tr>
       <tr><th>良い例</th><td>「今日直すのは2つです。結論を先に言うことと、数字を1つ入れること。次回は、この2つだけ見ます。」</td></tr>
     </table>
@@ -229,16 +174,33 @@
     <p>模擬面接は回数が効きますが、担当する人数が増えるほど、一人ひとりに付き合える回数は限られます。その間の反復用として、Pre Interview（AI面接練習の iPhone アプリ）があります。AIの面接官が声で質問し、面接のあとに、本人の発言を引用した講評を返します。面接官はAI、講評は参考の評価です。面接官役の方の代わりではなく、面談と面談のあいだの練習用です。</p>
     <p>法人・団体向けの案内は、<a href="/pre-interview-business.html">こちらのページ</a>にまとめています。</p>
 
-    <h2>出典</h2>
+    <h2 id="s6">出典</h2>
     <ul>
       <li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/newpage_56780.html" rel="noopener">公正な採用選考の基本｜厚生労働省</a>（就職差別につながるおそれのある事項。2026年10月27日に確認）</li>
     </ul>
-    <p style="font-size:13.5px;">チェックシートの項目と文言は、Pohoda が独自に作成したものです。印刷して自由にお使いください。</p>
+    <p class="jr-note">チェックシートの項目と文言は、Pohoda が独自に作成したものです。印刷して自由にお使いください。</p>
 
-    <p style="font-size:14px;">関連する読みもの：<a href="/journal/mogi-mensetsu-yarikata-shiensha.html">模擬面接のやり方（キャリア支援者向け）</a> ／ <a href="/journal/ai-mensetsu-renshu-yarikata.html">一人でできる面接練習のやり方</a> ／ <a href="/journal/ai-mogi-mensetsu-chatgpt.html">AIで模擬面接をする方法</a> ／ <a href="/journal/tenshoku-mensetsu-taisaku-yuryo.html">転職の面接対策、有料サービスの選び方</a></p>
+<aside class="jr-appcard" aria-label="AI面接練習 Pre Interviewの紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/pre-interview-icon.png" alt="AI面接練習 Pre Interview のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">AI面接練習 Pre Interview</p><p class="jr-appcard-kind">AI の面接官と、声で模擬面接をする iPhone アプリ</p></div></div>
+    <p class="jr-appcard-benefit">面接官役の方との面談と面談のあいだに、求職者が声で模擬面接を重ねられます（面接官役の代わりではなく、練習用）。</p>
+    <ul><li>話し終えるとすぐ声で返し、いまの回答をもとに深掘りの質問をする</li><li>回答の引用つきの講評。A4の PDF で保存・共有できる</li><li>講評をもとに、同じ質問に答え直すレッスンまでがセット</li></ul>
+    <p class="jr-appcard-price">1セット（面接15分＋講評＋レッスン15分）は、初回限定 ¥800／通常 ¥1,500（税込・アプリ内課金）。月額課金や有効期限はありません。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/id6818479447" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/pre-interview.html">製品ページを見る</a></div>
+  </div>
+  <div class="jr-appcard-shots"><span><img src="/assets/screens/pre-interview-interview.png" alt="Pre Interview の面接画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/pre-interview-report.png" alt="Pre Interview の講評画面" width="880" height="1912" loading="lazy"></span></div>
+</aside>
 
-    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
-  </article>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>模擬面接のチェックシートは、どこで手に入りますか？</summary><p>このページで無料で使えます。印刷ボタンでA4・1枚が印刷でき、PDFのダウンロードもできます。項目と文言は Pohoda が独自に作成したもので、印刷して自由に使えます。</p></details><details><summary>模擬面接のフィードバックは、どう書けばいいですか？</summary><p>5つの原則で整えます。本人の発言を引用する、良い点を先に伝える、直す点は1〜2つに絞る、言い直しの例を示す、次の練習を行動で決める。「全体的に硬かった」のような感想だけで終わらせないのがコツです。</p></details><details><summary>模擬面接で、聞いてはいけないことはありますか？</summary><p>厚生労働省は、本籍・出生地、家族に関すること、宗教・支持政党・人生観など、応募者の適性・能力と関係のない事項を面接で尋ねないよう求めています。模擬面接でも、本番と同じ線引きで進めましょう。</p></details><details><summary>友人どうしの模擬面接でも、チェックシートは使えますか？</summary><p>使えます。面接官役の人は、良かった点を1つ、直す点を1つだけ、本人の発言を引用して伝えます。「なんとなく良かった」を避けるだけで、次の練習の質が変わります。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/about.html" lang="en">About Pohoda（English）</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/mogi-mensetsu-yarikata-shiensha.html"><small>AI面接練習 Pre Interview</small><b>模擬面接のやり方（キャリア支援者向け）</b><span>面接官役で見る観点と、フィードバックの返し方の型。</span></a><a href="/journal/ai-mensetsu-renshu-yarikata.html"><small>AI面接練習 Pre Interview</small><b>一人でできる面接練習のやり方</b><span>1週間前から前日までの練習プランと、録音・AIの使い方。</span></a><a href="/journal/tenshoku-mensetsu-taisaku-yuryo.html"><small>AI面接練習 Pre Interview</small><b>転職の面接対策、有料サービスはどう選ぶ？</b><span>模擬面接・コーチング・AIの違いと、費用の目安。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
 </main>
 
 <footer class="site-footer">

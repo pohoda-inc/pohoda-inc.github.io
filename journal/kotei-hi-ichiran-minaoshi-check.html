@@ -3,92 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>固定費の一覧表と見直しチェックシート（印刷用・無料）｜年払いも書き出す</title>
-<meta name="description" content="固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・2か月ごとの支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。">
+<title>固定費の見直しチェックシート（印刷用・無料）｜年払いも書き出す</title>
+<meta name="description" content="固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・隔月の支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/kotei-hi-ichiran-minaoshi-check.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="固定費の一覧表と見直しチェックシート（印刷用・無料）｜年払いも書き出す">
-<meta property="og:description" content="固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・2か月ごとの支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。">
+<meta property="og:title" content="固定費の見直しチェックシート（印刷用・無料）｜年払いも書き出す">
+<meta property="og:description" content="固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・隔月の支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。">
 <meta property="og:url" content="https://pohoda.jp/journal/kotei-hi-ichiran-minaoshi-check.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-costs.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-10-29">
+<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:author" content="https://pohoda.jp/about.html">
+<meta property="article:section" content="お金と仕事の整理">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="固定費の一覧表と見直しチェックシート（印刷用・無料）｜年払いも書き出す">
-<meta name="twitter:description" content="固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・2か月ごとの支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。">
+<meta name="twitter:title" content="固定費の見直しチェックシート（印刷用・無料）｜年払いも書き出す">
+<meta name="twitter:description" content="固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・隔月の支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-costs.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=20">
-<style>
-.prose .toc { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 18px 0 8px; }
-.prose .toc ol { margin: 6px 0 0 20px; }
-.prose .toc li { margin-bottom: 3px; font-size: 14px; }
-.sheet-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 18px; }
-.sheet-wrap + .sheet-wrap { margin-top: 30px; padding-top: 22px; border-top: 1px dashed var(--line-2); }
-.sheet-title { font-size: 16px; font-weight: 700; color: var(--ink); margin: 18px 0 6px; }
-.sheet-wrap + .sheet-wrap .sheet-title { margin-top: 0; }
-.sheet-fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 18px; margin: 0 0 10px; font-size: 13.5px; color: var(--ink-2); }
-.sheet-fields.c3 { grid-template-columns: repeat(3, 1fr); }
-.sheet-fields span { border-bottom: 1px solid var(--ink-2); padding-bottom: 2px; }
-.sheet-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 6px 0 12px; }
-.prose table.sheet { display: table; width: 100%; min-width: 560px; font-size: 13px; margin: 0; }
-.prose table.sheet th, .prose table.sheet td { width: auto; padding: 6px 8px; vertical-align: middle; }
-.prose table.sheet thead th { background: var(--card); font-size: 12px; text-align: center; white-space: nowrap; padding-left: 4px; padding-right: 4px; }
-.prose table.sheet th.cat { background: var(--card); color: var(--ink); font-size: 13px; }
-.prose table.sheet td { color: var(--ink); height: 30px; }
-.prose table.sheet td.mk { width: 58px; text-align: center; font-size: 16px; line-height: 1; color: var(--ink-2); }
-.prose table.sheet td.ctr { text-align: center; color: var(--ink-2); }
-.prose table.sheet td.hint { font-size: 12.5px; color: var(--ink-2); }
-.prose table.sheet tr.sum td { background: var(--card); font-weight: 600; }
-.prose table.sheet td.off { background: var(--card); }
-.sheet-notes { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; color: var(--ink-2); min-height: 4.2em; margin-bottom: 8px; }
-.sheet-foot { font-size: 11.5px; color: var(--muted); }
-.print-only { display: none; }
-.sheet-graph { display: block; width: 100%; height: auto; margin: 4px 0 8px; }
-.sheet-graph .gl { stroke: var(--line-2); stroke-width: .6; }
-.sheet-graph .gb { stroke: var(--ink-2); stroke-width: .8; }
-.sheet-graph text { font-size: 9px; fill: var(--ink-2); text-anchor: middle; }
-.pair td, .pair th { font-size: 14px; }
-.prose table.pair th { width: 18%; }
-@media (max-width: 600px) {
-  .sheet-fields, .sheet-fields.c3 { grid-template-columns: 1fr; }
-  .prose table.sheet th, .prose table.sheet td { padding-left: 5px; padding-right: 5px; }
-}
-@page { size: A4; margin: 10mm; }
-@media print {
-  body { background: #fff; }
-  .site-header, .site-footer, .prose .back, .prose .app-tag, .prose h1, .prose .updated,
-  .prose > *:not(.sheet-wrap), .sheet-actions { display: none !important; }
-  .prose { padding: 0; }
-  .wrap.narrow { max-width: none; padding: 0; }
-  .sheet-wrap { display: block !important; }
-  .sheet-wrap + .sheet-wrap { break-before: page; margin: 0; padding: 0; border: 0; }
-  .print-only { display: block; }
-  .sheet-title { font-size: 17px; margin: 0 0 8px; }
-  .sheet-fields { font-size: 11.5px; gap: 8px 16px; margin-bottom: 8px; }
-  .sheet-scroll { overflow: visible; margin: 4px 0 8px; }
-  .prose table.sheet { min-width: 0; font-size: 11.5px; }
-  .prose table.sheet th, .prose table.sheet td { padding: 3px 5px; border-color: #666; }
-  .prose table.sheet td { height: var(--rowh, 9mm); }
-  .prose table.sheet td.mk { font-size: 15px; }
-  .prose table.sheet thead th { font-size: 10.5px; padding-left: 2px; padding-right: 2px; }
-  .sheet-notes { min-height: 15mm; font-size: 11px; margin-bottom: 5px; border-color: #666; }
-  .sheet-graph .gl { stroke: #aaa; }
-  .sheet-graph .gb { stroke: #555; }
-  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-}
-
-</style>
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"固定費の一覧表と見直しチェックシート（印刷用・無料）｜年払いも書き出す","description":"固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・2か月ごとの支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。","image":"https://pohoda.jp/assets/og/og-costs.png","datePublished":"2026-10-29","dateModified":"2026-10-29","inLanguage":"ja","about":"Costs","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/kotei-hi-ichiran-minaoshi-check.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"固定費の一覧表と見直しチェックシート（印刷用・無料）｜年払いも書き出す","description":"固定費の一覧表（A4・印刷用）と見直しチェックシートを無料で配布。年払い・隔月の支払いも年額にそろえて書き出せ、PDFもあります。書き出し方、見直しの順番、年払いの扱い方も整理しました。","image":["https://pohoda.jp/assets/og/og-costs.png"],"datePublished":"2026-10-29","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"お金と仕事の整理","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/about.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/kotei-hi-ichiran-minaoshi-check.html"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"固定費の一覧表と見直しチェックシート（印刷用・無料）｜年払いも書き出す","item":"https://pohoda.jp/journal/kotei-hi-ichiran-minaoshi-check.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"お金と仕事の整理","item":"https://pohoda.jp/journal/#okane"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"固定費の見直しは、何から始めればいいですか？","acceptedAnswer":{"@type":"Answer","text":"最初にやることは、何にいくら払っているかを1枚に書き出すことです。通帳、カードの明細、契約書、メールの請求書から拾い、年に1回の支払いまで拾うため、見る期間は直近1年分にします。"}},{"@type":"Question","name":"固定費の見直しは、どんな順番で進めますか？","acceptedAnswer":{"@type":"Answer","text":"手間が少なく、やめて困ることも少ないものから進めます。使っていないサブスクや会費、スマホ・ネット回線、保険、家賃・車の順です。金額は大きくても、引っ越しや手放す手間も大きいものは最後に回します。"}},{"@type":"Question","name":"年払いの固定費は、月いくらとして計算しますか？","acceptedAnswer":{"@type":"Answer","text":"年払い1回の金額がそのまま年額で、月あたりは年額÷12です。年額を12で割って毎月に均す見方は1年の負担の比較に、払う月にその額を計上する見方は、いつ山が来るかを知るのに向いています。"}},{"@type":"Question","name":"固定費の見直しチェックシートでは、何を確認しますか？","acceptedAnswer":{"@type":"Answer","text":"3つの観点です。使っているか（最近3か月のあいだに使った、同じ目的のサービスがほかにない、など）、契約が合っているか（プラン、解約・変更の期限や違約金、更新月）、支払い方を確認したか（年払い・隔月を一覧表に書いた、など）。「いいえ」「不明」が付いた質問が、見直しの手がかりです。"}}]}
 </script>
 </head>
 <body>
@@ -106,35 +55,24 @@
   </div>
 </header>
 
-<main class="marketing">
-  <article class="wrap narrow prose">
-    <a class="back" href="/journal/">← 読みもの一覧へ</a>
-    <div class="app-tag">Costs ・ 印刷用シートつき</div>
-    <h1>固定費の<wbr>一覧表と<wbr>見直しチェックシート<wbr>（印刷用・無料）｜<wbr>年払いも書き出す</h1>
-    <div class="updated">2026年10月29日</div>
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#okane">お金と仕事の整理</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/costs.html"><img src="/assets/costs-icon.png" alt="" width="22" height="22">Costs</a><span class="jr-theme">お金と仕事の整理</span><span class="jr-theme is-sheet">印刷用シートつき</span></div>
+      <h1>固定費の<wbr>一覧表と<wbr>見直しチェックシート<wbr>（印刷用・無料）｜<wbr>年払いも書き出す</h1>
+      <p class="jr-lead">固定費を見直すとき、最初にやることは「何にいくら払っているか」を1枚に書き出すことです。年払いや2か月ごとの支払いは、月々の明細に出てこないので、書き出さないと見落とします。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-10-29">2026年10月29日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約5分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
 
-    <p class="lede">固定費を見直すとき、最初にやることは「何にいくら払っているか」を1枚に書き出すことです。年払いや2か月ごとの支払いは、月々の明細に出てこないので、書き出さないと抜けやすくなります。この記事では、A4で印刷できる固定費の一覧表と見直しチェックシートを配布し、年額へのそろえ方、見直しの順番、年払いの扱い方を整理します。</p>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>通帳・カードの明細・契約書・請求書から、直近1年分の固定費を集める。払い方がばらばらでも、年額にそろえれば比べられる。</li><li>年額は、毎月×12、2か月ごと×6、3か月ごと×4、半年ごと×2、年払い×1、2年に1回÷2。</li><li>見直しの順番は、使っていないサブスクや会費、スマホ・ネット回線、保険、家賃・車。今月やるのは1〜3つに絞る。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#howto">固定費の書き出し方</a></li><li><a href="#sheet">固定費の一覧表と見直しチェックシート</a></li><li><a href="#order">見直しの順番</a></li><li><a href="#annual">年払い・隔月の支払いの扱い</a></li><li><a href="#app">アプリで続けたいとき</a></li></ol></nav>
 
-    <h2 style="border-top:0;padding-top:0;margin-top:22px">この記事で分かること</h2>
-    <ul>
-      <li>固定費を書き出す手順と、払い方ごとの年額の出し方</li>
-      <li>印刷用の固定費一覧表と見直しチェックシート（PDFあり）</li>
-      <li>見直しの順番と、減らす前に確かめること</li>
-      <li>年払い・隔月の支払いを見落とさない書き方</li>
-    </ul>
-    <nav class="toc" aria-label="目次">
-      <strong>目次</strong>
-      <ol>
-        <li><a href="#howto">固定費の書き出し方</a></li>
-        <li><a href="#sheet">一覧表と見直しチェックシート（印刷・PDF）</a></li>
-        <li><a href="#order">見直しの順番</a></li>
-        <li><a href="#annual">年払い・隔月の支払いの扱い</a></li>
-        <li><a href="#app">アプリで続けたいとき</a></li>
-      </ol>
-    </nav>
-
-    <h2 id="howto">固定費の書き出し方</h2>
-    <table>
+<h2 id="howto">固定費の書き出し方</h2>
+    <table class="stack">
       <tr><th>1. 集める</th><td>通帳、カードの明細、契約書、メールの請求書から拾います。年に1回の支払いまで拾うため、見る期間は直近1年分にします。</td></tr>
       <tr><th>2. 年額にそろえる</th><td>払い方がばらばらでも、年額にすれば比べられます。出し方は下の表のとおりです。</td></tr>
       <tr><th>3. チェックする</th><td>一覧表の項目ごとに、見直しチェックシートの質問に答えます。続ける・変える・やめるを、期日つきで決めます。</td></tr>
@@ -231,12 +169,29 @@
     <p>一覧表は、年に1〜2回書き直すのが手間になりがちです。Costs は、固定費を並べて、今月の合計と、これから1年のどの月に山が来るかを見られる iPhone の家計簿アプリです。支払いの頻度は、毎月・2か月ごと・6週ごと・年払い・2年ごと・月を指定から選べ、実際に払う月にその額が載ります。「月割りで見る」をオンにすると、ならした額でも見られます。80種のプリセットから選べ、金額を変えても過去の月はそのままなので、値上げの跡も推移に残ります。食費などの変動費は、カテゴリーごとにひと月分の金額を入れるだけです。</p>
     <p>固定費と変動費を合わせて5件までは無料です。それ以上は、買い切り（980円）または年額（300円）で上限を外せます。アカウント登録や銀行・カードとの連携はなく、記録は端末の中に保存されます。詳しくは<a href="/costs.html">Costs の紹介ページ</a>をご覧ください。</p>
 
-    <p style="font-size:13.5px;">一覧表とチェックシートの項目と文言は、Pohoda が独自に作成したものです。印刷して自由にお使いください。保険や契約の見直しは、ご自身の状況に合わせて、契約先や専門家にご確認ください。</p>
+    <p class="jr-note">一覧表とチェックシートの項目と文言は、Pohoda が独自に作成したものです。印刷して自由にお使いください。保険や契約の見直しは、ご自身の状況に合わせて、契約先や専門家にご確認ください。</p>
 
-    <p style="font-size:14px;">関連する読みもの：<a href="/journal/kakeibo-shisan-mieruka.html">家計簿が続かない・三日坊主になる理由と、資産を「見える化」する記録のコツ</a> ／ <a href="/journal/one-line-number-log.html">記録アプリが続かないのは、入力が重いから</a></p>
+<aside class="jr-appcard" aria-label="Costsの紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/costs-icon.png" alt="Costs のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Costs</p><p class="jr-appcard-kind">固定費がひと目で分かる、ゆるい家計簿 iOS アプリ</p></div></div>
+    <p class="jr-appcard-benefit">固定費を並べると、今月の合計と、これから1年のどの月に山が来るかが、ひと目で分かります。</p>
+    <ul><li>今月の合計と、これから1年の固定費の山がひと目で分かる</li><li>毎月・2ヶ月ごと・年払いなど、頻度がばらばらでも入れられる</li><li>アカウント登録も、銀行やカードとの連携も、広告もない</li></ul>
+    <p class="jr-appcard-price">固定費と変動費を合わせて5件まで無料。年額 ¥300／買い切り ¥980（税込）で上限を解除できます。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/id6826817393" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/costs.html">製品ページを見る</a></div>
+  </div>
+  <div class="jr-appcard-shots"><span><img src="/assets/screens/costs-home-light.png" alt="Costs のホーム画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/costs-graph-light.png" alt="Costs の1年のグラフ" width="880" height="1912" loading="lazy"></span></div>
+</aside>
 
-    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
-  </article>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>固定費の見直しは、何から始めればいいですか？</summary><p>最初にやることは、何にいくら払っているかを1枚に書き出すことです。通帳、カードの明細、契約書、メールの請求書から拾い、年に1回の支払いまで拾うため、見る期間は直近1年分にします。</p></details><details><summary>固定費の見直しは、どんな順番で進めますか？</summary><p>手間が少なく、やめて困ることも少ないものから進めます。使っていないサブスクや会費、スマホ・ネット回線、保険、家賃・車の順です。金額は大きくても、引っ越しや手放す手間も大きいものは最後に回します。</p></details><details><summary>年払いの固定費は、月いくらとして計算しますか？</summary><p>年払い1回の金額がそのまま年額で、月あたりは年額÷12です。年額を12で割って毎月に均す見方は1年の負担の比較に、払う月にその額を計上する見方は、いつ山が来るかを知るのに向いています。</p></details><details><summary>固定費の見直しチェックシートでは、何を確認しますか？</summary><p>3つの観点です。使っているか（最近3か月のあいだに使った、同じ目的のサービスがほかにない、など）、契約が合っているか（プラン、解約・変更の期限や違約金、更新月）、支払い方を確認したか（年払い・隔月を一覧表に書いた、など）。「いいえ」「不明」が付いた質問が、見直しの手がかりです。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/about.html" lang="en">About Pohoda（English）</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/kakeibo-shisan-mieruka.html"><small>Graph</small><b>家計簿が続かない・三日坊主になる理由と、資産を「見える化」する記録のコツ</b><span>明細ではなく、残高の数字だけを残す。</span></a><a href="/journal/taiju-kirokuhyo-insatsu.html"><small>Utility</small><b>体重の記録表（印刷用・無料）</b><span>1か月分の表と、点を打つだけで折れ線になるグラフ用紙。</span></a><a href="/journal/kokyaku-daicho-template.html"><small>One CRM</small><b>顧客台帳のテンプレート（印刷用・無料）</b><span>一覧表と顧客カードの2枚。書く項目の決め方つき。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
 </main>
 
 <footer class="site-footer">

@@ -3,32 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>面接日程と選考の進捗管理をアプリでひとつに</title>
-<meta name="description" content="複数社の面接日程と選考の進捗を、ひとつのアプリで管理する設計について。Glidwell 転職管理の記録方法を紹介します。">
+<title>面接日程と選考の進捗を管理するアプリ｜複数社をひとつの画面に</title>
+<meta name="description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="面接日程と選考の進捗管理をアプリでひとつに">
-<meta property="og:description" content="複数社の面接日程と選考の進捗を、ひとつのアプリで管理する設計について。Glidwell 転職管理の記録方法を紹介します。">
+<meta property="og:title" content="面接日程と選考の進捗を管理するアプリ｜複数社をひとつの画面に">
+<meta property="og:description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。">
 <meta property="og:url" content="https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-07-28">
+<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:author" content="https://pohoda.jp/about.html">
+<meta property="article:section" content="転職活動の管理">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="面接日程と選考の進捗管理をアプリでひとつに">
-<meta name="twitter:description" content="複数社の面接日程と選考の進捗を、ひとつのアプリで管理する設計について。Glidwell 転職管理の記録方法を紹介します。">
+<meta name="twitter:title" content="面接日程と選考の進捗を管理するアプリ｜複数社をひとつの画面に">
+<meta name="twitter:description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"面接日程と選考の進捗管理をアプリでひとつに","description":"複数社の面接日程と選考の進捗を、ひとつのアプリで管理する設計について。Glidwell 転職管理の記録方法を紹介します。","image":"https://pohoda.jp/assets/og/og-glidwell.png","datePublished":"2026-07-28","dateModified":"2026-07-28","inLanguage":"ja","about":"Glidwell","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"面接日程と選考の進捗管理をアプリでひとつに","description":"複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。","image":["https://pohoda.jp/assets/og/og-glidwell.png"],"datePublished":"2026-07-28","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"転職活動の管理","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/about.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"面接日程と選考の進捗管理をアプリでひとつに","item":"https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"転職活動の管理","item":"https://pohoda.jp/journal/#tenshoku"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"複数社の面接日程は、どう管理するのがいいですか？","acceptedAnswer":{"@type":"Answer","text":"応募企業ごとに面接日程を登録し、次の面接が近い順に並べて見ます。メモや手帳、メールが分散すると、次の面接がいつかを都度確認し直す手間が生まれるので、一箇所に集約するのがおすすめです。"}},{"@type":"Question","name":"選考の進捗管理では、何を記録しますか？","acceptedAnswer":{"@type":"Answer","text":"書類選考・一次面接・最終面接といった選考フェーズを、企業ごとに記録します。エージェント経由の応募が複数社にまたがっても、どの企業がどの段階にあるかをステータスで確認できます。Glidwell では手作業での更新のみで、自動追跡は行いません。"}},{"@type":"Question","name":"面接日程や選考状況のデータは、外部に送られますか？","acceptedAnswer":{"@type":"Answer","text":"記録は端末の中だけに保存されます。クラウド同期や外部サーバーへの送信を前提にせず、広告表示や外部への行動データ送信もありません。"}}]}
 </script>
 </head>
 <body>
@@ -46,43 +55,59 @@
   </div>
 </header>
 
-<main class="marketing">
-  <article class="wrap narrow prose">
-    <a class="back" href="/journal/">← 読みもの一覧へ</a>
-    <div class="app-tag">Glidwell ・ 転職活動</div>
-    <h1>面接日程と<wbr>選考の<wbr>進捗管理を<wbr>アプリで<wbr>ひとつに</h1>
-    <div class="updated">2026年7月28日</div>
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#tenshoku">転職活動の管理</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/glidwell.html"><img src="/assets/glidwell-icon.png" alt="" width="22" height="22">Glidwell</a><span class="jr-theme">転職活動の管理</span></div>
+      <h1>面接日程と<wbr>選考の<wbr>進捗管理を<wbr>アプリで<wbr>ひとつに</h1>
+      <p class="jr-lead">複数の転職エージェントを併用すると、面接の日程も選考の進捗も、企業ごとにばらばらになりがちです。次の面接がいつだったか分からなくなる前に、一つの画面にまとめて記録する考え方を紹介します。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-07-28">2026年7月28日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約2分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
 
-    <p class="lede">複数の転職エージェントを併用していると、面接の日程も選考の進捗も、企業ごとにばらばらに管理されがちです。手帳やメモアプリに書き散らすうちに、次の面接がいつだったか分からなくなることもあります。Glidwell 転職管理は、面接日程と選考の進捗を一つの画面にまとめて記録できるよう設計しました。</p>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>面接日程は応募企業ごとに登録でき、次の面接が近い順に並ぶ。複数社を並行しても、直近の予定を見失いにくい。</li><li>書類選考・一次面接・最終面接などの選考フェーズを企業ごとに記録し、ステータスで一覧できる（更新は手作業で、自動追跡はしない）。</li><li>記録は端末の中だけに保存される。外部サーバーへの送信も、広告もない。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">面接日程をまとめて管理する</a></li><li><a href="#s2">選考の進捗管理をアプリでひと目に</a></li><li><a href="#s3">なぜ面接日程を見失いやすいのか</a></li><li><a href="#s4">静かな設計というポリシー</a></li><li><a href="#s5">記録は端末の中だけに</a></li></ol></nav>
 
-    <h2>面接日程をまとめて管理する</h2>
+<h2 id="s1">面接日程をまとめて管理する</h2>
     <p>Glidwell 転職管理では、応募企業ごとに面接日程を登録できます。次の面接が近い順に並び替えて表示するため、複数社を並行して進めていても、直近の予定を見失いにくい設計にしています。日程はすべて端末内に保存され、外部サーバーへの送信や広告表示は行いません。</p>
 
-    <h2>選考の進捗管理をアプリでひと目に</h2>
+    <h2 id="s2">選考の進捗管理をアプリでひと目に</h2>
     <p>書類選考・一次面接・最終面接といった選考フェーズを、企業ごとに記録できます。エージェント経由の応募が複数社にまたがっても、どの企業がどの段階にあるかをひと目で確認できるよう、進捗はステータス表示でまとめました。手作業での更新のみで、自動追跡は行いません。</p>
 
-    <h2>なぜ面接日程を見失いやすいのか</h2>
+    <h2 id="s3">なぜ面接日程を見失いやすいのか</h2>
     <p>転職活動では、複数のエージェントから並行して選考の案内が届くことがあります。企業ごとに日程調整のやり取りが発生するため、メモや手帳、メールが分散すると、次の面接がいつかを都度確認し直す手間が生まれます。Glidwell 転職管理は、この分散を一箇所に集約する設計を選びました。</p>
 
-    <h2>静かな設計というポリシー</h2>
+    <h2 id="s4">静かな設計というポリシー</h2>
     <p>通知や演出を控えめにしているのは、転職活動という疲れる時期の道具だからです。派手なリマインドや煽る表現ではなく、必要な情報を淡々と記録し、見返せる状態にしておくことを優先しました。広告表示や外部への行動データ送信もありません。静かな道具であることを、機能面でも徹底しています。</p>
 
-    <h2>記録は端末の中だけに</h2>
+    <h2 id="s5">記録は端末の中だけに</h2>
     <p>面接日程も選考の進捗も、記録は端末の中だけに保存されます。転職活動でやり取りする情報には、応募企業名や選考状況など、他人に知られたくない内容が多く含まれます。だからこそ、クラウド同期や外部サーバーへの送信を前提にせず、データを外部に集めない設計を基本方針としました。将来のアップデートでも、この方針を変えるつもりはありません。</p>
+<p>面接日程と選考の進捗をひとつの場所にまとめておきたい方に、Glidwell 転職管理をご案内します。</p>
 
-    <div class="app-block">
-      <div class="app-head">Glidwell</div>
-      <p class="app-sub">複数社の面接日程と選考の進捗を、ひとつのアプリで管理する設計について。Glidwell 転職管理の記録方法を紹介します。</p>
-      <a class="btn btn-primary" href="/glidwell.html">Glidwell を詳しく見る</a>
-      <a class="btn btn-ghost" href="/glidwell.html#screens-detail">画面で知る →</a>
-    </div>
+<aside class="jr-appcard" aria-label="Glidwellの紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/glidwell-icon.png" alt="Glidwell のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Glidwell</p><p class="jr-appcard-kind">転職活動の選考・面接日程を管理する iOS アプリ</p></div></div>
+    <p class="jr-appcard-benefit">面接日程が近い順に並び、どの企業がどの段階かを、ステータスでひと目で確認できます。</p>
+    <ul><li>選考フェーズごとの社数をダッシュボードで一覧</li><li>「次の一手」と、いま誰の番か（自分・エージェント・企業）が常に見える</li><li>期日が近い対応や動きのない案件を、通知でお知らせ。選考状況も書類も原則、端末の中に保存</li></ul>
+    <p class="jr-appcard-price">選考管理・通知・書類・バックアップは無料。AI アシスタントはスタンダード（月 ¥980）／プロ（月 ¥2,980）の月間クレジット内で使えます。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/glidwell/id6785211683" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/glidwell.html">製品ページを見る</a></div>
+  </div>
+  <div class="jr-appcard-shots"><span><img src="/assets/screens/glidwell-v2-home.jpg" alt="Glidwell のホーム画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/glidwell-v2-detail.jpg" alt="Glidwell の案件詳細" width="880" height="1912" loading="lazy"></span></div>
+</aside>
 
-    <p>面接日程と選考の進捗をひとつの場所にまとめておきたい方に、Glidwell 転職管理をご案内します。</p>
-
-    <p style="font-size:14px;">関連する読みもの：<a href="/journal/ai-mensetsu-renshu-yarikata.html">一人でできる面接練習のやり方</a> ／ <a href="/journal/ai-mogi-mensetsu-chatgpt.html">AIで模擬面接をする方法</a></p>
-
-    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
-  </article>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>複数社の面接日程は、どう管理するのがいいですか？</summary><p>応募企業ごとに面接日程を登録し、次の面接が近い順に並べて見ます。メモや手帳、メールが分散すると、次の面接がいつかを都度確認し直す手間が生まれるので、一箇所に集約するのがおすすめです。</p></details><details><summary>選考の進捗管理では、何を記録しますか？</summary><p>書類選考・一次面接・最終面接といった選考フェーズを、企業ごとに記録します。エージェント経由の応募が複数社にまたがっても、どの企業がどの段階にあるかをステータスで確認できます。Glidwell では手作業での更新のみで、自動追跡は行いません。</p></details><details><summary>面接日程や選考状況のデータは、外部に送られますか？</summary><p>記録は端末の中だけに保存されます。クラウド同期や外部サーバーへの送信を前提にせず、広告表示や外部への行動データ送信もありません。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/about.html" lang="en">About Pohoda（English）</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/job-change-agent-management.html"><small>Glidwell</small><b>複数の転職エージェントの選考管理に、私はこうして詰んだ</b><span>フェーズ・ボールの所在・次の一手を一画面で見渡す。</span></a><a href="/journal/tenshoku-mensetsu-taisaku-yuryo.html"><small>AI面接練習 Pre Interview</small><b>転職の面接対策、有料サービスはどう選ぶ？</b><span>模擬面接・コーチング・AIの違いと、費用の目安。</span></a><a href="/journal/ai-mensetsu-renshu-yarikata.html"><small>AI面接練習 Pre Interview</small><b>一人でできる面接練習のやり方</b><span>1週間前から前日までの練習プランと、録音・AIの使い方。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
 </main>
 
 <footer class="site-footer">

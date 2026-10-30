@@ -3,32 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>連絡リマインダーアプリで、そろそろの連絡を思い出す｜疎遠になる前に</title>
-<meta name="description" content="大切な人ほど連絡が後回しになり、気づけば疎遠に。ふつうのリマインダーアプリだと連絡が義務のタスクになりがち。人ごとの頻度と「頃合い」でそっと知らせる連絡リマインダーアプリ Keep In Touch の設計を紹介します。">
+<title>連絡リマインダーアプリは、頻度と頃合いで選ぶ｜疎遠になる前に</title>
+<meta name="description" content="連絡リマインダーアプリを使うと、連絡が義務のタスクになりがち。人ごとに頻度を決め、最後に連絡した日から「頃合い」を割り出してそっと知らせる設計を、iOS アプリ Keep In Touch を例に紹介します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/renraku-reminder-app.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="連絡リマインダーアプリで、そろそろの連絡を思い出す">
-<meta property="og:description" content="連絡をタスクにせず、人ごとの頻度と頃合いでそっと知らせる。疎遠になる前に思い出す連絡リマインダーの設計。">
+<meta property="og:title" content="連絡リマインダーアプリは、頻度と頃合いで選ぶ｜疎遠になる前に">
+<meta property="og:description" content="連絡リマインダーアプリを使うと、連絡が義務のタスクになりがち。人ごとに頻度を決め、最後に連絡した日から「頃合い」を割り出してそっと知らせる設計を、iOS アプリ Keep In Touch を例に紹介します。">
 <meta property="og:url" content="https://pohoda.jp/journal/renraku-reminder-app.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-07-22">
+<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:author" content="https://pohoda.jp/about.html">
+<meta property="article:section" content="つながり・連絡">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="連絡リマインダーアプリで、そろそろの連絡を思い出す">
-<meta name="twitter:description" content="連絡をタスクにせず、頃合いでそっと知らせる連絡リマインダーの設計。Keep In Touch の話。">
+<meta name="twitter:title" content="連絡リマインダーアプリは、頻度と頃合いで選ぶ｜疎遠になる前に">
+<meta name="twitter:description" content="連絡リマインダーアプリを使うと、連絡が義務のタスクになりがち。人ごとに頻度を決め、最後に連絡した日から「頃合い」を割り出してそっと知らせる設計を、iOS アプリ Keep In Touch を例に紹介します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"連絡リマインダーアプリで、そろそろの連絡を思い出す","description":"連絡をタスクにせず、人ごとの頻度と頃合いでそっと知らせる連絡リマインダーアプリ Keep In Touch の設計を紹介。疎遠になる前に思い出すために。","image":"https://pohoda.jp/assets/og/og-keep-in-touch.png","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"ja","about":"Keep In Touch","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/renraku-reminder-app.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"連絡リマインダーアプリで、そろそろの連絡を思い出す","description":"連絡リマインダーアプリを使うと、連絡が義務のタスクになりがち。人ごとに頻度を決め、最後に連絡した日から「頃合い」を割り出してそっと知らせる設計を、iOS アプリ Keep In Touch を例に紹介します。","image":["https://pohoda.jp/assets/og/og-keep-in-touch.png"],"datePublished":"2026-07-22","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"つながり・連絡","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/about.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/renraku-reminder-app.html"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"連絡リマインダーアプリで、そろそろの連絡を思い出す","item":"https://pohoda.jp/journal/renraku-reminder-app.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"つながり・連絡","item":"https://pohoda.jp/journal/#tsunagari"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"連絡リマインダーアプリは、普通のリマインダーアプリと何が違いますか？","acceptedAnswer":{"@type":"Answer","text":"カレンダーや汎用のリマインダーで連絡を管理すると、連絡が「タスク」になって義務になります。連絡リマインダーに求められるのは、追い立てる通知ではなく、責めない「気づき」です。Keep In Touch は、人ごとに連絡の頻度を決め、最後に連絡した日からその頻度をもとに「そろそろ連絡したい人」を割り出して、ホームに浮かべます。"}},{"@type":"Question","name":"大切な人への連絡が後回しになるのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"たいてい緊急ではないからです。締め切りも催促もなく、今日やらなくても困らないので「また今度」を繰り返し、ある日「最後に連絡したのっていつだっけ」と気づきます。後回しにできてしまうこと自体が問題で、意志の強さでは解けません。"}},{"@type":"Question","name":"久しぶりの相手に、最初の一言が出てこないときはどうしますか？","acceptedAnswer":{"@type":"Answer","text":"人ごとに顔写真や最後に話した日、ちょっとしたメモを残しておきます。「そういえば、あのとき言っていた件どうなった？」と切り出せる小さな記録が、次に話すきっかけになります。"}},{"@type":"Question","name":"連絡先やメモは、どこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"Keep In Touch では、大切な人の連絡先やメモは原則あなたの端末の中だけに保存されます。行動を追跡する仕組みも、広告もありません。"}}]}
 </script>
 </head>
 <body>
@@ -46,22 +55,29 @@
   </div>
 </header>
 
-<main class="marketing">
-  <article class="wrap narrow prose">
-    <a class="back" href="/journal/">← 読みもの一覧へ</a>
-    <div class="app-tag">Keep In Touch ・ つながり</div>
-    <h1>連絡リマインダーアプリで、<wbr>そろそろの連絡を思い出す</h1>
-    <div class="updated">2026年7月22日</div>
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#tsunagari">つながり・連絡</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/keep-in-touch.html"><img src="/assets/keep-in-touch-icon.png" alt="" width="22" height="22">Keep In Touch</a><span class="jr-theme">つながり・連絡</span></div>
+      <h1>連絡リマインダーアプリで、<wbr>そろそろの連絡を思い出す</h1>
+      <p class="jr-lead">連絡リマインダーアプリを探す人の多くは、忘れっぽさに困っているのではありません。嫌いになったわけでもないのに疎遠になる、その静かな仕組みをどうにかしたいだけです。連絡を義務のタスクにせず、頃合いでそっと思い出す考え方を紹介します。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-07-22">2026年7月22日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約3分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
 
-    <p class="lede">連絡リマインダーアプリを探す人の多くは、忘れっぽさに困っているわけではありません。「嫌いになったわけでもないのに、気づけば疎遠になっている」——大切な人ほど連絡が後回しになる、その静かな仕組みをどうにかしたいだけです。この記事では、連絡を義務のタスクにせず、頃合いでそっと思い出すために作った Keep In Touch の考え方を紹介します。</p>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>大切な人への連絡には締め切りも催促もない。後回しにできること自体が問題で、意志の強さでは解けない。</li><li>汎用のリマインダーでは、連絡が「タスク」になって義務になる。求めるのは、追い立てる通知ではなく、責めない「気づき」。</li><li>人ごとに連絡の頻度を決め、頃合いが来た人をホームに浮かべる。写真やメモが、最初の一言のきっかけになる。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">なぜ「連絡リマインダー」が必要になるのか</a></li><li><a href="#s2">ふつうのリマインダーアプリだと、連絡が「義務」になる</a></li><li><a href="#s3">連絡リマインダーに欲しいのは、頻度と「頃合い」</a></li><li><a href="#s4">「連絡のきっかけ」を一緒にためておく</a></li><li><a href="#s5">連絡先は、あなたの端末の中に</a></li></ol></nav>
 
-    <h2>なぜ「連絡リマインダー」が必要になるのか</h2>
+<h2 id="s1">なぜ「連絡リマインダー」が必要になるのか</h2>
     <p>大切な人への連絡には、たいてい締め切りも催促もありません。緊急ではないから、今日やらなくても困らない。だから「また今度」を静かに繰り返し、ある日ふと「最後に連絡したのっていつだっけ」と気づく。後回しにできてしまうこと自体が問題で、意志の強さでは解けません。だからこそ、思い出させてくれる<strong>連絡リマインダー</strong>という道具が要る、という発想が出発点でした。</p>
 
-    <h2>ふつうのリマインダーアプリだと、連絡が「義務」になる</h2>
+    <h2 id="s2">ふつうのリマインダーアプリだと、連絡が「義務」になる</h2>
     <p>カレンダーや汎用のリマインダーアプリで管理しようとすると、別の壁にぶつかります。連絡を「タスク」にした瞬間、それは義務になる。ToDo リストに「○○さんに連絡する」が並ぶと、気持ちより先に「こなすもの」になってしまう。人とのつながりは、締め切りで動かすものではありません。連絡リマインダーに求められるのは、追い立てる通知ではなく、責めない「気づき」のほうです。</p>
 
-    <h2>連絡リマインダーに欲しいのは、頻度と「頃合い」</h2>
+    <h2 id="s3">連絡リマインダーに欲しいのは、頻度と「頃合い」</h2>
     <p>そこで Keep In Touch は、人ごとに連絡の頻度を決めておける設計にしました。よく話したい人は短い間隔で、年に一度でいい人はゆるやかに。最後に連絡した日と、その頻度から「そろそろ連絡したい人」を割り出し、頃合いが来た人をホームにそっと浮かべます。上から消化するタスクの列ではなく、<strong>いま気にかけたい顔ぶれ</strong>が見える形です。急かさず、でも見落とさない。連絡リマインダーに本当に欲しかったのは、この距離感でした。</p>
 
     <figure class="article-fig">
@@ -69,23 +85,36 @@
       <figcaption>開くと「そろそろ連絡したい人」が並ぶ。頃合いで思い出せるように。</figcaption>
     </figure>
 
-    <h2>「連絡のきっかけ」を一緒にためておく</h2>
+<aside class="jr-tip"><img src="/assets/keep-in-touch-icon.png" alt="" width="36" height="36" loading="lazy"><p><b>アプリでやるなら</b>Keep In Touch では、人ごとに連絡の頻度を決めておけます。最後に連絡した日から頃合いが来た人が、ホームにそっと浮かびます。</p></aside>
+
+<h2 id="s4">「連絡のきっかけ」を一緒にためておく</h2>
     <p>思い出せても、久しぶりだと最初の一言に迷うことがあります。そこで、人ごとに顔写真や、最後に話した日、ちょっとしたメモを残せるようにしました。「そういえば、あのとき言っていた件どうなった？」と切り出せる小さな記録が、次に話す<strong>きっかけ</strong>になる。連絡リマインダーが教えてくれるのは頃合いだけですが、その先で気持ちよく話し始められるところまでを一つの道具にしています。</p>
 
-    <h2>連絡先は、あなたの端末の中に</h2>
+    <h2 id="s5">連絡先は、あなたの端末の中に</h2>
     <p>大切な人の連絡先やメモは、原則あなたの端末の中だけに保存されます。行動を追跡する仕組みも、広告もありません。つながりは誰かに集められるものではなく、あなたのものだからです。連絡が後回しになる仕組みについては、<a href="/journal/stay-in-touch.html">大切な人ほど、連絡が後回しになる</a>にも書きました。</p>
+<p>連絡しなきゃ、ではなく、連絡したくなったときにそっと背中を押す。連絡リマインダーは、そのくらい静かでいい。そう思って作った道具です。</p>
 
-    <div class="app-block">
-      <div class="app-head">Keep In Touch</div>
-      <p class="app-sub">連絡を義務にせず、頃合いでそっと思い出す連絡リマインダーアプリ（iOS）。App Store で配信中。</p>
-      <a class="btn btn-primary" href="https://apps.apple.com/jp/app/keep-in-touch-pohoda/id6776073636">App Store で入手</a>
-      <a class="btn btn-ghost" href="/keep-in-touch.html#screens-detail">画面で知る →</a>
-    </div>
+<aside class="jr-appcard" aria-label="Keep In Touchの紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/keep-in-touch-icon.png" alt="Keep In Touch のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Keep In Touch</p><p class="jr-appcard-kind">大切な人との連絡を、忘れないうちに思い出す iOS アプリ</p></div></div>
+    <p class="jr-appcard-benefit">連絡を義務のタスクにせず、人ごとの頻度と頃合いで、そっと思い出せます。</p>
+    <ul><li>そろそろ連絡したい人が、ホームに並ぶ</li><li>誕生日や記念日を前もってお知らせ。ホーム画面のウィジェットでも確認できる</li><li>関わりの深さを「距離」で見せる関係マップ。連絡先は原則、端末の中だけに保存</li></ul>
+    <p class="jr-appcard-price">基本の機能は無料（5人まで登録）。ベーシックプランは月額 ¥270／年額 ¥2,400／買い切り ¥4,200（税込）で、人数の上限がなくなります。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/keep-in-touch-pohoda/id6776073636" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/keep-in-touch.html">製品ページを見る</a></div>
+  </div>
+  <div class="jr-appcard-shots"><span><img src="/assets/screens/kit-v2-home.jpg" alt="Keep In Touch のホーム画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/kit-v2-map.jpg" alt="Keep In Touch の関係マップ" width="880" height="1912" loading="lazy"></span></div>
+</aside>
 
-    <p>連絡しなきゃ、ではなく、連絡したくなったときにそっと背中を押す。連絡リマインダーは、そのくらい静かでいい。そう思って作った道具です。</p>
-
-    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
-  </article>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>連絡リマインダーアプリは、普通のリマインダーアプリと何が違いますか？</summary><p>カレンダーや汎用のリマインダーで連絡を管理すると、連絡が「タスク」になって義務になります。連絡リマインダーに求められるのは、追い立てる通知ではなく、責めない「気づき」です。Keep In Touch は、人ごとに連絡の頻度を決め、最後に連絡した日からその頻度をもとに「そろそろ連絡したい人」を割り出して、ホームに浮かべます。</p></details><details><summary>大切な人への連絡が後回しになるのはなぜですか？</summary><p>たいてい緊急ではないからです。締め切りも催促もなく、今日やらなくても困らないので「また今度」を繰り返し、ある日「最後に連絡したのっていつだっけ」と気づきます。後回しにできてしまうこと自体が問題で、意志の強さでは解けません。</p></details><details><summary>久しぶりの相手に、最初の一言が出てこないときはどうしますか？</summary><p>人ごとに顔写真や最後に話した日、ちょっとしたメモを残しておきます。「そういえば、あのとき言っていた件どうなった？」と切り出せる小さな記録が、次に話すきっかけになります。</p></details><details><summary>連絡先やメモは、どこに保存されますか？</summary><p>Keep In Touch では、大切な人の連絡先やメモは原則あなたの端末の中だけに保存されます。行動を追跡する仕組みも、広告もありません。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/about.html" lang="en">About Pohoda（English）</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/stay-in-touch.html"><small>Keep In Touch</small><b>大切な人ほど、連絡が後回しになる</b><span>連絡をタスクにせず、頃合いでそっと思い出す仕組みの話。</span></a><a href="/journal/taisetsu-na-hi-wasurenai.html"><small>Keep In Touch</small><b>誕生日や記念日を、忘れないために</b><span>前もってそっと知らせる、誕生日・記念日リマインドの作り方。</span></a><a href="/journal/tomodachi-renraku-wasureru.html"><small>Keep In Touch</small><b>友達への連絡を忘れる瞬間を、記録で減らす</b><span>経過日数という事実だけを、そっと伝える設計。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
 </main>
 
 <footer class="site-footer">

@@ -3,32 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>友達への連絡を忘れる瞬間を、記録で減らす</title>
-<meta name="description" content="友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。">
+<title>友達への連絡を忘れる理由｜薄情ではなく、思い出す仕組みがないだけ</title>
+<meta name="description" content="友達に連絡しなきゃと思いながら忘れてしまうのは、薄情だからではありません。最後の記録からの経過日数だけを知らせ、人ごとに写真とメモを残す。Keep In Touch の設計判断を、実装の事実で説明します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/tomodachi-renraku-wasureru.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="友達への連絡を忘れる瞬間を、記録で減らす">
-<meta property="og:description" content="友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。">
+<meta property="og:title" content="友達への連絡を忘れる理由｜薄情ではなく、思い出す仕組みがないだけ">
+<meta property="og:description" content="友達に連絡しなきゃと思いながら忘れてしまうのは、薄情だからではありません。最後の記録からの経過日数だけを知らせ、人ごとに写真とメモを残す。Keep In Touch の設計判断を、実装の事実で説明します。">
 <meta property="og:url" content="https://pohoda.jp/journal/tomodachi-renraku-wasureru.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-07-29">
+<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:author" content="https://pohoda.jp/about.html">
+<meta property="article:section" content="つながり・連絡">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="友達への連絡を忘れる瞬間を、記録で減らす">
-<meta name="twitter:description" content="友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。">
+<meta name="twitter:title" content="友達への連絡を忘れる理由｜薄情ではなく、思い出す仕組みがないだけ">
+<meta name="twitter:description" content="友達に連絡しなきゃと思いながら忘れてしまうのは、薄情だからではありません。最後の記録からの経過日数だけを知らせ、人ごとに写真とメモを残す。Keep In Touch の設計判断を、実装の事実で説明します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=20">
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"友達への連絡を忘れる瞬間を、記録で減らす","description":"友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。","image":"https://pohoda.jp/assets/og/og-keep-in-touch.png","datePublished":"2026-07-29","dateModified":"2026-07-29","inLanguage":"ja","about":"Keep In Touch","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/tomodachi-renraku-wasureru.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"友達への連絡を忘れる瞬間を、記録で減らす","description":"友達に連絡しなきゃと思いながら忘れてしまうのは、薄情だからではありません。最後の記録からの経過日数だけを知らせ、人ごとに写真とメモを残す。Keep In Touch の設計判断を、実装の事実で説明します。","image":["https://pohoda.jp/assets/og/og-keep-in-touch.png"],"datePublished":"2026-07-29","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"つながり・連絡","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/about.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/tomodachi-renraku-wasureru.html"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"友達への連絡を忘れる瞬間を、記録で減らす","item":"https://pohoda.jp/journal/tomodachi-renraku-wasureru.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"つながり・連絡","item":"https://pohoda.jp/journal/#tsunagari"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"友達への連絡を忘れてしまうのは、薄情だからですか？","acceptedAnswer":{"@type":"Answer","text":"そうとは限りません。連絡が途切れる理由の多くは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないからです。連絡を忘れてしまうのは、意志の弱さの問題ではなく、思い出す仕組みが無いだけだと考えています。"}},{"@type":"Question","name":"カレンダーに「友達に連絡する」と書くだけでは足りませんか？","acceptedAnswer":{"@type":"Answer","text":"いつ・誰に・何のために連絡するかが曖昧なままだと、結局は後回しにされます。Keep In Touch は、人ごとに最後に会った日・連絡した日を記録し、そこからの経過日数を基準に「そろそろ」を知らせます。"}},{"@type":"Question","name":"Keep In Touch は、どうやって「そろそろ」を決めますか？","acceptedAnswer":{"@type":"Answer","text":"「最後の記録からの経過日数」という一つの軸だけです。特別な人か久しぶりの相手かを判定させず、時間の経過という誰にでも同じ意味を持つ数字だけを見せます。通知は「前回の記録から日にちが経っている」という事実をそっと知らせるだけです。"}},{"@type":"Question","name":"写真やメモは、外部に送られますか？","acceptedAnswer":{"@type":"Answer","text":"記録と写真は端末の中だけに保存され、外部のサーバーには送られません。広告表示のための情報収集も行っていません。"}}]}
 </script>
 </head>
 <body>
@@ -46,36 +55,54 @@
   </div>
 </header>
 
-<main class="marketing">
-  <article class="wrap narrow prose">
-    <a class="back" href="/journal/">← 読みもの一覧へ</a>
-    <div class="app-tag">Keep In Touch ・ 人間関係</div>
-    <h1>友達への<wbr>連絡を<wbr>忘れる瞬間を<wbr>、<wbr>記録で減らす</h1>
-    <div class="updated">2026年7月29日</div>
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#tsunagari">つながり・連絡</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/keep-in-touch.html"><img src="/assets/keep-in-touch-icon.png" alt="" width="22" height="22">Keep In Touch</a><span class="jr-theme">つながり・連絡</span></div>
+      <h1>友達への<wbr>連絡を<wbr>忘れる瞬間を<wbr>、<wbr>記録で減らす</h1>
+      <p class="jr-lead">「そろそろ連絡しなきゃ」と思いながら、日々の予定に押し流されて時間だけが過ぎていく。多くの場合それは関心が薄れたからではなく、連絡のきっかけを忘れてしまうだけです。この「忘れる」という一点にしぼった設計を説明します。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-07-29">2026年7月29日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約2分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
 
-    <p class="lede">「そろそろ連絡しなきゃ」と思いながら、日々の予定に押し流されて時間だけが過ぎていく。多くの場合、それは相手への関心が薄れたからではなく、連絡のきっかけを忘れてしまうだけだ。Keep In Touchは、この「忘れる」という一点だけを設計の対象にしている。</p>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>友達への連絡が途切れるのは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないから。</li><li>Keep In Touch は「最後の記録からの経過日数」という1つの軸だけで、「そろそろ」を知らせる。重要度や親密さは数値化しない。</li><li>通知は事実を知らせるだけ。連絡するかどうかは、いつも受け取った側が決める。写真とメモは人ごとに残せる。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">友達との連絡を忘れるのは、薄情だからではない</a></li><li><a href="#s2">経過日数を数える設計にした理由</a></li><li><a href="#s3">写真とメモを人ごとに残す、という選択</a></li></ol></nav>
 
-    <h2>友達との連絡を忘れるのは、薄情だからではない</h2>
+<h2 id="s1">友達との連絡を忘れるのは、薄情だからではない</h2>
     <p>連絡が途切れる理由の多くは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないからだ。カレンダーやメモアプリに『友達に連絡する』とだけ書いても、いつ・誰に・何のために連絡するかが曖昧なままでは、結局は後回しにされる。Keep In Touchは、人ごとに最後に会った日・連絡した日を記録し、そこからの経過日数だけを基準にして『そろそろ』のタイミングを知らせる。</p>
 
-    <h2>経過日数を数える設計にした理由</h2>
+    <h2 id="s2">経過日数を数える設計にした理由</h2>
     <p>重要度や親密さを数値化しようとすると、判断が主観的になり、結局続かない。Keep In Touchが採用したのは、もっと単純な『最後の記録からの経過日数』という一つの軸だけだ。特別な人か、久しぶりの相手かを判定させるのではなく、時間の経過という誰にでも同じ意味を持つ数字だけを見せる設計にした。</p>
     <p>通知は、無理に何かをさせるためのものではない。『前回の記録から日にちが経っている』という事実を、そっと知らせるだけに留めている。行動を強制する演出や煽る文言を避けたのは、連絡を義務にしたくないからだ。連絡するかどうかは、常に受け取った側の判断に委ねている。</p>
 
-    <h2>写真とメモを人ごとに残す、という選択</h2>
+    <h2 id="s3">写真とメモを人ごとに残す、という選択</h2>
     <p>会った日の写真や会話の内容を、人ごとのページに残せるようにしている。次に連絡する時、前回の話題を思い出せれば、連絡そのものへの心理的なハードルが下がる。この記録と写真は端末の中だけに保存され、外部のサーバーには送られない。広告表示のための情報収集も行っていない。</p>
+<p>連絡を忘れてしまうことは、意志の弱さの問題ではなく、思い出す仕組みが無いだけだと考えている。Keep In Touchは、その仕組みを一つだけ、静かに用意した道具だ。派手な通知や煽る文言で連絡を急かすのではなく、経過日数という事実を淡々と伝えることに留めている。連絡するかどうかは、いつでも受け取った側が決めればいい。</p>
 
-    <div class="app-block">
-      <div class="app-head">Keep In Touch</div>
-      <p class="app-sub">友達への連絡を忘れてしまう瞬間と、Keep In Touchが経過日数の記録・人ごとの写真とメモで応える設計判断を実装事実で説明します。広告なし、データは端末内だけ。</p>
-      <a class="btn btn-primary" href="/keep-in-touch.html">Keep In Touch を詳しく見る</a>
-      <a class="btn btn-ghost" href="/keep-in-touch.html#screens-detail">画面で知る →</a>
-    </div>
+<aside class="jr-appcard" aria-label="Keep In Touchの紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/keep-in-touch-icon.png" alt="Keep In Touch のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Keep In Touch</p><p class="jr-appcard-kind">大切な人との連絡を、忘れないうちに思い出す iOS アプリ</p></div></div>
+    <p class="jr-appcard-benefit">人ごとの経過日数だけを見て、「そろそろ」の人に気づけます。連絡するかどうかは、いつでも自分で決められます。</p>
+    <ul><li>そろそろ連絡したい人が、ホームに並ぶ</li><li>誕生日や記念日を前もってお知らせ。ホーム画面のウィジェットでも確認できる</li><li>関わりの深さを「距離」で見せる関係マップ。連絡先は原則、端末の中だけに保存</li></ul>
+    <p class="jr-appcard-price">基本の機能は無料（5人まで登録）。ベーシックプランは月額 ¥270／年額 ¥2,400／買い切り ¥4,200（税込）で、人数の上限がなくなります。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/keep-in-touch-pohoda/id6776073636" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/keep-in-touch.html">製品ページを見る</a></div>
+  </div>
+  <div class="jr-appcard-shots"><span><img src="/assets/screens/kit-v2-home.jpg" alt="Keep In Touch のホーム画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/kit-v2-map.jpg" alt="Keep In Touch の関係マップ" width="880" height="1912" loading="lazy"></span></div>
+</aside>
 
-    <p>連絡を忘れてしまうことは、意志の弱さの問題ではなく、思い出す仕組みが無いだけだと考えている。Keep In Touchは、その仕組みを一つだけ、静かに用意した道具だ。派手な通知や煽る文言で連絡を急かすのではなく、経過日数という事実を淡々と伝えることに留めている。連絡するかどうかは、いつでも受け取った側が決めればいい。</p>
-
-    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
-  </article>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>友達への連絡を忘れてしまうのは、薄情だからですか？</summary><p>そうとは限りません。連絡が途切れる理由の多くは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないからです。連絡を忘れてしまうのは、意志の弱さの問題ではなく、思い出す仕組みが無いだけだと考えています。</p></details><details><summary>カレンダーに「友達に連絡する」と書くだけでは足りませんか？</summary><p>いつ・誰に・何のために連絡するかが曖昧なままだと、結局は後回しにされます。Keep In Touch は、人ごとに最後に会った日・連絡した日を記録し、そこからの経過日数を基準に「そろそろ」を知らせます。</p></details><details><summary>Keep In Touch は、どうやって「そろそろ」を決めますか？</summary><p>「最後の記録からの経過日数」という一つの軸だけです。特別な人か久しぶりの相手かを判定させず、時間の経過という誰にでも同じ意味を持つ数字だけを見せます。通知は「前回の記録から日にちが経っている」という事実をそっと知らせるだけです。</p></details><details><summary>写真やメモは、外部に送られますか？</summary><p>記録と写真は端末の中だけに保存され、外部のサーバーには送られません。広告表示のための情報収集も行っていません。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/about.html" lang="en">About Pohoda（English）</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/stay-in-touch.html"><small>Keep In Touch</small><b>大切な人ほど、連絡が後回しになる</b><span>連絡をタスクにせず、頃合いでそっと思い出す仕組みの話。</span></a><a href="/journal/renraku-reminder-app.html"><small>Keep In Touch</small><b>連絡リマインダーアプリで、そろそろの連絡を思い出す</b><span>頻度と頃合いでそっと知らせる、連絡リマインダーの考え方。</span></a><a href="/journal/taisetsu-na-hi-wasurenai.html"><small>Keep In Touch</small><b>誕生日や記念日を、忘れないために</b><span>前もってそっと知らせる、誕生日・記念日リマインドの作り方。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
 </main>
 
 <footer class="site-footer">

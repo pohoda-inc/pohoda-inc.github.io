@@ -4,91 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート</title>
-<meta name="description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。">
+<meta name="description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきでPDFもあります。測り方のそろえ方とグラフの見方も整理しました。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート">
-<meta property="og:description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。">
+<meta property="og:description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきでPDFもあります。測り方のそろえ方とグラフの見方も整理しました。">
 <meta property="og:url" content="https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-utility.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-10-29">
+<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:author" content="https://pohoda.jp/about.html">
+<meta property="article:section" content="数字の記録">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート">
-<meta name="twitter:description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。">
+<meta name="twitter:description" content="体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきでPDFもあります。測り方のそろえ方とグラフの見方も整理しました。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-utility.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=20">
-<style>
-.prose .toc { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 18px 0 8px; }
-.prose .toc ol { margin: 6px 0 0 20px; }
-.prose .toc li { margin-bottom: 3px; font-size: 14px; }
-.sheet-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 18px; }
-.sheet-wrap + .sheet-wrap { margin-top: 30px; padding-top: 22px; border-top: 1px dashed var(--line-2); }
-.sheet-title { font-size: 16px; font-weight: 700; color: var(--ink); margin: 18px 0 6px; }
-.sheet-wrap + .sheet-wrap .sheet-title { margin-top: 0; }
-.sheet-fields { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 18px; margin: 0 0 10px; font-size: 13.5px; color: var(--ink-2); }
-.sheet-fields.c3 { grid-template-columns: repeat(3, 1fr); }
-.sheet-fields span { border-bottom: 1px solid var(--ink-2); padding-bottom: 2px; }
-.sheet-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 6px 0 12px; }
-.prose table.sheet { display: table; width: 100%; min-width: 560px; font-size: 13px; margin: 0; }
-.prose table.sheet th, .prose table.sheet td { width: auto; padding: 6px 8px; vertical-align: middle; }
-.prose table.sheet thead th { background: var(--card); font-size: 12px; text-align: center; white-space: nowrap; padding-left: 4px; padding-right: 4px; }
-.prose table.sheet th.cat { background: var(--card); color: var(--ink); font-size: 13px; }
-.prose table.sheet td { color: var(--ink); height: 30px; }
-.prose table.sheet td.mk { width: 58px; text-align: center; font-size: 16px; line-height: 1; color: var(--ink-2); }
-.prose table.sheet td.ctr { text-align: center; color: var(--ink-2); }
-.prose table.sheet td.hint { font-size: 12.5px; color: var(--ink-2); }
-.prose table.sheet tr.sum td { background: var(--card); font-weight: 600; }
-.prose table.sheet td.off { background: var(--card); }
-.sheet-notes { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 13px; color: var(--ink-2); min-height: 4.2em; margin-bottom: 8px; }
-.sheet-foot { font-size: 11.5px; color: var(--muted); }
-.print-only { display: none; }
-.sheet-graph { display: block; width: 100%; height: auto; margin: 4px 0 8px; }
-.sheet-graph .gl { stroke: var(--line-2); stroke-width: .6; }
-.sheet-graph .gb { stroke: var(--ink-2); stroke-width: .8; }
-.sheet-graph text { font-size: 9px; fill: var(--ink-2); text-anchor: middle; }
-.pair td, .pair th { font-size: 14px; }
-.prose table.pair th { width: 18%; }
-@media (max-width: 600px) {
-  .sheet-fields, .sheet-fields.c3 { grid-template-columns: 1fr; }
-  .prose table.sheet th, .prose table.sheet td { padding-left: 5px; padding-right: 5px; }
-}
-@page { size: A4; margin: 10mm; }
-@media print {
-  body { background: #fff; }
-  .site-header, .site-footer, .prose .back, .prose .app-tag, .prose h1, .prose .updated,
-  .prose > *:not(.sheet-wrap), .sheet-actions { display: none !important; }
-  .prose { padding: 0; }
-  .wrap.narrow { max-width: none; padding: 0; }
-  .sheet-wrap { display: block !important; }
-  .sheet-wrap + .sheet-wrap { break-before: page; margin: 0; padding: 0; border: 0; }
-  .print-only { display: block; }
-  .sheet-title { font-size: 17px; margin: 0 0 8px; }
-  .sheet-fields { font-size: 11.5px; gap: 8px 16px; margin-bottom: 8px; }
-  .sheet-scroll { overflow: visible; margin: 4px 0 8px; }
-  .prose table.sheet { min-width: 0; font-size: 11.5px; }
-  .prose table.sheet th, .prose table.sheet td { padding: 3px 5px; border-color: #666; }
-  .prose table.sheet td { height: var(--rowh, 9mm); }
-  .prose table.sheet td.mk { font-size: 15px; }
-  .prose table.sheet thead th { font-size: 10.5px; padding-left: 2px; padding-right: 2px; }
-  .sheet-notes { min-height: 15mm; font-size: 11px; margin-bottom: 5px; border-color: #666; }
-  .sheet-graph .gl { stroke: #aaa; }
-  .sheet-graph .gb { stroke: #555; }
-  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-}
-
-</style>
+<link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート","description":"体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきで、PDFもあります。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理しました。","image":"https://pohoda.jp/assets/og/og-utility.png","datePublished":"2026-10-29","dateModified":"2026-10-29","inLanguage":"ja","about":"Utility","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/","sameAs":["https://x.com/kei_pohoda"]},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":"https://pohoda.jp/apple-touch-icon.png"},"mainEntityOfPage":"https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート","description":"体重の記録表（A4・1枚・印刷用）を無料で配布。1か月分の体重と体脂肪率を書き込める表と、点を打つだけで折れ線になるグラフ用紙つきでPDFもあります。測り方のそろえ方とグラフの見方も整理しました。","image":["https://pohoda.jp/assets/og/og-utility.png"],"datePublished":"2026-10-29","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"数字の記録","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/about.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html"}}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"体重の記録表（印刷用・無料）｜1か月分を書き込めるグラフ付きシート","item":"https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"数字の記録","item":"https://pohoda.jp/journal/#kazu"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"体重の記録表は、どこで手に入りますか？","acceptedAnswer":{"@type":"Answer","text":"このページで無料で使えます。印刷ボタンでA4・1枚が印刷でき、PDFのダウンロードもできます。上がグラフ用紙、下が1か月分の記録表です。項目と文言は Pohoda が独自に作成したもので、印刷して自由に使えます。"}},{"@type":"Question","name":"体重は、いつ測るのがいいですか？","acceptedAnswer":{"@type":"Answer","text":"毎日同じ時間帯に測ります。朝、起きてトイレを済ませたあとなど、自分が続けやすい場面を1つ決めてください。体重は1日のうちでも、食事や水分、トイレの前後で変わります。"}},{"@type":"Question","name":"体重のグラフは、どう見ればいいですか？","acceptedAnswer":{"@type":"Answer","text":"1日ごとの上下は気にしすぎず、1〜2週間の線の向きを見ます。大きな変化は、メモ欄に書いた出来事（旅行、飲み会、体調不良、体重計の入れ替えなど）と見比べます。体重は体の状態の一部しか表さないので、急に大きく増減したときや体調に不安があるときは、医療機関に相談してください。"}},{"@type":"Question","name":"記録表の縦軸の目盛りは、どう決めますか？","acceptedAnswer":{"@type":"Answer","text":"1目盛りを0.2kgや0.5kgなど、自分で決めて左の余白に書き込みます。1か月の最小と最大がちょうど収まる幅にします。1目盛りが大きすぎると線が平らになり、小さすぎると小さな上下が目立ちすぎます。"}}]}
 </script>
 </head>
 <body>
@@ -106,35 +55,24 @@
   </div>
 </header>
 
-<main class="marketing">
-  <article class="wrap narrow prose">
-    <a class="back" href="/journal/">← 読みもの一覧へ</a>
-    <div class="app-tag">Utility ・ 印刷用シートつき</div>
-    <h1>体重の<wbr>記録表<wbr>（印刷用・無料）｜<wbr>1か月分を書き込める<wbr>グラフ付きシート</h1>
-    <div class="updated">2026年10月29日</div>
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#kazu">数字の記録</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/utility.html"><img src="/assets/utility-icon.png" alt="" width="22" height="22">Utility</a><span class="jr-theme">数字の記録</span><span class="jr-theme is-sheet">印刷用シートつき</span></div>
+      <h1>体重の<wbr>記録表<wbr>（印刷用・無料）｜<wbr>1か月分を書き込める<wbr>グラフ付きシート</h1>
+      <p class="jr-lead">体重は、1回の数字より、続けて並べたときの線の向きに意味があります。1か月分の体重と体脂肪率を書き込める記録表と、点を打つだけで折れ線になるグラフ用紙を、無料で配布します。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-10-29">2026年10月29日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約4分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
 
-    <p class="lede">体重は、1回の数字より、続けて並べたときの線の向きに意味があります。この記事では、1か月分の体重と体脂肪率を書き込める記録表と、点を打つだけで折れ線になるグラフ用紙を、A4・1枚の印刷用シートにしました。測る条件のそろえ方、グラフの見方、紙・表計算・アプリの使い分けも整理します。</p>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>毎日同じ時間帯・同じ体重計・同じ場所で測ると、数字がぶれにくい。体脂肪率は、同じ条件で測った数字どうしで比べる。</li><li>1日ごとの上下は気にしすぎず、1〜2週間の線の向きを見る。</li><li>紙・表計算・アプリのどれが正解ということはなく、続くものが正解。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#howto">使い方と、測り方のそろえ方</a></li><li><a href="#sheet">体重の記録表本体</a></li><li><a href="#read">グラフの見方</a></li><li><a href="#tools">紙・表計算・アプリの違い</a></li><li><a href="#app">アプリで続けたいとき</a></li></ol></nav>
 
-    <h2 style="border-top:0;padding-top:0;margin-top:22px">この記事で分かること</h2>
-    <ul>
-      <li>印刷用の記録表（1か月分・グラフ用紙つき、PDFあり）</li>
-      <li>数字がぶれにくい、測り方のそろえ方</li>
-      <li>グラフで見るときの、見方の目安</li>
-      <li>紙・表計算・アプリの違い</li>
-    </ul>
-    <nav class="toc" aria-label="目次">
-      <strong>目次</strong>
-      <ol>
-        <li><a href="#howto">使い方と、測り方のそろえ方</a></li>
-        <li><a href="#sheet">体重の記録表本体（印刷・PDF）</a></li>
-        <li><a href="#read">グラフの見方</a></li>
-        <li><a href="#tools">紙・表計算・アプリの違い</a></li>
-        <li><a href="#app">アプリで続けたいとき</a></li>
-      </ol>
-    </nav>
-
-    <h2 id="howto">使い方と、測り方のそろえ方</h2>
-    <table>
+<h2 id="howto">使い方と、測り方のそろえ方</h2>
+    <table class="stack">
       <tr><th>測る時間</th><td>毎日同じ時間帯に。朝、起きてトイレを済ませたあとなど、自分が続けやすい場面を1つ決めます。体重は1日のうちでも、食事や水分、トイレの前後で変わります。</td></tr>
       <tr><th>測る場所</th><td>同じ体重計を、同じ場所に置いて使います。体重計を変えたら、変えた日をメモ欄に書いておきます。</td></tr>
       <tr><th>体脂肪率</th><td>体脂肪計の数字は、機種や測るタイミングで変わります。比べるのは、同じ体重計で、同じ条件で測った数字どうしにします。測らない人は、空欄で構いません。</td></tr>
@@ -194,7 +132,7 @@
     <p>体重が変わらない時期の考え方は、<a href="/journal/taiju-kiroku-teitaiki.html">体重の記録が続かない・体重が変わらない停滞期に</a>でも書いています。</p>
 
     <h2 id="tools">紙・表計算・アプリの違い</h2>
-    <table>
+    <table class="stack">
       <tr><th>紙</th><td>洗面所に貼っておけて、書くまでが早い方法です。グラフは手で打つ必要があり、期間をまたいで比べるには、用紙を並べて見ることになります。</td></tr>
       <tr><th>表計算</th><td>数字を入れるだけで、グラフが自動で描けます。パソコンかスマホで開く手間があり、毎日続けるには、入口を近くに置く工夫が要ります。</td></tr>
       <tr><th>アプリ</th><td>開いてすぐ入力でき、グラフも自動です。体重計から読み込めるものもあります。</td></tr>
@@ -205,12 +143,29 @@
     <p>Utility は、メモ・ToDo・カレンダーと、体重・体脂肪率・歩数の記録をひとつにまとめた iPhone・iPad・Mac のアプリです。体重・体脂肪率・歩数は手入力するか、「ヘルスケア」から読み込めます（iPhone・iPad）。身長を入れると BMI が自動で計算され、推移はグラフで見られます。単位は kg/cm と lb/ft-in から選べます。</p>
     <p>体重・体脂肪率・歩数の手入力記録は、それぞれ10件まで無料で保存できます。10件を超えても、登録済みの記録が消えることはありません（新しい記録の追加だけが制限されます）。健康の記録は、iCloud には保存せず、記録した端末の中だけに残ります。詳しくは<a href="/utility.html">Utility の紹介ページ</a>をご覧ください。</p>
 
-    <p style="font-size:13.5px;">記録表の項目と文言は、Pohoda が独自に作成したものです。印刷して自由にお使いください。この記事は体重の記録のしかたを紹介するもので、診断や治療の助言ではありません。</p>
+    <p class="jr-note">記録表の項目と文言は、Pohoda が独自に作成したものです。印刷して自由にお使いください。この記事は体重の記録のしかたを紹介するもので、診断や治療の助言ではありません。</p>
 
-    <p style="font-size:14px;">関連する読みもの：<a href="/journal/taiju-taion-ketsuatsu-kiroku.html">体重・体温・血圧を記録するなら、数字よりグラフで見る理由</a> ／ <a href="/journal/kintore-diet-kiroku-hoho.html">筋トレ・ダイエットの記録方法。ビフォーアフター写真で続けるやり方</a></p>
+<aside class="jr-appcard" aria-label="Utilityの紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/utility-icon.png" alt="Utility のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Utility</p><p class="jr-appcard-kind">メモ・ToDo・カレンダー・体重管理をまとめた iPhone・iPad・Mac アプリ</p></div></div>
+    <p class="jr-appcard-benefit">体重・体脂肪率・歩数を、手入力かヘルスケアから読み込んで記録できます。BMI は自動計算で、推移はグラフで見られます。</p>
+    <ul><li>体重・体脂肪率・歩数を手入力、または「ヘルスケア」から読み込み（iPhone・iPad）</li><li>BMI は身長から自動で計算し、推移はグラフで見られる</li><li>メモ・タスク・カレンダーも同じアプリに。広告・追跡・アカウント登録はない</li></ul>
+    <p class="jr-appcard-price">メモ・タスク・体重などの手入力記録は、それぞれ10件まで無料。サポーター（年額）または買い切りで上限がなくなります（価格は App Store に表示）。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/id6815232764" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/utility.html">製品ページを見る</a></div>
+  </div>
+  <div class="jr-appcard-shots"><span><img src="/assets/screens/utility-health-light.png" alt="Utility の健康の記録画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/utility-task-light.png" alt="Utility のタスク画面" width="880" height="1912" loading="lazy"></span></div>
+</aside>
 
-    <p style="margin-top:34px;font-size:14px;"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
-  </article>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>体重の記録表は、どこで手に入りますか？</summary><p>このページで無料で使えます。印刷ボタンでA4・1枚が印刷でき、PDFのダウンロードもできます。上がグラフ用紙、下が1か月分の記録表です。項目と文言は Pohoda が独自に作成したもので、印刷して自由に使えます。</p></details><details><summary>体重は、いつ測るのがいいですか？</summary><p>毎日同じ時間帯に測ります。朝、起きてトイレを済ませたあとなど、自分が続けやすい場面を1つ決めてください。体重は1日のうちでも、食事や水分、トイレの前後で変わります。</p></details><details><summary>体重のグラフは、どう見ればいいですか？</summary><p>1日ごとの上下は気にしすぎず、1〜2週間の線の向きを見ます。大きな変化は、メモ欄に書いた出来事（旅行、飲み会、体調不良、体重計の入れ替えなど）と見比べます。体重は体の状態の一部しか表さないので、急に大きく増減したときや体調に不安があるときは、医療機関に相談してください。</p></details><details><summary>記録表の縦軸の目盛りは、どう決めますか？</summary><p>1目盛りを0.2kgや0.5kgなど、自分で決めて左の余白に書き込みます。1か月の最小と最大がちょうど収まる幅にします。1目盛りが大きすぎると線が平らになり、小さすぎると小さな上下が目立ちすぎます。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/about.html" lang="en">About Pohoda（English）</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/taiju-kiroku-teitaiki.html"><small>KATACHI</small><b>体重の記録が続かない・体重が変わらない停滞期に</b><span>写真で体の変化を残す方法。</span></a><a href="/journal/taiju-taion-ketsuatsu-kiroku.html"><small>Graph</small><b>体重・体温・血圧の記録は、グラフで見るとわかることがある</b><span>数字を並べるだけでは見えない増減を、線で見る。</span></a><a href="/journal/kotei-hi-ichiran-minaoshi-check.html"><small>Costs</small><b>固定費の一覧表と見直しチェックシート（印刷用・無料）</b><span>年払いも年額にそろえて書き出す、A4・2枚のシート。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
 </main>
 
 <footer class="site-footer">
