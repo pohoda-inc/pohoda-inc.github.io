@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>誕生日を忘れない方法｜記念日も前もってそっと知らせるリマインド</title>
-<meta name="description" content="誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、前もって静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。">
+<title>誕生日を忘れない方法｜近づく日が見え、記念日は前もって通知</title>
+<meta name="description" content="誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、近づいていることが目に入り、静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。">
 <meta name="author" content="杉本 啓輔">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/taisetsu-na-hi-wasurenai.html">
@@ -12,8 +12,8 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="誕生日を忘れない方法｜記念日も前もってそっと知らせるリマインド">
-<meta property="og:description" content="誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、前もって静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。">
+<meta property="og:title" content="誕生日を忘れない方法｜近づく日が見え、記念日は前もって通知">
+<meta property="og:description" content="誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、近づいていることが目に入り、静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。">
 <meta property="og:url" content="https://pohoda.jp/journal/taisetsu-na-hi-wasurenai.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
 <meta property="og:image:width" content="1200">
@@ -23,21 +23,21 @@
 <meta property="article:author" content="https://pohoda.jp/operator.html">
 <meta property="article:section" content="つながり・連絡">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="誕生日を忘れない方法｜記念日も前もってそっと知らせるリマインド">
-<meta name="twitter:description" content="誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、前もって静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。">
+<meta name="twitter:title" content="誕生日を忘れない方法｜近づく日が見え、記念日は前もって通知">
+<meta name="twitter:description" content="誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、近づいていることが目に入り、静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-keep-in-touch.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="/styles.css?v=22">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"誕生日や記念日を、忘れないために","description":"誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、前もって静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。","image":["https://pohoda.jp/assets/og/og-keep-in-touch.png"],"datePublished":"2026-07-22","dateModified":"2026-10-31","inLanguage":"ja","articleSection":"つながり・連絡","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/taisetsu-na-hi-wasurenai.html"}}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"誕生日や記念日を、忘れないために","description":"誕生日や記念日を忘れてしまうのは、予定に埋もれて気づけないだけ。必要なのは記憶力ではなく、近づいていることが目に入り、静かに知らせる仕組みです。誕生日・記念日リマインドの設計を、iOS アプリ Keep In Touch を例に紹介します。","image":["https://pohoda.jp/assets/og/og-keep-in-touch.png"],"datePublished":"2026-07-22","dateModified":"2026-10-31","inLanguage":"ja","articleSection":"つながり・連絡","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/taisetsu-na-hi-wasurenai.html"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"つながり・連絡","item":"https://pohoda.jp/journal/#tsunagari"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"誕生日を忘れないようにするには、どうしたらいいですか？","acceptedAnswer":{"@type":"Answer","text":"当日に思い出す前提をやめ、前もって知らせてくれる仕組みを使います。人ごとに誕生日を登録しておけば、その日までにそっと知らせてくれるので、一言のメッセージや小さな贈りものを用意する余裕が生まれます。"}},{"@type":"Question","name":"記念日のリマインダーでは、誕生日以外も登録できますか？","acceptedAnswer":{"@type":"Answer","text":"Keep In Touch では、出会った日、はじめて会えた日、節目になった日など、任意の日付を記念日として登録でき、その日に合わせて知らせます。既製の「祝うべき日」ではなく、自分にとって意味のある日を覚えておけます。"}},{"@type":"Question","name":"友達の誕生日をまとめて確認できますか？","acceptedAnswer":{"@type":"Answer","text":"ホームに「今月の誕生日」がまとまって見える場所があります。月のはじめに一度眺めておけば、今月のうちに気にかけたい人がひと目で分かります。"}},{"@type":"Question","name":"登録した誕生日や写真は、どこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"原則あなたの端末の中だけに保存されます。行動を追跡する仕組みも、広告もありません。"}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"誕生日を忘れないようにするには、どうしたらいいですか？","acceptedAnswer":{"@type":"Answer","text":"当日に思い出す前提をやめ、近づいていることが目に入る仕組みを使います。Keep In Touch なら、誕生日を登録するとホームに30日以内の誕生日が並び、当日の朝にも通知が届きます。記念日は当日・1日前・3日前から通知の日を選べます。"}},{"@type":"Question","name":"記念日のリマインダーでは、誕生日以外も登録できますか？","acceptedAnswer":{"@type":"Answer","text":"Keep In Touch では、出会った日、はじめて会えた日、節目になった日など、任意の日付を記念日として登録でき、その日に合わせて知らせます。既製の「祝うべき日」ではなく、自分にとって意味のある日を覚えておけます。"}},{"@type":"Question","name":"友達の誕生日をまとめて確認できますか？","acceptedAnswer":{"@type":"Answer","text":"ホームに「今月の誕生日」がまとまって見える場所があります。月のはじめに一度眺めておけば、今月のうちに気にかけたい人がひと目で分かります。"}},{"@type":"Question","name":"登録した誕生日や写真は、どこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"原則あなたの端末の中だけに保存されます。行動を追跡する仕組みも、広告もありません。"}}]}
 </script>
 </head>
 <body>
@@ -68,16 +68,16 @@
   </header>
 
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>誕生日や記念日を忘れるのは、カレンダーで他の予定と同じ重さに並び、当日の朝まで気づけないから。</li><li>必要なのは記憶力ではなく、当日ではなく前もって、動けるタイミングで知らせてくれる仕組み。</li><li>記念日は出会った日など自分で決めた日も登録でき、ホームの「今月の誕生日」でまとめて見渡せる。</li></ul></aside>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>誕生日や記念日を忘れるのは、カレンダーで他の予定と同じ重さに並び、当日の朝まで気づけないから。</li><li>必要なのは記憶力ではなく、近づいていることが目に入り、動けるタイミングで知らせてくれる仕組み。</li><li>記念日は出会った日など自分で決めた日も登録でき、ホームの「近日中の誕生日」でまとめて見渡せる。</li></ul></aside>
 <nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">なぜ誕生日・記念日は「当日に思い出す」のか</a></li><li><a href="#s2">誕生日リマインダーアプリは「動けるタイミング」で知らせる</a></li><li><a href="#s3">記念日は、自分で決めた日も登録できる</a></li><li><a href="#s4">「今月の誕生日」を、ホームでまとめて見る</a></li><li><a href="#s5">思い出した先に、伝える一言を用意しておく</a></li><li><a href="#s6">登録した情報は、あなたの端末の中に</a></li></ol></nav>
 
 <h2 id="s1">なぜ誕生日・記念日は「当日に思い出す」のか</h2>
     <p>誕生日も記念日も、日付は決まっているのに忘れる。理由は、カレンダーの中で他の予定と同じ重さで並んでしまうからです。仕事の予定に紛れると、当日の朝にようやく気づく。あるいは、通知が鳴っても慌ただしくて、そのまま流れていく。大切な日ほど、<strong>前もって・気づける形で</strong>手元に置いておく必要があります。</p>
 
     <h2 id="s2">誕生日リマインダーアプリは「動けるタイミング」で知らせる</h2>
-    <p>Keep In Touch では、人ごとに誕生日を登録しておくと、その日までにそっと知らせます。当日いきなりではなく、前もって気づければ、一言のメッセージや小さな贈りものを用意する余裕が生まれます。派手なお祝い演出ではなく、「そういえば、もうすぐだ」と静かに思い出せること。<strong>誕生日リマインド</strong>に欲しいのは、その落ち着いたタイミングだと考えました。</p>
+    <p>Keep In Touch では、人ごとに誕生日を登録しておくと、30日以内に来る誕生日がホームに日付つきで並び、当日の朝にも通知が届きます。記念日は、当日・1日前・3日前から通知の日を選べます。当日いきなりではなく、前もって気づければ、一言のメッセージや小さな贈りものを用意する余裕が生まれます。派手なお祝い演出ではなく、「そういえば、もうすぐだ」と静かに思い出せること。<strong>誕生日リマインド</strong>に欲しいのは、その落ち着いたタイミングだと考えました。</p>
 
-<aside class="jr-tip"><img src="/assets/keep-in-touch-icon.png" alt="" width="36" height="36" loading="lazy"><p><b>アプリでやるなら</b>Keep In Touch では、人ごとに誕生日を登録しておくと、その日までにそっと知らせます。ホーム画面のウィジェットで、近日中の誕生日を確認することもできます。</p></aside>
+<aside class="jr-tip"><img src="/assets/keep-in-touch-icon.png" alt="" width="36" height="36" loading="lazy"><p><b>アプリでやるなら</b>Keep In Touch では、人ごとに誕生日を登録しておくと、30日以内の誕生日がホームに並び、当日の朝に通知します。ホーム画面のウィジェットでは、7日以内の誕生日を確認できます。</p></aside>
 
 <h2 id="s3">記念日は、自分で決めた日も登録できる</h2>
     <p>大切な日は誕生日だけではありません。出会った日、はじめて会えた日、節目になった日——人によって違います。だから<strong>記念日</strong>は任意の日付として登録でき、その日に合わせて知らせます。既製の「祝うべき日」ではなく、自分にとって意味のある日を、自分の手で覚えておける形です。</p>
@@ -100,15 +100,15 @@
 <aside class="jr-appcard" aria-label="Keep In Touchの紹介">
   <div class="jr-appcard-main">
     <div class="jr-appcard-id"><img src="/assets/keep-in-touch-icon.png" alt="Keep In Touch のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Keep In Touch</p><p class="jr-appcard-kind">大切な人との連絡を、忘れないうちに思い出す iOS アプリ</p></div></div>
-    <p class="jr-appcard-benefit">誕生日・記念日を前もって知らせるので、一言のメッセージや小さな贈りものを用意する余裕が生まれます。</p>
-    <ul><li>そろそろ連絡したい人が、ホームに並ぶ</li><li>誕生日や記念日を前もってお知らせ。ホーム画面のウィジェットでも確認できる</li><li>関わりの深さを「距離」で見せる関係マップ。連絡先は原則、端末の中だけに保存</li></ul>
+    <p class="jr-appcard-benefit">近づく誕生日がホームに並び、記念日は前もって通知できるので、一言のメッセージや小さな贈りものを用意する余裕が生まれます。</p>
+    <ul><li>そろそろ連絡したい人が、ホームに並ぶ</li><li>近づく誕生日がホームとウィジェットに並び、当日の朝に通知。記念日は3日前から選べる</li><li>関わりの深さを「距離」で見せる関係マップ。連絡先は原則、端末の中だけに保存</li></ul>
     <p class="jr-appcard-price">基本の機能は無料（5人まで登録）。ベーシックプランは月額 ¥270／年額 ¥2,400／買い切り ¥4,200（税込）で、人数の上限がなくなります。</p>
     <div class="jr-appcard-actions"><a class="btn btn-primary" href="https://apps.apple.com/jp/app/keep-in-touch-pohoda/id6776073636" rel="noopener">App Store で入手</a><a class="btn btn-ghost" href="/keep-in-touch.html">製品ページを見る</a></div>
   </div>
   <div class="jr-appcard-shots"><span><img src="/assets/screens/kit-v2-home.jpg" alt="Keep In Touch のホーム画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/kit-v2-map.jpg" alt="Keep In Touch の関係マップ" width="880" height="1912" loading="lazy"></span></div>
 </aside>
 
-<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>誕生日を忘れないようにするには、どうしたらいいですか？</summary><p>当日に思い出す前提をやめ、前もって知らせてくれる仕組みを使います。人ごとに誕生日を登録しておけば、その日までにそっと知らせてくれるので、一言のメッセージや小さな贈りものを用意する余裕が生まれます。</p></details><details><summary>記念日のリマインダーでは、誕生日以外も登録できますか？</summary><p>Keep In Touch では、出会った日、はじめて会えた日、節目になった日など、任意の日付を記念日として登録でき、その日に合わせて知らせます。既製の「祝うべき日」ではなく、自分にとって意味のある日を覚えておけます。</p></details><details><summary>友達の誕生日をまとめて確認できますか？</summary><p>ホームに「今月の誕生日」がまとまって見える場所があります。月のはじめに一度眺めておけば、今月のうちに気にかけたい人がひと目で分かります。</p></details><details><summary>登録した誕生日や写真は、どこに保存されますか？</summary><p>原則あなたの端末の中だけに保存されます。行動を追跡する仕組みも、広告もありません。</p></details></div></div>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>誕生日を忘れないようにするには、どうしたらいいですか？</summary><p>当日に思い出す前提をやめ、近づいていることが目に入る仕組みを使います。Keep In Touch なら、誕生日を登録するとホームに30日以内の誕生日が並び、当日の朝にも通知が届きます。記念日は当日・1日前・3日前から通知の日を選べます。</p></details><details><summary>記念日のリマインダーでは、誕生日以外も登録できますか？</summary><p>Keep In Touch では、出会った日、はじめて会えた日、節目になった日など、任意の日付を記念日として登録でき、その日に合わせて知らせます。既製の「祝うべき日」ではなく、自分にとって意味のある日を覚えておけます。</p></details><details><summary>友達の誕生日をまとめて確認できますか？</summary><p>ホームに「今月の誕生日」がまとまって見える場所があります。月のはじめに一度眺めておけば、今月のうちに気にかけたい人がひと目で分かります。</p></details><details><summary>登録した誕生日や写真は、どこに保存されますか？</summary><p>原則あなたの端末の中だけに保存されます。行動を追跡する仕組みも、広告もありません。</p></details></div></div>
 <aside class="jr-author" id="author" aria-label="この記事を書いた人">
   <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
   <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
