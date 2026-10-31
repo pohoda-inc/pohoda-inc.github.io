@@ -144,6 +144,69 @@
     <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/journal/dokusho-kiroku-template.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/suimin-kirokuhyo.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/hosuu-kirokuhyo.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-utility.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/uriage-kanrihyo-kojin.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/chokin-graph-tsukurikata.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kounetsuhi-kiroku-template.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-graph.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/hitorigurashi-seikatsuhi-uchiwake.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-costs.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kotei-hi-hendou-hi-ichiran.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-costs.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/todo-list-template.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-utility.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/journal/taiju-kirokuhyo-insatsu.html</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
