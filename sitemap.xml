@@ -95,6 +95,69 @@
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/journal/present-list-template.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-keep-in-touch.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/before-after-shashin-torikata.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kintore-menu-hyo-template.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/personal-training-karte-template.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-katachi-plus.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/anken-kanrihyo-template.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-one-crm.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/kokyaku-kanrihyo-excel.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-one-crm.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/gyaku-shitsumon-rei.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-pre-interview.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/shougaku-juken-mensetsu-oya.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-pre-interview.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/shukatsu-schedule-kanri.html</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-pre-interview.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/journal/tanjoubi-list-template.html</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
