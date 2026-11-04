@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アプリの保守費用の相場と中身｜公開後に起きたこと</title>
+<meta name="description" content="アプリの保守費用は、一般に年間で開発費の15%程度と語られます。保守に含まれるもの、公開後に実際に起きたこと、契約で確かめる点を、自社アプリ10本の運用経験から整理しました。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/journal/app-hoshu-hiyou.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="アプリの保守費用の相場と中身｜公開後に起きたこと">
+<meta property="og:description" content="アプリの保守費用は、一般に年間で開発費の15%程度と語られます。保守に含まれるもの、公開後に実際に起きたこと、契約で確かめる点を、自社アプリ10本の運用経験から整理しました。">
+<meta property="og:url" content="https://pohoda.jp/journal/app-hoshu-hiyou.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-11-04">
+<meta property="article:modified_time" content="2026-11-04">
+<meta property="article:author" content="https://pohoda.jp/operator.html">
+<meta property="article:section" content="アプリ開発を頼む">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="アプリの保守費用の相場と中身｜公開後に起きたこと">
+<meta name="twitter:description" content="アプリの保守費用は、一般に年間で開発費の15%程度と語られます。保守に含まれるもの、公開後に実際に起きたこと、契約で確かめる点を、自社アプリ10本の運用経験から整理しました。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=22">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"アプリの保守費用の相場と中身｜公開後に起きたこと","description":"アプリの保守費用は、一般に年間で開発費の15%程度と語られます。保守に含まれるもの、公開後に実際に起きたこと、契約で確かめる点を、自社アプリ10本の運用経験から整理しました。","image":["https://pohoda.jp/assets/og/og-default.png"],"datePublished":"2026-11-04","dateModified":"2026-11-04","inLanguage":"ja","articleSection":"アプリ開発を頼む","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/app-hoshu-hiyou.html"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"アプリ開発を頼む","item":"https://pohoda.jp/journal/#kaihatsu"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"アプリの保守費用はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"一般には、年間で開発費の15%程度が目安として語られます。保守の内容で大きく変わり、サーバーの費用や機能追加は別の項目として扱われることが多いです。Pohoda の保守は月3万円からです。"}},{"@type":"Question","name":"保守は必ず必要ですか？","acceptedAnswer":{"@type":"Answer","text":"必須ではありません。公開したアプリがすぐ動かなくなるわけではないからです。ただし、OS の更新や Apple の必須項目の変更で、次の更新の提出が止まることがあります。そのときに対応する人が手元にいるかどうかが、判断の分かれ目です。"}},{"@type":"Question","name":"他社が作ったアプリの保守も頼めますか？","acceptedAnswer":{"@type":"Answer","text":"ソースコードを見せていただいてから、お受けできるかを判断します。中身を見る前に、お受けするとはお約束できません。まずはご相談ください。"}},{"@type":"Question","name":"24時間対応はできますか？","acceptedAnswer":{"@type":"Answer","text":"していません。24時間の監視や即時の対応は、保守の範囲に含めていません。お返事は2営業日以内です。"}},{"@type":"Question","name":"保守を頼まず、自分で保守できますか？","acceptedAnswer":{"@type":"Answer","text":"できます。ソースコードと Apple のアカウントが手元にあり、Xcode でビルドと提出ができる人なら可能です。自分で見られない場合は、引き継ぎができる状態かどうかだけは、契約の時点で確かめてください。"}}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/development.html#contact">相談する</a>
+  </div>
+</header>
+
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#kaihatsu">アプリ開発を頼む</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/development.html"><img src="/assets/brand/pohoda-mark.svg" alt="" width="22" height="22">Pohoda</a><span class="jr-theme">アプリ開発を頼む</span></div>
+      <h1>アプリの<wbr>保守費用の<wbr>相場と中身｜<wbr>公開後に<wbr>起きたこと</h1>
+      <p class="jr-lead">アプリの保守費用は、一般に年間で開発費の15%程度と語られます。ただし、中身で大きく変わります。保守に含まれるもの、公開後に実際に起きたこと、契約で確かめる点を、自社アプリ10本を運用してきた経験から整理します。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-04">2026年11月4日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-04">2026年11月4日</time></dd></div><div><dt>読む目安</dt><dd>約6分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>保守費用は、年間で開発費の15%程度が一般的な目安。80万円の開発なら年12万円、月1万円。中身で大きく変わる。</li><li>公開後も、OS・Apple・外部サービスの変更で手を入れる必要が出る。自社アプリ10本では、2026年の秋だけで5件あった。</li><li>契約では、上限時間、返信の速さ、解約、報告、コードの権利、引き継ぎ（ソースと Apple アカウントが手元にあるか）を確かめる。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#kesron">結論：目安は年間で開発費の15%程度</a></li><li><a href="#range">保守に何が含まれるか</a></li><li><a href="#why">なぜ公開後に手がかかるのか</a></li><li><a href="#server">端末内で完結するアプリと、サーバーのあるアプリの差</a></li><li><a href="#nashi">保守を頼まないとどうなるか</a></li><li><a href="#check">保守の契約で確かめること</a></li><li><a href="#self">自分で保守する選択肢</a></li><li><a href="#s6">出典</a></li></ol></nav>
+
+<h2 id="kesron">結論：目安は年間で開発費の15%程度</h2>
+<p>アプリの保守費用は、年間で開発費の15%程度が一般に語られる目安です（出典は記事末）。</p>
+<p>この目安で計算すると、80万円で作ったアプリなら年12万円、月にして1万円です。</p>
+<p>Pohoda の保守は、月3万円からです。上の目安より高くなる場合があります。月に使える作業時間を決めて、その中で動くようにしているためです。安いと言うつもりはありません。代わりに、その費用で何をするのかを、次の節から具体的に書きます。</p>
+<p>この目安は、保守の中身で大きく変わります。サーバーの費用や新機能の追加は、別の項目として扱われることが多いです。金額だけを比べず、何が含まれるかを見てください。</p>
+<h2 id="range">保守に何が含まれるか</h2>
+<p>「保守」という言葉は、会社によって指す範囲が違います。Pohoda の範囲を例に、含むものと別料金になりやすいものを分けました。</p>
+<table class="stack">
+<tr><th>含むもの</th><td>OS 更新への対応。不具合の調査と小規模な修正。文言や画像の差し替え。ストア更新の申請と審査対応。</td></tr>
+<tr><th>別料金になりやすいもの</th><td>新機能の追加（Pohoda では別見積り）。サーバーや AI、決済など外部サービスの利用料（依頼主の負担）。Apple Developer Program の年会費。24時間の監視や即時の対応。</td></tr>
+</table>
+<p>Pohoda では、月の上限時間を決めています。使わなかった分は繰り越しません。解約は1か月前までの通知です。</p>
+<p>新機能の追加が別になるのは、保守と開発で仕事の性質が違うからです。保守は、今あるアプリを今の環境で動かし続ける仕事です。新しい機能は、仕様を決めるところから始まるので、改めて見積りをします。</p>
+<h2 id="why">なぜ公開後に手がかかるのか</h2>
+<p>私は自社で iPhone アプリ10本を運用しています。2026年の秋だけで、次のことがありました。</p>
+<ul>
+<li><strong>新型 iPhone Duo への対応（10月）。</strong>折りたたみの iPhone Duo が10月23日に発売されました。9本を Xcode 27.1 でビルドして確認し、コードを変えたのは1本の1行だけで、崩れはありませんでした。ただ、ストア用の画像は別に撮影する必要があります。Apple は2027年4月から、この画像を必須にする予定です。</li>
+<li><strong>キーボードの不具合（10月）。</strong>自前のタブバーが、キーボードと一緒にせり上がる不具合が5本で見つかりました。9本まとめて修正版を提出しました。</li>
+<li><strong>年齢区分の新しい必須項目（11月）。</strong>Apple が年齢区分の質問に新しい必須項目（ソーシャルメディア）を足しました。未回答のままだと、提出そのものが止まります。回答すれば通りました。</li>
+<li><strong>サイトの証明書の系統変更（10月）。</strong>会社の PC から「安全ではない」と表示される環境が出ました。配信経路を変えて解消しました。</li>
+<li><strong>データベースの移行（10月）。</strong>DriveScape と Insight のデータベースを、Neon から Cloudflare D1 へ移しました。これは外から迫られたのではなく、自分で決めた移行です。サーバーを持つと、こうした作業も出てきます。</li>
+</ul>
+<p>どれも、アプリを作った時点の予定にはなかったことです。調べて、直して、提出する。この繰り返しが、公開後の仕事の中身です。</p>
+<p>OS や Apple、外部サービスの側が変わると、アプリは変えていなくても手を入れる必要が出ます。私の契約では、検収の合格後に公開された OS・端末・第三者サービスの変更が原因のものは、無償の修補の対象外にしています。そういう変更に対応するのが、保守です。</p>
+<h2 id="server">端末内で完結するアプリと、サーバーのあるアプリの差</h2>
+<p>保守の重さは、アプリの作りで変わります。</p>
+<p>端末内で完結するアプリは、主な作業が OS の更新への対応とストア関係です。サーバーや AI を持つアプリは、それに加えて、サーバーの更新、データベースや証明書の変更、外部サービスの料金や仕様の変更を見る必要があります。上の例で言えば、証明書とデータベースの件がそれです。</p>
+<p>外部サービスの料金は、使われ方で上下します。保守費に含めて固定にするのか、実費を別に請求するのか、これも契約の前に決めておくと揉めません。</p>
+<p>サーバーや API の利用料は、保守費とは別にかかります。見積りの段階で、どちらの作りなのかを確認してください。</p>
+<h2 id="nashi">保守を頼まないとどうなるか</h2>
+<p>すぐに動かなくなるわけではありません。公開済みのアプリは、そのまま使えるのが普通です。</p>
+<p>困るのは、次に更新を出すときです。OS の変更や、Apple の必須項目の追加（上の年齢区分の件）で、提出が止まることがあります。サーバーのあるアプリは、外部サービスの変更で動きが変わることもあります。</p>
+<p>そのときに、直せる人がいるかどうかです。いなければ、探すところから始まります。探す時間が長いほど、アプリは更新されないまま置かれます。</p>
+<h2 id="check">保守の契約で確かめること</h2>
+<ul>
+<li><strong>月の上限時間と繰り越し。</strong>何時間まで含むのか。使わなかった分は繰り越せるのか（Pohoda は繰り越しません）。</li>
+<li><strong>返信の速さ。</strong>問い合わせにいつまでに返事があるのか。Pohoda は2営業日以内です。</li>
+<li><strong>解約の条件。</strong>いつまでに伝えれば解約できるのか（Pohoda は1か月前まで）。</li>
+<li><strong>作業報告。</strong>何をしたかが、報告で分かるか。</li>
+<li><strong>修正したコードの権利。</strong>保守で直したコードが、誰のものになるか。</li>
+<li><strong>開発者が辞めたときの引き継ぎ。</strong>ソースコードと Apple のアカウントが、自分の手元にあるか。ここが他人の名義だと、開発者がいなくなった時点で、更新を出せなくなります。</li>
+</ul>
+<h2 id="self">自分で保守する選択肢</h2>
+<p>自分で保守することもできます。ソースコードと Apple のアカウントが手元にあり、Xcode でビルドして、App Store Connect から提出できる人なら可能です。OS の更新があるたびに、動作を確かめる時間を取れることも条件になります。自分で見られないなら、頼める人を先に決めておくほうが、止まったときに慌てずに済みます。</p>
+<h2 id="s6">出典</h2>
+<ul>
+<li><a href="https://www.biz.ne.jp/matome/2003928/" rel="noopener">アプリの保守費用の相場とは？｜比較ビズまとめ</a>（年間でアプリ開発費用の15%程度。2026年11月4日に確認）</li>
+</ul>
+<p class="jr-note">自社アプリの出来事は、Pohoda の運用記録にもとづきます。Pohoda の保守の条件は2026年11月4日時点のもので、<a href="/development.html">アプリ開発のご相談</a>のページが最新です。</p>
+
+<aside class="jr-appcard" style="grid-template-columns:1fr" aria-label="Pohodaのアプリ開発の紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/brand/pohoda-mark.svg" alt="Pohoda のアイコン" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Pohoda のアプリ開発</p><p class="jr-appcard-kind">iPhone アプリを企画から App Store 公開まで</p></div></div>
+    <p class="jr-appcard-benefit">自社アプリ10本を作って運用してきた経験で、公開までと、公開後の保守を一人でお受けします。</p>
+    <ul><li>無料相談のあと、固定金額で見積り。週1回の進捗共有で、途中から TestFlight で触れる</li><li>ソースコードは引き渡し。Apple アカウントはご自身の名義</li><li>保守は月の上限時間を決めて対応。24時間の対応はしていません</li></ul>
+    <p class="jr-appcard-price">試作 30万円／公開まで 50万円から／保守は月3万円から（総額表示・免税事業者）。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="/development.html#contact">相談する</a><a class="btn btn-ghost" href="/development.html">料金と進め方を見る</a></div>
+  </div>
+</aside>
+
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>アプリの保守費用はいくらですか？</summary><p>一般には、年間で開発費の15%程度が目安として語られます。保守の内容で大きく変わり、サーバーの費用や機能追加は別の項目として扱われることが多いです。Pohoda の保守は月3万円からです。</p></details><details><summary>保守は必ず必要ですか？</summary><p>必須ではありません。公開したアプリがすぐ動かなくなるわけではないからです。ただし、OS の更新や Apple の必須項目の変更で、次の更新の提出が止まることがあります。そのときに対応する人が手元にいるかどうかが、判断の分かれ目です。</p></details><details><summary>他社が作ったアプリの保守も頼めますか？</summary><p>ソースコードを見せていただいてから、お受けできるかを判断します。中身を見る前に、お受けするとはお約束できません。まずはご相談ください。</p></details><details><summary>24時間対応はできますか？</summary><p>していません。24時間の監視や即時の対応は、保守の範囲に含めていません。お返事は2営業日以内です。</p></details><details><summary>保守を頼まず、自分で保守できますか？</summary><p>できます。ソースコードと Apple のアカウントが手元にあり、Xcode でビルドと提出ができる人なら可能です。自分で見られない場合は、引き継ぎができる状態かどうかだけは、契約の時点で確かめてください。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/iphone-app-kaihatsu-hiyou.html"><small>アプリ開発を頼む</small><b>iPhoneアプリの開発費用｜個人に頼む相場と内訳</b></a><a href="/journal/app-kaihatsu-kojin-irai.html"><small>アプリ開発を頼む</small><b>アプリ開発を個人に依頼するには｜開発会社との違いと頼む前の確認</b></a><a href="/journal/app-store-reject-jirei.html"><small>アプリ開発を頼む</small><b>App Storeのリジェクト理由と直し方｜自社アプリで受けた11回の実例</b></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -29,7 +29,7 @@ APPS = [("/katachi.html", "KATACHI"), ("/katachi-plus.html", "KATACHI +"), ("/ke
         ("/utility.html", "Utility"), ("/costs.html", "Costs"), ("/pre-interview.html", "Pre Interview")]
 WEB = [("/insight.html", "Insight"), ("/drivescape.html", "DriveScape"), ("/yane.html", "YANE")]
 JA_NAV = APPS + WEB + [("/journal/", "読みもの"), ("/news.html", "お知らせ")]
-JA_SUPPORT = [("/news.html", "お知らせ"), ("/journal/", "読みもの"), ("/request.html", "要望箱"),
+JA_SUPPORT = [("/news.html", "お知らせ"), ("/journal/", "読みもの"), ("/request.html", "要望箱"), ("/development.html", "アプリ開発のご相談"),
               ("/legal/support.html", "サポート"), ("/legal/privacy.html", "プライバシーポリシー"),
               ("/legal/terms.html", "利用規約"), ("/legal/tokushoho.html", "特定商取引法に基づく表記")]
 

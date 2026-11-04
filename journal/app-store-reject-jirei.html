@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Storeのリジェクト理由と直し方｜自社アプリで受けた11回の実例</title>
+<meta name="description" content="App Storeの審査で自社アプリが受けた11回の却下の実例です。課金まわり6回、規約リンク3回など、指摘と本当の原因、直し方、返信の仕方、提出前のチェックリストをまとめました。Product ID の不一致で4連続で落ちた話も書いています。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/journal/app-store-reject-jirei.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="App Storeのリジェクト理由と直し方｜自社アプリで受けた11回の実例">
+<meta property="og:description" content="App Storeの審査で自社アプリが受けた11回の却下の実例です。課金まわり6回、規約リンク3回など、指摘と本当の原因、直し方、返信の仕方、提出前のチェックリストをまとめました。Product ID の不一致で4連続で落ちた話も書いています。">
+<meta property="og:url" content="https://pohoda.jp/journal/app-store-reject-jirei.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-11-04">
+<meta property="article:modified_time" content="2026-11-04">
+<meta property="article:author" content="https://pohoda.jp/operator.html">
+<meta property="article:section" content="アプリ開発を頼む">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="App Storeのリジェクト理由と直し方｜自社アプリで受けた11回の実例">
+<meta name="twitter:description" content="App Storeの審査で自社アプリが受けた11回の却下の実例です。課金まわり6回、規約リンク3回など、指摘と本当の原因、直し方、返信の仕方、提出前のチェックリストをまとめました。Product ID の不一致で4連続で落ちた話も書いています。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=22">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"App Storeのリジェクト理由と直し方｜自社アプリで受けた11回の実例","description":"App Storeの審査で自社アプリが受けた11回の却下の実例です。課金まわり6回、規約リンク3回など、指摘と本当の原因、直し方、返信の仕方、提出前のチェックリストをまとめました。Product ID の不一致で4連続で落ちた話も書いています。","image":["https://pohoda.jp/assets/og/og-default.png"],"datePublished":"2026-11-04","dateModified":"2026-11-04","inLanguage":"ja","articleSection":"アプリ開発を頼む","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/app-store-reject-jirei.html"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"アプリ開発を頼む","item":"https://pohoda.jp/journal/#kaihatsu"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"App Storeでリジェクトされたら、再提出できますか？","acceptedAnswer":{"@type":"Answer","text":"できます。リジェクトは不合格の確定ではなく、直して出し直す前提の指摘です。私の11回も、原因を直して再提出する形で進めました。指摘の文言を正確に読み、原因を直し、審査のメッセージ欄から返信して再提出します。"}},{"@type":"Question","name":"審査に落ちる一番多い理由は何ですか？","acceptedAnswer":{"@type":"Answer","text":"Pohoda が受けた11回の中では、課金まわりが6回で最多でした。次が規約リンクの3回です。これは自社5本のアプリの記録であり、App Store 全体の傾向ではありません。"}},{"@type":"Question","name":"リジェクトへの返信は、どこからしますか？","acceptedAnswer":{"@type":"Answer","text":"App Store Connect の審査のメッセージ欄から返信します。ただし、提出を取り下げたあとのスレッドには返信できません。私は Keep In Touch の4回目で、審査メモで伝えました。"}},{"@type":"Question","name":"審査対応だけを頼めますか？","acceptedAnswer":{"@type":"Answer","text":"審査対応だけのご依頼はお受けしていません。開発からお受けする場合は、審査の対応まで担当します。Apple のアカウントは依頼主さまの名義で、審査への提出も依頼主さまのアカウントで行います。審査の合格と時期は保証できませんが、却下されたときは契約の範囲内で修正と再申請をします。"}},{"@type":"Question","name":"AIで作ったアプリは、審査で落ちやすいですか？","acceptedAnswer":{"@type":"Answer","text":"私の11回の記録に、AI で作ったことを理由にした却下はありません。ただし、Webサイトを包んだだけのアプリ（4.2）や、既存アプリと見分けがつかないアプリ（4.3）は、ガイドライン上、通りません。ツールを問わず、そこは確認が必要です。"}}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/development.html#contact">相談する</a>
+  </div>
+</header>
+
+<main class="marketing jr">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#kaihatsu">アプリ開発を頼む</a></li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/development.html"><img src="/assets/brand/pohoda-mark.svg" alt="" width="22" height="22">Pohoda</a><span class="jr-theme">アプリ開発を頼む</span></div>
+      <h1>App Storeの<wbr>リジェクト理由と<wbr>直し方｜<wbr>自社アプリで受けた<wbr>11回の実例</h1>
+      <p class="jr-lead">App Store の審査で止まったとき、知りたいのは、ガイドラインの言い換えではなく、実際に何が原因だったかだと思います。私は自社の iPhone アプリで、11回の却下を受けました。その指摘と本当の原因、直し方を全部書きます。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-04">2026年11月4日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-04">2026年11月4日</time></dd></div><div><dt>読む目安</dt><dd>約8分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>自社アプリの却下11回の内訳は、課金まわり6回、規約リンク3回、動作1回、年齢区分1回。</li><li>一番苦労したのは Keep In Touch の4連続。真因は Product ID の不一致で、テスト用設定も同じ誤りだったため、手元では動いた。</li><li>AI を理由にした却下は11回の記録にない。返信は審査のメッセージ欄から。取り下げ後は審査メモで伝える。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#ketsuron">結論：11回の内訳</a></li><li><a href="#ichiran">11回の一覧</a></li><li><a href="#kit">一番苦労した例：Keep In Touch の4連続</a></li><li><a href="#kiyaku">規約リンクの3回</a></li><li><a href="#checklist">提出前のチェックリスト</a></li><li><a href="#action">却下されたときの動き方</a></li><li><a href="#ai">「AIで作ったから落ちるのか」</a></li><li><a href="#s6">出典</a></li></ol></nav>
+
+<h2 id="ketsuron">結論：11回の内訳は、課金まわり6回、規約リンク3回、動作1回、年齢区分1回</h2>
+    <p>私は自社の iPhone アプリ5本（KATACHI、Glidwell、Keep In Touch、One CRM、Utility）で、App Store の審査を11回、却下されました。内訳は次のとおりです。</p>
+    <ul>
+      <li><strong>課金まわり：6回。</strong>課金画面にたどり着けない、商品が読み込まれない、課金が提出に入っていない、など。</li>
+      <li><strong>規約リンク：3回。</strong>購入画面、説明文、言語ごとの説明文で、利用規約のリンクが抜けていました。</li>
+      <li><strong>動作：1回。</strong>iPad で写真の取り込みが動きませんでした。</li>
+      <li><strong>年齢区分：1回。</strong>回答がアプリの内容と合っていませんでした。</li>
+    </ul>
+    <p>6＋3＋1＋1で11回です。半分以上が課金まわりで、規約リンクの3回は、いずれも書き忘れ・確認漏れでした。ガイドラインの文言を読んでも分かりにくいことが、実際には「設定が違う」「一か所書き忘れた」だったことが多くありました。この記事では、その実例を省略せずに書きます。</p>
+
+<h2 id="ichiran">11回の一覧</h2>
+    <p>ガイドライン番号は、記録に残っているものだけを書いています。Keep In Touch の1回目と2回目は、番号の記録が手元に残っていません。</p>
+    <table class="stack">
+      <tr><th>#1　KATACHI・2026年7月（3.1.2(c)）</th><td><b>言われたこと：</b>自動更新サブスクの購入画面に、利用規約（EULA）への有効なリンクがない。<br><b>原因と直し方：</b>購入画面にはプライバシーと特商法のリンクしかなかった。購入画面と設定に利用規約リンクを追加。</td></tr>
+      <tr><th>#2　Glidwell・2026年7月（2.1(a)）</th><td><b>言われたこと：</b>iPad で「写真から取り込む」が動かない。<br><b>原因と直し方：</b>SwiftUI の Menu の中に置いた PhotosPicker が、メニューが閉じる動作とぶつかっていた。Button と .photosPicker(isPresented:) に分けた。</td></tr>
+      <tr><th>#3　Keep In Touch 1回目・2026年7月</th><td><b>言われたこと：</b>審査員が課金画面にたどり着けない。<br><b>原因と直し方：</b>11人目の連絡先を登録したときだけ出る作りだった。設定にプランの項目を追加。</td></tr>
+      <tr><th>#4　Keep In Touch 2回目</th><td><b>言われたこと：</b>プランが読み込めない。<br><b>原因と直し方：</b>読み込みの失敗を握りつぶしていた。状態を画面に出し、再試行できるようにした。ただし真因は #6。</td></tr>
+      <tr><th>#5　Keep In Touch 3回目（2.1(b)・3.1.1）</th><td><b>言われたこと：</b>購入時にエラーが出る。復元ボタンがない。<br><b>原因と直し方：</b>審査環境で起きやすい「保留」「未検証」の結果までエラー扱いにしていた。復元ボタンは、読み込み成功時だけ出ていた。結果の扱いを直し、復元を購入画面と設定に常設。</td></tr>
+      <tr><th>#6　Keep In Touch 4回目（2.1(b)）</th><td><b>言われたこと：</b>アプリ内課金が読み込まれない。<br><b>原因と直し方：</b>真因は Product ID の不一致。実際の ID に直し、読み込みの自動再試行を足して、次の提出で通過。</td></tr>
+      <tr><th>#7　One CRM 1回目・2026年9月（2.1(b) ほか）</th><td><b>言われたこと：</b>課金が審査に含まれていない。<br><b>原因と直し方：</b>サブスクの価格が日本だけで、他の国が未設定。課金商品が提出できる状態になっていなかった。全地域の価格を設定。</td></tr>
+      <tr><th>#8　One CRM 2回目（2.1(b)）</th><td><b>言われたこと：</b>課金が提出されていない。<br><b>原因と直し方：</b>初回のサブスク・買い切りは、アプリのバージョンと同じ提出に入れる必要がある（API 単独の提出は拒否される）。グループも含めて同じ下書きに入れて提出。</td></tr>
+      <tr><th>#9　Utility・2026年9月（3.1.2）</th><td><b>言われたこと：</b>説明文に利用規約のリンクがない（自動メッセージ）。<br><b>原因と直し方：</b>サブスクのあるアプリは、説明文にも必要だった。全言語の説明文に追加。</td></tr>
+      <tr><th>#10　Utility（2.3.6）</th><td><b>言われたこと：</b>年齢区分の回答がアプリの内容と合わない。<br><b>原因と直し方：</b>健康・ウェルネスの項目を、別のアプリの値からコピーして見落とした。回答を直し、本体は変えずに再提出。</td></tr>
+      <tr><th>#11　Glidwell・2026年10月（3.1.2）</th><td><b>言われたこと：</b>英語の説明文だけ、規約リンクがない（自動メッセージ）。<br><b>原因と直し方：</b>日本語にはあった。ロケールごとの確認漏れ。追記して、すぐ再提出。</td></tr>
+    </table>
+    <p>動作の1回（#2）は、SwiftUI の PhotosPicker という写真選択の部品が原因でした。メニューの中に置くと、メニューが閉じる動きと選択画面の表示がぶつかります。iPad で初めて表に出ました。メニューとは別のボタンにして、そこから選択画面を開く形にして直りました。</p>
+
+<h2 id="kit">一番苦労した例：Keep In Touch の4連続</h2>
+    <p>いちばん苦労したのは、Keep In Touch の課金です。4回続けて却下されました。毎回、指摘どおりに直して出しています。それでも落ちました。</p>
+    <p>流れはこうです。1回目は「課金画面にたどり着けない」でした。11人目の連絡先を登録したときだけ課金画面が出る作りで、審査で10人も登録するとは限りません。設定にプランの項目を足しました。2回目は「プランが読み込めない」でした。読み込みの失敗を握りつぶしていたので、状態を画面に出して再試行できるようにしました。3回目は「購入時にエラー」と「復元ボタンがない」でした。審査環境で起きやすい「保留」「未検証」の結果までエラー扱いにしていたので、そこを直し、復元ボタンも常設しました。</p>
+    <p>手がかりになったのは、指摘の文言の変化です。3回目の「購入時にエラー」が、4回目には「アプリ内課金が読み込まれない」に変わりました。購入の処理ではなく、その手前で商品が見つかっていないのではないか。そう考えて、Product ID を見直しました。</p>
+    <p>Product ID は、課金商品を App Store Connect で見分けるための名前です。アプリ側の名前と実物が違うと、商品が見つかりません。原因は、まさにこの不一致でした。しかも、アプリのコードと、手元で課金を試すためのテスト用設定ファイルに、同じ誤った ID が書かれていました。ふたつが一致していたので、開発中はずっと正常に動いていました。</p>
+    <p>実際の ID に直し、読み込みの自動再試行を足して、次の提出で通りました。ここから学んだのは、<strong>手元で動くことは、審査で動くことの証拠にならない</strong>ということです。テスト用の設定は、間違いまで一緒に再現してしまいます。</p>
+
+<h2 id="kiyaku">規約リンクの3回：購入画面、説明文、ロケールごと</h2>
+    <p>サブスクのあるアプリは、利用規約（EULA）のリンクを示す必要があります（ガイドライン 3.1.2(c)）。私は、これを3回、別々の場所で落としました。</p>
+    <ul>
+      <li><strong>購入画面（KATACHI）。</strong>購入画面にはプライバシーと特商法のリンクしかありませんでした。購入画面と設定に、利用規約を足しました。</li>
+      <li><strong>説明文（Utility）。</strong>自動メッセージで届きました。説明文にも必要で、全言語の説明文に追加しました。</li>
+      <li><strong>ロケールごと（Glidwell）。</strong>日本語の説明文にはあったのに、英語だけ抜けていました。追記して、すぐ再提出しました。</li>
+    </ul>
+    <p>私は今、購入画面、設定、説明文の3か所に置いています。説明文は言語の数だけあります。「日本語で確認したから大丈夫」は通りません。</p>
+
+<h2 id="checklist">提出前のチェックリスト</h2>
+    <p>11回の共通点と、ガイドラインの該当箇所から作りました。自分のアプリで、提出の前に一つずつ確かめます。</p>
+    <ul>
+      <li><strong>審査員が課金画面に自力で着けるか。</strong>特定の条件でだけ出る画面にしない（#3）。</li>
+      <li><strong>商品の読み込みに失敗したとき、画面に状態が出て再試行できるか。</strong>失敗を握りつぶさない（#4）。</li>
+      <li><strong>Product ID が、App Store Connect の実物と一致しているか。</strong>テスト用の設定ではなく、実物と見比べる（#6）。</li>
+      <li><strong>購入の「保留」「未検証」をエラー扱いしていないか。復元ボタンが購入画面と設定にあるか。</strong>アプリ内の機能は、アプリ内課金で解放します（3.1.1）（#5）。</li>
+      <li><strong>課金商品が、提出できる状態か。</strong>価格が全地域に設定され、初回のサブスク・買い切りがアプリのバージョンと同じ提出に入っているか。課金はクラッシュや空の画面と同じく、2.1 の完成度の中で見られます（#7・#8）。</li>
+      <li><strong>利用規約のリンクが、購入画面、設定、説明文にあるか。全言語で。</strong>サブスクの情報の明示は 3.1.2(c) です（#1・#9・#11）。</li>
+      <li><strong>年齢区分の回答が、アプリの内容と合っているか。</strong>別アプリの値をコピーしない。年齢制限の質問には正直に答えます（2.3.6）（#10）。</li>
+      <li><strong>iPad など、使われうる端末で、主な機能が動くか。</strong>ログインがあるアプリは、審査用のデモアカウントを用意します（2.1）（#2）。</li>
+      <li><strong>Webサイトを包んだだけのアプリになっていないか（4.2）。既存のアプリと見分けがつくか（4.3）。</strong></li>
+      <li><strong>アカウントを作れるなら、アプリの中から削除できるか（5.1.1(v)）。</strong></li>
+    </ul>
+
+<h2 id="action">却下されたときの動き方</h2>
+    <ul>
+      <li><strong>指摘の文言を正確に読む。</strong>自分の言葉に言い換えて読むと、原因がずれます。</li>
+      <li><strong>文言の変化を見る。</strong>直したのに落ちたとき、前回と文言が変わっていれば、それが手がかりです。Keep In Touch がそうでした。</li>
+      <li><strong>返信は、App Store Connect の審査のメッセージ欄から。</strong></li>
+      <li><strong>提出を取り下げたあとのスレッドには、返信できません。</strong>そのときは、審査メモで伝えます。Keep In Touch の4回目がこの形でした。</li>
+      <li><strong>本体を変えずに再提出できる場合があります。</strong>年齢区分は回答を直しただけ（#10）、規約リンクは説明文に足しただけ（#9）でした。直す対象が本体かどうかを、先に見分けます。</li>
+    </ul>
+    <p>却下ではありませんが、同じ種類のことが2026年11月にも起きました。年齢区分の質問に、Apple が新しい必須項目（ソーシャルメディア）を足しました。未回答のままだと、提出そのものが止まります。回答すれば通りました。</p>
+
+<h2 id="ai">「AIで作ったから落ちるのか」</h2>
+    <p>Pohoda も、AI ツールを使ってアプリを開発しています。そのうえで言えるのは、11回の記録に、AI で作ったことを理由にした却下は1件もないということです。落ちた理由は、設定の誤り、書き忘れ、画面への導線でした。</p>
+    <p>ただし、AI で作りやすいアプリには、ガイドラインが当たりやすい箇所があります。4.2 は、Webサイトを包んだだけのアプリを認めていません。4.3 は、同じアプリを複数のバンドル ID で出すことや、既存のアプリと見分けがつかないアプリを認めていません。似たアプリを量産しがちな人は、ここを先に読んでください。私の見方では、ツールの種類より、課金や規約のような細かい確認を人が最後までやったかどうかのほうが、結果を左右します。</p>
+
+<h2 id="s6">出典</h2>
+    <ul>
+      <li><a href="https://developer.apple.com/jp/app-store/review/guidelines/" rel="noopener">App Review ガイドライン｜Apple Developer</a>（2026年6月8日更新版。2026年11月4日に確認）</li>
+    </ul>
+    <p class="jr-note">11回の却下の内容は、Pohoda の自社アプリの記録です。他社のアプリや、App Store 全体の傾向を示すものではありません。審査は変わることがあるため、提出前に最新のガイドラインを確認してください。</p>
+
+<aside class="jr-appcard" style="grid-template-columns:1fr" aria-label="Pohodaのアプリ開発の紹介">
+  <div class="jr-appcard-main">
+    <div class="jr-appcard-id"><img src="/assets/brand/pohoda-mark.svg" alt="Pohoda のロゴ" width="56" height="56" loading="lazy"><div><p class="jr-appcard-name">Pohoda のアプリ開発</p><p class="jr-appcard-kind">iPhone アプリを企画から App Store 公開まで</p></div></div>
+    <p class="jr-appcard-benefit">iPhone アプリの開発を、企画から審査の対応、App Store 公開まで一人で担当します。</p>
+    <ul><li>却下されたときは、原因の修正から再申請まで、契約の範囲内で対応します</li><li>課金・規約リンク・年齢区分は、提出の前に確かめます</li><li>Apple のアカウントは依頼主さまの名義。審査の合格と時期は保証できません</li></ul>
+    <p class="jr-appcard-price">試作 30万円／公開まで 50万円から／保守は月3万円から（いずれも総額）。審査対応だけのご依頼はお受けしていません。</p>
+    <div class="jr-appcard-actions"><a class="btn btn-primary" href="/development.html#contact">相談する</a><a class="btn btn-ghost" href="/development.html">料金と進め方を見る</a></div>
+  </div>
+</aside>
+
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>App Storeでリジェクトされたら、再提出できますか？</summary><p>できます。リジェクトは不合格の確定ではなく、直して出し直す前提の指摘です。私の11回も、原因を直して再提出する形で進めました。指摘の文言を正確に読み、原因を直し、審査のメッセージ欄から返信して再提出します。</p></details><details><summary>審査に落ちる一番多い理由は何ですか？</summary><p>Pohoda が受けた11回の中では、課金まわりが6回で最多でした。次が規約リンクの3回です。これは自社5本のアプリの記録であり、App Store 全体の傾向ではありません。</p></details><details><summary>リジェクトへの返信は、どこからしますか？</summary><p>App Store Connect の審査のメッセージ欄から返信します。ただし、提出を取り下げたあとのスレッドには返信できません。私は Keep In Touch の4回目で、審査メモで伝えました。</p></details><details><summary>審査対応だけを頼めますか？</summary><p>審査対応だけのご依頼はお受けしていません。開発からお受けする場合は、審査の対応まで担当します。Apple のアカウントは依頼主さまの名義で、審査への提出も依頼主さまのアカウントで行います。審査の合格と時期は保証できませんが、却下されたときは契約の範囲内で修正と再申請をします。</p></details><details><summary>AIで作ったアプリは、審査で落ちやすいですか？</summary><p>私の11回の記録に、AI で作ったことを理由にした却下はありません。ただし、Webサイトを包んだだけのアプリ（4.2）や、既存アプリと見分けがつかないアプリ（4.3）は、ガイドライン上、通りません。ツールを問わず、そこは確認が必要です。</p></details></div></div>
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>東京を拠点に、自分たちのアプリ（iOS アプリとウェブサービス）を設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する読みもの"><h2 class="jr-h2">関連する読みもの</h2><div class="jr-rel"><a href="/journal/app-kaihatsu-kojin-irai.html"><small>アプリ開発を頼む</small><b>アプリ開発を個人に依頼するには｜開発会社との違いと頼む前の確認</b><span>個人と開発会社の違い、頼む前に決めておくこと。</span></a><a href="/journal/iphone-app-kaihatsu-hiyou.html"><small>アプリ開発を頼む</small><b>iPhoneアプリの開発費用｜個人に頼む相場と内訳</b><span>費用の相場と内訳。</span></a><a href="/journal/app-hoshu-hiyou.html"><small>アプリ開発を頼む</small><b>アプリの保守費用の相場と中身｜公開後に起きたこと</b><span>公開後の保守に含まれるものと、実際に起きたこと。</span></a></div></nav>
+<p class="jr-back"><a href="/journal/">← 読みもの一覧へ戻る</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -527,7 +527,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/development.html</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-11-04</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
@@ -696,5 +696,30 @@
     <loc>https://pohoda.jp/en/costs.html</loc>
     <lastmod>2026-10-25</lastmod>
     <image:image><image:loc>https://pohoda.jp/assets/og/en/og-costs.png</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/app-kaihatsu-kojin-irai.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/iphone-app-kaihatsu-hiyou.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/app-shiyousho-template.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/app-store-reject-jirei.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://pohoda.jp/journal/app-hoshu-hiyou.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>
