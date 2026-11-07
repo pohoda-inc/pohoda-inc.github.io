@@ -29,9 +29,9 @@
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=22">
+<link rel="stylesheet" href="/styles.css?v=23">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"面接日程と選考の進捗管理をアプリでひとつに","description":"複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。","image":["https://pohoda.jp/assets/og/og-glidwell.png"],"datePublished":"2026-07-28","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"転職活動の管理","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html"}}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"面接日程と選考の進捗管理をアプリでひとつに","description":"複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。","image":["https://pohoda.jp/assets/og/og-glidwell.png"],"datePublished":"2026-07-28","dateModified":"2026-11-07","inLanguage":"ja","articleSection":"転職活動の管理","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"転職活動の管理","item":"https://pohoda.jp/journal/#tenshoku"}]}
@@ -64,12 +64,12 @@
       <div class="jr-tags"><a class="jr-app" href="/glidwell.html"><img src="/assets/glidwell-icon.png" alt="" width="22" height="22">Glidwell</a><span class="jr-theme">転職活動の管理</span></div>
       <h1>面接日程と<wbr>選考の<wbr>進捗管理を<wbr>アプリで<wbr>ひとつに</h1>
       <p class="jr-lead">複数の転職エージェントを併用すると、面接の日程も選考の進捗も、企業ごとにばらばらになりがちです。次の面接がいつだったか分からなくなる前に、一つの画面にまとめて記録する考え方を紹介します。</p>
-      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-07-28">2026年7月28日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約2分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-07-28">2026年7月28日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-07">2026年11月7日</time></dd></div><div><dt>読む目安</dt><dd>約2分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
     </div>
   </header>
 
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>面接日程は応募企業ごとに登録でき、次の面接が近い順に並ぶ。複数社を並行しても、直近の予定を見失いにくい。</li><li>書類選考・一次面接・最終面接などの選考フェーズを企業ごとに記録し、ステータスで一覧できる（更新は手作業で、自動追跡はしない）。</li><li>記録は端末の中だけに保存される。外部サーバーへの送信も、広告もない。</li></ul></aside>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><p class="jr-answer"><strong>面接日程と選考の進捗はどう管理する？</strong><br>応募企業ごとに面接日程を登録し、次の面接が近い順に並べて見ます。書類選考・一次面接・最終面接などの選考フェーズも企業ごとに記録し、ステータスで一覧します。</p><ul><li>面接日程は応募企業ごとに登録でき、次の面接が近い順に並ぶ。複数社を並行しても、直近の予定を見失いにくい。</li><li>書類選考・一次面接・最終面接などの選考フェーズを企業ごとに記録し、ステータスで一覧できる（更新は手作業で、自動追跡はしない）。</li><li>記録は端末の中だけに保存される。外部サーバーへの送信も、広告もない。</li></ul></aside>
 <nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">面接日程をまとめて管理する</a></li><li><a href="#s2">選考の進捗管理をアプリでひと目に</a></li><li><a href="#s3">なぜ面接日程を見失いやすいのか</a></li><li><a href="#s4">静かな設計というポリシー</a></li><li><a href="#s5">記録は端末の中だけに</a></li></ol></nav>
 
 <h2 id="s1">面接日程をまとめて管理する</h2>

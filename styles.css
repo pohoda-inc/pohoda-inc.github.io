@@ -723,6 +723,10 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 .jr-points li { position: relative; padding-left: 18px; margin: 0 0 8px; font-size: 15.5px; line-height: 1.85; color: var(--ink); }
 .jr-points li:last-child { margin-bottom: 0; }
 .jr-points li::before { content: ""; position: absolute; left: 3px; top: .82em; width: 6px; height: 6px; border-radius: 50%; background: var(--ink); }
+.jr-answer { margin: 0 0 12px; font-size: 15.5px; line-height: 1.85; color: var(--ink); }
+.jr-steps { margin: 0 0 12px; padding-left: 1.4em; font-size: 15px; line-height: 1.8; color: var(--ink); }
+.jr-points .jr-steps li { margin: 0 0 4px; padding-left: 0; font-size: 15px; }
+.jr-points .jr-steps li::before { content: none; }
 .jr-toc { border: 1px solid var(--line-2); border-radius: 14px; padding: 16px 22px 14px; margin: 0 0 12px; }
 .jr-toc ol { list-style: none; counter-reset: toc; margin: 0; padding: 0; }
 .jr-toc li { counter-increment: toc; margin: 0 0 6px; font-size: 14.5px; line-height: 1.7; display: flex; gap: 10px; }

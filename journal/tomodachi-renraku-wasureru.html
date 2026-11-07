@@ -29,9 +29,9 @@
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=22">
+<link rel="stylesheet" href="/styles.css?v=23">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"友達への連絡を忘れる瞬間を、記録で減らす","description":"友達に連絡しなきゃと思いながら忘れてしまうのは、薄情だからではありません。最後の記録からの経過日数だけを知らせ、人ごとに写真とメモを残す。Keep In Touch の設計判断を、実装の事実で説明します。","image":["https://pohoda.jp/assets/og/og-keep-in-touch.png"],"datePublished":"2026-07-29","dateModified":"2026-10-30","inLanguage":"ja","articleSection":"つながり・連絡","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/tomodachi-renraku-wasureru.html"}}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"友達への連絡を忘れる瞬間を、記録で減らす","description":"友達に連絡しなきゃと思いながら忘れてしまうのは、薄情だからではありません。最後の記録からの経過日数だけを知らせ、人ごとに写真とメモを残す。Keep In Touch の設計判断を、実装の事実で説明します。","image":["https://pohoda.jp/assets/og/og-keep-in-touch.png"],"datePublished":"2026-07-29","dateModified":"2026-11-07","inLanguage":"ja","articleSection":"つながり・連絡","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/tomodachi-renraku-wasureru.html"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"つながり・連絡","item":"https://pohoda.jp/journal/#tsunagari"}]}
@@ -64,12 +64,12 @@
       <div class="jr-tags"><a class="jr-app" href="/keep-in-touch.html"><img src="/assets/keep-in-touch-icon.png" alt="" width="22" height="22">Keep In Touch</a><span class="jr-theme">つながり・連絡</span></div>
       <h1>友達への<wbr>連絡を<wbr>忘れる瞬間を<wbr>、<wbr>記録で減らす</h1>
       <p class="jr-lead">「そろそろ連絡しなきゃ」と思いながら、日々の予定に押し流されて時間だけが過ぎていく。多くの場合それは関心が薄れたからではなく、連絡のきっかけを忘れてしまうだけです。この「忘れる」という一点にしぼった設計を説明します。</p>
-      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-07-29">2026年7月29日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-10-30">2026年10月30日</time></dd></div><div><dt>読む目安</dt><dd>約2分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-07-29">2026年7月29日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-07">2026年11月7日</time></dd></div><div><dt>読む目安</dt><dd>約2分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
     </div>
   </header>
 
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>友達への連絡が途切れるのは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないから。</li><li>Keep In Touch は「最後の記録からの経過日数」という1つの軸だけで、「そろそろ」を知らせる。重要度や親密さは数値化しない。</li><li>通知は事実を知らせるだけ。連絡するかどうかは、いつも受け取った側が決める。写真とメモは人ごとに残せる。</li></ul></aside>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><p class="jr-answer"><strong>友達への連絡を忘れるのは薄情だから？</strong><br>薄情だからとは限りません。連絡が途切れる理由の多くは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないからです。意志の弱さではなく、思い出す仕組みがないだけだと考えられます。</p><ul><li>友達への連絡が途切れるのは、関係が冷めたからではなく、思い出すきっかけが日常のどこにもないから。</li><li>Keep In Touch は「最後の記録からの経過日数」という1つの軸だけで、「そろそろ」を知らせる。重要度や親密さは数値化しない。</li><li>通知は事実を知らせるだけ。連絡するかどうかは、いつも受け取った側が決める。写真とメモは人ごとに残せる。</li></ul></aside>
 <nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">友達との連絡を忘れるのは、薄情だからではない</a></li><li><a href="#s2">経過日数を数える設計にした理由</a></li><li><a href="#s3">写真とメモを人ごとに残す、という選択</a></li></ol></nav>
 
 <h2 id="s1">友達との連絡を忘れるのは、薄情だからではない</h2>

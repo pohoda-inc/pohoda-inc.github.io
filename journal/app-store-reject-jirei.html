@@ -29,9 +29,9 @@
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=22">
+<link rel="stylesheet" href="/styles.css?v=23">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"App Storeのリジェクト理由と直し方｜自社アプリで受けた11回の実例","description":"App Storeの審査で自社アプリが受けた11回の却下の実例です。課金まわり6回、規約リンク3回など、指摘と本当の原因、直し方、返信の仕方、提出前のチェックリストをまとめました。Product ID の不一致で4連続で落ちた話も書いています。","image":["https://pohoda.jp/assets/og/og-default.png"],"datePublished":"2026-11-04","dateModified":"2026-11-05","inLanguage":"ja","articleSection":"アプリ開発を頼む","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/app-store-reject-jirei.html"}}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"App Storeのリジェクト理由と直し方｜自社アプリで受けた11回の実例","description":"App Storeの審査で自社アプリが受けた11回の却下の実例です。課金まわり6回、規約リンク3回など、指摘と本当の原因、直し方、返信の仕方、提出前のチェックリストをまとめました。Product ID の不一致で4連続で落ちた話も書いています。","image":["https://pohoda.jp/assets/og/og-default.png"],"datePublished":"2026-11-04","dateModified":"2026-11-07","inLanguage":"ja","articleSection":"アプリ開発を頼む","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/app-store-reject-jirei.html"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"アプリ開発を頼む","item":"https://pohoda.jp/journal/#kaihatsu"}]}
@@ -64,12 +64,12 @@
       <div class="jr-tags"><a class="jr-app" href="/development.html"><img src="/assets/brand/pohoda-mark.svg" alt="" width="22" height="22">Pohoda</a><span class="jr-theme">アプリ開発を頼む</span></div>
       <h1>App Storeの<wbr>リジェクト理由と<wbr>直し方｜<wbr>自社アプリで受けた<wbr>11回の実例</h1>
       <p class="jr-lead">App Store の審査で止まったとき、知りたいのは、ガイドラインの言い換えではなく、実際に何が原因だったかだと思います。私は自社の iPhone アプリで、11回の却下を受けました。その指摘と本当の原因、直し方を全部書きます。</p>
-      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-04">2026年11月4日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-05">2026年11月5日</time></dd></div><div><dt>読む目安</dt><dd>約8分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-04">2026年11月4日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-07">2026年11月7日</time></dd></div><div><dt>読む目安</dt><dd>約8分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
     </div>
   </header>
 
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>自社アプリの却下11回の内訳は、課金まわり6回、規約リンク3回、動作1回、年齢区分1回。</li><li>一番苦労したのは Keep In Touch の4連続。真因は Product ID の不一致で、テスト用設定も同じ誤りだったため、手元では動いた。</li><li>AI を理由にした却下は11回の記録にない。返信は審査のメッセージ欄から。取り下げ後は審査メモで伝える。</li></ul></aside>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><p class="jr-answer"><strong>App Storeでリジェクトされたら？</strong><br>リジェクトは不合格の確定ではなく、指摘どおりに直して再提出できます。返信は App Store Connect の審査のメッセージ欄から行います。自社アプリの11回の内訳は、課金まわり6回、規約リンク3回、動作1回、年齢区分1回です。</p><ol class="jr-steps"><li>指摘の文言を、言い換えずに正確に読む</li><li>直しても落ちたときは、前回からの文言の変化を手がかりにする</li><li>直して再提出し、返信は審査のメッセージ欄から送る</li></ol><ul><li>自社アプリの却下11回の内訳は、課金まわり6回、規約リンク3回、動作1回、年齢区分1回。</li><li>一番苦労したのは Keep In Touch の4連続。真因は Product ID の不一致で、テスト用設定も同じ誤りだったため、手元では動いた。</li><li>AI を理由にした却下は11回の記録にない。返信は審査のメッセージ欄から。取り下げ後は審査メモで伝える。</li></ul></aside>
 <nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#ketsuron">結論：11回の内訳</a></li><li><a href="#ichiran">11回の一覧</a></li><li><a href="#kit">一番苦労した例：Keep In Touch の4連続</a></li><li><a href="#kiyaku">規約リンクの3回</a></li><li><a href="#checklist">提出前のチェックリスト</a></li><li><a href="#action">却下されたときの動き方</a></li><li><a href="#ai">「AIで作ったから落ちるのか」</a></li><li><a href="#s6">出典</a></li></ol></nav>
 
 <h2 id="ketsuron">結論：11回の内訳は、課金まわり6回、規約リンク3回、動作1回、年齢区分1回</h2>
