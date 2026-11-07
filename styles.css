@@ -935,3 +935,10 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 .jx-group .jcard { padding: 20px 4px; }
 .jx-group .jcard h2 { font-size: 19px; margin: 6px 0 5px; }
 .jx-group .jcard p { font-size: 13.5px; }
+
+/* アプリ紹介ページの「どんなアプリ？」即答（AI検索・2026-11-07）。.jr-answer を流用 */
+.app-answer { padding: 8px 0 0; }
+.app-answer .wrap { text-align: left; }
+.app-answer-meta { margin: 10px 0 4px; font-size: 14.5px; line-height: 1.8; color: var(--ink); }
+.app-answer-meta b { display: inline-block; margin-right: 10px; font-weight: 600; color: var(--ink-2); }
+.app-answer-who { margin: 0 0 4px 1.3em; padding: 0; font-size: 14.5px; line-height: 1.8; color: var(--ink); }

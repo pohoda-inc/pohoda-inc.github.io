@@ -1,0 +1,28 @@
+# Pohoda
+
+> Pohoda（ポホダ）は、日本の個人事業主・杉本 啓輔が作っている iPhone アプリと Web サービスのブランドです。どのアプリも、記録は原則として端末の中か利用者自身の iCloud に保存し、広告は表示しません。
+
+用途ごとのアプリと、それぞれの紹介ページです。料金や機能の最新の内容は、各ページと App Store を正としてください。
+
+## iPhone アプリ（用途別）
+
+- [KATACHI（体型記録・筋トレ記録）](https://pohoda.jp/katachi.html)：筋トレ・体重・体脂肪・体型写真をひとつに記録し、前回を超える次の目標と推移のグラフを見せる iPhone アプリ。
+- [KATACHI +（パーソナルトレーナーの顧客管理）](https://pohoda.jp/katachi-plus.html)：パーソナルトレーナーと小規模ジム・スタジオ向けの顧客カルテとトレーニング記録。スタッフと店舗で共有、予約台帳・同意書の署名にも対応。iPhone・iPad・Mac。
+- [Keep In Touch（誕生日・連絡のリマインド）](https://pohoda.jp/keep-in-touch.html)：しばらく連絡していない大切な人をリマインドし、誕生日・記念日も知らせる iPhone アプリ。
+- [Glidwell（転職活動の選考管理）](https://pohoda.jp/glidwell.html)：複数の転職エージェントを併用する人向けに、選考のフェーズ・次にやること・書類をまとめる iPhone アプリ。
+- [Graph（数字の記録とグラフ）](https://pohoda.jp/graph.html)：体重・資産・収入・勉強時間・売上などの数字を2タップで記録し、自動でグラフにする iPhone アプリ。
+- [One CRM（個人事業主・サロンの顧客管理）](https://pohoda.jp/one-crm.html)：顧客と会ったことを記録すると、最後に連絡した日・回数・売上が自動で出る顧客台帳。個人客にも法人営業にも対応。iPhone・iPad・Mac。
+- [Utility（メモ・ToDo・カレンダー・体重管理）](https://pohoda.jp/utility.html)：メモ・ToDo・カレンダー・体重や体脂肪率・歩数・BMI をひとつにまとめた、広告のないアプリ。iPhone・iPad・Mac。
+- [Costs（固定費の家計簿）](https://pohoda.jp/costs.html)：家賃・サブスク・年払いなどの固定費を並べ、毎月いくら使っているかをひと目で見せる iPhone の家計簿。
+- [Pre Interview（AI 面接練習）](https://pohoda.jp/pre-interview.html)：AI の面接官と声で模擬面接をする iPhone アプリ。転職・新卒就活・英語面接・小学校受験の保護者面接に対応し、講評とやり直しのレッスンつき。
+
+## Web サービス
+
+- [YANE（物件比較・ハザードマップ）](https://pohoda.jp/yane.html)：住所から物件の災害リスク・地盤・地震・相場・学区・法規制を公的データで調べ、候補の物件を同じ表で比べる。Web 版（https://yane.pohoda.jp/）と iPhone アプリ。
+- [Insight（自己分析・自分の取扱説明書）](https://pohoda.jp/insight.html)：60問の自己分析診断から、自分の傾向を周囲に伝わる「取扱説明書」にまとめる Web サービス（https://insight.pohoda.jp/）。
+
+## 読みもの・その他
+
+- [読みもの](https://pohoda.jp/journal/)：記録表・チェックリスト・面接対策などの実用記事（印刷用 PDF つきのものが多い）。
+- [iPhone アプリ開発のご相談](https://pohoda.jp/development.html)：個人への iPhone アプリ開発の依頼。
+- [運営者情報](https://pohoda.jp/operator.html)
