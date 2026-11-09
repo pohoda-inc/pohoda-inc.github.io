@@ -1,0 +1,67 @@
+/* /nenshu/ 専用。色・余白は /styles.css の変数に合わせる（モバイル優先） */
+.ns { padding: 40px 0 72px; }
+.ns h1 { font-size: clamp(25px, 6.4vw, 38px); line-height: 1.35; margin-bottom: 14px; }
+.ns .ns-lead { color: var(--ink-2); font-size: 15px; margin-bottom: 8px; }
+.ns h2 { font-family: var(--sans); font-weight: 700; font-size: 19px; line-height: 1.5; margin: 52px 0 6px; padding-top: 28px; border-top: 1px solid var(--line); }
+.ns h2 + .ns-sub { color: var(--ink-2); font-size: 14px; margin-bottom: 18px; }
+.ns h3 { font-size: 15px; font-weight: 600; margin: 24px 0 8px; }
+.ns .num { font-variant-numeric: tabular-nums; }
+.ns-box { border: 1px solid var(--line-2); border-radius: var(--radius); background: var(--bg-2); padding: 20px 18px; }
+.ns fieldset { border: 0; margin: 0 0 16px; padding: 0; min-width: 0; }
+.ns legend, .ns label.ns-label { display: block; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 6px; padding: 0; }
+.ns-seg { display: flex; gap: 0; border: 1px solid var(--line-2); border-radius: 12px; overflow: hidden; background: var(--bg); }
+.ns-seg label { flex: 1; text-align: center; font-size: 14px; padding: 11px 6px; cursor: pointer; color: var(--ink-2); border-left: 1px solid var(--line-2); line-height: 1.4; }
+.ns-seg label:first-child { border-left: 0; }
+.ns-seg input { position: absolute; opacity: 0; pointer-events: none; }
+.ns-seg input:checked + span { color: var(--bg); }
+.ns-seg label:has(input:checked) { background: var(--ink); color: var(--bg); }
+.ns-seg label:has(input:focus-visible) { outline: 2px solid var(--ink); outline-offset: -3px; }
+.ns-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.ns-row > div { flex: 1 1 140px; min-width: 0; }
+.ns input[type=number] { width: 100%; font: inherit; font-size: 16px; padding: 10px 12px; border: 1px solid var(--line-2); border-radius: 10px; background: var(--bg); color: var(--ink); }
+.ns input[type=number]:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+.ns .unit { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+.ns-check { display: flex; gap: 10px; align-items: center; font-size: 14px; color: var(--ink); cursor: pointer; }
+.ns-check input { width: 18px; height: 18px; accent-color: var(--ink); }
+.ns-result { margin-top: 20px; }
+.ns-big { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ns-big > div { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 14px 14px 12px; }
+.ns-big dt { font-size: 12.5px; color: var(--ink-2); line-height: 1.5; }
+.ns-big dd { font-size: clamp(20px, 6vw, 26px); font-weight: 700; margin-top: 2px; letter-spacing: -.01em; }
+.ns-big dd small { font-size: 12.5px; font-weight: 400; color: var(--ink-2); display: block; letter-spacing: 0; }
+.ns table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 10px 0; }
+.ns th, .ns td { padding: 9px 4px; border-bottom: 1px solid var(--line); text-align: right; vertical-align: top; font-weight: 400; }
+.ns th:first-child, .ns td:first-child { text-align: left; }
+.ns thead th { font-size: 12px; color: var(--muted); }
+.ns tfoot td, .ns tr.sum td { font-weight: 600; border-top: 1px solid var(--line-2); }
+.ns td small, .ns th small { color: var(--muted); font-size: 11.5px; display: block; line-height: 1.5; }
+.ns-note { margin-top: 16px; border-left: 3px solid var(--ink); padding: 4px 0 4px 14px; font-size: 14px; color: var(--ink); line-height: 1.8; }
+.ns-note ul { margin: 6px 0 0 18px; color: var(--ink-2); }
+.ns-note li { margin-bottom: 3px; font-size: 14px; }
+.ns-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 18px; }
+.ns-chips button { font: inherit; font-size: 14px; padding: 8px 14px; border: 1px solid var(--line-2); background: var(--bg); color: var(--ink); border-radius: 999px; cursor: pointer; min-height: 40px; }
+.ns-chips button[aria-pressed=true] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.ns-chips button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.ns-who { font-size: 14px; color: var(--ink-2); margin: 4px 0 14px; }
+.ns-who strong { color: var(--ink); }
+.ns-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; margin: 0 0 8px; }
+.ns-grid dt { font-size: 12.5px; color: var(--ink-2); }
+.ns-grid dd { font-size: 17px; font-weight: 600; }
+.ns-grid dd small { display: block; font-size: 11.5px; font-weight: 400; color: var(--muted); }
+.ns .tag-fixed { font-size: 11px; border: 1px solid var(--line-2); border-radius: 6px; padding: 0 5px; margin-left: 6px; color: var(--ink-2); white-space: nowrap; }
+.ns-cta { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ns-fixedcalc { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-2); }
+.ns-fixedout { margin-top: 10px; font-size: 15px; color: var(--ink); min-height: 1.8em; }
+.ns-cautions { margin: 12px 0 0 20px; }
+.ns-cautions li { font-size: 14.5px; margin-bottom: 8px; color: var(--ink-2); }
+.ns-err { color: #8a2a1a; font-size: 14px; }
+@media (min-width: 720px) {
+  .ns { padding-top: 64px; }
+  .ns-box { padding: 28px; }
+  .ns-big { grid-template-columns: repeat(3, 1fr); }
+  .ns-grid { grid-template-columns: repeat(3, 1fr); }
+  .ns table { font-size: 15px; }
+}
+.ns [hidden] { display: none !important; }
+.ns-big > div:first-child { grid-column: 1 / -1; }
+@media (min-width: 720px) { .ns-big > div:first-child { grid-column: auto; } }

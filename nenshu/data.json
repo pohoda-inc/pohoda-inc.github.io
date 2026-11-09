@@ -1,0 +1,1187 @@
+[
+ {
+  "id": "s300",
+  "income": 300,
+  "fam": false,
+  "label": "独身・26歳",
+  "job": "物流の事務",
+  "home": "1K・駅14分・築28年",
+  "husband": null,
+  "wife": null,
+  "age": 26,
+  "rows": [
+   {
+    "name": "家賃",
+    "amount": 65000,
+    "fixed": true
+   },
+   {
+    "name": "奨学金",
+    "amount": 14000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ",
+    "amount": 2500,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 32000,
+    "fixed": false
+   },
+   {
+    "name": "日用品",
+    "amount": 4000,
+    "fixed": false
+   },
+   {
+    "name": "服と美容院",
+    "amount": 10000,
+    "fixed": false
+   },
+   {
+    "name": "友だちと",
+    "amount": 18000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 8000,
+    "fixed": false
+   }
+  ],
+  "take": 184917,
+  "inflow": 184917,
+  "child_allowance": 0,
+  "bonus": 194697,
+  "left": 21417,
+  "spent": 163500,
+  "year_take": 2413702,
+  "year_tax": 586298,
+  "saved": 151701,
+  "special": 300000,
+  "fee": 0,
+  "invest": 0
+ },
+ {
+  "id": "s400",
+  "income": 400,
+  "fam": false,
+  "label": "独身・28歳",
+  "job": "営業",
+  "home": "1K・駅10分・築18年",
+  "husband": null,
+  "wife": null,
+  "age": 28,
+  "rows": [
+   {
+    "name": "家賃",
+    "amount": 72000,
+    "fixed": true
+   },
+   {
+    "name": "奨学金",
+    "amount": 15000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "スマホと回線",
+    "amount": 8000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 42000,
+    "fixed": false
+   },
+   {
+    "name": "趣味",
+    "amount": 10000,
+    "fixed": false
+   },
+   {
+    "name": "飲み会",
+    "amount": 20000,
+    "fixed": false
+   },
+   {
+    "name": "服",
+    "amount": 5000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 8000,
+    "fixed": false
+   }
+  ],
+  "take": 224826,
+  "inflow": 224826,
+  "child_allowance": 0,
+  "bonus": 479092,
+  "left": 34826,
+  "spent": 190000,
+  "year_take": 3177002,
+  "year_tax": 822998,
+  "saved": 447004,
+  "special": 450000,
+  "fee": 0,
+  "invest": 0
+ },
+ {
+  "id": "s500",
+  "income": 500,
+  "fam": false,
+  "label": "独身・31歳",
+  "job": "メーカー勤務",
+  "home": "1LDK・駅8分・築15年",
+  "husband": null,
+  "wife": null,
+  "age": 31,
+  "rows": [
+   {
+    "name": "家賃",
+    "amount": 85000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "スマホと回線",
+    "amount": 9000,
+    "fixed": true
+   },
+   {
+    "name": "NISA",
+    "amount": 30000,
+    "fixed": false
+   },
+   {
+    "name": "食費",
+    "amount": 45000,
+    "fixed": false
+   },
+   {
+    "name": "外食と友だち",
+    "amount": 30000,
+    "fixed": false
+   },
+   {
+    "name": "服と美容",
+    "amount": 22000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 5000,
+    "fixed": true
+   },
+   {
+    "name": "ほか",
+    "amount": 12000,
+    "fixed": false
+   }
+  ],
+  "take": 277923,
+  "inflow": 277923,
+  "child_allowance": 0,
+  "bonus": 596166,
+  "left": 27923,
+  "spent": 250000,
+  "year_take": 3931239,
+  "year_tax": 1068761,
+  "saved": 791242,
+  "special": 500000,
+  "fee": 0,
+  "invest": 30000
+ },
+ {
+  "id": "s600",
+  "income": 600,
+  "fam": false,
+  "label": "独身・33歳",
+  "job": "IT企業勤務",
+  "home": "1LDK・駅6分・築10年",
+  "husband": null,
+  "wife": null,
+  "age": 33,
+  "rows": [
+   {
+    "name": "家賃",
+    "amount": 95000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "スマホと回線",
+    "amount": 9000,
+    "fixed": true
+   },
+   {
+    "name": "NISA",
+    "amount": 50000,
+    "fixed": false
+   },
+   {
+    "name": "食費",
+    "amount": 55000,
+    "fixed": false
+   },
+   {
+    "name": "付き合い",
+    "amount": 35000,
+    "fixed": false
+   },
+   {
+    "name": "趣味",
+    "amount": 25000,
+    "fixed": false
+   },
+   {
+    "name": "服",
+    "amount": 10000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 5000,
+    "fixed": true
+   },
+   {
+    "name": "ほか",
+    "amount": 13000,
+    "fixed": false
+   }
+  ],
+  "take": 329243,
+  "inflow": 329243,
+  "child_allowance": 0,
+  "bonus": 709689,
+  "left": 20243,
+  "spent": 309000,
+  "year_take": 4660610,
+  "year_tax": 1339390,
+  "saved": 952605,
+  "special": 600000,
+  "fee": 0,
+  "invest": 50000
+ },
+ {
+  "id": "s700",
+  "income": 700,
+  "fam": false,
+  "label": "独身・35歳",
+  "job": "専門職",
+  "home": "1LDK・駅5分・築8年",
+  "husband": null,
+  "wife": null,
+  "age": 35,
+  "rows": [
+   {
+    "name": "家賃",
+    "amount": 110000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 13000,
+    "fixed": true
+   },
+   {
+    "name": "スマホと回線",
+    "amount": 9000,
+    "fixed": true
+   },
+   {
+    "name": "NISA",
+    "amount": 50000,
+    "fixed": false
+   },
+   {
+    "name": "食費",
+    "amount": 60000,
+    "fixed": false
+   },
+   {
+    "name": "友だちと",
+    "amount": 40000,
+    "fixed": false
+   },
+   {
+    "name": "ジムと美容",
+    "amount": 30000,
+    "fixed": false
+   },
+   {
+    "name": "服",
+    "amount": 20000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 20000,
+    "fixed": false
+   }
+  ],
+  "take": 375178,
+  "inflow": 375178,
+  "child_allowance": 0,
+  "bonus": 813105,
+  "left": 23178,
+  "spent": 352000,
+  "year_take": 5315243,
+  "year_tax": 1684757,
+  "saved": 991241,
+  "special": 700000,
+  "fee": 0,
+  "invest": 50000
+ },
+ {
+  "id": "s800",
+  "income": 800,
+  "fam": false,
+  "label": "独身・38歳",
+  "job": "メーカー管理職手前",
+  "home": "2LDK・駅5分・築12年",
+  "husband": null,
+  "wife": null,
+  "age": 38,
+  "rows": [
+   {
+    "name": "家賃",
+    "amount": 115000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 15000,
+    "fixed": true
+   },
+   {
+    "name": "スマホと回線",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "NISA",
+    "amount": 80000,
+    "fixed": false
+   },
+   {
+    "name": "食費",
+    "amount": 65000,
+    "fixed": false
+   },
+   {
+    "name": "付き合い",
+    "amount": 40000,
+    "fixed": false
+   },
+   {
+    "name": "カーシェア",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "趣味",
+    "amount": 25000,
+    "fixed": false
+   },
+   {
+    "name": "服",
+    "amount": 15000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "ほか",
+    "amount": 15000,
+    "fixed": false
+   }
+  ],
+  "take": 418841,
+  "inflow": 418841,
+  "child_allowance": 0,
+  "bonus": 912979,
+  "left": 18841,
+  "spent": 400000,
+  "year_take": 5939076,
+  "year_tax": 2060924,
+  "saved": 1299071,
+  "special": 800000,
+  "fee": 0,
+  "invest": 80000
+ },
+ {
+  "id": "s900",
+  "income": 900,
+  "fam": false,
+  "label": "独身・41歳",
+  "job": "金融系の総合職",
+  "home": "分譲2LDK・ローン35年",
+  "husband": null,
+  "wife": null,
+  "age": 41,
+  "rows": [
+   {
+    "name": "ローンと管理費",
+    "amount": 160000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 16000,
+    "fixed": true
+   },
+   {
+    "name": "スマホと回線",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "NISA",
+    "amount": 60000,
+    "fixed": false
+   },
+   {
+    "name": "食費",
+    "amount": 70000,
+    "fixed": false
+   },
+   {
+    "name": "親へ",
+    "amount": 30000,
+    "fixed": false
+   },
+   {
+    "name": "友だちと",
+    "amount": 45000,
+    "fixed": false
+   },
+   {
+    "name": "美容と服",
+    "amount": 35000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "ほか",
+    "amount": 15000,
+    "fixed": false
+   }
+  ],
+  "take": 457093,
+  "inflow": 457093,
+  "child_allowance": 0,
+  "bonus": 1001649,
+  "left": 4093,
+  "spent": 453000,
+  "year_take": 6486765,
+  "year_tax": 2513235,
+  "saved": 870765,
+  "special": 900000,
+  "fee": 0,
+  "invest": 60000
+ },
+ {
+  "id": "s1000",
+  "income": 1000,
+  "fam": false,
+  "label": "独身・43歳",
+  "job": "管理職",
+  "home": "2LDK・駅3分・築6年",
+  "husband": null,
+  "wife": null,
+  "age": 43,
+  "rows": [
+   {
+    "name": "家賃",
+    "amount": 135000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 16000,
+    "fixed": true
+   },
+   {
+    "name": "スマホと回線",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "NISA",
+    "amount": 100000,
+    "fixed": false
+   },
+   {
+    "name": "食費",
+    "amount": 80000,
+    "fixed": false
+   },
+   {
+    "name": "会食と付き合い",
+    "amount": 55000,
+    "fixed": false
+   },
+   {
+    "name": "趣味",
+    "amount": 30000,
+    "fixed": false
+   },
+   {
+    "name": "服",
+    "amount": 20000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "ほか",
+    "amount": 20000,
+    "fixed": false
+   }
+  ],
+  "take": 502336,
+  "inflow": 502336,
+  "child_allowance": 0,
+  "bonus": 1095625,
+  "left": 22336,
+  "spent": 480000,
+  "year_take": 7123656,
+  "year_tax": 2876344,
+  "saved": 1563657,
+  "special": 1000000,
+  "fee": 0,
+  "invest": 100000
+ },
+ {
+  "id": "f300",
+  "income": 300,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 230万 / 妻 パート70万",
+  "home": "2DK・郊外・築35年",
+  "husband": 230,
+  "wife": 70,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 14000,
+    "fixed": true
+   },
+   {
+    "name": "家賃",
+    "amount": 62000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 18000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 15000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 6000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 42000,
+    "fixed": false
+   },
+   {
+    "name": "子どもの物",
+    "amount": 8000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 6000,
+    "fixed": true
+   },
+   {
+    "name": "ほか",
+    "amount": 5000,
+    "fixed": false
+   }
+  ],
+  "take": 194348,
+  "inflow": 209348,
+  "child_allowance": 15000,
+  "bonus": 280222,
+  "left": 33348,
+  "spent": 176000,
+  "year_take": 2612400,
+  "year_tax": 387601,
+  "saved": 380398,
+  "special": 300000,
+  "fee": 14000,
+  "invest": 0
+ },
+ {
+  "id": "f400",
+  "income": 400,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 320万 / 妻 パート80万",
+  "home": "2LDK・駅15分・築30年",
+  "husband": 320,
+  "wife": 80,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 21000,
+    "fixed": true
+   },
+   {
+    "name": "家賃",
+    "amount": 68000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 25000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 17000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 8000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 52000,
+    "fixed": false
+   },
+   {
+    "name": "子どもの物",
+    "amount": 10000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "お小遣い",
+    "amount": 12000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 12000,
+    "fixed": false
+   }
+  ],
+  "take": 252338,
+  "inflow": 267338,
+  "child_allowance": 15000,
+  "bonus": 387912,
+  "left": 32338,
+  "spent": 235000,
+  "year_take": 3415969,
+  "year_tax": 584031,
+  "saved": 475968,
+  "special": 300000,
+  "fee": 21000,
+  "invest": 0
+ },
+ {
+  "id": "f500",
+  "income": 500,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 400万 / 妻 パート100万",
+  "home": "2LDK・駅12分・築25年",
+  "husband": 400,
+  "wife": 100,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 21000,
+    "fixed": true
+   },
+   {
+    "name": "家賃",
+    "amount": 80000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 28000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 18000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 9000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 60000,
+    "fixed": false
+   },
+   {
+    "name": "子どもの物",
+    "amount": 12000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "お小遣い",
+    "amount": 35000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 13000,
+    "fixed": false
+   }
+  ],
+  "take": 311879,
+  "inflow": 326879,
+  "child_allowance": 15000,
+  "bonus": 481863,
+  "left": 38879,
+  "spent": 288000,
+  "year_take": 4224401,
+  "year_tax": 775599,
+  "saved": 548411,
+  "special": 400000,
+  "fee": 21000,
+  "invest": 0
+ },
+ {
+  "id": "f600",
+  "income": 600,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 450万 / 妻 150万",
+  "home": "2LDK・駅10分・築20年",
+  "husband": 450,
+  "wife": 150,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 31000,
+    "fixed": true
+   },
+   {
+    "name": "家賃",
+    "amount": 85000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 30000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 20000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 10000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 68000,
+    "fixed": false
+   },
+   {
+    "name": "子どもの物",
+    "amount": 14000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 15000,
+    "fixed": true
+   },
+   {
+    "name": "お小遣い",
+    "amount": 40000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 15000,
+    "fixed": false
+   }
+  ],
+  "take": 352797,
+  "inflow": 367797,
+  "child_allowance": 15000,
+  "bonus": 638806,
+  "left": 39797,
+  "spent": 328000,
+  "year_take": 4872368,
+  "year_tax": 1127633,
+  "saved": 566370,
+  "special": 550000,
+  "fee": 31000,
+  "invest": 0
+ },
+ {
+  "id": "f700",
+  "income": 700,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 480万 / 妻 時短220万",
+  "home": "中古マンション・ローン35年",
+  "husband": 480,
+  "wife": 220,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 43000,
+    "fixed": true
+   },
+   {
+    "name": "ローン",
+    "amount": 95000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 32000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 20000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 11000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 75000,
+    "fixed": false
+   },
+   {
+    "name": "子どもの物",
+    "amount": 15000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 18000,
+    "fixed": true
+   },
+   {
+    "name": "お小遣い",
+    "amount": 45000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 16000,
+    "fixed": false
+   }
+  ],
+  "take": 405159,
+  "inflow": 420159,
+  "child_allowance": 15000,
+  "bonus": 716701,
+  "left": 50159,
+  "spent": 370000,
+  "year_take": 5578620,
+  "year_tax": 1421380,
+  "saved": 618609,
+  "special": 700000,
+  "fee": 43000,
+  "invest": 0
+ },
+ {
+  "id": "f800",
+  "income": 800,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 500万 / 妻 300万",
+  "home": "分譲マンション・ローン35年",
+  "husband": 500,
+  "wife": 300,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 43000,
+    "fixed": true
+   },
+   {
+    "name": "ローンと管理費",
+    "amount": 123000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 35000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 22000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 78000,
+    "fixed": false
+   },
+   {
+    "name": "習い事と子ども",
+    "amount": 18000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 20000,
+    "fixed": true
+   },
+   {
+    "name": "お小遣い",
+    "amount": 50000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 18000,
+    "fixed": false
+   }
+  ],
+  "take": 462840,
+  "inflow": 477840,
+  "child_allowance": 15000,
+  "bonus": 790863,
+  "left": 58840,
+  "spent": 419000,
+  "year_take": 6344941,
+  "year_tax": 1655059,
+  "saved": 746943,
+  "special": 750000,
+  "fee": 43000,
+  "invest": 0
+ },
+ {
+  "id": "f900",
+  "income": 900,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 550万 / 妻 350万",
+  "home": "分譲マンション・駅近",
+  "husband": 550,
+  "wife": 350,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 43000,
+    "fixed": true
+   },
+   {
+    "name": "ローンと管理費",
+    "amount": 130000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 38000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 23000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 12000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 85000,
+    "fixed": false
+   },
+   {
+    "name": "習い事と子ども",
+    "amount": 25000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 22000,
+    "fixed": true
+   },
+   {
+    "name": "お小遣い",
+    "amount": 60000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 20000,
+    "fixed": false
+   }
+  ],
+  "take": 518215,
+  "inflow": 533215,
+  "child_allowance": 15000,
+  "bonus": 879945,
+  "left": 75215,
+  "spent": 458000,
+  "year_take": 7098528,
+  "year_tax": 1901472,
+  "saved": 882525,
+  "special": 900000,
+  "fee": 43000,
+  "invest": 0
+ },
+ {
+  "id": "f1000",
+  "income": 1000,
+  "fam": true,
+  "label": "夫婦・子ども2歳",
+  "job": "夫 600万 / 妻 400万",
+  "home": "分譲マンション・駅5分",
+  "husband": 600,
+  "wife": 400,
+  "age": 30,
+  "rows": [
+   {
+    "name": "保育料",
+    "amount": 43000,
+    "fixed": true
+   },
+   {
+    "name": "ローンと管理費",
+    "amount": 140000,
+    "fixed": true
+   },
+   {
+    "name": "車",
+    "amount": 40000,
+    "fixed": true
+   },
+   {
+    "name": "電気ガス水道",
+    "amount": 25000,
+    "fixed": true
+   },
+   {
+    "name": "スマホ2台",
+    "amount": 13000,
+    "fixed": true
+   },
+   {
+    "name": "食費",
+    "amount": 92000,
+    "fixed": false
+   },
+   {
+    "name": "習い事と子ども",
+    "amount": 30000,
+    "fixed": false
+   },
+   {
+    "name": "家事代行",
+    "amount": 10000,
+    "fixed": false
+   },
+   {
+    "name": "保険",
+    "amount": 25000,
+    "fixed": true
+   },
+   {
+    "name": "お小遣い",
+    "amount": 65000,
+    "fixed": false
+   },
+   {
+    "name": "ほか",
+    "amount": 22000,
+    "fixed": false
+   }
+  ],
+  "take": 572495,
+  "inflow": 587495,
+  "child_allowance": 15000,
+  "bonus": 967661,
+  "left": 82495,
+  "spent": 505000,
+  "year_take": 7837612,
+  "year_tax": 2162388,
+  "saved": 1057601,
+  "special": 900000,
+  "fee": 43000,
+  "invest": 0
+ }
+]
