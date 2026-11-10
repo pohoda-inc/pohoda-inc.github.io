@@ -942,3 +942,98 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 .app-answer-meta { margin: 10px 0 4px; font-size: 14.5px; line-height: 1.8; color: var(--ink); }
 .app-answer-meta b { display: inline-block; margin-right: 10px; font-weight: 600; color: var(--ink-2); }
 .app-answer-who { margin: 0 0 4px 1.3em; padding: 0; font-size: 14.5px; line-height: 1.8; color: var(--ink); }
+
+/* ============================================================
+   使い方ガイド（.guide）2026-11
+   広い画面は「左に目次（追従）｜右に本文」。狭い画面は章へのリンクだけを本文の上に置く。
+   本文は .prose の読みやすさをそのまま使い、見出しを 章(h2)＞項目(h3)＞小見出し(h4) の3段にする。
+   ============================================================ */
+.guide { padding-top: 56px; padding-bottom: 90px; }
+.guide-head, .guide-body { max-width: 700px; }
+.guide [id] { scroll-margin-top: 84px; }
+.guide a:focus-visible, .guide summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+.guide ::selection { background: var(--ink); color: #fff; }
+
+.guide-head .back { display: inline-block; margin-bottom: 26px; font-size: 13px; color: var(--ink-2); }
+.guide-head h1 { font-size: clamp(28px, 5vw, 40px); margin-bottom: 6px; }
+.guide-head .updated { font-size: 13px; color: var(--muted); margin-bottom: 18px; }
+.guide-head .lede { font-size: 16px; color: var(--ink); max-width: 34em; }
+.guide-head h2 { font-size: 20px; font-weight: 700; margin: 44px 0 4px; }
+.guide-head h2 + p { font-size: 14.5px; color: var(--ink-2); margin-bottom: 20px; }
+
+/* 最初の3ステップ：画面の写真に、押す場所の枠を重ねる */
+.quick-steps { list-style: none; counter-reset: q; display: grid; gap: 22px; }
+.quick-steps li { counter-increment: q; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 18px; align-items: start; align-content: start; }
+.quick-steps h3 { font-size: 15.5px; margin: 2px 0 4px; }
+.quick-steps h3::before { content: counter(q) ". "; font-variant-numeric: tabular-nums; }
+.quick-steps p { font-size: 14px; color: var(--ink-2); line-height: 1.75; }
+.shot { position: relative; display: block; }
+.shot img { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line-2); box-shadow: 0 10px 26px rgba(28,20,14,.10); }
+.shot .tap { position: absolute; border: 2px solid var(--ink); border-radius: 9px; box-shadow: 0 0 0 3px rgba(255,255,255,.85); pointer-events: none; }
+@media (min-width: 640px) {
+  .quick-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+  .quick-steps li { grid-template-columns: 1fr; gap: 14px; }
+  .shot img { border-radius: 20px; }
+  .shot .tap { border-radius: 12px; }
+}
+
+/* 使い方で選ぶ：3行のリンク */
+.guide-roles { list-style: none; border-top: 1px solid var(--line); }
+.guide-roles a { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: center; padding: 15px 2px; border-bottom: 1px solid var(--line); color: var(--ink); }
+.guide-roles a:hover { text-decoration: none; background: var(--bg-2); }
+.guide-roles strong { display: block; font-size: 15px; font-weight: 600; }
+.guide-roles span { display: block; font-size: 13.5px; color: var(--ink-2); line-height: 1.7; }
+.guide-roles a::after { content: "→"; grid-column: 2; grid-row: 1 / span 2; color: var(--ink-2); }
+
+/* 目次 */
+.guide-toc { margin: 40px 0 0; }
+.guide-toc ul { list-style: none; }
+.guide-toc > ul { display: flex; flex-wrap: wrap; gap: 8px; }
+.guide-toc > ul > li > a { display: block; padding: 7px 14px; border: 1px solid var(--line-2); border-radius: 999px; font-size: 13.5px; color: var(--ink); white-space: nowrap; }
+.guide-toc > ul > li > a:hover { text-decoration: none; border-color: var(--ink); }
+.guide-toc ul ul { display: none; }
+@media (min-width: 1000px) {
+  .guide { display: grid; grid-template-columns: 200px minmax(0, 700px); column-gap: 72px; justify-content: center; }
+  .guide-head, .guide-body { grid-column: 2; }
+  .guide-toc { grid-column: 1; grid-row: 1 / span 2; align-self: start; position: sticky; top: 86px; margin: 0; padding: 4px 8px 24px 0; max-height: calc(100vh - 100px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line-2) transparent; }
+  .guide-toc > ul { display: block; }
+  .guide-toc > ul > li { margin-bottom: 18px; }
+  .guide-toc > ul > li > a { padding: 0; border: 0; border-radius: 0; font-size: 13px; font-weight: 700; white-space: normal; }
+  .guide-toc ul ul { display: block; margin-top: 6px; border-left: 1px solid var(--line); }
+  .guide-toc ul ul a { display: block; padding: 4px 0 4px 13px; margin-left: -1px; border-left: 1px solid transparent; font-size: 13px; line-height: 1.55; color: var(--ink-2); }
+  .guide-toc ul ul a:hover { color: var(--ink); text-decoration: none; }
+  .guide-toc ul ul a[aria-current="true"] { color: var(--ink); font-weight: 600; border-left-color: var(--ink); }
+}
+
+/* 本文 */
+.guide-body.prose { padding: 0; }
+.guide-body h2 { font-size: 24px; font-weight: 700; margin: 76px 0 6px; padding-top: 22px; border-top: 1px solid var(--ink); }
+.guide-body h2 + p { color: var(--ink-2); margin-bottom: 4px; }
+.guide-body h3 { font-size: 18px; font-weight: 700; margin: 46px 0 12px; padding-top: 26px; border-top: 1px solid var(--line); }
+.guide-body h2 + p + h3 { margin-top: 26px; padding-top: 0; border-top: 0; }
+.guide-body h4 { font-size: 15px; font-weight: 600; color: var(--ink); margin: 26px 0 6px; }
+.guide-body p { margin-bottom: 10px; }
+.guide-body ol.steps { list-style: none; margin: 14px 0 16px; counter-reset: s; }
+.guide-body ol.steps > li { counter-increment: s; position: relative; padding-left: 38px; margin-bottom: 12px; }
+.guide-body ol.steps > li::before { content: counter(s); position: absolute; left: 0; top: .16em; width: 24px; height: 24px; border: 1px solid var(--ink); border-radius: 50%; font-size: 12.5px; font-weight: 600; line-height: 22px; text-align: center; color: var(--ink); font-variant-numeric: tabular-nums; }
+.guide-body table.pair th { width: 50%; }
+.guide-body table.pair td { width: 50%; }
+
+/* 手順の横に画面を置く（狭い画面では手順の下） */
+.guide-split .shot { max-width: 250px; margin: 22px auto 6px; }
+.guide-split figcaption { text-align: center; font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+@media (min-width: 720px) {
+  .guide-split { display: grid; grid-template-columns: minmax(0, 1fr) 216px; column-gap: 36px; align-items: start; }
+  .guide-split .shot { margin: 6px 0 0; }
+  .guide-split > figure { position: sticky; top: 92px; }
+}
+
+/* くわしい説明は畳んでおく */
+.guide-body details.more { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 18px 0; }
+.guide-body details.more + details.more { border-top: 0; margin-top: -18px; }
+.guide-body details.more summary { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 2px; cursor: pointer; list-style: none; font-size: 14.5px; font-weight: 600; color: var(--ink); }
+.guide-body details.more summary::-webkit-details-marker { display: none; }
+.guide-body details.more summary::after { content: "＋"; font-weight: 400; font-size: 17px; flex: none; }
+.guide-body details.more[open] summary::after { content: "−"; }
+.guide-body details.more > :last-child { margin-bottom: 20px; }
+.guide-body .faq { margin: 8px 0 0; max-width: none; }
