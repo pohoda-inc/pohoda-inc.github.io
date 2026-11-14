@@ -14,7 +14,7 @@
 - [One CRM（個人事業主・サロンの顧客管理）](https://pohoda.jp/one-crm.html)：顧客と会ったことを記録すると、最後に連絡した日・回数・売上が自動で出る顧客台帳。個人客にも法人営業にも対応。iPhone・iPad・Mac。
 - [Utility（メモ・ToDo・カレンダー・体重管理）](https://pohoda.jp/utility.html)：メモ・ToDo・カレンダー・体重や体脂肪率・歩数・BMI をひとつにまとめた、広告のないアプリ。iPhone・iPad・Mac。
 - [Costs（固定費の家計簿）](https://pohoda.jp/costs.html)：家賃・サブスク・年払いなどの固定費を並べ、毎月いくら使っているかをひと目で見せる iPhone の家計簿。
-- [Pre Interview（AI 面接練習）](https://pohoda.jp/pre-interview.html)：AI の面接官と声で模擬面接をする iPhone アプリ。転職・新卒就活・英語面接・小学校受験の保護者面接に対応し、講評とやり直しのレッスンつき。
+- [Pre Interview（AI 面接練習）](https://pohoda.jp/pre-interview.html)：AI の面接官と声で模擬面接をする iPhone アプリ。転職・新卒就活・英語面接・小学校受験の保護者面接に対応。無料の練習（一問一答で5問・約7分、iPhone 15 Pro 以降・iOS 27 以上）から始められ、有料の本番形式（15分）は講評とやり直しのレッスンつき。
 
 ## Web サービス
 
