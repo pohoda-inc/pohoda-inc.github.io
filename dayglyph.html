@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dayglyph｜今日の調子を、文字盤の印ひとつで見せる Apple Watch アプリ</title>
+<meta name="description" content="Dayglyph は、Apple Watch が記録した昨夜の睡眠・心拍変動・安静時心拍数を本人のふだんと比べ、朝に文字盤の印をひとつ出す Apple Watch アプリ。数字や点数は出しません。健康データは Apple Watch の中だけに。">
+<link rel="canonical" href="https://pohoda.jp/dayglyph.html">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/dayglyph.html">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/dayglyph.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Dayglyph｜今日の調子を、文字盤の印ひとつで。">
+<meta property="og:description" content="昨夜の睡眠・心拍変動・安静時心拍数を、ふだんの自分と比べて印ひとつに。数字は出さない Apple Watch アプリ。">
+<meta property="og:url" content="https://pohoda.jp/dayglyph.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-dayglyph.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dayglyph｜今日の調子を、文字盤の印ひとつで。">
+<meta name="twitter:description" content="昨夜の睡眠・心拍変動・安静時心拍数を、ふだんの自分と比べて印ひとつに。数字は出さない Apple Watch アプリ。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-dayglyph.png">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="./styles.css?v=24">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Dayglyph",
+  "operatingSystem": "watchOS 26",
+  "applicationCategory": "HealthApplication",
+  "url": "https://pohoda.jp/dayglyph.html",
+  "image": "https://pohoda.jp/assets/og/og-dayglyph.png",
+  "description": "昨夜の睡眠・睡眠中の心拍変動・安静時心拍数を本人のふだんと比べ、今日の調子を文字盤の印ひとつで見せる Apple Watch アプリ。健康データは Apple Watch の中だけで扱う。",
+  "inLanguage": "ja",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Pohoda",
+    "url": "https://pohoda.jp/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "印が保留のままです", "acceptedAnswer": {"@type": "Answer", "text": "基準が5日分たまるまでは、印は保留になります。また、昨夜の睡眠が記録されていない朝も保留になります。寝るときに Apple Watch を着けてください。"}}, {"@type": "Question", "name": "iPhone だけで使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "使えません。判定は Apple Watch の中で行います。iPhone は、入れ方の説明と購入だけに使います。"}}, {"@type": "Question", "name": "データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "Apple Watch の中だけです。アプリを削除すると消えます。"}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "Dayglyph", "item": "https://pohoda.jp/dayglyph.html"}]}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="https://apps.apple.com/jp/developer/keisuke-sugimoto/id6776073638">App Store で見る</a>
+  </div>
+</header>
+
+<main class="marketing">
+  <section class="hero ring-hero app-hero">
+    <div class="wrap">
+      <div class="cat-copy">
+        <div class="app-id"><img class="app-icon" src="./assets/dayglyph-icon.png" alt="Dayglyph アイコン" width="44" height="44"><span>Dayglyph</span></div>
+        <h1>今日の調子を、<wbr>文字盤の印ひとつで。</h1>
+        <p class="lead">Apple Watch が記録した昨夜の睡眠をもとに、朝、文字盤に印をひとつ出します。数字も点数もグラフも出しません。ふだんの自分と比べて、今日はどうかだけを伝えます。</p>
+        <div class="btn-row">
+        <span class="btn btn-primary" aria-disabled="true" style="cursor:default;opacity:.55;">App Store で近日公開</span><!-- TODO: 公開後に App Store の URL のリンクへ戻す -->
+        <a class="btn btn-ghost" href="#howto">入れ方を見る ↓</a>
+      </div>
+        <dl class="cat-spec"><div><dt>使う場面</dt><dd>朝の調子の確認</dd></div><div><dt>使える端末</dt><dd>Apple Watch（watchOS 26 以降）</dd></div><div><dt>健康データの置き場所</dt><dd>Apple Watch の中</dd></div></dl>
+      </div>
+      <!-- TODO: 画面の画像（ストア画像と同時に用意） -->
+    </div>
+  </section>
+
+  <section class="app-answer" aria-labelledby="answer-tone">
+    <div class="wrap">
+      <p class="jr-answer" id="answer-tone"><strong>Dayglyph はどんなアプリ？</strong><br>Dayglyph は、Apple Watch が記録した昨夜の睡眠時間・睡眠中の心拍変動（HRV）・安静時心拍数を、本人のふだん（直近最大28日の中央値とばらつき）と比べて、朝に文字盤の印をひとつ出す Apple Watch アプリです。数字・点数・グラフは出しません。</p>
+      <p class="app-answer-meta"><b>向いている人</b></p><ul class="app-answer-who"><li>寝るときも Apple Watch を着けている人</li><li>点数や細かい数字より、ひと目で分かるほうがいい人</li></ul>
+      <p class="app-answer-meta"><b>料金</b>最初の7日間はすべての機能を使えます。そのあとは買い切り 500円（税込）。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- TODO: 画面の画像がそろったら「画面」の節を戻す（見出しだけだと空いて見えるので、それまで出さない）
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-label">画面</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+  -->
+
+  <section>
+    <div class="wrap">
+      <div class="section-label">できること</div>
+      <div class="features">
+        <div class="feature">
+          <h3><span class="dot"></span>数字を出さない</h3>
+          <p>点数もグラフも出しません。朝に文字盤を見て、印をひとつ確かめるだけです。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>本人のふだんと比べる</h3>
+          <p>昨夜の睡眠時間・睡眠中の心拍変動（HRV）・安静時心拍数を、直近最大28日の中央値とばらつきと比べます。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>色がなくても分かる</h3>
+          <p>良好は塗りつぶしの丸、通常は左半分を塗った丸、低調は輪、保留は短い線。色が出ない文字盤でも形で見分けられます。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>理由は3行で</h3>
+          <p>アプリを開くと、睡眠・HRV・安静時心拍がそれぞれふだんより上か下かを3行で見られます。直近7日の印も並びます。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>文字盤のどこにでも</h3>
+          <p>文字盤の丸・角・1行の枠に置けます。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>データが足りない日は判定しない</h3>
+          <p>基準は使いながら貯まります。5日分たまるまでは保留の印です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap narrow">
+      <div class="section-label">印は4つ</div>
+      <div class="features">
+        <div class="feature">
+          <h3><span class="dot"></span>● 良好</h3>
+          <p>塗りつぶしの丸です。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>◐ 通常</h3>
+          <p>左半分を塗った丸です。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>○ 低調</h3>
+          <p>輪です。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>－ 保留</h3>
+          <p>短い線です。データが足りない日は判定しません。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="howto">
+    <div class="wrap narrow">
+      <div class="section-label">入れ方</div>
+      <h2>3つの手順です。</h2>
+      <ol class="lead" style="padding-left:1.4em;">
+        <li>iPhone で Dayglyph を入手します。</li>
+        <li>Apple Watch に入らないときは、iPhone の Watch アプリの「利用可能な App」から入れます。</li>
+        <li>文字盤を長押しして「編集」→「コンプリケーション」を開き、一覧から Dayglyph を選びます。</li>
+      </ol>
+      <p class="lead" style="margin-top:14px;">動作環境は、watchOS 26 以降の Apple Watch です。iPhone は iOS 26 以降で、入れ方の説明と購入だけに使います。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="pricing">
+    <div class="wrap narrow">
+      <div class="section-label">料金</div>
+      <h2>まず7日間、すべての機能を。</h2>
+      <p class="lead" style="margin-bottom:14px;">最初の7日間は、すべての機能を使えます。そのあとは<strong style="color:var(--ink)">買い切り</strong>で続けて使えます。月額・年額はありません。ファミリー共有に対応しています。</p>
+
+      <div class="price-grid">
+        <div class="price-card feature-on">
+          <div class="plan">買い切り</div>
+          <div class="amount">500円<small> 税込</small></div>
+          <div class="note">一度きり・自動更新なし</div>
+        </div>
+      </div>
+
+      <p class="lead" style="margin-top:28px;font-size:13.5px;">詳しくは <a href="./legal/terms.html#dayglyph">利用規約</a> と <a href="./legal/tokushoho.html#dayglyph">特定商取引法に基づく表記</a> をご覧ください。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap narrow">
+      <div class="section-label">プライバシー</div>
+      <h2>健康データは、腕の中だけに。</h2>
+      <p class="lead">健康データは Apple Watch の中だけで扱います。iPhone にも、当方のサーバーにも送りません。アカウント登録も広告もありません。詳しくは <a href="./legal/privacy.html#dayglyph">プライバシーポリシー</a> をご覧ください。</p>
+      <p class="lead" style="font-size:13.5px;">Dayglyph は医療機器ではありません。病気の診断・治療・予防を目的としたものではありません。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <div class="wrap narrow">
+      <div class="section-label">よくある質問</div>
+      <div class="faq">
+        <details><summary>印が保留のままです</summary><p>基準が5日分たまるまでは、印は保留になります。また、昨夜の睡眠が記録されていない朝も保留になります。寝るときに Apple Watch を着けてください。</p></details>
+        <details><summary>iPhone だけで使えますか？</summary><p>使えません。判定は Apple Watch の中で行います。iPhone は、入れ方の説明と購入だけに使います。</p></details>
+        <details><summary>データはどこに保存されますか？</summary><p>Apple Watch の中だけです。アプリを削除すると消えます。</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

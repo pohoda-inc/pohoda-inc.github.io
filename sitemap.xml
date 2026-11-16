@@ -693,6 +693,12 @@
     <image:image><image:loc>https://pohoda.jp/assets/screens/costs-settings-light.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/dayglyph.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-dayglyph.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/en/costs.html</loc>
     <lastmod>2026-10-25</lastmod>
     <image:image><image:loc>https://pohoda.jp/assets/og/en/og-costs.png</image:loc></image:image>
