@@ -50,7 +50,7 @@
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "録音を隠せますか？", "acceptedAnswer": {"@type": "Answer", "text": "隠せません。録音は自分で始めて自分で止め、録音中は iPhone と Apple Watch のマイクの表示が出ます。録音するのは、自分が参加している会話だけにしてください。"}}, {"@type": "Question", "name": "音声や文字起こしはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "iPhone と Apple Watch の中だけです。Pohoda のサーバーはありません。アプリを削除すると消えます。"}}, {"@type": "Question", "name": "報告づくりでデータは外に出ますか？", "acceptedAnswer": {"@type": "Answer", "text": "設定で「Private Cloud Compute を使う」を選んだときだけ、文字にした文章（音声は含みません）を Apple の Private Cloud Compute で処理します。「端末内だけで使う」を選ぶと外には出ませんが、報告は簡易な形になります。"}}, {"@type": "Question", "name": "書き出した記録は証拠になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "書き出しは記録を手元に残すための機能で、証拠としての効力を約束するものではありません。使うときは、弁護士などの専門家にご相談ください。"}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "録音を隠せますか？", "acceptedAnswer": {"@type": "Answer", "text": "隠せません。録音は自分で始めて自分で止め、録音中は iPhone と Apple Watch のマイクの表示が出ます。録音するのは、自分が参加している会話だけにしてください。"}}, {"@type": "Question", "name": "音声や文字起こしはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "iPhone と Apple Watch の中だけです。Pohoda のサーバーはありません。アプリを削除すると消えます。"}}, {"@type": "Question", "name": "報告づくりでデータは外に出ますか？", "acceptedAnswer": {"@type": "Answer", "text": "設定で「Private Cloud Compute を使う」を選んだときだけ、文字にした文章（音声は含みません）を Apple の Private Cloud Compute で処理します。週のふり返りも同じ仕組みで、日ごとの報告の文章だけを使います。「端末内だけで使う」を選ぶと外には出ませんが、報告は簡易な形になり、週のふり返りは作りません。"}}, {"@type": "Question", "name": "書き出した記録は証拠になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "書き出しは記録を手元に残すための機能で、証拠としての効力を約束するものではありません。使うときは、弁護士などの専門家にご相談ください。"}}]}
 </script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "DayDay", "item": "https://pohoda.jp/dayday.html"}]}
@@ -87,7 +87,7 @@
       </div>
       <figure class="cat-stage">
         <span class="cat-phone p2"><img src="./assets/home/dayday-2.jpg" alt="DayDay の一日の報告の画面" width="500" height="1086"></span>
-        <span class="cat-phone p1"><img src="./assets/home/dayday.jpg" alt="DayDay の今日の画面" width="500" height="1086" fetchpriority="high"></span>
+        <span class="cat-phone p1"><img src="./assets/home/dayday.jpg" alt="Apple Watch で録音している DayDay の画面" width="500" height="1086" fetchpriority="high"></span>
       </figure>
     </div>
   </section>
@@ -106,8 +106,9 @@
     <div class="wrap">
       <div class="section-label">画面</div>
       <div class="shot-pair" style="justify-content:center;flex-wrap:wrap;">
-        <figure><img src="./assets/screens/dayday-today.jpg" alt="DayDay 今日の画面" width="660" height="1434" loading="lazy" style="width:200px"></figure>
+        <figure><img src="./assets/screens/dayday-watch.jpg" alt="DayDay Apple Watch での録音と今日の画面" width="660" height="1434" loading="lazy" style="width:200px"></figure>
         <figure><img src="./assets/screens/dayday-report.jpg" alt="DayDay 一日の報告" width="660" height="1434" loading="lazy" style="width:200px"></figure>
+        <figure><img src="./assets/screens/dayday-week.jpg" alt="DayDay 週のふり返り" width="660" height="1434" loading="lazy" style="width:200px"></figure>
         <figure><img src="./assets/screens/dayday-search.jpg" alt="DayDay 検索" width="660" height="1434" loading="lazy" style="width:200px"></figure>
       </div>
     </div>
@@ -132,8 +133,12 @@
           <p>一日のまとめと、時間ごとに何の話をしていたかが並びます。報告から、その時刻の音声をすぐ再生でき、元の文字起こしにも戻れます。</p>
         </div>
         <div class="feature">
-          <h3><span class="dot"></span>探す・まとめる</h3>
-          <p>言葉でも、質問でも探せます。今週のまとめで、日ごとに何をしていたかをふり返れます。</p>
+          <h3><span class="dot"></span>一週間をふり返る</h3>
+          <p>日ごとの報告が2日分たまると、その週に何に時間を使い、どの話が続いたかを、週のふり返りにまとめます。今週と先週を切り替えて読めます（「Private Cloud Compute を使う」を選んでいるとき）。</p>
+        </div>
+        <div class="feature">
+          <h3><span class="dot"></span>あとから探す</h3>
+          <p>言葉でも、質問でも探せます。今週・今月や、自分の発言だけに絞れます。</p>
         </div>
         <div class="feature">
           <h3><span class="dot"></span>報告の手がかり（使いたい人だけ）</h3>
@@ -177,7 +182,7 @@
     <div class="wrap narrow">
       <div class="section-label">プライバシー</div>
       <h2>録音は、手元の端末の中に。</h2>
-      <p class="lead">音声・文字起こし・報告は iPhone と Apple Watch の中だけに保存します。Pohoda のサーバーはなく、アカウント登録も広告もありません。報告づくりの Private Cloud Compute は、選んだときだけ使います。詳しくは <a href="./legal/privacy.html#dayday">プライバシーポリシー</a> をご覧ください。</p>
+      <p class="lead">音声・文字起こし・報告は iPhone と Apple Watch の中だけに保存します。Pohoda のサーバーはなく、アカウント登録も広告もありません。報告と週のふり返りを作る Private Cloud Compute は、選んだときだけ使います。詳しくは <a href="./legal/privacy.html#dayday">プライバシーポリシー</a> をご覧ください。</p>
       <p class="lead" style="font-size:13.5px;">録音するのは、自分が参加している会話だけにしてください。文字起こしと報告は自動の処理による結果で、聞き間違いを含むことがあります。書き出した記録の法的な効力は約束しません。</p>
     </div>
   </section>
@@ -190,7 +195,7 @@
       <div class="faq">
         <details><summary>録音を隠せますか？</summary><p>隠せません。録音は自分で始めて自分で止め、録音中は iPhone と Apple Watch のマイクの表示が出ます。録音するのは、自分が参加している会話だけにしてください。</p></details>
         <details><summary>音声や文字起こしはどこに保存されますか？</summary><p>iPhone と Apple Watch の中だけです。Pohoda のサーバーはありません。アプリを削除すると消えます。</p></details>
-        <details><summary>報告づくりでデータは外に出ますか？</summary><p>設定で「Private Cloud Compute を使う」を選んだときだけ、文字にした文章（音声は含みません）を Apple の Private Cloud Compute で処理します。「端末内だけで使う」を選ぶと外には出ませんが、報告は簡易な形になります。</p></details>
+        <details><summary>報告づくりでデータは外に出ますか？</summary><p>設定で「Private Cloud Compute を使う」を選んだときだけ、文字にした文章（音声は含みません）を Apple の Private Cloud Compute で処理します。週のふり返りも同じ仕組みで、日ごとの報告の文章だけを使います。「端末内だけで使う」を選ぶと外には出ませんが、報告は簡易な形になり、週のふり返りは作りません。</p></details>
         <details><summary>書き出した記録は証拠になりますか？</summary><p>書き出しは記録を手元に残すための機能で、証拠としての効力を約束するものではありません。使うときは、弁護士などの専門家にご相談ください。</p></details>
       </div>
     </div>
