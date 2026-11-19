@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
     paths: ['**.html', 'sitemap.xml']
+# リポジトリの設定が将来変わっても、このジョブは読み取りだけ。
+permissions:
+  contents: read
 jobs:
   ping:
     runs-on: ubuntu-latest
