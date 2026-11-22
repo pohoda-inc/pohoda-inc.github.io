@@ -1077,3 +1077,4 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 }
 .aima .jr-body th, .aima .jr-rel b, .aima .jr-body strong, .aima .jr-points strong, .aima b, .aima strong { font-weight: 500; }
 .aima .btn, .aima .section-label, .aima summary, .aima .jr-app, .aima .jr-author-name, .aima .jr-box-title, .aima .jr-rel b, .aima .jcard h2, .aima .cat-spec dt { font-weight: 500; }
+.aima .jr-theme, .aima .cat-get, .aima .jr-badge, .aima .jr-tip b, .aima [class*="jr-appcard"] b, .aima [class*="jr-appcard"] strong { font-weight: 500; }
