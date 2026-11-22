@@ -32,7 +32,7 @@
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "使い方", "item": "https://pohoda.jp/ai-mail-auto/guide/"}, {"@type": "ListItem", "position": 4, "name": "会社でまとめて入れる", "item": "https://pohoda.jp/ai-mail-auto/guide/kaisha/"}]}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "HowTo", "name": "AI Mail Auto for Thunderbird を会社でまとめて入れる手順", "inLanguage": "ja", "step": [{"@type": "HowToStep", "name": "申し込み", "text": "会社の管理者が、申し込みのページで会社の情報と人数（2人から）を入れ、法人向けの規約に同意して、カードか請求書払いを選びます。"}, {"@type": "HowToStep", "name": "管理画面へのログイン", "text": "管理者のメールアドレスにログイン用のリンクが届きます。パスワードはなく、リンクは15分で切れ、1回だけ使えます。"}, {"@type": "HowToStep", "name": "参加できるドメインの設定", "text": "管理画面で、会社のドメイン（例 @example.co.jp）を設定します。"}, {"@type": "HowToStep", "name": "policies.json の配布", "text": "管理画面から policies.json をダウンロードし、Windows は Thunderbird のインストール先の distribution フォルダー、Mac は Thunderbird.app/Contents/Resources/distribution に置くか、グループポリシーや構成プロファイルで配ります。"}, {"@type": "HowToStep", "name": "参加の確かめ方", "text": "管理画面の使っている人の一覧に、参加した人が出ます。"}, {"@type": "HowToStep", "name": "人数の増減", "text": "管理画面の請求のページ（Stripe のポータル）で人数を変えます。"}, {"@type": "HowToStep", "name": "やめるとき", "text": "請求のページから解約します。支払い済みの期間の終わりまで使えます。"}]}
+{"@context": "https://schema.org", "@type": "HowTo", "name": "AI Mail Auto for Thunderbird を会社でまとめて入れる手順", "inLanguage": "ja", "step": [{"@type": "HowToStep", "name": "申し込み", "text": "会社の管理者が、申し込みのページで会社の情報と人数（2人から）を入れ、法人向けの規約に同意して、カードか請求書払いを選びます。"}, {"@type": "HowToStep", "name": "管理画面へのログイン", "text": "管理者のメールアドレスにログイン用のリンクが届きます。パスワードはなく、リンクは15分で切れ、1回だけ使えます。"}, {"@type": "HowToStep", "name": "参加できるドメインの設定", "text": "管理画面で、会社のドメイン（例 @example.co.jp）を設定します。"}, {"@type": "HowToStep", "name": "policies.json の配布", "text": "管理画面から policies.json をダウンロードし、Windows は Thunderbird のインストール先の distribution フォルダー、Mac は Thunderbird.app/Contents/Resources/distribution に置くか、グループポリシーや構成プロファイルで配ります。"}, {"@type": "HowToStep", "name": "参加の確かめ方", "text": "管理画面の使っている人の一覧に、参加した人が出ます。"}, {"@type": "HowToStep", "name": "人数の増減", "text": "管理画面の人数の変更で変えます（Stripe のポータルでは変えられません）。使っている席より少なくはできません。"}, {"@type": "HowToStep", "name": "やめるとき", "text": "請求のページから解約します。支払い済みの期間の終わりまで使えます。"}]}
 </script>
 </head>
 <body>
@@ -68,7 +68,7 @@
 <li>会社の情報、管理者のメールアドレス、人数（2人から）を入れます。</li>
 <li>法人向けの規約（<a href="/legal/terms.html">利用規約第3条の4</a>）を読んで同意します。会社として、AI の処理を米国の Anthropic に再委託することの承諾も、ここで管理者が行います。使う人の初回の案内では、同意のチェックの代わりに、会社の管理者が AI の利用を決めていることが表示されます。</li>
 <li>支払い方法を選びます。クレジットカード、または請求書払い（銀行振込・支払期限は請求書の発行日から30日）です。お試しは14日間で、お試しのあいだは請求しません。</li>
-<li>請求書払いでは、メールアドレスの確認のリンク（15分）が届きます。リンクを開くと、申し込みが完了します。最初の請求書の支払いが確認できるまでは、席は10まで、AI は1人あたり月 ¥200 まで、招待は1日に席の数までです。</li>
+<li>請求書払いでは、メールアドレスの確認のリンク（15分）が届きます。リンクを開いてボタンを押すと、申し込みが完了します。最初の請求書の支払いが確認できるまでは、席は10まで、AI は1人あたり月 ¥200 まで、招待は1日に席の数までです。</li>
 </ol>
 <p>会社の規則や、メールの相手方への扱いに照らして、外部の AI にメールの内容の一部を送ってよいかは、申し込む前に、会社で確かめてください。会社の決まりで AI を使わないと決めれば、検索と送る前の確認だけを使えます。</p>
 
@@ -120,14 +120,14 @@
 <h3>ほかの渡し方</h3>
 <ul>
 <li><strong>招待のメール</strong>：管理画面でメールアドレスを入れると、入れ方とキーの受け取り用のリンクが届きます。リンクは7日間で、1回だけ使えます。</li>
-<li><strong>手で渡す</strong>：管理画面でキーを発行し（その場で1回だけ表示されます）、使う人が設定画面に貼ります。</li>
+<li><strong>手で渡す</strong>：管理画面でキーを発行し（その場で1回だけ表示されます）、使う人が設定画面に貼ります。キーは PC 1台ごとに1つです。1人で3台まで使えます（直近30日に使った PC で数えます）。</li>
 </ul>
 
 <h2 id="s5">参加の確かめ方</h2>
 <ul>
 <li>管理画面の「使っている人」の一覧に、参加した人の名前とメールアドレス、最後に使った日、PC の台数が出ます。</li>
 <li>使う人の設定画面では、会社の管理者が決めた項目に「会社の管理者が決めています」と出ます。</li>
-<li>確認のメールのリンクは24時間で切れます。確認のメールは、同じアドレスへ1日3通までです。</li>
+<li>確認のメールのリンクは24時間で切れます。まだ使っていない確認のメールは、同じアドレスに1日3通までです。</li>
 <li>一覧に出ないときは、その人のメールアドレスが参加できるドメインに当てはまるか、席が空いているか、policies.json が配られているか（置き場所とファイル名）を確かめます。Thunderbird を終了して起動し直すと、参加を申し込み直します。</li>
 </ul>
 
@@ -143,7 +143,7 @@
 <li>管理画面の請求のページから、解約します。支払い済みの期間の終わりまで使えます。日割りの返金はしません。</li>
 <li>止まったあとも、検索と送る前の確認は使えます。AI の機能だけが止まります。</li>
 <li>請求書払いで、支払期限を過ぎても入金がないときは、連絡します。支払期限から7日を過ぎても入金がないときは、AI の機能が止まることがあります。入金の確認後に再開します。カードの更新の失敗も、同じ7日です。</li>
-<li>解約から90日で、会社の情報は削除されます（<a href="/legal/privacy.html">プライバシーポリシー</a>）。それより前に消したいときは、メールでご請求ください。</li>
+<li>契約が終わってから90日で、会社の情報は削除されます（<a href="/legal/privacy.html">プライバシーポリシー</a>）。それより前に消したいときは、メールでご請求ください。</li>
 </ul>
 
 <aside class="jr-author" id="author" aria-label="この記事を書いた人">
