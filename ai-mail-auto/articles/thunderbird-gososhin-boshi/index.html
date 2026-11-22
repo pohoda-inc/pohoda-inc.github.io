@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thunderbird の誤送信を防ぐ設定とアドオン 2026</title>
+<meta name="description" content="Thunderbird の誤送信を防ぐ方法を、本体の設定（添付忘れの通知・後で送信）から順に解説。アドオンの FlexConfirmMail の使いどころと、宛名や会社名の取り違えなど、起きやすい誤送信のパターンもまとめました。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Thunderbird の誤送信を防ぐ設定とアドオン 2026">
+<meta property="og:description" content="Thunderbird の誤送信を防ぐ方法を、本体の設定（添付忘れの通知・後で送信）から順に解説。アドオンの FlexConfirmMail の使いどころと、宛名や会社名の取り違えなど、起きやすい誤送信のパターンもまとめました。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thunderbird の誤送信を防ぐ設定とアドオン 2026">
+<meta name="twitter:description" content="Thunderbird の誤送信を防ぐ方法を、本体の設定（添付忘れの通知・後で送信）から順に解説。アドオンの FlexConfirmMail の使いどころと、宛名や会社名の取り違えなど、起きやすい誤送信のパターンもまとめました。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の誤送信を防ぐ設定とアドオン 2026", "description": "Thunderbird の誤送信を防ぐ方法を、本体の設定（添付忘れの通知・後で送信）から順に解説。アドオンの FlexConfirmMail の使いどころと、宛名や会社名の取り違えなど、起きやすい誤送信のパターンもまとめました。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird の誤送信を防ぐ設定とアドオン 2026", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird で誤送信を防ぐには？", "acceptedAnswer": {"@type": "Answer", "text": "まず本体の設定を使います。添付忘れの通知は設定の「作成」にあり、「後で送信」は作成画面の「ファイル」メニューにあります。ただし、本体には、宛先を確かめる確認ダイアログの設定は見つかりませんでした。宛先の確認を足したいときは、FlexConfirmMail のようなアドオンを使います。どの方法でも、すべての誤送信は防げません。"}}, {"@type": "Question", "name": "Thunderbird の添付忘れの通知はどこで設定しますか？", "acceptedAnswer": {"@type": "Answer", "text": "設定の「作成」の「全般」にある、添付ファイルを付け忘れていないか確認する項目です。英語の画面では Check for missing attachments という名前です（Mozilla の利用者向けの回答による）。日本語の画面での名前は確認できていません。本文に「添付」などの語があるのに添付がないときに知らせる仕組みで、語がなければ働きません。"}}, {"@type": "Question", "name": "FlexConfirmMail は無料ですか？", "acceptedAnswer": {"@type": "Answer", "text": "addons.thunderbird.net の掲載ページでは、無料です。開発は ClearCode Inc.、ライセンスは MPL 1.1 と表示されています。宛先のドメインや添付ファイルを条件に確認ダイアログを出し、送信を遅らせる機能もあります。一部の機能は別に入れる補助のプログラム（Native Messaging Host）が要ります。"}}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>誤送信防止</li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/ai-mail-auto/">Thunderbird のアドオン AI Mail Auto</a><span class="jr-theme">誤送信防止</span></div>
+      <h1>Thunderbird の誤送信を<wbr>防ぐ設定とアドオン 2026</h1>
+      <p class="jr-lead">Thunderbird の誤送信は、本体の設定で減らせるものと、アドオンを足さないと減らせないものがあります。添付忘れの通知と「後で送信」を、設定の場所つきで先にまとめ、そのあとにアドオンの FlexConfirmMail を紹介します。最後に、実際に起きやすい誤送信のパターンと、防ぎ方を書きました。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-22">2026年11月22日</time></dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>本体でできるのは、添付忘れの通知と「後で送信」です。どちらも無料で、アドオンは要りません。</li><li>宛先を確かめる確認ダイアログは、本体の設定には見つかりませんでした。足すときは、無料のアドオン FlexConfirmMail が定番です。</li><li>実際の誤送信は、会社名や宛名の取り違え、社内と社外の混同、別の会社への文面の流用、Cc と Bcc の取り違えが多く、どの方法でも、すべては防げません。</li><li>メニューの名前は、確認できなかったものを本文に書きました。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">本体の添付忘れの通知</a></li><li><a href="#s2">本体の「後で送信」</a></li><li><a href="#s3">送信前の確認ダイアログの設定</a></li><li><a href="#s4">アドオン FlexConfirmMail</a></li><li><a href="#s5">起きやすい誤送信のパターン</a></li><li><a href="#s6">宛名・会社名の取り違えを送る前に止めたい人へ</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
+
+<h2 id="s1">本体の添付忘れの通知</h2>
+<p>本文に「添付」「添付ファイル」のような語を書いたのに、ファイルを付けないまま送ろうとすると、知らせる機能が Thunderbird 本体にあります。アドオンは要りません。</p>
+<ol>
+<li>設定を開き、「作成」を選びます。</li>
+<li>「全般」にある、添付ファイルの付け忘れを確認する項目にチェックを入れます。英語の画面では Check for missing attachments という名前です（Mozilla の利用者向けの回答による）。</li>
+<li>設定を変えても働かないときは、Thunderbird を再起動します。</li>
+</ol>
+<p>この通知は、本文の語で判断します。語のリストは詳細設定（設定エディター）の mail.compose.attachment_reminder_keywords にあり、「添付」と書かなければ通知は出ません。ファイルの付け忘れしか見ないので、宛先や会社名の間違いは見つけられません。</p>
+<p>確認できなかった点：日本語の画面での項目名、Thunderbird 128 以降の画面での正確な位置は、Mozilla の公式ヘルプのページを開いて確かめることができませんでした。</p>
+
+<h2 id="s2">本体の「後で送信」</h2>
+<p>送信の直前に迷いが出たときは、「後で送信」で、いったん手元に止められます。</p>
+<ul>
+<li>作成画面の「ファイル」メニューから「後で送信」を選ぶか、Ctrl＋Shift＋Enter（Mac は ⌘＋Shift＋Return）を押すと、メールが「送信トレイ」に入ります。</li>
+<li>送信トレイに入れただけでは、自動では送られません。「ファイル」メニューの、未送信のメッセージを送る項目を選ぶか、Thunderbird を再起動して、未送信のメッセージを送るかを聞かれたときに「はい」を選んだときに、送られます（Mozilla の利用者向けの回答による）。</li>
+<li>送信トレイの中のメールは、開いて直せます。</li>
+</ul>
+<p>日時を決めて自動で送る予約は、本体の「後で送信」にはありません。予約には、アドオンの Send Later があります。どちらも、送ったあとに取り消せるものではありません。送る前に止める手段です。</p>
+<p>確認できなかった点：日本語の画面でのメニューの名前（「後で送信」「未送信メッセージを送信」）は、Mozilla の公式ヘルプのページを開いて確かめることができませんでした。</p>
+
+<h2 id="s3">送信前の確認ダイアログの設定</h2>
+<p>「送るボタンを押したら、宛先を見せて確認させる」設定は、Thunderbird の本体には見つかりませんでした。ただし、Mozilla の公式ヘルプの該当ページを確認できなかったため、見落としがあるかもしれません。</p>
+<p>本体でできる、宛先まわりの工夫は次のとおりです。</p>
+<ul>
+<li>送る前に、作成画面の宛先欄を、上から順に、声に出して読む。</li>
+<li>一斉に送るときは、宛先を Bcc に入れる（次のパターンの節）。</li>
+<li>返信のときは、「返信」と「全員に返信」の違いを見る（Ctrl＋R と Ctrl＋Shift＋R）。</li>
+</ul>
+
+<h2 id="s4">アドオン FlexConfirmMail</h2>
+<p>本体にない確認を足すアドオンの定番が、ClearCode Inc. の FlexConfirmMail です。addons.thunderbird.net の掲載ページでは、無料（ライセンスは MPL 1.1）で、Thunderbird 91 以降が対象と表示されています。</p>
+<ul>
+<li>宛先：社外のドメインなど、決めたドメイン宛てに送ろうとすると、追加の確認ダイアログが出ます。社外宛てを毎回確かめたい会社に向いています。</li>
+<li>添付ファイル：決めた拡張子のファイルや、「社外秘」のような語を名前に含むファイルを付けて送ろうとすると、確認が出ます。</li>
+<li>送信をブロックするドメインを決めて、そのドメイン宛てには送れなくすることもできます。</li>
+<li>宛先を手で足したとき、別の宛先のメールから本文を貼ったときなど、誤送信の危険が高いときだけ再確認する動作モードがあります。</li>
+<li>遅延送信：送る操作のあと、5 秒（変えられます）待ってから送るので、取り消せる機会が 1 回増えます。</li>
+</ul>
+<p>注意点が二つあります。一部の機能は、別に入れる補助のプログラム（Native Messaging Host）が要ります。また、確認の中身は、あらかじめ決めたドメインや語のリストで決まるので、リストにない間違いは止まりません。会社で入れるときは、管理者向けの設定の仕組み（Managed Storage）も用意されています。</p>
+
+<h2 id="s5">起きやすい誤送信のパターン</h2>
+<p>誤送信は、ファイルの付け忘れより、中身と宛先が合っていないことで起きるほうが重くなりがちです。よくある四つを挙げます。</p>
+<ul>
+<li>会社名・宛名の取り違え：本文は「田中様」宛てなのに、宛先が同じ姓の別の人になっている。宛先の入力の補完で、隣の候補を選んでしまうときに起きます。本文の「株式会社〇〇」と宛先の会社が違うこともあります。</li>
+<li>社内と社外の取り違え：社内だけのつもりのメールの宛先に、同じ姓の社外の人が入っていた。社内だけのやり取りに、返信の途中で社外の人が加わることもあります。</li>
+<li>別の会社に出した文面の流用：前に別の会社に送った見積もりや案内を、書き換えて使ううちに、前の会社の名前や条件が残ってしまう。</li>
+<li>Cc と Bcc の取り違え：一斉に送るメールを、Bcc ではなく To や Cc に入れてしまい、受け取る人どうしのアドレスが見える。</li>
+</ul>
+<p>防ぎ方は、送る前の見直しの習慣に頼る部分が大きく、確認の仕組みは、それを補うものです。次の習慣が効きます。</p>
+<ol>
+<li>返信や流用のときは、本文の宛名と会社名を、先に直してから宛先を見る。</li>
+<li>宛先の欄は、補完で選んだあとに、アドレスのドメインまで読む。</li>
+<li>10 人以上に送るときは、Bcc にする。</li>
+<li>金額や条件が入る文面は、「後で送信」で一度、送信トレイに止める。</li>
+</ol>
+
+<h2 id="s6">宛名・会社名の取り違えを送る前に止めたい人へ</h2>
+<p>ここまでの設定とアドオンで足りない、中身と宛先の食い違いを止めたい人向けに、私たちが作っている <a href="/ai-mail-auto/?from=thunderbird-gososhin-boshi">AI Mail Auto for Thunderbird</a> には、無料で、ライセンスなしで使える「送る前の確認」があります。Thunderbird 128 以降の PC の中だけで動き、AI は使わず、メールの内容を外に送りません。過去のメールの記録と照らして、問題がなさそうなら何も出さずにそのまま送り、おかしいときだけ送信を止めて理由を一文で見せます。止めるのは、宛名の苗字と宛先が合わないとき、本文の会社名と宛先が合わないとき、いつもと違う送信元のアカウントのとき、同じ姓の社外の人を選んでいそうなとき、社内だけのやり取りに社外の人が入っているとき、「社外秘」などの語があるのに社外の宛先があるとき、これまで一緒に出てこなかった会社の人が同じメールに入っているとき、社外の宛先が多いとき（Bcc を提案）です。社外の宛先ごとに確認する設定もあり、初期は切ってあります。添付忘れの通知と送信の遅延は、Thunderbird 本体に任せているので、アドオンには入れていません。過去のメールの記録だけが頼りなので、すべての間違いは見つけられず、自信がないときは何も言わずに送れます。AI の下書きや分類などは、14日間のお試しのあと月 ¥1,000（税込）で、カードの登録が必要です。お試しの期間内に解約すれば請求は発生しません。入れただけでは何も変えないので、上の設定で足りる人は、入れなくて構いません。</p>
+
+<h2 id="s7">よくある質問</h2>
+<div class="faq">
+<details><summary>Thunderbird で誤送信を防ぐには？</summary><p>まず本体の設定を使います。添付忘れの通知は設定の「作成」にあり、「後で送信」は作成画面の「ファイル」メニューにあります。ただし、本体には、宛先を確かめる確認ダイアログの設定は見つかりませんでした。宛先の確認を足したいときは、FlexConfirmMail のようなアドオンを使います。どの方法でも、すべての誤送信は防げません。</p></details>
+<details><summary>Thunderbird の添付忘れの通知はどこで設定しますか？</summary><p>設定の「作成」の「全般」にある、添付ファイルを付け忘れていないか確認する項目です。英語の画面では Check for missing attachments という名前です（Mozilla の利用者向けの回答による）。日本語の画面での名前は確認できていません。本文に「添付」などの語があるのに添付がないときに知らせる仕組みで、語がなければ働きません。</p></details>
+<details><summary>FlexConfirmMail は無料ですか？</summary><p>addons.thunderbird.net の掲載ページでは、無料です。開発は ClearCode Inc.、ライセンスは MPL 1.1 と表示されています。宛先のドメインや添付ファイルを条件に確認ダイアログを出し、送信を遅らせる機能もあります。一部の機能は別に入れる補助のプログラム（Native Messaging Host）が要ります。</p></details>
+</div>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する記事"><h2 class="jr-h2">関連する記事</h2><div class="jr-rel"><a href="/ai-mail-auto/articles/thunderbird-jidouka/"><small>Thunderbird の自動化</small><b>Thunderbird を自動化する方法 2026</b></a><a href="/ai-mail-auto/articles/thunderbird-benri/"><small>便利な設定</small><b>Thunderbird を便利にする設定とアドオン 2026</b></a><a href="/ai-mail-auto/articles/thunderbird-addon-osusume-2026/"><small>アドオン</small><b>Thunderbird のおすすめアドオン 2026</b></a><a href="/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/"><small>振り分け</small><b>Thunderbird の振り分けがうまくいかないとき</b></a></div></nav>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+<script>
+(function(){try{
+var M={"chatgpt.com":"ai-chatgpt","chat.openai.com":"ai-chatgpt","perplexity.ai":"ai-perplexity","claude.ai":"ai-claude","copilot.microsoft.com":"ai-copilot","gemini.google.com":"ai-gemini"};
+var h="";try{h=new URL(document.referrer).hostname.toLowerCase().replace(/^www\./,"");}catch(e){}
+var q=(new URLSearchParams(location.search).get("utm_source")||"").toLowerCase().replace(/^www\./,"");
+var v=Object.prototype.hasOwnProperty.call(M,h)?M[h]:(Object.prototype.hasOwnProperty.call(M,q)?M[q]:"");
+if(!/^[A-Za-z0-9-]{1,32}$/.test(v))return;
+document.querySelectorAll("a[href],form[action]").forEach(function(el){
+var k=el.tagName==="FORM"?"action":"href",u;
+try{u=new URL(el.getAttribute(k),location.href);}catch(e){return;}
+var ok=(u.origin==="https://mail-ai.pohoda.jp"&&(u.pathname==="/download"||u.pathname==="/checkout"))||(u.origin===location.origin&&u.pathname==="/ai-mail-auto/");
+if(!ok)return;
+u.searchParams.set("from",v);el.setAttribute(k,u.toString());});
+}catch(e){}})();
+</script>
+</body>
+</html>
