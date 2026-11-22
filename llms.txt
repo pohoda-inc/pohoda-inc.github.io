@@ -29,7 +29,7 @@
   - 使い方：[使い方ガイド](https://pohoda.jp/ai-mail-auto/guide/)
   - 解説：[Thunderbird を便利にする設定とアドオン 2026（効率化の方法）](https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/)
   - 解説：[Thunderbird の誤送信を防ぐ設定とアドオン 2026](https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/)
-  - [AI Mail Auto 法人契約（会社でまとめて入れる手順）](https://pohoda.jp/ai-mail-auto/guide/kaisha/)：1人 ¥1,000/月（税込）・2人から・カードか請求書払い。管理画面と policies.json で全部の PC に配れます。管理者にもメールの中身は見えません。
+  - [AI Mail Auto 法人契約（会社でまとめて入れる手順）](https://pohoda.jp/ai-mail-auto/guide/kaisha/)：1人 ¥1,000/月（税込）・2人から・カードか請求書払い。管理者がドメインを登録すれば社員が自分で入れられ、policies.json でまとめて配ることもできます。管理者にもメールの中身は見えません。
 
 ## 読みもの・その他
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Mail Auto を会社でまとめて入れる手順｜情シス向け・policies.json・管理画面</title>
-<meta name="description" content="AI Mail Auto for Thunderbird の法人契約を、情報システム担当の方が進める手順。申し込み、管理画面、参加できるドメイン、policies.json の配布（Windows・Mac）、参加の確かめ方、人数の増減、やめるときまで。">
+<title>AI Mail Auto を会社でまとめて入れる手順｜管理画面・policies.json</title>
+<meta name="description" content="AI Mail Auto for Thunderbird の法人契約を、管理者の方が進める手順。申し込み、管理画面、社員が自分で入れる方法、情シスがまとめて配る方法（policies.json）、参加の確かめ方、人数の増減、やめるときまで。">
 <meta name="author" content="杉本 啓輔">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/ai-mail-auto/guide/kaisha/">
@@ -14,15 +14,15 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="AI Mail Auto を会社でまとめて入れる手順｜情シス向け・policies.json・管理画面">
-<meta property="og:description" content="AI Mail Auto for Thunderbird の法人契約を、情報システム担当の方が進める手順。申し込み、管理画面、参加できるドメイン、policies.json の配布（Windows・Mac）、参加の確かめ方、人数の増減、やめるときまで。">
+<meta property="og:title" content="AI Mail Auto を会社でまとめて入れる手順｜管理画面・policies.json">
+<meta property="og:description" content="AI Mail Auto for Thunderbird の法人契約を、管理者の方が進める手順。申し込み、管理画面、社員が自分で入れる方法、情シスがまとめて配る方法（policies.json）、参加の確かめ方、人数の増減、やめるときまで。">
 <meta property="og:url" content="https://pohoda.jp/ai-mail-auto/guide/kaisha/">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Mail Auto を会社でまとめて入れる手順｜情シス向け・policies.json・管理画面">
-<meta name="twitter:description" content="AI Mail Auto for Thunderbird の法人契約を、情報システム担当の方が進める手順。申し込み、管理画面、参加できるドメイン、policies.json の配布（Windows・Mac）、参加の確かめ方、人数の増減、やめるときまで。">
+<meta name="twitter:title" content="AI Mail Auto を会社でまとめて入れる手順｜管理画面・policies.json">
+<meta name="twitter:description" content="AI Mail Auto for Thunderbird の法人契約を、管理者の方が進める手順。申し込み、管理画面、社員が自分で入れる方法、情シスがまとめて配る方法（policies.json）、参加の確かめ方、人数の増減、やめるときまで。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
@@ -32,7 +32,7 @@
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "使い方", "item": "https://pohoda.jp/ai-mail-auto/guide/"}, {"@type": "ListItem", "position": 4, "name": "会社でまとめて入れる", "item": "https://pohoda.jp/ai-mail-auto/guide/kaisha/"}]}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "HowTo", "name": "AI Mail Auto for Thunderbird を会社でまとめて入れる手順", "inLanguage": "ja", "step": [{"@type": "HowToStep", "name": "申し込み", "text": "会社の管理者が、申し込みのページで会社の情報と人数（2人から）を入れ、法人向けの規約に同意して、カードか請求書払いを選びます。"}, {"@type": "HowToStep", "name": "管理画面へのログイン", "text": "管理者のメールアドレスにログイン用のリンクが届きます。パスワードはなく、リンクは15分で切れ、1回だけ使えます。"}, {"@type": "HowToStep", "name": "参加できるドメインの設定", "text": "管理画面で、会社のドメイン（例 @example.co.jp）を設定します。"}, {"@type": "HowToStep", "name": "policies.json の配布", "text": "管理画面から policies.json をダウンロードし、Windows は Thunderbird のインストール先の distribution フォルダー、Mac は Thunderbird.app/Contents/Resources/distribution に置くか、グループポリシーや構成プロファイルで配ります。"}, {"@type": "HowToStep", "name": "参加の確かめ方", "text": "管理画面の使っている人の一覧に、参加した人が出ます。"}, {"@type": "HowToStep", "name": "人数の増減", "text": "管理画面の人数の変更で変えます（Stripe のポータルでは変えられません）。使っている席より少なくはできません。"}, {"@type": "HowToStep", "name": "やめるとき", "text": "請求のページから解約します。支払い済みの期間の終わりまで使えます。"}]}
+{"@context": "https://schema.org", "@type": "HowTo", "name": "AI Mail Auto for Thunderbird を会社でまとめて入れる手順", "inLanguage": "ja", "step": [{"@type": "HowToStep", "name": "申し込み", "text": "会社の管理者が、申し込みのページで会社の情報と人数（2人から）を入れ、法人向けの規約に同意して、カードか請求書払いを選びます。"}, {"@type": "HowToStep", "name": "管理画面へのログイン", "text": "管理者のメールアドレスにログイン用のリンクが届きます。パスワードはなく、リンクは15分で切れ、1回だけ使えます。"}, {"@type": "HowToStep", "name": "社員が自分で入れる（おすすめ）", "text": "管理画面で会社のドメイン（例 @example.co.jp）を登録します。フリーメールのドメインと、ほかの契約が登録しているドメインは登録できません。社員がアドオンを入れ、「使い始める」の画面で「会社の契約で使う」を選び、届いた確認のメールの4桁の数字を確かめて「参加する」を押します。"}, {"@type": "HowToStep", "name": "情シスがまとめて配る（任意）", "text": "社員の操作をなくしたいときは、管理画面から policies.json をダウンロードし、Thunderbird のインストール先の distribution フォルダーに置くか、グループポリシーや構成プロファイルで配ります。"}, {"@type": "HowToStep", "name": "参加の確かめ方", "text": "管理画面の使う人の一覧に、参加した人が出ます。"}, {"@type": "HowToStep", "name": "人数の増減", "text": "管理画面の人数の変更で変えます（Stripe のポータルでは変えられません）。使っている席より少なくはできません。"}, {"@type": "HowToStep", "name": "やめるとき", "text": "請求のページから解約します。支払い済みの期間の終わりまで使えます。"}]}
 </script>
 </head>
 <body>
@@ -56,11 +56,11 @@
     <div class="jr-wrap">
       <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li><a href="/ai-mail-auto/guide/">使い方</a></li><li>会社でまとめて入れる</li></ol></nav>
       <h1>会社でまとめて<wbr>入れる手順</h1>
-      <p class="jr-lead">情報システムの担当の方が、法人契約を申し込み、全部の PC に配り、人数を管理するまでの手順です。1人あたり月 ¥1,000（税込）、2人分から、14日間のお試しがあります。</p>
+      <p class="jr-lead">会社の管理者の方が、法人契約を申し込み、社員に入れてもらい、人数を管理するまでの手順です。1人あたり月 ¥1,000（税込）、2人分から、14日間のお試しがあります。</p>
     </div>
   </header>
   <div class="jr-wrap jr-body">
-<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">申し込み</a></li><li><a href="#s2">管理画面へのログイン</a></li><li><a href="#s3">参加できるドメインの設定</a></li><li><a href="#s4">policies.json の配布</a></li><li><a href="#s5">参加の確かめ方</a></li><li><a href="#s6">人数の増減</a></li><li><a href="#s7">やめるとき</a></li></ol></nav>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">申し込み</a></li><li><a href="#s2">管理画面へのログイン</a></li><li><a href="#s3">社員が自分で入れる（おすすめ）</a></li><li><a href="#s4">情シスがまとめて配る（任意）</a></li><li><a href="#s5">参加の確かめ方</a></li><li><a href="#s6">人数の増減</a></li><li><a href="#s7">やめるとき</a></li></ol></nav>
 
 <h2 id="s1">申し込み</h2>
 <ol>
@@ -75,18 +75,26 @@
 
 <h2 id="s2">管理画面へのログイン</h2>
 <ol>
-<li><a href="https://mail-ai.pohoda.jp/admin">mail-ai.pohoda.jp/admin</a> を開き、管理者のメールアドレスを入れます。</li>
+<li><a href="https://mail-ai.pohoda.jp/admin/login">mail-ai.pohoda.jp/admin/login</a> を開き、管理者のメールアドレスを入れます。</li>
 <li>届いたメールのリンクを開きます。パスワードはありません。リンクは15分で切れ、1回だけ使えます。ログインは8時間です。</li>
 </ol>
-<p>管理者は、1社で3人までです。管理画面では、契約の人数と使っている人数、使っている人の一覧、人ごとの停止・再開・取り外し、手で渡すキーの発行、policies.json のダウンロード、会社の決まり、請求、管理者の追加と削除、操作の記録を扱えます。</p>
-<p>管理者に見えるのは、参加している人の名前・メールアドレス・最後に使った日・今月の利用額・PC の台数です。メールの中身と検索の内容は、管理者にも見えず、Pohoda のサーバーにもありません。学習したルールと設定は、同期を使う場合だけ、PC の中で暗号化した形で置かれ、Pohoda にも管理者にも読めません。</p>
+<p>管理者は、1社で3人までです。管理画面は、概要・使う人・人を追加する・会社の決まり・人数と請求・管理者・操作の記録、の7つのページです。使う人の一覧では、人ごとの停止・再開・取り外し、手で渡すキーの発行ができます。</p>
+<p>管理者に見えるのは、参加している人の名前・メールアドレス・最後に使った日・今月の AI の使用量（月の目安に対する％。金額は出ません）・PC の台数です。メールの中身と検索の内容は、管理者にも見えず、Pohoda のサーバーにもありません。学習したルールと設定は、同期を使う場合だけ、PC の中で暗号化した形で置かれ、Pohoda にも管理者にも読めません。</p>
 
-<h2 id="s3">参加できるドメインの設定</h2>
-<p>管理画面で、参加できるドメインを入れます（例 <code>@example.co.jp</code>）。参加の申し込みのとき、その PC の Thunderbird のメールアドレスがこのドメインに当てはまるか、管理者が招待したアドレスであれば、空いている席が割り当てられます。席がなければ参加できません。</p>
-<p>1つのメールアドレスが1席で、1席で使える PC は、直近30日で3台までです。席のキーは PC ごとに分かれるため、いまの版では、同じ人の PC の間でも設定と POP の整理はそろいません（同期しません）。PC ごとに設定してください。会社の決まり（AI を使うか、自動の下書き、1人あたりの月の上限など）も、この画面で決めます。決めた項目は、使う人の設定画面で「会社の管理者が決めています」と出て、変えられません。</p>
+<h2 id="s3">社員が自分で入れる（おすすめ）</h2>
+<p>情報システムの作業は要りません。管理者が会社のドメインを登録し、社員が自分で入れます。</p>
+<ol>
+<li>管理画面で、参加できるドメイン（例 <code>@example.co.jp</code>）を登録します。登録できるのは、管理者のメールアドレスのドメインだけです。gmail.com などのフリーメールのドメインと、ほかの契約が登録しているドメインは、登録できません。</li>
+<li>社員に、アドオンを入れてもらいます（入れ方は<a href="/ai-mail-auto/guide/#s1">使い方の「入れ方」</a>）。</li>
+<li>入れると開く「使い始める」の画面で、社員が「会社の契約で使う」を選び、会社のメールアドレスを選びます。</li>
+<li>その Thunderbird に確認のメールが届きます。メールの4桁の数字が画面の数字と同じことを確かめて、「参加する」を押すと、席が割り当てられ、自動で使えるようになります。</li>
+</ol>
+<p>1つのメールアドレスが1席で、1席で使える PC は、直近30日で3台までです。席のキーは PC ごとに分かれるため、いまの版では、同じ人の PC の間でも設定と POP の整理はそろいません（同期しません）。PC ごとに設定してください。</p>
+<p>会社の決まりは、管理画面の「会社の決まり」で決めます。AI を使うか、自動の下書き、送る前の確認の細かさ、ご意見・インタビューのお願いを社員に表示するか（初めは表示しません）、などです。決めた項目は、使う人の設定画面で「会社の管理者が決めています」と出て、変えられません。AI の使いすぎを防ぐ月の目安は、Pohoda が決めます。目安を超えた人は、その月だけ AI が止まり、検索と送る前の確認は使えます。1人ごとの月の金額の上限は、設定できません。</p>
 
-<h2 id="s4">policies.json の配布</h2>
-<p>管理画面から、会社用の policies.json をダウンロードします。中身は、アドオンを入れる指示と、会社の参加用の合言葉です。形は次のとおりです（&lt;合言葉&gt; の部分は、管理画面のものに置き換わります）。</p>
+<h2 id="s4">情シスがまとめて配る（任意）</h2>
+<p>社員に操作をしてもらわず、全部の PC に入れておきたいときの方法です。使う人のすることがなくなります。必須ではありません。</p>
+<p>管理画面から、会社用の policies.json をダウンロードします。中身は、アドオンを入れる指示と、会社の参加用の配布用の設定ファイル（トークン）です。形は次のとおりです（&lt;トークン&gt; の部分は、管理画面のものに置き換わります）。</p>
 <pre><code>{
   "policies": {
     "Extensions": {
@@ -95,17 +103,17 @@
     "3rdparty": {
       "Extensions": {
         "tb-ai-mail@pohoda.jp": {
-          "enrollToken": "&lt;合言葉&gt;"
+          "enrollToken": "&lt;トークン&gt;"
         }
       }
     }
   }
 }</code></pre>
-<p>アドオンは、起動のときにこの合言葉を読み、その PC の Thunderbird のメールアドレスと表示名を送って、参加を申し込みます。参加できるドメインに当てはまるか、管理者が招待したアドレスだけが保存されます。そのアドレスに確認のメールが届くので、<strong>使う人がすることは、そのメールのリンク（24時間・1回だけ）を1回押すこと</strong>です。押すと、席が割り当てられ、アドオンが自動でキーを受け取ります。<code>Extensions</code> と <code>3rdparty</code> は、Thunderbird の会社向けの設定（<a href="https://github.com/thunderbird/policy-templates">policy-templates</a>）の項目です。</p>
+<p>アドオンは、起動のときにこのトークンを読み、その PC の Thunderbird のメールアドレスと表示名を送って、参加を申し込みます。参加できるドメインに当てはまるか、管理者が招待したアドレスだけが保存されます。そのアドレスに確認のメールが届くので、使う人がすることは、そのメールのリンク（24時間・1回だけ）を1回押すことだけです。押すと、席が割り当てられ、アドオンが自動でキーを受け取ります。<code>Extensions</code> と <code>3rdparty</code> は、Thunderbird の会社向けの設定（<a href="https://github.com/thunderbird/policy-templates">policy-templates</a>）の項目です。</p>
 <h3>Windows</h3>
 <ul>
 <li><strong>ファイルで置く</strong>：Thunderbird のインストール先（<code>thunderbird.exe</code> があるフォルダー）に、<code>distribution</code> フォルダーを作り、その中に <code>policies.json</code> を置きます。</li>
-<li><strong>グループポリシーで配る</strong>：Thunderbird の ADMX テンプレート（<code>thunderbird.admx</code> と <code>mozilla.admx</code>、それぞれの .adml）を取り込み、「Mozilla」の中の「Policies for Extensions」と「Extensions」の項目で設定します。「Policies for Extensions」の中の「Managed storage of extensions」（<code>Software\Policies\Mozilla\Thunderbird\3rdparty\Extensions</code>）に、値の名前として <code>tb-ai-mail@pohoda.jp</code>、値として <code>{"enrollToken": "&lt;合言葉&gt;"}</code> を入れ、「Extensions」の中の「Extensions to install」に、アドオンの URL を入れます。テンプレートは Thunderbird のバージョンに合うものを使ってください。</li>
+<li><strong>グループポリシーで配る</strong>：Thunderbird の ADMX テンプレート（<code>thunderbird.admx</code> と <code>mozilla.admx</code>、それぞれの .adml）を取り込み、「Mozilla」の中の「Policies for Extensions」と「Extensions」の項目で設定します。「Policies for Extensions」の中の「Managed storage of extensions」（<code>Software\Policies\Mozilla\Thunderbird\3rdparty\Extensions</code>）に、値の名前として <code>tb-ai-mail@pohoda.jp</code>、値として <code>{"enrollToken": "&lt;トークン&gt;"}</code> を入れ、「Extensions」の中の「Extensions to install」に、アドオンの URL を入れます。テンプレートは Thunderbird のバージョンに合うものを使ってください。</li>
 </ul>
 <h3>Mac</h3>
 <ul>
@@ -117,7 +125,7 @@
 <li>Thunderbird のインストール先の <code>distribution</code> フォルダー（<code>thunderbird/distribution</code>）、または <code>/etc/thunderbird/policies</code> に、<code>policies.json</code> を置きます。</li>
 </ul>
 <p>台数が多いときは、グループポリシーや構成プロファイルでの配布が向いています。配ったあとは、Thunderbird を一度終了して、起動し直してもらいます。</p>
-<p>合言葉は、全部の PC の設定に入るので、社外に出さないでください。漏れたときは、管理画面で作り直せます（参加済みの人には影響しません）。</p>
+<p>このトークンは、全部の PC の設定に入るので、社外に出さないでください。漏れたときは、管理画面で作り直せます（参加済みの人には影響しません）。</p>
 <h3>ほかの渡し方</h3>
 <ul>
 <li><strong>招待のメール</strong>：管理画面でメールアドレスを入れると、入れ方とキーの受け取り用のリンクが届きます。リンクは7日間で、1回だけ使えます。</li>
@@ -126,10 +134,10 @@
 
 <h2 id="s5">参加の確かめ方</h2>
 <ul>
-<li>管理画面の「使っている人」の一覧に、参加した人の名前とメールアドレス、最後に使った日、PC の台数が出ます。</li>
+<li>管理画面の「使う人」の一覧に、参加した人の名前とメールアドレス、最後に使った日、PC の台数が出ます。</li>
 <li>使う人の設定画面では、会社の管理者が決めた項目に「会社の管理者が決めています」と出ます。</li>
 <li>確認のメールのリンクは24時間で切れます。まだ使っていない確認のメールは、同じアドレスに1日3通までです。</li>
-<li>一覧に出ないときは、その人のメールアドレスが参加できるドメインに当てはまるか、席が空いているか、policies.json が配られているか（置き場所とファイル名）を確かめます。Thunderbird を終了して起動し直すと、参加を申し込み直します。</li>
+<li>一覧に出ないときは、その人のメールアドレスが登録したドメインに当てはまるか、席が空いているか、確認のメールの数字が合っているかを確かめます。policies.json で配っているときは、置き場所とファイル名も確かめます。Thunderbird を終了して起動し直すと、参加を申し込み直します。</li>
 </ul>
 
 <h2 id="s6">人数の増減</h2>
