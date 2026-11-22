@@ -66,8 +66,9 @@
 <ol>
 <li><a href="https://mail-ai.pohoda.jp/org/checkout">法人契約の申し込みのページ</a>を開きます。</li>
 <li>会社の情報、管理者のメールアドレス、人数（2人から）を入れます。</li>
-<li>法人向けの規約（<a href="/legal/terms.html">利用規約第3条の4</a>）を読んで同意します。会社として AI の処理を米国の Anthropic に委託することへの同意も、ここで管理者が行います。</li>
+<li>法人向けの規約（<a href="/legal/terms.html">利用規約第3条の4</a>）を読んで同意します。会社として、AI の処理を米国の Anthropic に再委託することの承諾も、ここで管理者が行います。使う人の初回の案内では、同意のチェックの代わりに、会社の管理者が AI の利用を決めていることが表示されます。</li>
 <li>支払い方法を選びます。クレジットカード、または請求書払い（銀行振込・支払期限は請求書の発行日から30日）です。お試しは14日間で、お試しのあいだは請求しません。</li>
+<li>請求書払いでは、メールアドレスの確認のリンク（15分）が届きます。リンクを開くと、申し込みが完了します。最初の請求書の支払いが確認できるまでは、席は10まで、AI は1人あたり月 ¥200 まで、招待は1日に席の数までです。</li>
 </ol>
 <p>会社の規則や、メールの相手方への扱いに照らして、外部の AI にメールの内容の一部を送ってよいかは、申し込む前に、会社で確かめてください。会社の決まりで AI を使わないと決めれば、検索と送る前の確認だけを使えます。</p>
 
@@ -77,7 +78,7 @@
 <li>届いたメールのリンクを開きます。パスワードはありません。リンクは15分で切れ、1回だけ使えます。ログインは8時間です。</li>
 </ol>
 <p>管理者は、1社で3人までです。管理画面では、契約の人数と使っている人数、使っている人の一覧、人ごとの停止・再開・取り外し、手で渡すキーの発行、policies.json のダウンロード、会社の決まり、請求、管理者の追加と削除、操作の記録を扱えます。</p>
-<p>管理者に見えるのは、参加している人の名前・メールアドレス・最後に使った日・今月の利用額・PC の台数です。メールの中身・学習したルール・設定・検索の内容は、管理者にも見えず、Pohoda のサーバーにもありません。</p>
+<p>管理者に見えるのは、参加している人の名前・メールアドレス・最後に使った日・今月の利用額・PC の台数です。メールの中身と検索の内容は、管理者にも見えず、Pohoda のサーバーにもありません。学習したルールと設定は、同期を使う場合だけ、PC の中で暗号化した形で置かれ、Pohoda にも管理者にも読めません。</p>
 
 <h2 id="s3">参加できるドメインの設定</h2>
 <p>管理画面で、参加できるドメインを入れます（例 <code>@example.co.jp</code>）。参加の申し込みのとき、その PC の Thunderbird のメールアドレスがこのドメインに当てはまるか、管理者が招待したアドレスであれば、空いている席が割り当てられます。席がなければ参加できません。</p>
@@ -99,18 +100,23 @@
     }
   }
 }</code></pre>
-<p>アドオンは、起動のときにこの合言葉を読み、その PC の Thunderbird のメールアドレスで参加を申し込みます。使う人は、何もしなくて構いません。<code>Extensions</code> と <code>3rdparty</code> は、Thunderbird の会社向けの設定（<a href="https://github.com/thunderbird/policy-templates">policy-templates</a>）の項目です。</p>
+<p>アドオンは、起動のときにこの合言葉を読み、その PC の Thunderbird のメールアドレスと表示名を送って、参加を申し込みます。参加できるドメインに当てはまるか、管理者が招待したアドレスだけが保存されます。そのアドレスに確認のメールが届くので、<strong>使う人がすることは、そのメールのリンク（24時間・1回だけ）を1回押すこと</strong>です。押すと、席が割り当てられ、アドオンが自動でキーを受け取ります。<code>Extensions</code> と <code>3rdparty</code> は、Thunderbird の会社向けの設定（<a href="https://github.com/thunderbird/policy-templates">policy-templates</a>）の項目です。</p>
 <h3>Windows</h3>
 <ul>
 <li><strong>ファイルで置く</strong>：Thunderbird のインストール先（<code>thunderbird.exe</code> があるフォルダー）に、<code>distribution</code> フォルダーを作り、その中に <code>policies.json</code> を置きます。</li>
-<li><strong>グループポリシーで配る</strong>：Thunderbird の ADMX テンプレート（<code>thunderbird.admx</code> と <code>mozilla.admx</code>、それぞれの .adml）を取り込み、「Mozilla」の中の「Policies for Extensions」と「Extensions」の項目で設定します。合言葉は、管理画面の policies.json の中身と同じものを入れます。テンプレートは Thunderbird のバージョンに合うものを使ってください。</li>
+<li><strong>グループポリシーで配る</strong>：Thunderbird の ADMX テンプレート（<code>thunderbird.admx</code> と <code>mozilla.admx</code>、それぞれの .adml）を取り込み、「Mozilla」の中の「Policies for Extensions」と「Extensions」の項目で設定します。「Policies for Extensions」の中の「Managed storage of extensions」（<code>Software\Policies\Mozilla\Thunderbird\3rdparty\Extensions</code>）に、値の名前として <code>tb-ai-mail@pohoda.jp</code>、値として <code>{"enrollToken": "&lt;合言葉&gt;"}</code> を入れ、「Extensions」の中の「Extensions to install」に、アドオンの URL を入れます。テンプレートは Thunderbird のバージョンに合うものを使ってください。</li>
 </ul>
 <h3>Mac</h3>
 <ul>
 <li><strong>ファイルで置く</strong>：<code>Thunderbird.app/Contents/Resources/distribution</code> フォルダーに、<code>policies.json</code> を置きます。</li>
-<li><strong>構成プロファイルで配る</strong>：Thunderbird が用意している <code>org.mozilla.thunderbird.plist</code> の形式で、同じ内容を設定します。</li>
+<li><strong>構成プロファイルで配る</strong>：Thunderbird が用意している <code>org.mozilla.thunderbird</code> の形式で、<code>3rdparty</code> の中に <code>Extensions</code>、その中にアドオンの ID（<code>tb-ai-mail@pohoda.jp</code>）の dict、という形で、同じ内容を設定します。配る前に、1台で試してください。</li>
+</ul>
+<h3>Linux</h3>
+<ul>
+<li>Thunderbird のインストール先の <code>distribution</code> フォルダー（<code>thunderbird/distribution</code>）、または <code>/etc/thunderbird/policies</code> に、<code>policies.json</code> を置きます。</li>
 </ul>
 <p>台数が多いときは、グループポリシーや構成プロファイルでの配布が向いています。配ったあとは、Thunderbird を一度終了して、起動し直してもらいます。</p>
+<p>合言葉は、全部の PC の設定に入るので、社外に出さないでください。漏れたときは、管理画面で作り直せます（参加済みの人には影響しません）。</p>
 <h3>ほかの渡し方</h3>
 <ul>
 <li><strong>招待のメール</strong>：管理画面でメールアドレスを入れると、入れ方とキーの受け取り用のリンクが届きます。リンクは7日間で、1回だけ使えます。</li>
@@ -121,13 +127,14 @@
 <ul>
 <li>管理画面の「使っている人」の一覧に、参加した人の名前とメールアドレス、最後に使った日、PC の台数が出ます。</li>
 <li>使う人の設定画面では、会社の管理者が決めた項目に「会社の管理者が決めています」と出ます。</li>
+<li>確認のメールのリンクは24時間で切れます。確認のメールは、同じアドレスへ1日3通までです。</li>
 <li>一覧に出ないときは、その人のメールアドレスが参加できるドメインに当てはまるか、席が空いているか、policies.json が配られているか（置き場所とファイル名）を確かめます。Thunderbird を終了して起動し直すと、参加を申し込み直します。</li>
 </ul>
 
 <h2 id="s6">人数の増減</h2>
 <ul>
-<li>管理画面の請求のページ（Stripe のポータル）で、人数を変えます。増やすと、その日から日割りで請求します。減らすのは、次の請求からです。</li>
-<li>席より少ない人数にするときは、先に、管理画面で参加者を取り外します。取り外すと、その人のすべてのキーが止まります。</li>
+<li>人数は、管理画面の人数の変更から、変えます（Stripe のポータルでは変えません）。使っている席より少なくはできません。増やすと、その日から日割りで請求します。減らすのは、次の請求からです。</li>
+<li>席より少ない人数にするときは、先に、管理画面で参加者を取り外します。取り外すと、その人のすべてのキーが止まり、名前とメールアドレスは、すぐに消えます。取り外した人は、管理者が招待し直すまで、自動では参加しません。</li>
 <li>退職した人などは、管理画面で止める（あとで再開できます）か、外す（席が空きます）を選べます。</li>
 </ul>
 
@@ -135,8 +142,8 @@
 <ul>
 <li>管理画面の請求のページから、解約します。支払い済みの期間の終わりまで使えます。日割りの返金はしません。</li>
 <li>止まったあとも、検索と送る前の確認は使えます。AI の機能だけが止まります。</li>
-<li>請求書払いで、支払期限を過ぎても入金がないときは、7日を過ぎたところで、AI の機能が止まることがあります。入金の確認後に再開します。</li>
-<li>データの削除は、メールで請求してください（<a href="/legal/privacy.html">プライバシーポリシー</a>）。</li>
+<li>請求書払いで、支払期限を過ぎても入金がないときは、連絡します。支払期限から7日を過ぎても入金がないときは、AI の機能が止まることがあります。入金の確認後に再開します。カードの更新の失敗も、同じ7日です。</li>
+<li>解約から90日で、会社の情報は削除されます（<a href="/legal/privacy.html">プライバシーポリシー</a>）。それより前に消したいときは、メールでご請求ください。</li>
 </ul>
 
 <aside class="jr-author" id="author" aria-label="この記事を書いた人">
