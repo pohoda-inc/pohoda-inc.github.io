@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thunderbird を自動化する方法 2026｜振り分け・返信・転送・受信・起動・AI</title>
+<meta name="description" content="Thunderbird で自動にできることの一覧と、設定の場所。自動振り分け・自動返信・自動転送・自動受信・Windows の自動起動・AI の分類と下書きを、標準の機能とアドオンに分けて整理します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Thunderbird を自動化する方法 2026｜振り分け・返信・転送・受信・起動・AI">
+<meta property="og:description" content="Thunderbird で自動にできることの一覧と、設定の場所。自動振り分け・自動返信・自動転送・自動受信・Windows の自動起動・AI の分類と下書きを、標準の機能とアドオンに分けて整理します。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thunderbird を自動化する方法 2026｜振り分け・返信・転送・受信・起動・AI">
+<meta name="twitter:description" content="Thunderbird で自動にできることの一覧と、設定の場所。自動振り分け・自動返信・自動転送・自動受信・Windows の自動起動・AI の分類と下書きを、標準の機能とアドオンに分けて整理します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird を自動化する方法 2026", "description": "Thunderbird で自動にできることの一覧と、設定の場所。自動振り分け・自動返信・自動転送・自動受信・Windows の自動起動・AI の分類と下書きを、標準の機能とアドオンに分けて整理します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird を自動化する方法 2026", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird で自動にできることは？", "acceptedAnswer": {"@type": "Answer", "text": "振り分け（フィルター）・転送・新着の自動確認は標準の機能でできます。不在の自動返信は、メールサービス側の設定か、フィルターで作ります。パソコン起動時の自動起動は、OS の設定です。AI の分類・下書きは、アドオンで足します。"}}, {"@type": "Question", "name": "Thunderbird に自動返信の機能はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "不在用の専用の機能はありません。メールサービス側の自動応答、または、フィルターの「テンプレートで返信」で作ります。フィルターの方法は、Thunderbird が起動して受信しているあいだだけ動きます。"}}, {"@type": "Question", "name": "AI のアドオンは、メールを自動で送りますか？", "acceptedAnswer": {"@type": "Answer", "text": "アドオンによって違います。AI Mail Auto for Thunderbird は、下書きまでで、メールを自動では送りません。選ぶときは、自動送信の有無を確かめてください。"}}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>Thunderbird の自動化</li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/ai-mail-auto/">Thunderbird のアドオン AI Mail Auto</a><span class="jr-theme">Thunderbird の自動化</span></div>
+      <h1>Thunderbird を<wbr>自動化する方法 2026</h1>
+      <p class="jr-lead">Thunderbird で、手作業を減らしたい。自動にできること・できないこと、それぞれの設定の場所を、一覧にしました。標準の機能で足りるものは、無料で設定できます。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-22">2026年11月22日</time></dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>振り分け・転送・受信の間隔は、Thunderbird の標準の機能で自動にできます。</li><li>「不在」の自動返信は、Thunderbird に専用の機能がありません。メールサービス側の設定か、フィルターで作ります。</li><li>AI の分類と下書きは、アドオンで足せます。AI Mail Auto は、下書きまでで、自動では送りません。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">自動にできること一覧</a></li><li><a href="#s2">自動振り分け</a></li><li><a href="#s3">自動返信（不在・休暇）</a></li><li><a href="#s4">自動転送</a></li><li><a href="#s5">自動受信</a></li><li><a href="#s6">自動起動</a></li><li><a href="#s7">AI で自動にする</a></li><li><a href="#s8">自動で「送る」のは、慎重に</a></li><li><a href="#s9">AI の下書きは、下書きまで（AI Mail Auto for Thunderbird）</a></li></ol></nav>
+
+<h2 id="s1">自動にできること一覧</h2>
+<table><thead><tr><th>やりたいこと</th><th>方法</th><th>設定の場所</th></tr></thead><tbody>
+<tr><th>自動で振り分ける</th><td>標準（メッセージフィルター）</td><td>メニューの「ツール」の「メッセージフィルター」</td></tr>
+<tr><th>自動で返信する（不在・休暇）</th><td>メールサービス側の設定が確実。Thunderbird では、フィルターの「テンプレートで返信」</td><td>メールサービスの設定画面／メッセージフィルター</td></tr>
+<tr><th>自動で転送する</th><td>メールサービス側の設定、またはフィルターの転送</td><td>メールサービスの設定画面／メッセージフィルター</td></tr>
+<tr><th>自動で受信する</th><td>標準（受信の間隔・起動時の確認）</td><td>アカウント設定の「サーバー設定」</td></tr>
+<tr><th>パソコンを起動したら自動で開く</th><td>パソコン（OS）側の設定</td><td>Windows のスタートアップなど</td></tr>
+<tr><th>自動で分類・下書き</th><td>アドオン（ThunderAI・AI Mail Auto など）</td><td>各アドオンの設定</td></tr>
+<tr><th>自動で更新する</th><td>標準</td><td>設定の「一般」の、Thunderbird の更新の項目</td></tr>
+</tbody></table>
+<p>メニューやボタンの名前は、Thunderbird 128 以降の日本語の画面を目安にしています。版や設定で、表示が少し違うことがあります。</p>
+
+<h2 id="s2">自動振り分け</h2>
+<p>Thunderbird のメッセージフィルターで、差出人・件名・宛先などの条件に合うメールを、フォルダーへ移す、タグを付ける、既読にする、といった動作を自動で行えます。動かないときの確認は、<a href="/ai-mail-auto/articles/thunderbird-jido-furiwake/">自動振り分けができない・されないとき</a>に書きました。</p>
+
+<h2 id="s3">自動返信（不在・休暇）</h2>
+<p>Thunderbird には、不在用の専用の機能がありません。パソコンの電源が切れていても返信できるのは、メールサービス側の自動応答の設定です。Thunderbird のフィルターでも作れますが、Thunderbird が起動して受信しているあいだしか動きません。注意点と作り方は、<a href="/ai-mail-auto/articles/thunderbird-jido-henshin/">自動返信（不在・休暇）の設定</a>に。</p>
+
+<h2 id="s4">自動転送</h2>
+<p>メールサービス側の転送の設定か、Thunderbird のフィルターの転送の動作で行います。会社のメールを、社外のアドレスへ自動で転送してよいかは、規則を確かめてください。くわしくは<a href="/ai-mail-auto/articles/thunderbird-jido-tensou/">自動転送の設定</a>に。</p>
+
+<h2 id="s5">自動受信</h2>
+<p>新着メールを確認する間隔と、起動時の確認は、アカウントごとに設定します。受信されないときの確認は、<a href="/ai-mail-auto/articles/thunderbird-jido-jushin/">自動受信されないとき</a>に。</p>
+
+<h2 id="s6">自動起動</h2>
+<p>パソコンにログインしたら、Thunderbird を自動で開きたいときは、パソコン側の設定です。<a href="/ai-mail-auto/articles/thunderbird-jido-kidou-windows11/">Windows 11 で自動起動させる</a>手順を書きました。</p>
+
+<h2 id="s7">AI で自動にする</h2>
+<p>メールの分類や、返信の下書きを AI で自動にするには、アドオンを使います。選択肢と比べ方は、<a href="/ai-mail-auto/articles/thunderbird-ai/">Thunderbird で AI を使う方法 2026</a>にまとめています。AI が作るのは下書きや分類の案で、メールを自動で送ったり、消したりするかどうかは、アドオンによって違います。選ぶときは、自動で送信しないことを確かめてください。会社のメールに使うときは、メールの内容が外部の AI に送られるので、先に会社の規則を確かめます。</p>
+
+<h2 id="s8">自動で「送る」のは、慎重に</h2>
+<p>返信や転送を自動にすると、相手に、宛先違い・内容違い・多すぎる送信が届くおそれがあります。自動で送るのは、決まった文面で、相手が限られているときだけにして、できれば、手動で一度試してから有効にします。</p>
+
+<h2 id="s9">AI の下書きは、下書きまで（AI Mail Auto for Thunderbird）</h2>
+<p><a href="/ai-mail-auto/?from=thunderbird-jidouka">AI Mail Auto for Thunderbird</a> は、自分が To に入っていて返信が必要なメールに、AI が下書きを作って「下書き」フォルダーに入れる Thunderbird のアドオンです。AI Mail Auto for Thunderbird は、下書きまでを作るアドオンで、メールを自動では送りません。送るのは、必ずご自分です。日本語の本文検索は無料、AI の機能は14日間のお試しのあと月 ¥1,000（税込）で、API キーは要りません。入れただけでは何も変えません。</p>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する記事"><h2 class="jr-h2">関連する記事</h2><div class="jr-rel"><a href="/ai-mail-auto/articles/thunderbird-jido-furiwake/"><small>自動振り分け</small><b>Thunderbird の自動振り分けができない・されないとき</b></a><a href="/ai-mail-auto/articles/thunderbird-jido-henshin/"><small>自動返信</small><b>Thunderbird の自動返信（不在・休暇）の設定</b></a><a href="/ai-mail-auto/articles/thunderbird-jido-tensou/"><small>自動転送</small><b>Thunderbird の自動転送の設定</b></a></div></nav>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

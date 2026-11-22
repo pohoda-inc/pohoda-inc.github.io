@@ -1075,3 +1075,5 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
   .aima-shots, .aima-price { grid-template-columns: 1fr; }
   .aima-table { display: block; overflow-x: auto; }
 }
+.aima .jr-body th, .aima .jr-rel b, .aima .jr-body strong, .aima .jr-points strong, .aima b, .aima strong { font-weight: 500; }
+.aima .btn, .aima .section-label, .aima summary, .aima .jr-app, .aima .jr-author-name, .aima .jr-box-title, .aima .jr-rel b, .aima .jcard h2, .aima .cat-spec dt { font-weight: 500; }
