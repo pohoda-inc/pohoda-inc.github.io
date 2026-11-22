@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thunderbird の振り分けがうまくいかないとき｜フィルターの直し方</title>
+<meta name="description" content="Thunderbird のメッセージフィルター（振り分け）が効かないときの直し方。実行のタイミング、条件の書き方、順番、IMAP での注意、フィルターの引っ越しまで、確認する順に説明します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Thunderbird の振り分けがうまくいかないとき｜フィルターの直し方">
+<meta property="og:description" content="Thunderbird のメッセージフィルター（振り分け）が効かないときの直し方。実行のタイミング、条件の書き方、順番、IMAP での注意、フィルターの引っ越しまで、確認する順に説明します。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thunderbird の振り分けがうまくいかないとき｜フィルターの直し方">
+<meta name="twitter:description" content="Thunderbird のメッセージフィルター（振り分け）が効かないときの直し方。実行のタイミング、条件の書き方、順番、IMAP での注意、フィルターの引っ越しまで、確認する順に説明します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の振り分けがうまくいかないとき", "description": "Thunderbird のメッセージフィルター（振り分け）が効かないときの直し方。実行のタイミング、条件の書き方、順番、IMAP での注意、フィルターの引っ越しまで、確認する順に説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird の振り分けがうまくいかないとき", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird のフィルターが動かないのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "フィルターが有効でない、受信時に実行する設定になっていない、条件（差出人の名前とアドレス・含むと一致）が合っていない、前のフィルターで実行が止まっている、サーバー側の振り分けと重なっている、のどれかであることが多いです。"}}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>振り分け</li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/ai-mail-auto/">Thunderbird のアドオン AI Mail Auto</a><span class="jr-theme">振り分け</span></div>
+      <h1>Thunderbird の振り分けが<wbr>うまくいかないとき</h1>
+      <p class="jr-lead">作ったはずのフィルターが動かない。違うフォルダーに入ってしまう。Thunderbird の振り分けの不調は、確認する場所がだいたい決まっています。上から順に確かめてください。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-22">2026年11月22日</time></dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>まず、フィルターが「有効」で、「新着メッセージの受信時」に実行する設定か確認します。</li><li>条件は、差出人の「アドレス」と「名前」、「含む」と「一致」の違いで外れやすいです。</li><li>順番と「これ以降のフィルターを実行しない」で、後ろのフィルターが働かないことがあります。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">フィルターの画面を開く</a></li><li><a href="#s2">確認1　有効になっているか</a></li><li><a href="#s3">確認2　条件が合っているか</a></li><li><a href="#s4">確認3　順番と「これ以降を実行しない」</a></li><li><a href="#s5">確認4　どのフォルダーを対象にしているか</a></li><li><a href="#s6">確認5　今あるメールに当てる</a></li><li><a href="#s7">確認6　迷惑メールの判定との順番</a></li><li><a href="#s8">フィルターを引っ越す・移行する</a></li><li><a href="#s9">条件を考えずに、言葉で振り分けたい人へ</a></li></ol></nav>
+
+<h2 id="s1">フィルターの画面を開く</h2>
+<p>メニューの「ツール」にある「メッセージフィルター」で、フィルターの一覧を開きます（メニューバーが隠れているときは、Alt キー、または画面のメニューのボタンから出せます）。画面の上で、アカウントを切り替えられます。フィルターは、アカウントごとに持っています。</p>
+<p>※ メニューやボタンの名前は、Thunderbird 128 以降の日本語の画面を目安にしています。版や設定によって表示が少し違うことがあります。見つからないときは、メニューの名前に近い項目を探してください。</p>
+
+<h2 id="s2">確認1　有効になっているか</h2>
+<p>一覧の左のチェックが入っているかを見ます。フィルターを編集する画面でも、「フィルターを実行するタイミング」に、新着メッセージの受信時の項目にチェックが入っているかを確かめます。受信時の実行にチェックがないと、受信しても動きません。</p>
+
+<h2 id="s3">確認2　条件が合っているか</h2>
+<ul>
+<li><strong>差出人の書き方</strong>：差出人は「名前」と「アドレス」の両方を持っています。名前で条件を作ると、相手が表示名を変えたときに外れます。アドレスやドメイン（<code>@example.co.jp</code> の部分）で作るほうが安定します。</li>
+<li><strong>「含む」と「一致する」</strong>：「一致する」は、全体が完全に同じときだけです。まず「含む」で試します。</li>
+<li><strong>「すべてに一致」と「いずれかに一致」</strong>：複数の条件を並べたとき、すべて満たすのか、どれか一つでよいのかを確かめます。</li>
+<li><strong>全角・半角・表記ゆれ</strong>：件名や本文の語は、「見積」と「御見積」のように書き方が違うと外れます。</li>
+<li><strong>本文の条件</strong>：IMAP では、本文を手元にダウンロードする前に振り分けが動くと、本文の条件が効かないことがあります。件名や差出人など、先に分かる条件のほうが確実です。</li>
+</ul>
+
+<h2 id="s4">確認3　順番と「これ以降を実行しない」</h2>
+<p>フィルターは、一覧の上から順に実行されます。前のフィルターに「これ以降のフィルターを実行しない」が入っていると、そのメールには、後ろのフィルターが働きません。一般的なルールを後ろに、特別なルールを前に置きます。一覧の画面の矢印で、順番を入れ替えられます。</p>
+
+<h2 id="s5">確認4　どのフォルダーを対象にしているか</h2>
+<p>フィルターが動くのは、受信トレイに届いたメールが中心です。受信トレイ以外のフォルダーに届くメールや、サーバー側で先に別のフォルダーへ移されたメールには、動かないことがあります。IMAP のアカウントでは、サーバーのルール（Gmail のラベルなど）が先に振り分けていることもあります。両方で振り分けていると、思わぬ結果になるので、どちらか一方にそろえます。</p>
+
+<h2 id="s6">確認5　今あるメールに当てる</h2>
+<p>フィルターは、基本的に新しく届くメールに働きます。今あるメールに当てたいときは、フィルターの一覧の画面で、フォルダーを選んで「今すぐ実行」を押します。また、メニューから、選んだメールだけにフィルターを実行することもできます。</p>
+
+<h2 id="s7">確認6　迷惑メールの判定との順番</h2>
+<p>迷惑メールの判定の前に実行するか、あとに実行するかを、フィルターごとに選べる場合があります。迷惑メールとして先に移されると、フィルターに届かないことがあります。</p>
+
+<h2 id="s8">フィルターを引っ越す・移行する</h2>
+<p>フィルターは、アカウントのフォルダーの中の <code>msgFilterRules.dat</code> というファイルに保存されています。別の PC や、新しい Thunderbird に移したいときは、「ヘルプ」の「トラブルシューティング情報」から、プロファイルのフォルダーを開き、アカウントごとのフォルダーの中のこのファイルを、移す先の同じ場所へコピーします。コピーする前に Thunderbird を終了し、移す先の元のファイルは、取っておいてください。アカウントの名前（サーバー名）が違うと、ファイルの場所も変わります。フィルターに書かれた移動先のフォルダーが、移行先に無いと、そのフィルターは働きません。</p>
+
+<h2 id="s9">条件を考えずに、言葉で振り分けたい人へ</h2>
+<p><a href="/ai-mail-auto/?from=thunderbird-furiwake-ukumaku-ikanai">AI Mail Auto for Thunderbird</a> は、「◯◯社のメールはこのフォルダーに」「社内のメールには下書き不要」のような自由な文章を、AI が決まった形のルールに直します。保存の前に中身を日本語で見せるので、確かめてから使えます。元からあるフィルターは上書きせず、まだ受信トレイにあるメールにだけ当てます。送り主ごとの通数をもとにした振り分けの提案は、AI を使わずに手元で計算します。AI の機能は14日間のお試しのあと月 ¥1,000 です。上の確認で直るなら、入れなくて大丈夫です。</p>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する記事"><h2 class="jr-h2">関連する記事</h2><div class="jr-rel"><a href="/ai-mail-auto/articles/thunderbird-kensaku-hit-shinai/"><small>検索</small><b>Thunderbird で検索がヒットしない・遅いときの直し方</b></a><a href="/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/"><small>POP と IMAP</small><b>Thunderbird を POP から IMAP に切り替える手順</b></a><a href="/ai-mail-auto/articles/thunderbird-iphone-doki/"><small>iPhone と同期</small><b>Thunderbird と iPhone でメールを同期する方法</b></a></div></nav>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

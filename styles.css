@@ -1037,3 +1037,41 @@ p, .lead, li, .desc, figcaption { text-wrap: pretty; }
 .guide-body details.more[open] summary::after { content: "−"; }
 .guide-body details.more > :last-child { margin-bottom: 20px; }
 .guide-body .faq { margin: 8px 0 0; max-width: none; }
+
+/* ---- AI Mail Auto（/ai-mail-auto/）: 無彩色・太字なし ---- */
+.aima h1, .aima h2, .aima h3, .aima strong, .aima b, .aima th, .aima .jr-box-title, .aima .jr-body h2, .aima .jr-body h3, .aima .jr-body strong, .aima .jr-head h1 { font-weight: 500; }
+.aima-hero { padding: 0; }
+.aima-hero .wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 72px; }
+.aima-kind { font-size: 13px; letter-spacing: .04em; color: var(--ink-2); margin-bottom: 18px; }
+.aima-hero h1 { font-size: clamp(30px, 4vw, 50px); line-height: 1.28; letter-spacing: 0; text-align: left; }
+.aima-hero .lead { margin-top: 24px; line-height: 2; }
+.aima-hero .cat-spec { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--line-2); max-width: 460px; }
+.aima-shot, .aima-shots figure { margin: 0; }
+.aima-shot img, .aima-shots img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; background: var(--bg-2); border: 1px solid var(--line-2); border-radius: 14px; box-shadow: 0 16px 40px rgba(28,20,14,.10); }
+.aima-shot figcaption, .aima-shots figcaption { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+.aima-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.aima-list { margin: 8px 0 0 1.3em; }
+.aima-list li { font-size: 15px; line-height: 1.9; color: var(--ink-2); margin-bottom: 8px; }
+.aima-note { font-size: 13.5px; line-height: 1.9; color: var(--ink-2); margin-top: 16px; }
+.aima-price { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 36px; align-items: start; }
+.aima-yen { font-family: var(--serif); font-size: 44px; line-height: 1.2; color: var(--ink); margin-bottom: 8px; }
+.aima-yen span { font-size: 15px; font-family: var(--sans); color: var(--ink-2); }
+.aima-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; line-height: 1.8; }
+.aima-table th, .aima-table td { text-align: left; vertical-align: top; padding: 12px 14px; border: 1px solid var(--line-2); }
+.aima-table thead th { background: var(--bg-2); }
+.aima-table tbody th { width: 16%; background: var(--bg-2); }
+.aima-steps { margin: 8px 0 0 1.4em; }
+.aima-steps li { font-size: 15px; line-height: 1.9; color: var(--ink-2); margin-bottom: 8px; }
+.aima-form { display: grid; gap: 10px; max-width: 460px; margin-top: 18px; }
+.aima-form label { font-size: 13px; color: var(--ink-2); }
+.aima-form input { font: inherit; font-size: 16px; padding: 12px 14px; border: 1px solid var(--line-2); border-radius: 10px; background: #fff; color: var(--ink); }
+.aima-form button { cursor: pointer; border: 0; }
+.aima-terms { max-width: 640px; }
+.aima-pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: 14.5px; line-height: 1.85; background: var(--bg-2); border: 1px solid var(--line-2); border-radius: 12px; padding: 16px 18px; margin: 12px 0 20px; color: var(--ink); }
+.aima .jr-body code { font-size: .92em; background: var(--bg-2); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+.aima .jr-body table { display: block; overflow-x: auto; }
+@media (max-width: 760px) {
+  .aima-hero .wrap { grid-template-columns: 1fr; gap: 28px; padding-top: 48px; padding-bottom: 48px; }
+  .aima-shots, .aima-price { grid-template-columns: 1fr; }
+  .aima-table { display: block; overflow-x: auto; }
+}

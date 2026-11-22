@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thunderbird と iPhone でメールを同期する方法｜IMAP にできないときも</title>
+<meta name="description" content="Thunderbird と iPhone でメールをそろえる方法。IMAP の設定のしかた、iPhone のメールアプリに同じアカウントを追加する手順、POP しか使えないときの対処、同期されないものを説明します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-iphone-doki/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-iphone-doki/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-iphone-doki/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Thunderbird と iPhone でメールを同期する方法｜IMAP にできないときも">
+<meta property="og:description" content="Thunderbird と iPhone でメールをそろえる方法。IMAP の設定のしかた、iPhone のメールアプリに同じアカウントを追加する手順、POP しか使えないときの対処、同期されないものを説明します。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-iphone-doki/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thunderbird と iPhone でメールを同期する方法｜IMAP にできないときも">
+<meta name="twitter:description" content="Thunderbird と iPhone でメールをそろえる方法。IMAP の設定のしかた、iPhone のメールアプリに同じアカウントを追加する手順、POP しか使えないときの対処、同期されないものを説明します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird と iPhone でメールを同期する方法", "description": "Thunderbird と iPhone でメールをそろえる方法。IMAP の設定のしかた、iPhone のメールアプリに同じアカウントを追加する手順、POP しか使えないときの対処、同期されないものを説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-iphone-doki/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-iphone-doki/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird と iPhone でメールを同期する方法", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-iphone-doki/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird と iPhone でメールを同期するには？", "acceptedAnswer": {"@type": "Answer", "text": "アカウントを IMAP にして、iPhone のメールアプリにも同じアカウントを IMAP で追加します。フォルダー・既読・送信済み・下書きが両方で同じになります。"}}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>iPhone と同期</li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/ai-mail-auto/">Thunderbird のアドオン AI Mail Auto</a><span class="jr-theme">iPhone と同期</span></div>
+      <h1>Thunderbird と iPhone で<wbr>メールを同期する方法</h1>
+      <p class="jr-lead">PC の Thunderbird で見ているメールを、iPhone でも同じように見たい。方法は、アカウントを IMAP にして、iPhone のメールアプリにも同じアカウントを入れることです。IMAP にできないときの考え方も書きます。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-22">2026年11月22日</time></dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>iPhone との同期は、Thunderbird のアドオンではなく、メールのサーバー（IMAP）の仕組みで行います。</li><li>IMAP なら、受信トレイ・フォルダー・既読・送信済み・下書きが、PC と iPhone で同じになります。</li><li>POP のままでは、既読やフォルダーはそろいません。IMAP にするのがいちばん確実です。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">結論：IMAP にして、同じアカウントを両方に入れる</a></li><li><a href="#s2">手順1　Thunderbird 側が IMAP かを確かめる</a></li><li><a href="#s3">手順2　iPhone にアカウントを追加する</a></li><li><a href="#s4">手順3　送信済み・下書きの保存先をそろえる</a></li><li><a href="#s5">同期されないもの</a></li><li><a href="#s6">IMAP にできないとき（POP しか使えない）</a></li><li><a href="#s7">PC と iPhone を、AI の下書きでもつなぐ</a></li></ol></nav>
+
+<h2 id="s1">結論：IMAP にして、同じアカウントを両方に入れる</h2>
+<p>Thunderbird と iPhone を同期させる、特別な設定やアプリは要りません。メールのサーバーに IMAP でつなぐと、メールの本体はサーバーにあり、PC も iPhone もその同じ内容を見ます。フォルダーの移動、既読、送信済み、下書きが両方に反映されます。</p>
+
+<h2 id="s2">手順1　Thunderbird 側が IMAP かを確かめる</h2>
+<p>アカウント設定の「サーバー設定」で、「サーバーの種類」が IMAP メールサーバーになっているかを確かめます。POP になっているときは、先に <a href="/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/">POP から IMAP に切り替える手順</a>を行ってください。</p>
+
+<h2 id="s3">手順2　iPhone にアカウントを追加する</h2>
+<ol>
+<li>iPhone の「設定」アプリで、メールの項目を開き、「アカウント」からアカウントを追加します（iOS の版によって、メニューの場所が少し違います）。</li>
+<li>Gmail・iCloud・Microsoft 365 などは、一覧から選ぶと、サインインの画面に進みます。</li>
+<li>それ以外のメールサービスは「その他」を選び、「メールアカウントを追加」から、名前・メールアドレス・パスワードを入れます。</li>
+<li>種類は IMAP を選び、受信メールサーバーと送信メールサーバーの名前・ユーザー名・パスワードを、Thunderbird に設定してあるものと同じにします。</li>
+<li>「メール」のスイッチをオンにして保存します。</li>
+</ol>
+
+<h2 id="s4">手順3　送信済み・下書きの保存先をそろえる</h2>
+<p>Thunderbird のアカウント設定の「コピーとフォルダー」で、送信済みと下書きの保存先が、このアカウントのサーバー上のフォルダーになっているかを確かめます。ローカルフォルダーになっていると、iPhone で送ったメールは PC の送信済みに出ず、PC で送ったメールも iPhone に出ません。</p>
+
+<h2 id="s5">同期されないもの</h2>
+<ul>
+<li><strong>Thunderbird のタグ・色</strong>：サーバーが対応していれば、Thunderbird どうしでは同期します。iPhone の標準のメールアプリには、同じ形では出ません。</li>
+<li><strong>Thunderbird のフィルター</strong>：PC の Thunderbird が動いているときに働きます。iPhone だけで受信したメールは、Thunderbird を開くまで振り分けられません。</li>
+<li><strong>ローカルフォルダーのメール</strong>：PC の中にあるだけなので、iPhone では見えません。</li>
+<li><strong>アドオンの機能</strong>：Thunderbird のアドオンは、iPhone では動きません。</li>
+</ul>
+
+<h2 id="s6">IMAP にできないとき（POP しか使えない）</h2>
+<p>会社のサーバーなどで IMAP が使えないときは、次の方法があります。どれも、IMAP ほどそろいません。</p>
+<ul>
+<li><strong>PC も iPhone も POP で受信し、「サーバーにメッセージを残す」にする</strong>：Thunderbird のアカウント設定の「サーバー設定」に、受信したメールをサーバーに残す設定があります。両方で受信できますが、既読・フォルダー・送信済みはそろいません。サーバーに残す期間の上限や、サーバーの容量にも注意が必要です。</li>
+<li><strong>iPhone では確認だけにして、返信は PC で書く</strong>：iPhone は受信の確認用、と役割を分けます。</li>
+<li><strong>メールサービス側の転送機能</strong>：サーバーに、別のアドレス（IMAP が使えるもの）へ写しを送る機能があれば、それを iPhone 用に使えます。ただし、会社のメールを社外のサービスに転送してよいかは、会社の規則を確かめてください。</li>
+</ul>
+
+<h2 id="s7">PC と iPhone を、AI の下書きでもつなぐ</h2>
+<p><a href="/ai-mail-auto/?from=thunderbird-iphone-doki">AI Mail Auto for Thunderbird</a> は、PC の Thunderbird のアドオンで、iPhone では動きません。ただ、IMAP のアカウントなら、AI が作った返信の下書きは、サーバーの下書きフォルダーに入るので、iPhone からも開いて直して送れます（PC の Thunderbird が起動している間に届いたメールが対象です）。日本語の本文の検索は無料、AI の下書きは14日間のお試しのあと月 ¥1,000 です。IMAP の設定だけで足りるなら、アドオンは要りません。</p>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する記事"><h2 class="jr-h2">関連する記事</h2><div class="jr-rel"><a href="/ai-mail-auto/articles/thunderbird-kensaku-hit-shinai/"><small>検索</small><b>Thunderbird で検索がヒットしない・遅いときの直し方</b></a><a href="/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/"><small>POP と IMAP</small><b>Thunderbird を POP から IMAP に切り替える手順</b></a><a href="/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/"><small>振り分け</small><b>Thunderbird の振り分けがうまくいかないとき</b></a></div></nav>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

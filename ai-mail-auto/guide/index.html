@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Mail Auto for Thunderbird の使い方｜入れ方・初回の案内・検索・下書き</title>
+<meta name="description" content="AI Mail Auto for Thunderbird の入れ方と使い方。アドオンの入れ方、初回の案内、日本語の検索、自動の下書き、自由文の設定、複数の PC での同期、元に戻す方法を説明します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/guide/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/guide/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/guide/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="AI Mail Auto for Thunderbird の使い方｜入れ方・初回の案内・検索・下書き">
+<meta property="og:description" content="AI Mail Auto for Thunderbird の入れ方と使い方。アドオンの入れ方、初回の案内、日本語の検索、自動の下書き、自由文の設定、複数の PC での同期、元に戻す方法を説明します。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/guide/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Mail Auto for Thunderbird の使い方｜入れ方・初回の案内・検索・下書き">
+<meta name="twitter:description" content="AI Mail Auto for Thunderbird の入れ方と使い方。アドオンの入れ方、初回の案内、日本語の検索、自動の下書き、自由文の設定、複数の PC での同期、元に戻す方法を説明します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "使い方", "item": "https://pohoda.jp/ai-mail-auto/guide/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "HowTo", "name": "AI Mail Auto for Thunderbird の入れ方と使い方", "inLanguage": "ja", "step": [{"@type": "HowToStep", "name": "アドオンを入れる", "text": "配布ファイル（.xpi）を保存し、Thunderbird の「アドオンとテーマ」からファイルを指定して入れます。"}, {"@type": "HowToStep", "name": "初回の案内を進める", "text": "今の整理を読み取り、AI をどこまで使うかを選び、変わる内容を確かめて始めます。"}, {"@type": "HowToStep", "name": "検索を使う", "text": "ツールバーのボタンから検索の画面を開き、語を入れて探します。"}, {"@type": "HowToStep", "name": "AI を使う（ライセンス）", "text": "お試しを始め、届いたライセンスキーを設定画面に入れます。"}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>使い方</li></ol></nav>
+      <h1>AI Mail Auto の<wbr>使い方</h1>
+      <p class="jr-lead">入れ方から、初回の案内、検索、AI の下書き、困ったときまで。入れただけでは何も変えないので、順に進めて大丈夫です。</p>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">入れ方</a></li><li><a href="#s2">初回の案内</a></li><li><a href="#s3">検索</a></li><li><a href="#s4">AI の下書き</a></li><li><a href="#s5">自由文の設定・振り分け</a></li><li><a href="#s6">複数の PC で使う</a></li><li><a href="#s7">元に戻す・やめる</a></li><li><a href="#s8">困ったとき</a></li></ol></nav>
+
+<h2 id="s1">入れ方</h2>
+<ol>
+<li><a href="https://mail-ai.pohoda.jp/download?from=guide" data-from-url>ダウンロードのページ</a>から、アドオンのファイル（.xpi）を保存します。対応は Thunderbird 128 以降です。</li>
+<li>Thunderbird で「アドオンとテーマ」を開き、歯車のメニューから「ファイルからアドオンをインストール」を選んで、保存したファイルを指定します。</li>
+<li>追加の確認が出たら、求められる権限（メールを読む・下書きを作るなど）を読んで、進めます。</li>
+<li>ツールバーに、検索のボタンが加わります。</li>
+</ol>
+<p>更新は、Thunderbird の自動更新で届きます。</p>
+
+<h2 id="s2">初回の案内</h2>
+<p>入れた直後は、索引を作る以外は、何も動きません。メールを動かすことも、タグを付けることも、下書きを作ることもありません。初回の案内は、5つの段階です。いつでも途中でやめられ、設定画面からやり直せます。</p>
+<ol>
+<li><strong>今の整理を読み取る</strong>（何も変えません）：フォルダーの一覧と通数、使っているタグ、送り主ごとに、どのフォルダーに入っているか。</li>
+<li><strong>読み取った結果を見る</strong>：「◯◯社のメールは96％が『取引先』に入っています」のように、いまのやり方を言葉で確かめます。</li>
+<li><strong>AI をどこまで使うかを選ぶ</strong>：分類のタグを、新しく4つ足す・いまあるタグに合わせる・付けない、から選びます。自動の下書きを使うかも選びます。ここで、AI の機能を使うと、メールの内容の一部が米国の Anthropic 社へ送られることが表示されます。<strong>同意のチェックを入れるまで、AI の機能は動きません</strong>。自分の呼ばれ方（苗字・あだ名など）もここで足します。</li>
+<li><strong>より良くする提案を選ぶ</strong>：手で振り分けていたものを自動にする、通数の多い送り主を振り分ける、返信漏れの一覧、など。選んだものだけが使われます。</li>
+<li><strong>変わる内容を確かめて始める</strong>：新着に当てるルール、いまあるメールを何通動かすかが、一覧で出ます。</li>
+</ol>
+<p>索引作りは、直近のメールから先に進めます。直近90日の索引ができたところで、初回の案内を始められます。</p>
+
+<h2 id="s3">検索</h2>
+<ul>
+<li>ツールバーのボタンから、検索の画面（専用のタブ）を開きます。</li>
+<li>語を空白で区切って入れると、全部の語を含むメールが、日付の新しい順に並びます。差出人・件名・日付と、該当する箇所の前後が出ます。クリックでメールが開きます。</li>
+<li>探す対象は、ごみ箱と迷惑メール以外のすべてのフォルダー（送信済みと下書きを含む）です。本文・件名・差出人・宛先・添付ファイル名を、部分一致で探します。</li>
+<li>最初の索引作りの途中は、「◯年◯月◯日以降のメールを検索できます」と表示されます。使っているあいだは控えめに進め、操作がないあいだに速く進みます。一時停止と再開もできます。</li>
+<li>検索は、ライセンスがなくても、ずっと使えます。</li>
+</ul>
+<p>「先月の大阪出張の見積もり」のような言い方で探す AI 検索は、ライセンスが必要です。言い換えや表記ゆれを含めて探し、近いものを理由つきで最大5件選びます。AI が使えないときは、ふつうの検索に戻ります。</p>
+
+<h2 id="s4">AI の下書き</h2>
+<h3>自動の下書き</h3>
+<p>次のすべてに当てはまるとき、「下書き」フォルダーに返信の下書きを作ります。作成の画面は開きません。</p>
+<ul>
+<li>設定で、自動の下書きがオン。</li>
+<li>自分のアドレスが To にある。Cc の場合は、本文で自分が名指しされ、近くに依頼の言い回し（お願い・ください・確認・対応など）があるとき。</li>
+<li>AI が「要返信」と判断した。</li>
+<li>メルマガ・自動配信（List-Id や配信解除のヘッダーがあるもの）、no-reply の差出人ではない。</li>
+</ul>
+<p>宛名（差出人の表示名に「様」）と署名はコードで付けます。日付と曜日はコードで検査し、違えば直します。元のメールを引用します。1通につき下書きは1回だけです。自分で返信を書き始めたら、AI の下書きは取りやめます。</p>
+<h3>ボタンで作る</h3>
+<p>メールを開き、ボタンから一言メモを入れて「下書きを作る」。AI の文ができてから、返信の画面が、文の入った状態で開きます。</p>
+<h3>新しいメールを AI で書く</h3>
+<p>作成の画面のボタンから、依頼フォーマットを選び（なしでも可）、一言メモを書きます。AI の文は、ポップアップに出ます。「本文の先頭に入れる」を押したときだけ入ります。足りない項目は「確認したいこと」として出ます。</p>
+<h3>直しから学ぶ</h3>
+<p>AI の下書きと、実際に送った文を比べて、直していればルールにします。ルールは設定画面の一覧で、直したり消したりできます。</p>
+<p>AI の文は、たたき台です。宛名・日付・曜日・金額・URL は、送る前にご自分で確かめてください。送信は、自動では行いません。</p>
+
+<h2 id="s5">自由文の設定・振り分け</h2>
+<p>設定画面に、「◯◯社のメールはこのフォルダーに」「社内のメールには下書き不要」「△△さんには丁寧に」のように書きます。AI が決まった形のルールに直し、保存の前に「この設定でよいですか」と日本語で見せます。フォルダーがなければ、作るかを聞きます。新着に毎回当てます。いまあるメールにも当てるかは、ボタンで選べます。</p>
+<p>元からある Thunderbird のフィルターは上書きせず、まだ受信トレイにあるメールにだけ当てます。</p>
+
+<h2 id="s6">複数の PC で使う</h2>
+<ul>
+<li>振り分けのルール・依頼フォーマット・学習したルール・書き方の好み・署名・見た目の設定は、ライセンスごとにそろいます。中身はライセンスキーから作った鍵で PC の中で暗号化して送るので、Pohoda のサーバーでは読めません。</li>
+<li>POP のアカウントを、複数の PC で受信しているとき、どのメールをどのフォルダーに動かしたか、既読・フラグ・タグの操作を、Thunderbird どうしでそろえられます（初期オフ。本文・件名・宛先は送りません）。</li>
+<li>1つのライセンスで使える PC は、直近30日で3台までです。</li>
+<li>iPhone のアプリでは動きません。IMAP のアカウントなら、AI が作った下書きがサーバーに入るので、iPhone からも開けます。</li>
+</ul>
+
+<h2 id="s7">元に戻す・やめる</h2>
+<ul>
+<li>アドオンがメールを動かしたときは、記録されます。設定画面と初回の案内の「元に戻す」で、直近20回分を戻せます。タグも、アドオンが足した分だけ外せます。</li>
+<li>設定画面の「索引を消す」で、手元の索引を消せます。</li>
+<li>AI の同意は、設定画面から取り消せます。取り消すと、AI の機能だけが止まります。</li>
+<li>解約は、カスタマーポータルから。解約しても、支払い済みの期間の終わりまでは使えます。検索は、そのあとも使えます。</li>
+<li>データの削除は、メールで請求してください（<a href="/legal/privacy.html">プライバシーポリシー</a>）。</li>
+</ul>
+
+<h2 id="s8">困ったとき</h2>
+<ul>
+<li><strong>「AI: 一時停止中」と出る</strong>：AI のサービスやサーバーが止まっているときの表示です。検索と、AI を使わない仕分け・ルールは、そのまま使えます。数分後に自動で再開し、止まっていた間に届いた分は、戻ったら順に処理します。</li>
+<li><strong>「今月の上限に達しました」と出る</strong>：使いすぎを防ぐための、月ごとの上限です。その月は AI だけ止まり、検索は使えます。</li>
+<li><strong>「端末の数の上限」と出る</strong>：1つのキーで使える PC は、直近30日で3台までです。</li>
+<li><strong>ライセンスキーを忘れた</strong>：登録したメールアドレスから、キーを再送できます。</li>
+<li><strong>検索で出ないメールがある</strong>：索引の状況を、設定画面で確かめます。「作り直す」で、索引を最初から作れます。</li>
+<li>それでも直らないときは、<a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a> までご連絡ください。</li>
+</ul>
+<p>Thunderbird の標準の機能で直したいときは、<a href="/ai-mail-auto/articles/thunderbird-kensaku-hit-shinai/">検索がヒットしないときの直し方</a>などの記事もご覧ください。</p>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+<script>
+(function(){try{var f=new URLSearchParams(location.search).get("from");if(!f||!/^[a-z0-9-]{1,60}$/.test(f))return;
+document.querySelectorAll("[data-from-url]").forEach(function(a){var u=new URL(a.getAttribute(a.tagName==="FORM"?"action":"href"));u.searchParams.set("from",f);a.setAttribute(a.tagName==="FORM"?"action":"href",u.toString());});}catch(e){}})();
+</script>
+</body>
+</html>

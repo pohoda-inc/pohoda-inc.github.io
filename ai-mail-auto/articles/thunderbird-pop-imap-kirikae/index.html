@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thunderbird を POP から IMAP に切り替える手順｜容量と古いメールの移し方</title>
+<meta name="description" content="Thunderbird の POP アカウントを IMAP に切り替える手順。今の種類の確認方法、IMAP アカウントの追加、古いメールの移し方、容量と注意点を、順番に説明します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Thunderbird を POP から IMAP に切り替える手順｜容量と古いメールの移し方">
+<meta property="og:description" content="Thunderbird の POP アカウントを IMAP に切り替える手順。今の種類の確認方法、IMAP アカウントの追加、古いメールの移し方、容量と注意点を、順番に説明します。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thunderbird を POP から IMAP に切り替える手順｜容量と古いメールの移し方">
+<meta name="twitter:description" content="Thunderbird の POP アカウントを IMAP に切り替える手順。今の種類の確認方法、IMAP アカウントの追加、古いメールの移し方、容量と注意点を、順番に説明します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird を POP から IMAP に切り替える手順", "description": "Thunderbird の POP アカウントを IMAP に切り替える手順。今の種類の確認方法、IMAP アカウントの追加、古いメールの移し方、容量と注意点を、順番に説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird を POP から IMAP に切り替える手順", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird の POP を IMAP に変更するには？", "acceptedAnswer": {"@type": "Answer", "text": "POP のアカウントを直接 IMAP に変えるボタンはありません。同じアドレスの IMAP アカウントを追加し、古いメールを IMAP のフォルダーへコピーして、確認が済んだら POP のアカウントを外します。"}}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>POP と IMAP</li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/ai-mail-auto/">Thunderbird のアドオン AI Mail Auto</a><span class="jr-theme">POP と IMAP</span></div>
+      <h1>Thunderbird を POP から<wbr>IMAP に切り替える手順</h1>
+      <p class="jr-lead">複数の PC やスマホで同じメールを見たいなら、IMAP が向いています。ただし、今の POP のアカウントを、そのまま IMAP に変えるボタンはありません。新しく IMAP を追加して、古いメールを移す手順になります。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-22">2026年11月22日</time></dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>いまの種類は、アカウント設定の「サーバー設定」で確認できます。</li><li>切り替えは「IMAP のアカウントを追加して、古いメールをコピーする」手順です。元のメールは、確認が終わるまで消さないでください。</li><li>容量（サーバーの保存量）と、会社のサーバーで IMAP が使えるかを、先に確かめます。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">POP と IMAP の違い</a></li><li><a href="#s2">手順1　いまの種類を確認する</a></li><li><a href="#s3">手順2　始める前の確認</a></li><li><a href="#s4">手順3　IMAP のアカウントを追加する</a></li><li><a href="#s5">手順4　古いメールを IMAP へコピーする</a></li><li><a href="#s6">手順5　全部は移さない、という選び方</a></li><li><a href="#s7">手順6　切り替えたあとの設定</a></li><li><a href="#s8">手順7　確認が済んだら、POP の側を片づける</a></li><li><a href="#s9">IMAP にできない人へ</a></li></ol></nav>
+
+<h2 id="s1">POP と IMAP の違い</h2>
+<table><thead><tr><th></th><th>POP</th><th>IMAP</th></tr></thead><tbody>
+<tr><th>メールの置き場所</th><td>受信すると、この PC に取り込む（サーバーからは消す設定が多い）</td><td>サーバーに置いたまま、各端末から見る</td></tr>
+<tr><th>複数の端末</th><td>端末ごとにメールが別れる</td><td>フォルダー・既読・送信済みが同じになる</td></tr>
+<tr><th>容量</th><td>PC のディスクを使う</td><td>サーバーの容量を使う（上限に注意）</td></tr>
+</tbody></table>
+
+<h2 id="s2">手順1　いまの種類を確認する</h2>
+<p>アカウント設定を開き、確認したいアカウントの「サーバー設定」を見ます。「サーバーの種類」に、POP メールサーバーか IMAP メールサーバーかが書かれています。POP だったら、この記事の手順が当てはまります。</p>
+
+<h2 id="s3">手順2　始める前の確認</h2>
+<ul>
+<li><strong>IMAP が使えるか</strong>：契約しているメールサービスで、IMAP が使えるかを確かめます。会社や学校のサーバーは、管理者が IMAP を止めていることがあります。使えるかどうか、管理者に確認してください。</li>
+<li><strong>サーバーの容量</strong>：IMAP はサーバーに全部置きます。いま PC にあるメールの合計より、サーバーの容量に余裕があるかを確かめます。容量が足りないときは、古いメールを移さず、ローカルのフォルダーに残す方法もあります（手順5）。</li>
+<li><strong>バックアップ</strong>：念のため、Thunderbird のプロファイルのフォルダーを丸ごとコピーしておきます（「ヘルプ」の「トラブルシューティング情報」から場所を開けます）。</li>
+</ul>
+
+<h2 id="s4">手順3　IMAP のアカウントを追加する</h2>
+<ol>
+<li>アカウント設定の「アカウント操作」から、メールアカウントを追加します。</li>
+<li>名前・メールアドレス・パスワードを入れて、設定を進めます。サーバー名などが自動で入らないときは、サービスが案内する IMAP のサーバー名・ポート番号・暗号化の方式を手で入れます。</li>
+<li>Gmail や Microsoft 365 などは、パスワードの代わりに、ブラウザーでのサインイン（認証）や、アプリ用のパスワードを求められることがあります。画面の案内に従います。</li>
+<li>追加できたら、同じアドレスの POP のアカウントと IMAP のアカウントが、左の一覧に並びます。</li>
+</ol>
+
+<h2 id="s5">手順4　古いメールを IMAP へコピーする</h2>
+<ol>
+<li>IMAP のアカウントに、同じ名前のフォルダー（受信トレイの下の「取引先」など）を、必要な分だけ作ります。</li>
+<li>POP のアカウント（またはローカルフォルダー）で、移したいフォルダーのメールをすべて選びます。</li>
+<li>右クリックして「コピー先」から、IMAP の同じ名前のフォルダーを選びます。ドラッグで移すと、元のメールが消える「移動」になることがあるので、確認が済むまでは「コピー」にします。</li>
+<li>フォルダーごとに、IMAP 側で件数が合うことを確かめます。</li>
+</ol>
+<p>メールが何万通もあるときは、サーバーへのアップロードに時間がかかります。一度に全部ではなく、フォルダーごと、または一年分ずつに分けて進めると安心です。</p>
+
+<h2 id="s6">手順5　全部は移さない、という選び方</h2>
+<p>直近1〜2年分だけを IMAP に移し、それより古いメールは、ローカルフォルダー（この PC の中にだけあるフォルダー）に置いたままにする方法もあります。サーバーの容量を節約でき、古いメールも Thunderbird から探せます。ただし、ローカルフォルダーのメールは、他の端末からは見えません。</p>
+
+<h2 id="s7">手順6　切り替えたあとの設定</h2>
+<ul>
+<li><strong>送信済み・下書き</strong>：アカウント設定の「コピーとフォルダー」で、送信済みと下書きの保存先を、IMAP サーバー上のフォルダーにします。これで、スマホで送ったメールも、PC の送信済みに並びます。</li>
+<li><strong>フィルター</strong>：振り分けのルールは、アカウントごとです。IMAP のアカウント用に作り直します。</li>
+<li><strong>タグ</strong>：Thunderbird のタグは、IMAP のサーバーが対応していれば、サーバーにも残ります。ただし、スマホの標準のメールアプリには、同じ形では出ません。</li>
+<li><strong>メールを手元に保存する</strong>：アカウント設定の「同期とストレージ」で、このアカウントのメッセージを、このコンピューターに保存する設定にします。オフラインでも読め、本文の検索も安定します。</li>
+</ul>
+
+<h2 id="s8">手順7　確認が済んだら、POP の側を片づける</h2>
+<p>数日使って、IMAP 側で受信・送信・フォルダーが問題なく動くと確認できてから、古い POP のアカウントを外します。POP のアカウントを削除しても、Thunderbird のプロファイル内のメールのファイルが残る場合がありますが、削除する前に、バックアップがあることをもう一度確かめてください。同じアドレスを POP と IMAP の両方で受信し続けると、メールが二重に届くので、受信の設定を一方だけにします。</p>
+
+<h2 id="s9">IMAP にできない人へ</h2>
+<p>会社のサーバーが IMAP に対応していない、管理者が許可しない、という場合は、POP のまま使い続けるしかありません。そのような方向けに、<a href="/ai-mail-auto/?from=thunderbird-pop-imap-kirikae">AI Mail Auto for Thunderbird</a> には、POP のアカウントを複数の PC の Thunderbird で受信している前提で、どのメールをどのフォルダーに動かしたか、既読・フラグ・タグの操作を、暗号化してそろえる機能があります（初期オフ・本文や件名は送りません）。AI の機能は14日間のお試しのあと月 ¥1,000 で、日本語の本文の検索は無料です。まずは上の手順で IMAP にできないかを、先に確かめてみてください。</p>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する記事"><h2 class="jr-h2">関連する記事</h2><div class="jr-rel"><a href="/ai-mail-auto/articles/thunderbird-kensaku-hit-shinai/"><small>検索</small><b>Thunderbird で検索がヒットしない・遅いときの直し方</b></a><a href="/ai-mail-auto/articles/thunderbird-iphone-doki/"><small>iPhone と同期</small><b>Thunderbird と iPhone でメールを同期する方法</b></a><a href="/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/"><small>振り分け</small><b>Thunderbird の振り分けがうまくいかないとき</b></a></div></nav>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

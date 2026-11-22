@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メールの返信を AI で下書きする方法｜Copilot・Gemini・アドオンの比べ方</title>
+<meta name="description" content="メールの返信を AI で下書きする方法。ChatGPT などに貼って頼む手順とそのまま使える指示文、確認すべき点、Copilot・Gemini・Thunderbird のアドオンの違いを説明します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/mail-henshin-ai-shitagaki/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/articles/mail-henshin-ai-shitagaki/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/articles/mail-henshin-ai-shitagaki/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="メールの返信を AI で下書きする方法｜Copilot・Gemini・アドオンの比べ方">
+<meta property="og:description" content="メールの返信を AI で下書きする方法。ChatGPT などに貼って頼む手順とそのまま使える指示文、確認すべき点、Copilot・Gemini・Thunderbird のアドオンの違いを説明します。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/mail-henshin-ai-shitagaki/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="メールの返信を AI で下書きする方法｜Copilot・Gemini・アドオンの比べ方">
+<meta name="twitter:description" content="メールの返信を AI で下書きする方法。ChatGPT などに貼って頼む手順とそのまま使える指示文、確認すべき点、Copilot・Gemini・Thunderbird のアドオンの違いを説明します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "メールの返信を AI で下書きする方法", "description": "メールの返信を AI で下書きする方法。ChatGPT などに貼って頼む手順とそのまま使える指示文、確認すべき点、Copilot・Gemini・Thunderbird のアドオンの違いを説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/mail-henshin-ai-shitagaki/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/mail-henshin-ai-shitagaki/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "メールの返信を AI で下書きする方法", "item": "https://pohoda.jp/ai-mail-auto/articles/mail-henshin-ai-shitagaki/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "メールの返信を AI で下書きするには？", "acceptedAnswer": {"@type": "Answer", "text": "ChatGPT などに、相手のメールと返信の方針を貼って頼むのが、いちばん手軽です。宛名・日付・曜日・金額は、送る前に必ず自分で確かめます。Thunderbird を使っているなら、アドオンで下書きまで自動にもできます。"}}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>AI で返信</li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/ai-mail-auto/">Thunderbird のアドオン AI Mail Auto</a><span class="jr-theme">AI で返信</span></div>
+      <h1>メールの返信を AI で<wbr>下書きする方法</h1>
+      <p class="jr-lead">返信の文面を毎回ゼロから書くのは大変です。AI に下書きを頼む方法は、無料でもすぐ始められます。コピーして貼るだけの方法と、確認する点を先に書き、そのあとで Copilot・Gemini・アドオンを比べます。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-22">2026年11月22日</time></dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>返信の下書きは、ChatGPT などに、相手のメールとメモを貼って頼むだけで作れます。</li><li>宛名・日付・曜日・金額・約束の内容は、必ず自分で確かめてから送ります。</li><li>会社のメールを外部の AI に貼ってよいかは、会社の規則しだいです。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">手順1　AI に貼る前に決めること</a></li><li><a href="#s2">手順2　指示文のひな形</a></li><li><a href="#s3">手順3　送る前に確かめること</a></li><li><a href="#s4">手順4　自分らしくするコツ</a></li><li><a href="#s5">Copilot・Gemini・アドオンの違い</a></li><li><a href="#s6">AI の返信を、毎日たくさん書く人へ</a></li></ol></nav>
+
+<h2 id="s1">手順1　AI に貼る前に決めること</h2>
+<ul>
+<li><strong>貼ってよいメールか</strong>：会社の規則や、相手との秘密保持の約束で、外部の AI に貼れないメールがあります。個人情報や機密が入っていれば、貼らないか、伏せ字にします。</li>
+<li><strong>どう返したいか</strong>：承諾・断り・日程の調整・確認の依頼など、返信の方針を、自分で決めておきます。AI に決めさせると、約束していないことを書いてしまいます。</li>
+</ul>
+
+<h2 id="s2">手順2　指示文のひな形</h2>
+<p>次の文章の、［　］の部分を埋めて、ChatGPT・Gemini・Claude などに貼ります。</p>
+<pre class="aima-pre">あなたは［会社名・部署］の［自分の名前］の秘書です。
+下の「届いたメール」への返信の下書きを、日本語で書いてください。
+
+条件
+・返信の方針：［例：日程は来週火曜の午後で調整したい］
+・口調：［例：丁寧だが、かたすぎない］
+・宛名と署名は書かないでください（自分で付けます）
+・メモにないことを、約束しないでください
+・分からない点は、書かずに「確認したいこと」として最後に挙げてください
+・本文だけを返してください
+
+届いたメール
+［ここにメールを貼る］</pre>
+
+<h2 id="s3">手順3　送る前に確かめること</h2>
+<ul>
+<li><strong>宛名</strong>：相手の名前・会社名・敬称が合っているか。</li>
+<li><strong>日付と曜日</strong>：「12月3日（水）」のような曜日が、その年のカレンダーと合っているか。AI は曜日を間違えやすい点です。</li>
+<li><strong>金額・数量・URL・電話番号</strong>：元のメールにあるものと同じか。元のメールにない URL が入っていないか。</li>
+<li><strong>約束</strong>：自分が約束していないことが、書かれていないか。</li>
+<li><strong>口調と長さ</strong>：普段の自分の書き方に近いか。長すぎる文は削ります。</li>
+</ul>
+<p>AI の文は、たたき台です。送る前に、必ず自分で読んで直します。</p>
+
+<h2 id="s4">手順4　自分らしくするコツ</h2>
+<ul>
+<li>よく使う言い回しや、避けたい言い回しを、指示文に足します。</li>
+<li>過去に自分が送った返信を1〜2通、見本として貼ります（機密に注意）。</li>
+<li>直したところを、次の依頼のときに指示文へ足していくと、少しずつ近づきます。</li>
+</ul>
+
+<h2 id="s5">Copilot・Gemini・アドオンの違い</h2>
+<table><thead><tr><th>方法</th><td></td></tr></thead><tbody>
+<tr><th>ChatGPT・Gemini・Claude に貼る</th><td>どれでも使えます。無料の枠から始められます。毎回メールをコピーして貼る手間があります。</td></tr>
+<tr><th>Microsoft Copilot（Outlook など）</th><td>Outlook などの Microsoft のアプリの中で使います。多くの場合、Microsoft の別の契約が要ります。Thunderbird の中では使えません。</td></tr>
+<tr><th>Gemini（Gmail）</th><td>Gmail の画面の中で使います。契約によっては、使える機能が違います。Thunderbird の中では使えません。</td></tr>
+<tr><th>Thunderbird のアドオン</th><td>Thunderbird の中で、メールを開いたまま下書きまで作れます。自分の API キーが要るもの（ThunderAI など）と、要らないもの（AI Mail Auto）があります。比較は<a href="/ai-mail-auto/articles/thunderbird-addon-osusume-2026/">おすすめアドオンの記事</a>にまとめています。</td></tr>
+</tbody></table>
+<p>料金やできることは、各サービスの最新の案内を確認してください。</p>
+
+<h2 id="s6">AI の返信を、毎日たくさん書く人へ</h2>
+<p>返信が毎日たくさんあって、貼って頼む手間も惜しいときは、Thunderbird の中で下書きまで用意するアドオンが向いています。<a href="/ai-mail-auto/?from=mail-henshin-ai-shitagaki">AI Mail Auto for Thunderbird</a> は、自分が To に入っていて返信が必要なメールに、AI が下書きを作って「下書き」フォルダーに入れます（メルマガなどには作りません）。宛名と署名、日付と曜日は、AI ではなくコードで確かめます。直した内容から書き方のルールを学びます。自動送信はしません。14日間のお試しのあと月 ¥1,000 で、API キーは要りません。外部の AI へ送る範囲は、初回の案内で説明し、同意するまで動きません。</p>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する記事"><h2 class="jr-h2">関連する記事</h2><div class="jr-rel"><a href="/ai-mail-auto/articles/thunderbird-kensaku-hit-shinai/"><small>検索</small><b>Thunderbird で検索がヒットしない・遅いときの直し方</b></a><a href="/ai-mail-auto/articles/thunderbird-pop-imap-kirikae/"><small>POP と IMAP</small><b>Thunderbird を POP から IMAP に切り替える手順</b></a><a href="/ai-mail-auto/articles/thunderbird-iphone-doki/"><small>iPhone と同期</small><b>Thunderbird と iPhone でメールを同期する方法</b></a></div></nav>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
