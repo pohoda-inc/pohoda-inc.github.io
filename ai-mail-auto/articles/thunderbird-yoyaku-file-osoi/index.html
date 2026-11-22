@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thunderbird の「要約ファイルを作成しています」が遅い・終わらないとき｜無料で直す手順</title>
-<meta name="description" content="Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの圧縮、「修復」、バックアップの取り方を、順に説明します。">
+<meta name="description" content="Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの最適化、「フォルダーを修復」、バックアップの取り方を、順に説明します。">
 <meta name="author" content="杉本 啓輔">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-yoyaku-file-osoi/">
@@ -15,27 +15,27 @@
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="Thunderbird の「要約ファイルを作成しています」が遅い・終わらないとき｜無料で直す手順">
-<meta property="og:description" content="Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの圧縮、「修復」、バックアップの取り方を、順に説明します。">
+<meta property="og:description" content="Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの最適化、「フォルダーを修復」、バックアップの取り方を、順に説明します。">
 <meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-yoyaku-file-osoi/">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Thunderbird の「要約ファイルを作成しています」が遅い・終わらないとき｜無料で直す手順">
-<meta name="twitter:description" content="Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの圧縮、「修復」、バックアップの取り方を、順に説明します。">
+<meta name="twitter:description" content="Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの最適化、「フォルダーを修復」、バックアップの取り方を、順に説明します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="/styles.css?v=25">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の「要約ファイルを作成しています」が遅い・終わらないとき", "description": "Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの圧縮、「修復」、バックアップの取り方を、順に説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-yoyaku-file-osoi/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-yoyaku-file-osoi/"}
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の「要約ファイルを作成しています」が遅い・終わらないとき", "description": "Thunderbird で「要約ファイルを作成しています」と出て遅い、終わらないときの直し方。要約ファイル（.msf）とは何か、フォルダーの最適化、「フォルダーを修復」、バックアップの取り方を、順に説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-yoyaku-file-osoi/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-yoyaku-file-osoi/"}
 </script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird で AI を使う方法 2026", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-ai/"}, {"@type": "ListItem", "position": 4, "name": "Thunderbird の「要約ファイルを作成しています」が遅い・終わらないとき", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-yoyaku-file-osoi/"}]}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "「要約ファイルを作成しています」が終わらないときは？", "acceptedAnswer": {"@type": "Answer", "text": "まずバックアップを取り、フォルダーの「圧縮」と「修復」を試します。直らなければ、Thunderbird を完全に終了してから、問題のフォルダーの .msf ファイルを退避して、作り直させます。メールの本体のファイルは触りません。"}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "「要約ファイルを作成しています」が終わらないときは？", "acceptedAnswer": {"@type": "Answer", "text": "まずバックアップを取り、「フォルダーを最適化」と「フォルダーを修復」を試します。直らなければ、Thunderbird を完全に終了してから、問題のフォルダーの .msf ファイルを退避して、作り直させます。メールの本体のファイルは触りません。"}}]}
 </script>
 </head>
 <body>
@@ -65,8 +65,8 @@
     </div>
   </header>
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>要約ファイル（.msf）は、フォルダーごとの一覧の情報のファイルで、壊れると作り直されます。</li><li>まずバックアップ。次に、フォルダーの「圧縮」と「修復」を試します。</li><li>プロファイルのファイルを触るときは、必ず Thunderbird を完全に終了してから。</li></ul></aside>
-<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">要約ファイル（.msf）とは</a></li><li><a href="#s2">手順0　まず、バックアップ</a></li><li><a href="#s3">手順1　待ってみる</a></li><li><a href="#s4">手順2　フォルダーを圧縮する</a></li><li><a href="#s5">手順3　フォルダーを「修復」する</a></li><li><a href="#s6">手順4　それでも直らないとき（要約ファイルを手で消す）</a></li><li><a href="#s7">手順5　大きくなりすぎたフォルダーを分ける</a></li><li><a href="#s8">手順6　そのほかの原因</a></li><li><a href="#s9">日本語の検索が遅い・ヒットしない人へ</a></li></ol></nav>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>要約ファイル（.msf）は、フォルダーごとの一覧の情報のファイルで、壊れると作り直されます。</li><li>まずバックアップ。次に、「フォルダーを最適化」と「フォルダーを修復」を試します。</li><li>プロファイルのファイルを触るときは、必ず Thunderbird を完全に終了してから。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">要約ファイル（.msf）とは</a></li><li><a href="#s2">手順0　まず、バックアップ</a></li><li><a href="#s3">手順1　待ってみる</a></li><li><a href="#s4">手順2　フォルダーを最適化する</a></li><li><a href="#s5">手順3　フォルダーを修復する</a></li><li><a href="#s6">手順4　それでも直らないとき（要約ファイルを手で消す）</a></li><li><a href="#s7">手順5　大きくなりすぎたフォルダーを分ける</a></li><li><a href="#s8">手順6　そのほかの原因</a></li><li><a href="#s9">日本語の検索が遅い・ヒットしない人へ</a></li></ol></nav>
 
 <h2 id="s1">要約ファイル（.msf）とは</h2>
 <p>Thunderbird は、フォルダーごとに、メールの一覧（差出人・件名・日付・既読かどうかなど）の情報を、「要約ファイル」（拡張子 .msf）として持っています。フォルダーを開いたときに一覧を速く出すためのファイルです。このファイルが壊れた、古くなった、メールの本体のファイルと合わなくなったとき、Thunderbird は一覧を作り直します。その作り直しが「要約ファイルを作成しています」の表示です。メールが何万通もあるフォルダーでは、時間がかかります。</p>
@@ -82,11 +82,11 @@
 <h2 id="s3">手順1　待ってみる</h2>
 <p>メールが多いと、作り直しに時間がかかります。表示が出ている間も、進んでいることがあります。ほかの重い作業をやめ、しばらく待ちます。毎回の起動のたびに出るなら、次へ進みます。</p>
 
-<h2 id="s4">手順2　フォルダーを圧縮する</h2>
-<p>削除したメールの領域が残っていると、フォルダーのファイルが大きくなります。フォルダーを右クリックして、「圧縮」を選びます。圧縮の前に、ディスクの空き容量が、そのフォルダーのファイルより十分大きいことを確かめます。大きなフォルダーは、圧縮に時間がかかります。終わるまで待ってください。</p>
+<h2 id="s4">手順2　フォルダーを最適化する</h2>
+<p>削除したメールの領域が残っていると、フォルダーのファイルが大きくなります。フォルダーを右クリックして、「フォルダーを最適化」を選びます。最適化の前に、ディスクの空き容量が、そのフォルダーのファイルより十分大きいことを確かめます。大きなフォルダーは、最適化に時間がかかります。終わるまで待ってください。</p>
 
-<h2 id="s5">手順3　フォルダーを「修復」する</h2>
-<p>遅い、または毎回作り直されるフォルダーを右クリックして「プロパティ」を開き、「修復」を押します。そのフォルダーの要約ファイルを、作り直します。1つのフォルダーだけが原因のことが多いので、まず、どのフォルダーを開いたときに出るかを確かめます。</p>
+<h2 id="s5">手順3　フォルダーを修復する</h2>
+<p>遅い、または毎回作り直されるフォルダーを右クリックして「情報を見る」を開き、「フォルダーを修復」を押します。そのフォルダーの要約ファイルを、作り直します。1つのフォルダーだけが原因のことが多いので、まず、どのフォルダーを開いたときに出るかを確かめます。</p>
 
 <h2 id="s6">手順4　それでも直らないとき（要約ファイルを手で消す）</h2>
 <p>Thunderbird を完全に終了し、手順0のバックアップがあることを確かめてから行います。</p>

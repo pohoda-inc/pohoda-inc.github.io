@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thunderbird の自動返信（不在・休暇）の設定｜フィルターで作る方法と注意</title>
-<meta name="description" content="Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートで返信」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。">
+<meta name="description" content="Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートを使用して返信する」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。">
 <meta name="author" content="杉本 啓輔">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-henshin/">
@@ -15,27 +15,27 @@
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="Thunderbird の自動返信（不在・休暇）の設定｜フィルターで作る方法と注意">
-<meta property="og:description" content="Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートで返信」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。">
+<meta property="og:description" content="Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートを使用して返信する」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。">
 <meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-henshin/">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Thunderbird の自動返信（不在・休暇）の設定｜フィルターで作る方法と注意">
-<meta name="twitter:description" content="Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートで返信」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。">
+<meta name="twitter:description" content="Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートを使用して返信する」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="/styles.css?v=25">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の自動返信（不在・休暇）の設定", "description": "Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートで返信」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-henshin/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-henshin/"}
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の自動返信（不在・休暇）の設定", "description": "Thunderbird で不在・休暇の自動返信を設定する方法。メールサービス側の自動応答と、フィルターの「テンプレートを使用して返信する」で作る方法、返信の往復や送りすぎを防ぐ注意、AI の下書きとの違いを説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-henshin/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-henshin/"}
 </script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird を自動化する方法 2026", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/"}, {"@type": "ListItem", "position": 4, "name": "Thunderbird の自動返信（不在・休暇）の設定", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-henshin/"}]}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird に自動返信（不在）の機能はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "専用の機能はありません。メールサービス側の自動応答を使うのが確実です。Thunderbird では、テンプレートとフィルターの「テンプレートで返信」で作れますが、Thunderbird が起動して受信しているあいだしか動きません。"}}, {"@type": "Question", "name": "自動返信で気をつけることは？", "acceptedAnswer": {"@type": "Answer", "text": "相手も自動返信のときの往復、メーリングリストへの返信、同じ相手への送りすぎ、複数のパソコンでの二重返信に、対策をします。終わったらフィルターをオフにします。"}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird に自動返信（不在）の機能はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "専用の機能はありません。メールサービス側の自動応答を使うのが確実です。Thunderbird では、テンプレートとフィルターの「テンプレートを使用して返信する」で作れますが、Thunderbird が起動して受信しているあいだしか動きません。"}}, {"@type": "Question", "name": "自動返信で気をつけることは？", "acceptedAnswer": {"@type": "Answer", "text": "相手も自動返信のときの往復、メーリングリストへの返信、同じ相手への送りすぎ、複数のパソコンでの二重返信に、対策をします。終わったらフィルターをオフにします。"}}]}
 </script>
 </head>
 <body>
@@ -65,7 +65,7 @@
     </div>
   </header>
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>パソコンの電源が切れていても返すなら、メールサービス側の自動応答の設定が確実です。</li><li>Thunderbird では、テンプレートを作り、フィルターの「テンプレートで返信」で作れます。Thunderbird が起動して受信しているあいだだけ動きます。</li><li>返信の往復・メーリングリストへの返信・送りすぎに、必ず対策をします。</li></ul></aside>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>パソコンの電源が切れていても返すなら、メールサービス側の自動応答の設定が確実です。</li><li>Thunderbird では、テンプレートを作り、フィルターの「テンプレートを使用して返信する」で作れます。Thunderbird が起動して受信しているあいだだけ動きます。</li><li>返信の往復・メーリングリストへの返信・送りすぎに、必ず対策をします。</li></ul></aside>
 <nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">方法1　メールサービス側の自動応答（おすすめ）</a></li><li><a href="#s2">方法2　Thunderbird のフィルターで作る</a></li><li><a href="#s3">必ず守ること：送りすぎ・往復を防ぐ</a></li><li><a href="#s4">AI の下書きとの違い</a></li><li><a href="#s5">返信の下書きを用意したい人へ</a></li></ol></nav>
 
 <h2 id="s1">方法1　メールサービス側の自動応答（おすすめ）</h2>
@@ -76,24 +76,24 @@
 <h3>1　返信の文面（テンプレート）を作る</h3>
 <ol>
 <li>新しいメールの作成画面を開き、件名と本文に、不在の案内を書きます（宛先は空のままにします）。</li>
-<li>メニューの「ファイル」の「名前を付けて保存」から、「テンプレート」を選んで保存します。</li>
+<li>作成画面のメニューの「ファイル」の「選択して保存」から、「テンプレート」を選んで保存します。</li>
 </ol>
 <h3>2　フィルターを作る</h3>
 <ol>
 <li>メニューの「ツール」の「メッセージフィルター」を開き、新しいフィルターを作ります。</li>
 <li>条件を決めます（下の「送りすぎを防ぐ条件」を参照）。</li>
-<li>動作に、「テンプレートで返信」を選び、さっき作ったテンプレートを指定します。</li>
+<li>動作に、「テンプレートを使用して返信する」を選び、さっき作ったテンプレートを指定します。</li>
 <li>フィルターを有効にして、保存します。</li>
 </ol>
-<p>フィルターを実行するタイミングは、「新着メッセージの受信時」だけにします。「手動で実行」などにチェックが入っていると、「今すぐ実行」を押したとき、いまあるメール全部に返信が送られます。</p>
+<p>フィルターを実行するタイミングは、「新着メール受信時」だけにします。「手動で実行する」などにチェックが入っていると、「今すぐ実行」を押したとき、いまあるメール全部に返信が送られます。</p>
 <p>先に、自分の別のアドレスから、1通送って、返信されるかを試します。</p>
 
 <h2 id="s3">必ず守ること：送りすぎ・往復を防ぐ</h2>
 <ul>
 <li><strong>相手も自動返信のとき</strong>：お互いに自動返信すると、返信が止まらず往復します。差出人が no-reply や mailer-daemon のメールは、条件で除きます。件名に「自動返信」「不在」などを含むメールも、除きます。</li>
-<li><strong>メーリングリスト・メルマガ</strong>：リスト全体へ不在の返信が届くと、迷惑になります。宛先に自分のアドレスが直接入っているメール（To）だけを対象にします。メールのヘッダーを条件にするには、条件の左の欄の「カスタマイズ」から、ヘッダーの名前を追加します（表示の名前は版で違うことがあります）。リスト用の印があるメールを、条件で除きます。</li>
+<li><strong>メーリングリスト・メルマガ</strong>：リスト全体へ不在の返信が届くと、迷惑になります。宛先に自分のアドレスが直接入っているメール（To）だけを対象にします。メールのヘッダーを条件にするには、条件の左の欄の「カスタムヘッダー...」から、ヘッダーの名前を追加します（表示の名前は版で違うことがあります）。リスト用の印があるメールを、条件で除きます。</li>
 <li><strong>迷惑メール</strong>：迷惑メールにも返信すると、あなたのアドレスが実在すると知らせることになります。迷惑メールと判定されたメールを、条件で除きます。</li>
-<li><strong>同じ相手に何度も返す</strong>：フィルターだけで、同じ相手には一度だけ返す、という仕組みを作るのは難しく、メールが届くたびに返信が出ることがあります。対象を、特定の相手や、特定のフォルダーに限る方法もあります。</li>
+<li><strong>同じ相手に何度も返す</strong>：フィルターの動作の「テンプレートを使用して返信する」には、同じ相手には一度だけ返す、という選択肢が見つかりません。メールが届くたびに返信が出ることがあります。対象を、特定の相手や、特定のフォルダーに限る方法もあります。</li>
 <li><strong>複数のパソコンで受信しているとき</strong>：どの Thunderbird でも、同じフィルターが動くと、二重に返信されます。1台だけで動かします。</li>
 <li><strong>終わったら、フィルターをオフにする</strong>：期間を自動では区切れません。戻った日に、必ずオフにします。</li>
 <li><strong>会社のメール</strong>：不在の文面の書き方（休暇の理由・戻る日・連絡先）は、会社の決まりに従います。</li>

@@ -35,7 +35,7 @@
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird の誤送信を防ぐ設定とアドオン 2026", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/"}]}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird で誤送信を防ぐには？", "acceptedAnswer": {"@type": "Answer", "text": "まず本体の設定を使います。添付忘れの通知は設定の「作成」にあり、「後で送信」は作成画面の「ファイル」メニューにあります。ただし、本体には、宛先を確かめる確認ダイアログの設定は見つかりませんでした。宛先の確認を足したいときは、FlexConfirmMail のようなアドオンを使います。どの方法でも、すべての誤送信は防げません。"}}, {"@type": "Question", "name": "Thunderbird の添付忘れの通知はどこで設定しますか？", "acceptedAnswer": {"@type": "Answer", "text": "設定の「作成」の「全般」にある、添付ファイルを付け忘れていないか確認する項目です。英語の画面では Check for missing attachments という名前です（Mozilla の利用者向けの回答による）。日本語の画面での名前は確認できていません。本文に「添付」などの語があるのに添付がないときに知らせる仕組みで、語がなければ働きません。"}}, {"@type": "Question", "name": "FlexConfirmMail は無料ですか？", "acceptedAnswer": {"@type": "Answer", "text": "addons.thunderbird.net の掲載ページでは、無料です。開発は ClearCode Inc.、ライセンスは MPL 1.1 と表示されています。宛先のドメインや添付ファイルを条件に確認ダイアログを出し、送信を遅らせる機能もあります。一部の機能は別に入れる補助のプログラム（Native Messaging Host）が要ります。"}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird で誤送信を防ぐには？", "acceptedAnswer": {"@type": "Answer", "text": "まず本体の設定を使います。添付忘れの通知は設定の「編集」にあり、「後で送信」は作成画面の「ファイル」メニューにあります。ただし、本体には、宛先を確かめる確認ダイアログの設定は見つかりませんでした。宛先の確認を足したいときは、FlexConfirmMail のようなアドオンを使います。どの方法でも、すべての誤送信は防げません。"}}, {"@type": "Question", "name": "Thunderbird の添付忘れの通知はどこで設定しますか？", "acceptedAnswer": {"@type": "Answer", "text": "設定の「編集」の「添付ファイル」にある「ファイルの添付忘れがないか確認する」です。本文に「添付」などの語があるのに添付がないときに知らせる仕組みで、語がなければ働きません。"}}, {"@type": "Question", "name": "FlexConfirmMail は無料ですか？", "acceptedAnswer": {"@type": "Answer", "text": "addons.thunderbird.net の掲載ページでは、無料です。開発は ClearCode Inc.、ライセンスは MPL 1.1 と表示されています。宛先のドメインや添付ファイルを条件に確認ダイアログを出し、送信を遅らせる機能もあります。一部の機能は別に入れる補助のプログラム（Native Messaging Host）が要ります。"}}]}
 </script>
 </head>
 <body>
@@ -65,28 +65,26 @@
     </div>
   </header>
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>本体でできるのは、添付忘れの通知と「後で送信」です。どちらも無料で、アドオンは要りません。</li><li>宛先を確かめる確認ダイアログは、本体の設定には見つかりませんでした。足すときは、無料のアドオン FlexConfirmMail が定番です。</li><li>実際の誤送信は、会社名や宛名の取り違え、社内と社外の混同、別の会社への文面の流用、Cc と Bcc の取り違えが多く、どの方法でも、すべては防げません。</li><li>メニューの名前は、確認できなかったものを本文に書きました。</li></ul></aside>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>本体でできるのは、添付忘れの通知と「後で送信」です。どちらも無料で、アドオンは要りません。</li><li>宛先を確かめる確認ダイアログは、本体の設定には見つかりませんでした。足すときは、無料のアドオン FlexConfirmMail が定番です。</li><li>実際の誤送信は、会社名や宛名の取り違え、社内と社外の混同、別の会社への文面の流用、Cc と Bcc の取り違えが多く、どの方法でも、すべては防げません。</li><li></li></ul></aside>
 <nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">本体の添付忘れの通知</a></li><li><a href="#s2">本体の「後で送信」</a></li><li><a href="#s3">送信前の確認ダイアログの設定</a></li><li><a href="#s4">アドオン FlexConfirmMail</a></li><li><a href="#s5">起きやすい誤送信のパターン</a></li><li><a href="#s6">宛名・会社名の取り違えを送る前に止めたい人へ</a></li><li><a href="#s7">よくある質問</a></li></ol></nav>
 
 <h2 id="s1">本体の添付忘れの通知</h2>
 <p>本文に「添付」「添付ファイル」のような語を書いたのに、ファイルを付けないまま送ろうとすると、知らせる機能が Thunderbird 本体にあります。アドオンは要りません。</p>
 <ol>
-<li>設定を開き、「作成」を選びます。</li>
-<li>「全般」にある、添付ファイルの付け忘れを確認する項目にチェックを入れます。英語の画面では Check for missing attachments という名前です（Mozilla の利用者向けの回答による）。</li>
+<li>設定を開き、「編集」を選びます。</li>
+<li>「添付ファイル」の「ファイルの添付忘れがないか確認する」にチェックを入れます。</li>
 <li>設定を変えても働かないときは、Thunderbird を再起動します。</li>
 </ol>
-<p>この通知は、本文の語で判断します。語のリストは詳細設定（設定エディター）の mail.compose.attachment_reminder_keywords にあり、「添付」と書かなければ通知は出ません。ファイルの付け忘れしか見ないので、宛先や会社名の間違いは見つけられません。</p>
-<p>確認できなかった点：日本語の画面での項目名、Thunderbird 128 以降の画面での正確な位置は、Mozilla の公式ヘルプのページを開いて確かめることができませんでした。</p>
+<p>この通知は、本文の語で判断します。語のリストは詳細設定（設定エディター）の mail.compose.attachment_reminder_keywords にあり、「添付」と書かなければ通知は出ません。語のリストは、同じ場所の「キーワードを編集...」からも直せます。ファイルの付け忘れしか見ないので、宛先や会社名の間違いは見つけられません。</p>
 
 <h2 id="s2">本体の「後で送信」</h2>
 <p>送信の直前に迷いが出たときは、「後で送信」で、いったん手元に止められます。</p>
 <ul>
 <li>作成画面の「ファイル」メニューから「後で送信」を選ぶか、Ctrl＋Shift＋Enter（Mac は ⌘＋Shift＋Return）を押すと、メールが「送信トレイ」に入ります。</li>
-<li>送信トレイに入れただけでは、自動では送られません。「ファイル」メニューの、未送信のメッセージを送る項目を選ぶか、Thunderbird を再起動して、未送信のメッセージを送るかを聞かれたときに「はい」を選んだときに、送られます（Mozilla の利用者向けの回答による）。</li>
+<li>送信トレイに入れただけでは、自動では送られません。「ファイル」メニューの、「未送信メッセージを送信」を選ぶか、Thunderbird を再起動して、未送信のメッセージを送るかを聞かれたときに「はい」を選んだときに、送られます（Mozilla の利用者向けの回答による）。</li>
 <li>送信トレイの中のメールは、開いて直せます。</li>
 </ul>
 <p>日時を決めて自動で送る予約は、本体の「後で送信」にはありません。予約には、アドオンの Send Later があります。どちらも、送ったあとに取り消せるものではありません。送る前に止める手段です。</p>
-<p>確認できなかった点：日本語の画面でのメニューの名前（「後で送信」「未送信メッセージを送信」）は、Mozilla の公式ヘルプのページを開いて確かめることができませんでした。</p>
 
 <h2 id="s3">送信前の確認ダイアログの設定</h2>
 <p>「送るボタンを押したら、宛先を見せて確認させる」設定は、Thunderbird の本体には見つかりませんでした。ただし、Mozilla の公式ヘルプの該当ページを確認できなかったため、見落としがあるかもしれません。</p>
@@ -129,8 +127,8 @@
 
 <h2 id="s7">よくある質問</h2>
 <div class="faq">
-<details><summary>Thunderbird で誤送信を防ぐには？</summary><p>まず本体の設定を使います。添付忘れの通知は設定の「作成」にあり、「後で送信」は作成画面の「ファイル」メニューにあります。ただし、本体には、宛先を確かめる確認ダイアログの設定は見つかりませんでした。宛先の確認を足したいときは、FlexConfirmMail のようなアドオンを使います。どの方法でも、すべての誤送信は防げません。</p></details>
-<details><summary>Thunderbird の添付忘れの通知はどこで設定しますか？</summary><p>設定の「作成」の「全般」にある、添付ファイルを付け忘れていないか確認する項目です。英語の画面では Check for missing attachments という名前です（Mozilla の利用者向けの回答による）。日本語の画面での名前は確認できていません。本文に「添付」などの語があるのに添付がないときに知らせる仕組みで、語がなければ働きません。</p></details>
+<details><summary>Thunderbird で誤送信を防ぐには？</summary><p>まず本体の設定を使います。添付忘れの通知は設定の「編集」にあり、「後で送信」は作成画面の「ファイル」メニューにあります。ただし、本体には、宛先を確かめる確認ダイアログの設定は見つかりませんでした。宛先の確認を足したいときは、FlexConfirmMail のようなアドオンを使います。どの方法でも、すべての誤送信は防げません。</p></details>
+<details><summary>Thunderbird の添付忘れの通知はどこで設定しますか？</summary><p>設定の「編集」の「添付ファイル」にある「ファイルの添付忘れがないか確認する」です。本文に「添付」などの語があるのに添付がないときに知らせる仕組みで、語がなければ働きません。</p></details>
 <details><summary>FlexConfirmMail は無料ですか？</summary><p>addons.thunderbird.net の掲載ページでは、無料です。開発は ClearCode Inc.、ライセンスは MPL 1.1 と表示されています。宛先のドメインや添付ファイルを条件に確認ダイアログを出し、送信を遅らせる機能もあります。一部の機能は別に入れる補助のプログラム（Native Messaging Host）が要ります。</p></details>
 </div>
 

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thunderbird の自動転送の設定｜サーバー側とフィルターの方法・注意</title>
-<meta name="description" content="Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送」の方法、動かないときの確認、会社のメールでの注意を説明します。">
+<meta name="description" content="Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送する」の方法、動かないときの確認、会社のメールでの注意を説明します。">
 <meta name="author" content="杉本 啓輔">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-tensou/">
@@ -15,27 +15,27 @@
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="Thunderbird の自動転送の設定｜サーバー側とフィルターの方法・注意">
-<meta property="og:description" content="Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送」の方法、動かないときの確認、会社のメールでの注意を説明します。">
+<meta property="og:description" content="Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送する」の方法、動かないときの確認、会社のメールでの注意を説明します。">
 <meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-tensou/">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Thunderbird の自動転送の設定｜サーバー側とフィルターの方法・注意">
-<meta name="twitter:description" content="Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送」の方法、動かないときの確認、会社のメールでの注意を説明します。">
+<meta name="twitter:description" content="Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送する」の方法、動かないときの確認、会社のメールでの注意を説明します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="/styles.css?v=25">
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の自動転送の設定", "description": "Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送」の方法、動かないときの確認、会社のメールでの注意を説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-tensou/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-tensou/"}
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird の自動転送の設定", "description": "Thunderbird でメールを自動で転送する設定。メールサービス側の転送と、フィルターの「メッセージを転送する」の方法、動かないときの確認、会社のメールでの注意を説明します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-tensou/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-tensou/"}
 </script>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird を自動化する方法 2026", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jidouka/"}, {"@type": "ListItem", "position": 4, "name": "Thunderbird の自動転送の設定", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-jido-tensou/"}]}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird でメールを自動転送するには？", "acceptedAnswer": {"@type": "Answer", "text": "メールサービス側の転送の設定が確実です。Thunderbird のフィルターで「メッセージを転送」の動作を使う方法もありますが、Thunderbird が起動して受信しているあいだしか動きません。"}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird でメールを自動転送するには？", "acceptedAnswer": {"@type": "Answer", "text": "メールサービス側の転送の設定が確実です。Thunderbird のフィルターで「メッセージを転送する」の動作を使う方法もありますが、Thunderbird が起動して受信しているあいだしか動きません。"}}]}
 </script>
 </head>
 <body>
@@ -77,8 +77,8 @@
 <ol>
 <li>メニューの「ツール」の「メッセージフィルター」を開き、新しいフィルターを作ります。</li>
 <li>条件を決めます（例：差出人が特定のドメイン）。全部転送するなら、条件は広くなりますが、慎重に。</li>
-<li>フィルターを実行するタイミングは、「新着メッセージの受信時」だけにします。「手動で実行」などにチェックが入っていると、「今すぐ実行」を押したとき、いまあるメール全部が転送されます。</li>
-<li>動作に、「メッセージを転送」を選び、転送先のアドレスを入れます。</li>
+<li>フィルターを実行するタイミングは、「新着メール受信時」だけにします。「手動で実行する」などにチェックが入っていると、「今すぐ実行」を押したとき、いまあるメール全部が転送されます。</li>
+<li>動作に、「メッセージを転送する」を選び、転送先のアドレスを入れます。</li>
 <li>有効にして、保存します。先に1通、試します。</li>
 </ol>
 <p>この方法は、Thunderbird が起動して、新着を受信しているあいだしか動きません。</p>
