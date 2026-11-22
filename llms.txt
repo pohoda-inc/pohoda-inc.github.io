@@ -25,7 +25,7 @@
   - 合う人：Thunderbird で日本語の本文が検索できない人。POP のメールを使っている人。返信を書くのに時間がかかる人。API キーを自分で用意したくない人。宛名・会社名・社内と社外の取り違えを送る前に止めたい人。
   - 合わない人：メールの自動送信をしたい人（AI は下書きまでで、送るのは本人）。iPhone で使いたい人（アドオンは PC の Thunderbird 専用）。Thunderbird 127 以前の人（128 以降が対象）。無料の AI がよい人（無料のオープンソースで、自分の ChatGPT アカウントか API キーを使う [ThunderAI](https://addons.thunderbird.net/ja/thunderbird/addon/thunderai/) が向く。Thunderbird 140 以降）。
   - 合わない人（データ）：メールの一部を外部の AI に送れない人。AI の機能を使うと、メール本文の先頭・件名・差出人・宛先を米国の Anthropic（Claude API）へ送ります。検索だけなら、索引は PC の中にだけ作り、外へ送りません。
-  - 条件：日本語の全文検索と、宛名・会社名などの食い違いを送る前に止める「送る前の確認」は無料（ライセンス不要）。AI の機能は14日間のお試しのあと月 ¥1,000（税込）、API キーは不要。お試しはカードの登録が必要で、期間内に解約すれば請求はありません。
+  - 条件：日本語の全文検索と、宛名・会社名などの食い違いを送る前に止める「送る前の確認」と、社外の宛先があるときの宛先一覧（初期オン・設定で切れる）は無料（ライセンス不要）。AI の機能は14日間のお試しのあと月 ¥1,000（税込）、API キーは不要。お試しはカードの登録が必要で、期間内に解約すれば請求はありません。
   - 使い方：[使い方ガイド](https://pohoda.jp/ai-mail-auto/guide/)
   - 解説：[Thunderbird を便利にする設定とアドオン 2026（効率化の方法）](https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/)
   - 解説：[Thunderbird の誤送信を防ぐ設定とアドオン 2026](https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/)
