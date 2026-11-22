@@ -22,6 +22,11 @@
 - [Insight（自己分析・自分の取扱説明書）](https://pohoda.jp/insight.html)：60問の自己分析診断から、自分の傾向を周囲に伝わる「取扱説明書」にまとめる Web サービス（https://insight.pohoda.jp/）。
 
 - [AI Mail Auto for Thunderbird（日本語のメール検索と AI の下書き）](https://pohoda.jp/ai-mail-auto/)：Thunderbird 128 以降のアドオン。日本語の本文まで探せる検索（無料）と、返信が必要なメールへの AI の下書き・分類・修正からの学習（14日間お試し・月 ¥1,000）。自動送信はしません。
+  - 合う人：Thunderbird で日本語の本文が検索できない人。POP のメールを使っている人。返信を書くのに時間がかかる人。API キーを自分で用意したくない人。
+  - 合わない人：メールの自動送信をしたい人（AI は下書きまでで、送るのは本人）。iPhone で使いたい人（アドオンは PC の Thunderbird 専用）。Thunderbird 127 以前の人（128 以降が対象）。無料の AI がよい人（自分の API キーで使える ThunderAI が向く）。
+  - 条件：日本語の全文検索は無料。AI の機能は14日間のお試しのあと月 ¥1,000（税込）、API キーは不要。
+  - 使い方：[使い方ガイド](https://pohoda.jp/ai-mail-auto/guide/)
+  - 解説：[Thunderbird を便利にする設定とアドオン 2026（効率化の方法）](https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/)
 
 ## 読みもの・その他
 

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thunderbird を便利にする設定とアドオン 2026（効率化の方法）</title>
+<meta name="description" content="Thunderbird の便利な使い方・設定・アドオンを、無料でできる順にまとめました。検索・フィルター・タグ・テンプレート・ショートカット・表示・クイックフィルターバー・検索フォルダーのあとに、他の人のアドオンと AI Mail Auto for Thunderbird を紹介します。">
+<meta name="author" content="杉本 啓輔">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/">
+<link rel="alternate" hreflang="ja" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/">
+<link rel="alternate" hreflang="x-default" href="https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Thunderbird を便利にする設定とアドオン 2026（効率化の方法）">
+<meta property="og:description" content="Thunderbird の便利な使い方・設定・アドオンを、無料でできる順にまとめました。検索・フィルター・タグ・テンプレート・ショートカット・表示・クイックフィルターバー・検索フォルダーのあとに、他の人のアドオンと AI Mail Auto for Thunderbird を紹介します。">
+<meta property="og:url" content="https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thunderbird を便利にする設定とアドオン 2026（効率化の方法）">
+<meta name="twitter:description" content="Thunderbird の便利な使い方・設定・アドオンを、無料でできる順にまとめました。検索・フィルター・タグ・テンプレート・ショートカット・表示・クイックフィルターバー・検索フォルダーのあとに、他の人のアドオンと AI Mail Auto for Thunderbird を紹介します。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="/styles.css?v=25">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Thunderbird を便利にする設定とアドオン 2026", "description": "Thunderbird の便利な使い方・設定・アドオンを、無料でできる順にまとめました。検索・フィルター・タグ・テンプレート・ショートカット・表示・クイックフィルターバー・検索フォルダーのあとに、他の人のアドオンと AI Mail Auto for Thunderbird を紹介します。", "url": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "inLanguage": "ja", "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}, "mainEntityOfPage": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "AI Mail Auto for Thunderbird", "item": "https://pohoda.jp/ai-mail-auto/"}, {"@type": "ListItem", "position": 3, "name": "Thunderbird を便利にする設定とアドオン 2026", "item": "https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Thunderbird を便利にするには？", "acceptedAnswer": {"@type": "Answer", "text": "まず本体の設定で整えます。検索（Ctrl＋K）、メッセージフィルター、タグ、テンプレート、キーボードショートカット、列の表示、クイックフィルターバー、検索フォルダーは、どれも無料です。足りないところだけアドオンで足します。"}}, {"@type": "Question", "name": "Thunderbird の便利なアドオンは？", "acceptedAnswer": {"@type": "Answer", "text": "送信の予約なら Send Later、定型文なら Quicktext、書き出しなら ImportExportTools NG、AI の返信なら ThunderAI（無料・自分の API キー）や AI Mail Auto for Thunderbird（API キー不要・月額）があります。"}}]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="/ai-mail-auto/">AI Mail Auto</a>
+  </div>
+</header>
+
+<main class="marketing jr aima">
+<article>
+  <header class="jr-head">
+    <div class="jr-wrap">
+      <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/ai-mail-auto/">AI Mail Auto</a></li><li>便利な設定</li></ol></nav>
+      <div class="jr-tags"><a class="jr-app" href="/ai-mail-auto/">Thunderbird のアドオン AI Mail Auto</a><span class="jr-theme">便利な設定</span></div>
+      <h1>Thunderbird を<wbr>便利にする設定とアドオン 2026</h1>
+      <p class="jr-lead">Thunderbird は、本体の設定だけでも、かなり使いやすくなります。検索・フィルター・タグ・テンプレート・ショートカット・表示を、無料の設定から順に、メニューの場所つきでまとめました。そのあとに、アドオンを、他の人のものも含めて正直に紹介します。</p>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-11-22">2026年11月22日</time></dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+    </div>
+  </header>
+  <div class="jr-wrap jr-body">
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><ul><li>Thunderbird は、標準の設定だけで、検索・振り分け・タグ・定型文・ショートカット・表示を整えられます。費用はかかりません。</li><li>設定で足りないところだけ、アドオンを足します。AI の返信には、無料で自分の API キーを使う ThunderAI と、API キー不要で月額の AI Mail Auto があります。</li><li>メニューの名前は Thunderbird 128 以降の日本語の画面を目安にしています。確認できなかった名前は、本文に書きました。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">検索のコツ</a></li><li><a href="#s2">メッセージフィルターで振り分ける</a></li><li><a href="#s3">タグで目印を付ける</a></li><li><a href="#s4">テンプレート（定型文）</a></li><li><a href="#s5">キーボードショートカット</a></li><li><a href="#s6">表示と列を整える</a></li><li><a href="#s7">クイックフィルターバー</a></li><li><a href="#s8">検索フォルダー（保存した検索）</a></li><li><a href="#s9">アドオンで足す</a></li><li><a href="#s10">日本語の検索と、返信の下書きがほしい人へ</a></li></ol></nav>
+
+<h2 id="s1">検索のコツ</h2>
+<p>探し物は、画面上部の検索ボックス（全体の検索）に語を入れて探すのが基本で、Windows・Linux は Ctrl＋K、Mac は ⌘＋K で開きます。件名・本文・差出人・宛先を、すべてのアカウントとフォルダーにわたって探します。</p>
+<ul>
+<li>複数の語を入れると、それぞれの語を含むメールが出ます。語を引用符（"）で囲むと、並び順のとおりのフレーズで探します。</li>
+<li>Mozilla の説明では、全体の検索の索引は、3文字より短い語を索引に入れません。</li>
+<li>ごみ箱と迷惑メールのフォルダーは、初期設定では検索の対象外です。フォルダーのプロパティで、全体の検索の結果に含めるかを選べます。</li>
+<li>条件を細かく決めたいときは、「メッセージを検索」を使います（Windows・Linux は Ctrl＋Shift＋F、Mac は ⌘＋Shift＋F）。選んだフォルダーを、索引に頼らず直接探します。</li>
+</ul>
+<p>日本語は語と語の間に空白がないため、全体の検索で一部のメールしか出ないことがあります。直し方は、<a href="/ai-mail-auto/articles/thunderbird-kensaku-hit-shinai/">Thunderbird で検索がヒットしない・遅いときの直し方</a>に手順を書きました。</p>
+
+<h2 id="s2">メッセージフィルターで振り分ける</h2>
+<p>決まったメールを自動でフォルダーに移したいときは、メッセージフィルターを作ります。アカウントごとに、独自のフィルターの一覧を持ちます。</p>
+<ol>
+<li>アプリケーションメニューの「ツール」から「メッセージフィルター」を開き、「新規」を押します。</li>
+<li>「フィルター名」を入れ、「フィルターを適用するタイミング」を選びます。初期設定は「手動で実行する」と「新着メール受信時」です。</li>
+<li>プロパティ（「件名」「差出人」など）・一致基準（「次を含む」など）・値を決め、動作（フォルダーへ移動、スターを付ける、など）を選んで「OK」を押します。</li>
+<li>すでに届いているメールにも使うときは、「メッセージフィルター」の画面で「今すぐ実行」を押します。</li>
+</ol>
+<p>自動で動くフィルターは、受信トレイにだけ適用されます（アーカイブ時と送信後のフィルターは、その操作に含まれるメールだけ）。メッセージの本文で振り分けにくいときは、「迷惑メール分類後に実行」を選ぶと動くことがある、と Mozilla は説明しています。メッセージの上の差出人のアドレスを右クリックして「フィルターを作成」を選ぶと、その差出人を条件にしたフィルターの下書きができます。動かないときの確認は、<a href="/ai-mail-auto/articles/thunderbird-jido-furiwake/">自動振り分けができない・されないとき</a>に。</p>
+
+<h2 id="s3">タグで目印を付ける</h2>
+<p>タグは、メールに色つきの目印を付ける機能で、「重要」「仕事」「プライベート」「To Do」「後で」の5つが初めから用意されています。自分で足すこともできます。</p>
+<ul>
+<li>メールを選び、ツールバーの「タグ」から付けたいタグを選びます。外すときも同じ手順です。</li>
+<li>メニューのタグに付いている数字のキー（1 から 9）を押すと、そのタグが付きます。0 を押すと、すべてのタグが外れます。</li>
+<li>タグの追加・名前や色の変更・削除は、「タグ」のメニューの、タグを管理する項目から行います。</li>
+<li>付けたタグは、クイックフィルターバーの「タグ」で絞り込めます。</li>
+</ul>
+<p>フィルターの動作に「タグを付ける」を選ぶと、振り分けと同時に目印も付けられます。</p>
+
+<h2 id="s4">テンプレート（定型文）</h2>
+<p>よく書く文面は、Thunderbird 本体にテンプレートとして保存できます。アドオンは要りません。</p>
+<ol>
+<li>新規メッセージに、よく使う文面を書きます。</li>
+<li>「ファイル」の「名前を付けて保存」から「テンプレート」を選んで保存します。保存したものは、アカウントの「テンプレート」フォルダーに入ります。</li>
+<li>使うときは、「テンプレート」フォルダーのテンプレートをダブルクリックすると、内容のコピーから新しいメッセージが開きます。</li>
+</ol>
+<p>テンプレートの扱いは版によって少し違うので、文面を直すときは、保存し直したあとの「テンプレート」フォルダーの中身を確かめてください。文面を差し込む専用のアドオン（Quicktext など）もあります。</p>
+
+<h2 id="s5">キーボードショートカット</h2>
+<p>よく使う操作は、キーを覚えると速くなります。次は Mozilla のキーボードショートカットの一覧にあるものの一部です（Windows・Linux は Ctrl、Mac は ⌘ を使います）。</p>
+<table><thead><tr><th>やること</th><th>キー</th></tr></thead><tbody>
+<tr><th>新しいメッセージ</th><td>Ctrl＋N</td></tr>
+<tr><th>返信（送信者のみ）／全員に返信</th><td>Ctrl＋R ／ Ctrl＋Shift＋R</td></tr>
+<tr><th>転送</th><td>Ctrl＋L</td></tr>
+<tr><th>すべてのメッセージを検索</th><td>Ctrl＋K</td></tr>
+<tr><th>クイックフィルター</th><td>Ctrl＋Shift＋K</td></tr>
+<tr><th>メッセージを検索（詳細）</th><td>Ctrl＋Shift＋F</td></tr>
+<tr><th>次の未読メッセージへ</th><td>N</td></tr>
+<tr><th>既読・未読の切り替え／スター</th><td>M ／ S</td></tr>
+<tr><th>アーカイブ</th><td>A</td></tr>
+<tr><th>前回と同じフォルダーへ移動</th><td>Ctrl＋Shift＋M</td></tr>
+<tr><th>タグを付ける・外す</th><td>1 から 9（0 で全部外す）</td></tr>
+<tr><th>メッセージペインの表示・非表示</th><td>F8</td></tr>
+</tbody></table>
+<p>Mozilla の説明では、一部のショートカットは、アドオンで変更・無効にできます。</p>
+
+<h2 id="s6">表示と列を整える</h2>
+<p>メッセージリストは、列の出し入れ、並び替え、カード表示とテーブル表示の切り替えで、見やすくできます。</p>
+<ul>
+<li>列：列の見出しの右端のボタン（コラムピッカー）か、見出しの右クリックで、出す列と隠す列を選びます。見出しをドラッグすると並びを変えられ、境界をドラッグすると幅を変えられます。</li>
+<li>他のフォルダーにも同じ列を使うには、列の一覧の下にある「他のフォルダーにも適用...」を選びます。</li>
+<li>カード表示とテーブル表示：Thunderbird 140 以降では、アプリケーションメニューの設定の「外観」（英語版は Appearance）で切り替えます。カード表示は2行か3行を選べます。</li>
+<li>新しいフォルダーの並び順（日付・件名・差出人）とスレッド表示の初期値も、同じ画面で決めます。</li>
+</ul>
+
+<h2 id="s7">クイックフィルターバー</h2>
+<p>クイックフィルターバーは、いま開いているフォルダーのメッセージリストを、その場で絞り込む機能です。メッセージリストの上の「クイックフィルター」を押すか、Ctrl＋Shift＋K（Mac は ⌘＋Shift＋K）で出し、Esc で隠します。</p>
+<ul>
+<li>ボタンは、「固定」（フォルダーを移っても絞り込みを保つ）・「未読」・「スター」・「連絡先」（アドレス帳にいる人）・「タグ」・「添付」です。</li>
+<li>検索欄に語を入れると、探す対象を、送信者・受信者・件名・本文に分けられます。</li>
+<li>「タグ」を押すと、複数のタグを「すべてに一致」か「いずれかに一致」で絞れます。</li>
+</ul>
+<p>探せるのは、いま開いているフォルダーの中だけです。すべてのフォルダーを探すときは、全体の検索を使います。</p>
+
+<h2 id="s8">検索フォルダー（保存した検索）</h2>
+<p>よくする検索は、検索フォルダーとして保存すると、一覧に出る専用のフォルダーとして、いつでもすぐ開けます。条件に合う新しいメールは、自動で加わります。</p>
+<ol>
+<li>フォルダーペインでアカウントを選び、「ファイル」の「新規作成」から「検索フォルダー...」を選びます。</li>
+<li>名前と、検索する元のフォルダーを選びます。</li>
+<li>条件（差出人・件名・タグ・日付・添付の有無など）を決めます。「すべてに一致」か「いずれかに一致」を選べます。</li>
+</ol>
+<p>注意が二つあります。検索フォルダーのメールは、コピーではなく元のメールそのものなので、ここで消すと元のメールも消えます（フォルダー自体を消しても、元のメールは消えません）。また、本文の検索には時間がかかり、元のフォルダーを増やすほど遅くなります。</p>
+
+<h2 id="s9">アドオンで足す</h2>
+<p>本体の設定で足りないところは、アドオンで足せます。アドオンは、メールに触れる権限を持つものがあるので、入れ方と確認の観点は、<a href="/ai-mail-auto/articles/thunderbird-addon-osusume-2026/">Thunderbird のおすすめアドオン 2026</a>にまとめています。</p>
+<ul>
+<li>送信の予約：Send Later。</li>
+<li>定型文の差し込み：Quicktext。</li>
+<li>メールの書き出し・バックアップ：ImportExportTools NG。</li>
+<li>連絡先の管理：CardBook。</li>
+<li>AI の返信の下書き・分類：ThunderAI（オープンソース・アドオンは無料。自分の ChatGPT アカウントか API キーが要り、Thunderbird 140 以降）。AI Mail Auto for Thunderbird もあります（下の節）。</li>
+</ul>
+<p>Thunderbird の公式の AI（Thunderbird Assist）は、開発チームの説明では、有料の Thunderbird Pro 側で提供する予定です（2026年11月時点・公開日は未定）。選び方は、<a href="/ai-mail-auto/articles/thunderbird-ai/">Thunderbird で AI を使う方法 2026</a>に、設定での自動化は、<a href="/ai-mail-auto/articles/thunderbird-jidouka/">Thunderbird を自動化する方法 2026</a>にまとめています。</p>
+
+<h2 id="s10">日本語の検索と、返信の下書きがほしい人へ</h2>
+<p>ここまでの設定で足りないときの一つの選択肢が、私たちが作っている <a href="/ai-mail-auto/?from=thunderbird-benri">AI Mail Auto for Thunderbird</a> です。Thunderbird 128 以降の PC のアドオンで、日本語のメールを本文まで探せる検索は無料です。返信が必要なメールへの AI の下書き・分類・修正からの学習は、14日間のお試しのあと月 ¥1,000（税込）で、API キーは要りません。AI が作るのは下書きまでで、自動では送らず、iPhone では動きません。入れただけでは何も変えないので、上の設定で足りる人は、入れなくて構いません。</p>
+
+<aside class="jr-author" id="author" aria-label="この記事を書いた人">
+  <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
+  <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>
+  <p>自分たちのアプリとウェブサービスを設計・開発・運営している個人事業主です。屋号は Pohoda。<a href="/operator.html">運営者情報</a></p></div>
+</aside>
+<nav class="jr-rel-wrap" aria-label="関連する記事"><h2 class="jr-h2">関連する記事</h2><div class="jr-rel"><a href="/ai-mail-auto/articles/thunderbird-ai/"><small>Thunderbird と AI</small><b>Thunderbird で AI を使う方法 2026</b></a><a href="/ai-mail-auto/articles/thunderbird-jidouka/"><small>Thunderbird の自動化</small><b>Thunderbird を自動化する方法 2026</b></a><a href="/ai-mail-auto/articles/thunderbird-kensaku-hit-shinai/"><small>検索</small><b>Thunderbird で検索がヒットしない・遅いときの直し方</b></a><a href="/ai-mail-auto/articles/thunderbird-furiwake-ukumaku-ikanai/"><small>振り分け</small><b>Thunderbird の振り分けがうまくいかないとき</b></a></div></nav>
+<p class="jr-back"><a href="/ai-mail-auto/">← AI Mail Auto for Thunderbird へ</a></p>
+  </div>
+</article>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+<script>
+(function(){try{
+var M={"chatgpt.com":"ai-chatgpt","chat.openai.com":"ai-chatgpt","perplexity.ai":"ai-perplexity","claude.ai":"ai-claude","copilot.microsoft.com":"ai-copilot","gemini.google.com":"ai-gemini"};
+var h="";try{h=new URL(document.referrer).hostname.toLowerCase().replace(/^www\./,"");}catch(e){}
+var q=(new URLSearchParams(location.search).get("utm_source")||"").toLowerCase().replace(/^www\./,"");
+var v=Object.prototype.hasOwnProperty.call(M,h)?M[h]:(Object.prototype.hasOwnProperty.call(M,q)?M[q]:"");
+if(!/^[A-Za-z0-9-]{1,32}$/.test(v))return;
+document.querySelectorAll("a[href],form[action]").forEach(function(el){
+var k=el.tagName==="FORM"?"action":"href",u;
+try{u=new URL(el.getAttribute(k),location.href);}catch(e){return;}
+var ok=(u.origin==="https://mail-ai.pohoda.jp"&&(u.pathname==="/download"||u.pathname==="/checkout"))||(u.origin===location.origin&&u.pathname==="/ai-mail-auto/");
+if(!ok)return;
+u.searchParams.set("from",v);el.setAttribute(k,u.toString());});
+}catch(e){}})();
+</script>
+</body>
+</html>
