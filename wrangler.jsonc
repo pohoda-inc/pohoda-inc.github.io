@@ -1,0 +1,13 @@
+{
+  // pohoda.jp 本体。GitHub Pages と同じ URL の形で静的ファイルを配る。
+  // ファイルがある URL はそのまま配信し、見つからないときだけ worker.js が index.html / .html を補う。
+  "name": "pohoda-site",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none"
+  }
+}

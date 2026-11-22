@@ -1,0 +1,9 @@
+.git
+.github
+tools
+CNAME
+.nojekyll
+wrangler.jsonc
+.assetsignore
+worker.js
+.wrangler

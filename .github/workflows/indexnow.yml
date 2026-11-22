@@ -19,7 +19,7 @@ jobs:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
         run: |
-          sleep 90  # GitHub Pages の反映を待つ
+          sleep 150  # Cloudflare Workers への公開を待つ
           KEY=5246f54f733abaca9d39b5192465dcb9
           git diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" -- '*.html' \
             | sed -e 's#index\.html$##' -e 's#^#https://pohoda.jp/#' > urls.txt || true
