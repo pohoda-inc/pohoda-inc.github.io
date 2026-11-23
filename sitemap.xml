@@ -526,6 +526,12 @@
     <image:image><image:loc>https://pohoda.jp/assets/screens/pre-interview-home.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://pohoda.jp/business.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://pohoda.jp/development.html</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.6</priority>

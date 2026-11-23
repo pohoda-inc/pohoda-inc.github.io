@@ -34,5 +34,6 @@
 ## 読みもの・その他
 
 - [読みもの](https://pohoda.jp/journal/)：記録表・チェックリスト・面接対策などの実用記事（印刷用 PDF つきのものが多い）。
+- [法人向けサービス](https://pohoda.jp/business.html)：法人・事業者向けの4サービスの一覧。iPhone アプリ開発（50万円から・約1か月）、AI Mail Auto（1人 月 ¥1,000・2人から・14日お試し）、YANE for Business（不動産会社向け・月 ¥4,980・5人まで・1週間お試し）、Pre Interview（10セット分のコード ¥12,000）。アプリ開発以外は請求書払い（銀行振込）に対応。適格請求書（インボイス）は発行していません。
 - [iPhone アプリ開発のご相談](https://pohoda.jp/development.html)：個人への iPhone アプリ開発の依頼。着手から App Store 公開まで約1か月、費用は50万円から（機能別に加算）、保守は月3万円から。相談は無料。
 - [運営者情報](https://pohoda.jp/operator.html)

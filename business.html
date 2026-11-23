@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>法人向けサービス｜アプリ開発・AI Mail Auto・YANE for Business・Pre Interview｜Pohoda</title>
+<meta name="description" content="Pohoda の法人・事業者向けサービスの一覧です。iPhone アプリの受託開発、Thunderbird のメール検索と AI の下書き（AI Mail Auto）、不動産会社向けの物件レポート（YANE for Business）、求職者に配れる AI 模擬面接（Pre Interview）。料金・お試し・お支払い方法をまとめています。">
+<link rel="canonical" href="https://pohoda.jp/business.html">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pohoda">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="法人向けサービス｜Pohoda">
+<meta property="og:description" content="iPhone アプリの受託開発、AI Mail Auto、YANE for Business、Pre Interview。Pohoda の法人・事業者向けサービスの料金・お試し・お支払い方法をまとめています。">
+<meta property="og:url" content="https://pohoda.jp/business.html">
+<meta property="og:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="法人向けサービス｜Pohoda">
+<meta name="twitter:description" content="iPhone アプリの受託開発、AI Mail Auto、YANE for Business、Pre Interview。料金・お試し・お支払い方法をまとめています。">
+<meta name="twitter:image" content="https://pohoda.jp/assets/og/og-default.png?v=3">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
+<link rel="stylesheet" href="./styles.css?v=20">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://pohoda.jp/"}, {"@type": "ListItem", "position": 2, "name": "法人向けサービス", "item": "https://pohoda.jp/business.html"}]}
+</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "請求書払い（銀行振込）はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "AI Mail Auto の法人契約、YANE for Business、Pre Interview の10セット分のコードは、請求書払い（銀行振込）に対応しています。iPhone アプリの開発は、着手前にカードでの前払いをお願いしています。"}}, {"@type": "Question", "name": "インボイス（適格請求書）は発行できますか？", "acceptedAnswer": {"@type": "Answer", "text": "発行していません。Pohoda はインボイス制度の登録をしていない、消費税の免税事業者です。金額は税込の総額で、消費税を別に上乗せすることはありません。"}}, {"@type": "Question", "name": "契約の前に試せますか？", "acceptedAnswer": {"@type": "Answer", "text": "AI Mail Auto は14日間、YANE for Business は1週間、無料で試せます。Pre Interview は、アプリを入れると無料の練習を試せます。iPhone アプリの開発は、ご相談からお見積りまで無料です。"}}, {"@type": "Question", "name": "運営しているのは会社ですか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。運営は、個人事業主の杉本 啓輔（屋号 Pohoda）です。会社（法人）ではありません。開業は2026年5月で、開発からお問い合わせの対応まで一人で行っています。"}}, {"@type": "Question", "name": "ほかに、仕事で使えるアプリはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "個人事業主や店舗の方に向けて、顧客・案件の台帳の One CRM と、パーソナルトレーナーの顧客カルテの KATACHI + があります。どちらも App Store から入れて、すぐに使えます。"}}, {"@type": "Question", "name": "4つのうち、どれが合うか分からないときは？", "acceptedAnswer": {"@type": "Answer", "text": "メールでご相談ください。やりたいことをうかがって、合うサービスをお答えします。合うものが無いときは、そうお伝えします。"}}]}</script>
+<style>
+/* 法人向けサービスのページ専用（共通 styles.css は変更しない） */
+.marketing.biz > section { padding: 72px 0; scroll-margin-top: 70px; }
+.marketing.biz > section.hero:first-child:not(.app-hero) { padding: 64px 0 64px; }
+.marketing.biz > section.hero:first-child:not(.app-hero) h1 { font-size: clamp(30px, 4.6vw, 54px); max-width: 13em; }
+.biz p, .biz li, .biz dd { text-wrap: pretty; }
+.biz .kicker { font-size: 14px; font-weight: 500; color: var(--ink-2); margin-bottom: 14px; }
+.biz .hero-sub { margin-top: 22px; font-size: 17px; line-height: 1.95; color: var(--ink-2); max-width: 35em; }
+.biz .hero .btn-row { margin-top: 28px; }
+.biz a:focus-visible, .biz summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+.biz .btn:focus-visible { border-radius: 999px; }
+
+/* 4つの一覧（最初の画面で全部が見える） */
+.biz .index { list-style: none; margin-top: 56px; border-top: 1px solid var(--ink); }
+.biz .index a {
+  display: grid; grid-template-columns: 44px minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) 20px;
+  column-gap: 28px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--line-2); color: var(--ink);
+}
+.biz .index a:hover { text-decoration: none; }
+.biz .index a:hover .nm { text-decoration: underline; text-underline-offset: .2em; }
+.biz .index .no { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.biz .index .nm { display: block; font-size: clamp(18px, 2.1vw, 22px); font-weight: 500; line-height: 1.4; }
+.biz .index .ln { display: block; margin-top: 2px; font-size: 14px; color: var(--ink-2); line-height: 1.7; }
+.biz .index .who, .biz .index .fee { font-size: 14.5px; line-height: 1.7; }
+.biz .index .who { color: var(--ink-2); }
+.biz .index .fee { font-variant-numeric: tabular-nums; }
+.biz .index .go { color: var(--ink-2); text-align: right; }
+.biz .index-head { display: grid; grid-template-columns: 44px minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) 20px; column-gap: 28px; margin-top: 40px; padding-bottom: 8px; font-size: 12.5px; color: var(--ink-2); }
+.biz .index-head + .index { margin-top: 0; }
+
+/* サービスごとの節 */
+.biz .svc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: center; }
+.biz .svc.flip .svc-text { order: 2; }
+.biz .svc-no { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; margin-bottom: 10px; }
+.biz .svc h2 { font-size: clamp(24px, 3vw, 34px); line-height: 1.4; margin-bottom: 14px; }
+.biz .svc-lead { font-size: 16px; line-height: 1.95; color: var(--ink-2); max-width: 32em; }
+.biz .points { list-style: none; margin-top: 18px; }
+.biz .points li { position: relative; padding: 9px 0 9px 18px; border-top: 1px solid var(--line-2); font-size: 15px; line-height: 1.8; }
+.biz .points li::before { content: ""; position: absolute; left: 2px; top: 1.25em; width: 5px; height: 5px; border-radius: 50%; background: var(--ink); }
+.biz .spec { margin-top: 22px; border-top: 1px solid var(--ink); }
+.biz .spec div { display: grid; grid-template-columns: 7em minmax(0, 1fr); column-gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line-2); font-size: 14.5px; line-height: 1.75; }
+.biz .spec dt { color: var(--ink-2); }
+.biz .spec dd { font-variant-numeric: tabular-nums; }
+.biz .svc .btn-row { margin-top: 26px; }
+.biz .svc-note { margin-top: 14px; font-size: 13px; line-height: 1.8; color: var(--ink-2); }
+.biz .svc-fig { margin: 0; }
+.biz .svc-fig img { display: block; width: 100%; height: auto; }
+.biz .svc-fig figcaption { margin-top: 12px; font-size: 12.5px; color: var(--ink-2); }
+.biz .fig-screen img { border-radius: 10px; border: 1px solid var(--line-2); box-shadow: 0 30px 50px -28px rgba(28,24,20,.45), 0 12px 24px -14px rgba(28,24,20,.22); }
+.biz .fig-paper { max-width: 400px; margin-inline: auto; }
+.biz .fig-paper img { border: 1px solid var(--line-2); box-shadow: 0 30px 50px -28px rgba(28,24,20,.45), 0 12px 24px -14px rgba(28,24,20,.22); }
+.biz .fig-phone { max-width: 340px; margin-inline: auto; }
+.biz .fig-phone img { border-radius: 24px; }
+.biz .made { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px 12px; }
+.biz .made li { display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 12.5px; line-height: 1.4; color: var(--ink-2); text-align: center; }
+.biz .made .app-icon { width: 64px; height: 64px; }
+
+/* お取引について */
+.biz .sec-head { border-top: 1px solid var(--ink); padding-top: 20px; margin-bottom: 28px; }
+.biz .sec-head h2 { margin-bottom: 0; }
+.biz .sec-lead { margin-top: 10px; font-size: 15px; color: var(--ink-2); }
+.biz .terms { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 40px; }
+.biz .terms li { border-top: 1px solid var(--line-2); padding: 16px 0 26px; font-size: 14.5px; line-height: 1.85; color: var(--ink-2); }
+.biz .terms strong { display: block; font-size: 16.5px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+.biz .terms a, .biz .faq a, .biz .svc-note a { text-decoration: underline; text-underline-offset: .2em; }
+.biz .faq { max-width: 720px; margin: 0; }
+.biz .faq summary { font-size: 16px; line-height: 1.6; }
+
+/* 問い合わせ */
+.marketing.biz > section.cta-band { background: var(--ink); color: #fff; padding: 56px 0; }
+.biz .cta-band h2 { color: #fff; margin-bottom: 10px; }
+.biz .cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+.biz .cta-band p { color: #d9d5cd; font-size: 15.5px; line-height: 1.85; max-width: 34em; }
+.biz .cta-actions { flex: none; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.biz .cta-band .btn-primary { background: #fff; color: var(--ink); }
+.biz .cta-band .btn-primary:hover { background: #e9e6df; }
+.biz .cta-band a:focus-visible { outline-color: #fff; }
+.biz .cta-actions small { font-size: 13px; color: #d9d5cd; }
+
+@media (max-width: 900px) {
+  .biz .svc { grid-template-columns: 1fr; gap: 36px; }
+  .biz .svc.flip .svc-text { order: 0; }
+  .biz .terms { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .biz .index-head { display: none; }
+  .biz .index-head + .index { margin-top: 44px; }
+  .biz .index a { grid-template-columns: 32px minmax(0, 1fr) 16px; column-gap: 12px; row-gap: 4px; }
+  .biz .index .who, .biz .index .fee { grid-column: 2; }
+  .biz .index .go { grid-column: 3; grid-row: 1; }
+}
+@media (max-width: 700px) {
+  .marketing.biz > section { padding: 48px 0; }
+  .marketing.biz > section.hero:first-child:not(.app-hero) { padding: 52px 0 44px; }
+  .biz .terms { grid-template-columns: 1fr; }
+  .biz .hero .btn, .biz .svc .btn { width: 100%; text-align: center; }
+  .biz .made { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .biz .cta-inner { flex-direction: column; align-items: flex-start; gap: 22px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/business.html" aria-current="page">法人の方へ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="#contact">問い合わせる</a>
+  </div>
+</header>
+
+<main class="marketing biz" id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">法人・事業者向けサービス</p>
+      <h1>会社の仕事を、<wbr>4つのサービスで<wbr>受け持ちます。</h1>
+      <p class="hero-sub">Pohoda は、個人向けのアプリのほかに、法人・事業者向けのサービスを提供しています。アプリの開発、メールの返信、物件の説明資料、面接の練習。どれも少人数から始められ、月額のサービスは無料のお試しから使えます。</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#contact">メールで問い合わせる</a>
+        <a class="btn btn-ghost" href="#terms">お支払い・契約について</a>
+      </div>
+
+      <div class="index-head" aria-hidden="true"><span></span><span>サービス</span><span>こんな会社に</span><span>料金（税込）</span><span></span></div>
+      <ol class="index">
+        <li><a href="#development">
+          <span class="no">01</span>
+          <span><span class="nm">iPhone アプリ開発</span><span class="ln">企画から App Store 公開まで、約1か月</span></span>
+          <span class="who">自社のアプリを持ちたい会社</span>
+          <span class="fee">50万円から</span>
+          <span class="go" aria-hidden="true">↓</span>
+        </a></li>
+        <li><a href="#ai-mail-auto">
+          <span class="no">02</span>
+          <span><span class="nm">AI Mail Auto</span><span class="ln">Thunderbird で、メールの検索と返信の下書き</span></span>
+          <span class="who">Thunderbird でメールを使う会社</span>
+          <span class="fee">1人 月 ¥1,000</span>
+          <span class="go" aria-hidden="true">↓</span>
+        </a></li>
+        <li><a href="#yane">
+          <span class="no">03</span>
+          <span><span class="nm">YANE for Business</span><span class="ln">会社名とロゴ入りの物件レポートを、住所から</span></span>
+          <span class="who">不動産会社</span>
+          <span class="fee">月 ¥4,980（5人まで）</span>
+          <span class="go" aria-hidden="true">↓</span>
+        </a></li>
+        <li><a href="#pre-interview">
+          <span class="no">04</span>
+          <span><span class="nm">Pre Interview</span><span class="ln">求職者に配れる、AI の面接官との模擬面接</span></span>
+          <span class="who">人材紹介・キャリア支援・就活塾</span>
+          <span class="fee">10セット ¥12,000</span>
+          <span class="go" aria-hidden="true">↓</span>
+        </a></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="development">
+    <div class="wrap svc">
+      <div class="svc-text">
+        <p class="svc-no">01　自社のアプリを持ちたい会社に</p>
+        <h2>iPhone アプリを、約1か月で App Store 公開まで。</h2>
+        <p class="svc-lead">iPhone アプリの受託開発です。自社のアプリ12本と Web サービスを企画から公開まで通してきた同じ手順で、杉本 啓輔が一人で担当します。</p>
+        <ul class="points">
+          <li>作るもの・金額・納期を、着手の前に固定でお見積りします。</li>
+          <li>毎週、進み具合をお伝えし、2週目からお手元の iPhone で触れます。</li>
+          <li>課金、iCloud 同期、通知、AI 連携、審査の対応まで含められます。</li>
+        </ul>
+        <dl class="spec">
+          <div><dt>料金</dt><dd>公開まで 50万円から（機能ごとに加算）・保守 月3万円から</dd></div>
+          <div><dt>期間</dt><dd>お支払いの確認から約1か月</dd></div>
+          <div><dt>ご相談</dt><dd>無料（お見積りまで）</dd></div>
+          <div><dt>契約・お支払い</dt><dd>電子契約のあと、着手前にカードで前払い</dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/development.html">料金とスケジュールを見る</a>
+        </div>
+        <p class="svc-note">審査の合格と時期は Apple が決めるため、保証はできません。Android のアプリは対象外です。</p>
+      </div>
+      <figure class="svc-fig">
+        <ul class="made">
+          <li><img class="app-icon" src="./assets/katachi-icon.png" alt="" width="64" height="64" loading="lazy">KATACHI</li>
+          <li><img class="app-icon" src="./assets/katachi-plus-icon.png" alt="" width="64" height="64" loading="lazy">KATACHI +</li>
+          <li><img class="app-icon" src="./assets/keep-in-touch-icon.png" alt="" width="64" height="64" loading="lazy">Keep In Touch</li>
+          <li><img class="app-icon" src="./assets/glidwell-icon.png" alt="" width="64" height="64" loading="lazy">Glidwell</li>
+          <li><img class="app-icon" src="./assets/graph-icon.png" alt="" width="64" height="64" loading="lazy">Graph</li>
+          <li><img class="app-icon" src="./assets/onecrm-icon.png" alt="" width="64" height="64" loading="lazy">One CRM</li>
+          <li><img class="app-icon" src="./assets/utility-icon.png" alt="" width="64" height="64" loading="lazy">Utility</li>
+          <li><img class="app-icon" src="./assets/costs-icon.png" alt="" width="64" height="64" loading="lazy">Costs</li>
+          <li><img class="app-icon" src="./assets/dayglyph-icon.png" alt="" width="64" height="64" loading="lazy">Dayglyph</li>
+          <li><img class="app-icon" src="./assets/dayday-icon.png" alt="" width="64" height="64" loading="lazy">DayDay</li>
+          <li><img class="app-icon" src="./assets/yane-icon.png" alt="" width="64" height="64" loading="lazy">YANE</li>
+          <li><img class="app-icon" src="./assets/pre-interview-icon.png" alt="" width="64" height="64" loading="lazy">Pre Interview</li>
+        </ul>
+        <figcaption>自社で企画・開発し、App Store で公開しているアプリ</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="ai-mail-auto">
+    <div class="wrap svc flip">
+      <div class="svc-text">
+        <p class="svc-no">02　Thunderbird でメールを使う会社に</p>
+        <h2>メールを本文まで探せて、返信の下書きは AI が用意。</h2>
+        <p class="svc-lead">AI Mail Auto は、Thunderbird に入れるアドオンです。いまのメールの環境はそのままで、日本語の検索と、返信の下書きが使えるようになります。送るのは、必ず本人です。</p>
+        <ul class="points">
+          <li>本文・件名・差出人・宛先を部分一致で探せます（検索は無料）。</li>
+          <li>宛名と宛先の食い違いなどを、送る前に確かめます（無料・AI は使いません）。</li>
+          <li>管理者が会社のドメインを登録すれば、社員は自分で入れられます。情報システムの作業は要りません。</li>
+        </ul>
+        <dl class="spec">
+          <div><dt>料金</dt><dd>1人 月 ¥1,000（税込）・2人分から</dd></div>
+          <div><dt>お試し</dt><dd>14日間（お試しのあいだは請求しません）</dd></div>
+          <div><dt>お支払い</dt><dd>カード、または請求書払い（銀行振込・期限は発行日から14日）</dd></div>
+          <div><dt>使う環境</dt><dd>Thunderbird 128 以降（Windows・Mac・Linux）</dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/ai-mail-auto/guide/kaisha/">会社で入れる手順を見る</a>
+          <a class="btn btn-ghost" href="/ai-mail-auto/">できることを見る</a>
+        </div>
+        <p class="svc-note">AI の機能を使うときだけ、メールの本文の一部を米国の Anthropic へ送ります。会社のメールで使ってよいかは、会社の規則に照らしてご判断ください。検索の索引は PC の中だけに作ります。</p>
+      </div>
+      <figure class="svc-fig fig-screen">
+        <img src="./assets/business/ai-mail-auto-inbox.jpg" alt="Thunderbird の受信トレイ。メールの上に「AIで下書き」のボタンがある" width="1200" height="540" loading="lazy" decoding="async">
+        <figcaption>Thunderbird の画面に「AIで下書き」のボタンが加わります（架空の会社の見本です）</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="yane">
+    <div class="wrap svc">
+      <div class="svc-text">
+        <p class="svc-no">03　不動産会社に</p>
+        <h2>お客様にそのまま渡せる、会社名入りの物件レポート。</h2>
+        <p class="svc-lead">YANE for Business は、物件の住所を入れるだけで、災害・暮らし・相場の公的データを6ページのレポートにまとめる Web サービスです。表紙には会社のロゴと、お客様のお名前が入ります。</p>
+        <ul class="points">
+          <li>洪水・内水・高潮・津波・土砂の想定区域を、一覧で確かめられます。</li>
+          <li>2件以上の物件を、同じ表に並べた比較レポートも作れます。</li>
+          <li>レポートは何件でも作れます。物件のデータは、ブラウザの中だけに保存します。</li>
+        </ul>
+        <dl class="spec">
+          <div><dt>料金</dt><dd>月 ¥4,980（税込）・5人まで・初期費用なし</dd></div>
+          <div><dt>お試し</dt><dd>1週間無料（カード不要・1人）</dd></div>
+          <div><dt>お支払い</dt><dd>カード、または銀行振込（請求書払い）</dd></div>
+          <div><dt>使う環境</dt><dd>パソコン・タブレット・スマートフォンのブラウザ</dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://yane.pohoda.jp/business/">1週間無料で試す</a>
+          <a class="btn btn-ghost" href="https://yane.pohoda.jp/business/sample-report-business.pdf">見本レポート（PDF）</a>
+        </div>
+        <p class="svc-note">レポートは公的なハザードマップなどをもとにした参考情報です。重要事項説明の代わりにはなりません。</p>
+      </div>
+      <figure class="svc-fig fig-paper">
+        <img src="./assets/business/yane-business-report.png" alt="会社のロゴとお客様の名前が入った物件レポートの1ページ目" width="909" height="1287" loading="lazy" decoding="async">
+        <figcaption>レポートの1ページ目（架空の会社「さくら不動産」の見本です）</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="pre-interview">
+    <div class="wrap svc flip">
+      <div class="svc-text">
+        <p class="svc-no">04　人材紹介・キャリア支援・就活塾に</p>
+        <h2>求職者の模擬面接を、AI の面接官で。</h2>
+        <p class="svc-lead">Pre Interview は、AI の面接官と声で模擬面接をする iPhone アプリです。まとめて買ったコードを求職者に配ると、本人が空いた時間に、面接・講評・レッスンまで進められます。</p>
+        <ul class="points">
+          <li>1セットは、15分の面接、発言を引用した講評、15分のレッスンです。</li>
+          <li>転職・新卒・英語面接・小学校受験の保護者面接に対応しています。</li>
+          <li>購入した方に見えるのは、コードが使用済みかどうかだけです。面接や講評の中身は見えません。</li>
+        </ul>
+        <dl class="spec">
+          <div><dt>料金</dt><dd>10セット分のコード ¥12,000（税込）・1セット 1,200円</dd></div>
+          <div><dt>期限</dt><dd>コードの有効期限なし・自動更新なし</dd></div>
+          <div><dt>お支払い</dt><dd>Web でカード払い、請求書払い（銀行振込）、アプリ内で購入</dd></div>
+          <div><dt>使う環境</dt><dd>受け取る方に iOS 17 以上の iPhone</dd></div>
+        </dl>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/pre-interview-business.html">くわしく見る</a>
+          <a class="btn btn-ghost" href="https://interview-api.pohoda.jp/request">資料をダウンロード</a>
+        </div>
+        <p class="svc-note">面接官は AI です。講評は AI による参考の評価で、面接の結果や合否を保証するものではありません。</p>
+      </div>
+      <figure class="svc-fig fig-phone">
+        <img src="./assets/biz/biz-gift-codes.jpg" alt="Pre Interview の「まとめて買って配る」の画面" width="880" height="1338" loading="lazy" decoding="async">
+        <figcaption>コードを買って配る画面（サンプルの内容です）</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="terms">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>お支払い・契約について</h2>
+        <p class="sec-lead">社内で確認されることが多い点を、先にまとめました。</p>
+      </div>
+      <ul class="terms">
+        <li><strong>請求書払い（銀行振込）</strong>AI Mail Auto、YANE for Business、Pre Interview は、請求書払いに対応しています。アプリ開発は、着手前のカード払いです。</li>
+        <li><strong>お試し</strong>AI Mail Auto は14日間、YANE for Business は1週間、無料で試せます。お試しが終わっても、自動で有料にはなりません（YANE）。アプリ開発のご相談は、お見積りまで無料です。</li>
+        <li><strong>見積書</strong>アプリ開発と Pre Interview は、見積書を作成します。メールでご依頼ください。</li>
+        <li><strong>インボイス</strong>Pohoda は消費税の免税事業者のため、適格請求書（インボイス）は発行していません。金額はすべて税込の総額です。</li>
+        <li><strong>データの扱い</strong>サービスごとに、何をどこへ送り、どこに保存するかを各ページに書いています。AI を使う機能は、処理のために内容の一部を AI の事業者へ送ります。</li>
+        <li><strong>運営者</strong>運営は、個人事業主の杉本 啓輔（屋号 Pohoda）です。会社（法人）ではありません。連絡先と事業の内容は<a href="/operator.html">運営者情報</a>にあります。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head"><h2>よくある質問</h2></div>
+      <div class="faq">
+        <details><summary>請求書払い（銀行振込）はできますか？</summary><p>AI Mail Auto の法人契約、YANE for Business、Pre Interview の10セット分のコードは、請求書払い（銀行振込）に対応しています。iPhone アプリの開発は、着手前にカードでの前払いをお願いしています。</p></details>
+        <details><summary>インボイス（適格請求書）は発行できますか？</summary><p>発行していません。Pohoda はインボイス制度の登録をしていない、消費税の免税事業者です。金額は税込の総額で、消費税を別に上乗せすることはありません。</p></details>
+        <details><summary>契約の前に試せますか？</summary><p>AI Mail Auto は14日間、YANE for Business は1週間、無料で試せます。Pre Interview は、アプリを入れると無料の練習を試せます。iPhone アプリの開発は、ご相談からお見積りまで無料です。</p></details>
+        <details><summary>運営しているのは会社ですか？</summary><p>いいえ。運営は、個人事業主の杉本 啓輔（屋号 Pohoda）です。会社（法人）ではありません。開業は2026年5月で、開発からお問い合わせの対応まで一人で行っています。</p></details>
+        <details><summary>ほかに、仕事で使えるアプリはありますか？</summary><p>個人事業主や店舗の方に向けて、顧客・案件の台帳の One CRM と、パーソナルトレーナーの顧客カルテの KATACHI + があります。どちらも App Store から入れて、すぐに使えます。</p></details>
+        <details><summary>4つのうち、どれが合うか分からないときは？</summary><p>メールでご相談ください。やりたいことをうかがって、合うサービスをお答えします。合うものが無いときは、そうお伝えします。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="cta-band">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>お問い合わせは、メールで。</h2>
+        <p>導入のご相談、見積書や請求書払いのご依頼、サービスについてのご質問を受け付けています。会社名と、気になっているサービスを書いてお送りください。</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="mailto:info@pohoda.jp?subject=%E6%B3%95%E4%BA%BA%E5%90%91%E3%81%91%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで問い合わせる</a>
+        <small>info@pohoda.jp</small>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/business.html">法人向けサービス</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
