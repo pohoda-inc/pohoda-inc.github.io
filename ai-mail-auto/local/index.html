@@ -123,9 +123,19 @@
 <div><dt>設定</dt><dd>10万円（税抜）・お送りいただいた Mac mini に AI と仕組みを入れて、お返しします</dd></div>
 <div><dt>Mac mini 本体</dt><dd>お客さまでご購入ください（推奨: Mac mini M6・メモリ32GB。価格は Apple のサイトでご確認ください）。</dd></div>
 <div><dt>年間保守（予定）</dt><dd>モデルの入れ替え・遠隔の手伝いを予定しています。</dd></div>
-<div><dt>使える人数</dt><dd>実機で測ってから公開します。</dd></div>
+<div><dt>使える人数</dt><dd>目安 50人まで（試算・下の「箱1台で処理できる量」をご覧ください）</dd></div>
 </dl>
 <p class="warn">すべて予定です。変わることがあります。</p>
+</div>
+<div class="capw">
+<h2>箱1台で処理できる量（試算）</h2>
+<p class="sub">Mac mini M6・メモリ32GB で、AI のモデル Gemma 4 26B を使う場合の見積もりです。実機で測り次第、更新します。</p>
+<div class="caps">
+<div class="cap"><span class="k">同時に処理できるメール</span><span class="v">2<small>通</small></span><span class="d">2通を並べて処理します</span></div>
+<div class="cap"><span class="k">1時間に処理できるメール</span><span class="v">約600<small>通</small></span><span class="d">分類と、返事が要るメールの下書きまで</span></div>
+<div class="cap"><span class="k">使う人数の目安</span><span class="v">50<small>人まで</small></span><span class="d">メールの届く時間が散らばっていれば 80人ほど</span></div>
+</div>
+<ul class="capn"><li>1人に1日50通届き、そのうち15通に返事が要るとして計算しています。</li><li>いちばん混む1時間に1日の2割（1人10通）が届いても、50人分（500通）が1時間以内に終わります。</li><li>1通あたりは、分類が約4秒、下書きが約11秒です。朝に100通まとめて届いても、約10分で全部終わります。</li><li>もっと多い人数には、メモリの多い Mac（Mac Studio など）をご相談ください。</li></ul>
 </div>
 </div></section>
 
@@ -207,6 +217,12 @@
 .pl{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .pl .from{font-size:14px;color:var(--ink-2)}.pl .amt{font-size:38px;font-weight:500;letter-spacing:.01em}.pl .tx{font-size:13px;color:var(--ink-2)}
 .pr div{display:grid;grid-template-columns:11em 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.pr div:first-child{border-top:0}.pr dt{font-size:14px;color:var(--ink)}.pr dd{font-size:14px;line-height:1.8;color:var(--ink-2)}@media(max-width:600px){.pr div{grid-template-columns:1fr;gap:2px}}
+.capw{margin-top:56px}
+.caps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:900px}
+.cap{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:6px}
+.cap .k{font-size:13px;color:var(--ink-2)}.cap .v{font-size:38px;font-weight:500;letter-spacing:.01em;line-height:1.2}.cap .v small{font-size:15px;font-weight:400;margin-left:4px;color:var(--ink-2)}.cap .d{font-size:13px;line-height:1.7;color:var(--ink-2)}
+.capn{margin-top:18px;padding-left:18px;font-size:14px;line-height:2;color:var(--ink-2);max-width:46em}
+@media(max-width:760px){.caps{grid-template-columns:1fr}.cap .v{font-size:32px}}
 .price ul{padding-left:18px;font-size:14px;line-height:2;color:var(--ink-2)}
 .price .warn{margin-top:16px;display:inline-block;font-size:12.5px;color:var(--ink-2);border:1px solid var(--line-2);border-radius:999px;padding:3px 12px}
 .ol .faq{margin:0;max-width:760px}
