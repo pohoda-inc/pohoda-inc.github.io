@@ -3,13 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pohoda.jp/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>1.0</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pohoda.jp/operator.html</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -90,7 +90,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/journal/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
@@ -533,7 +533,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/development.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
@@ -545,13 +545,13 @@
   </url>
   <url>
     <loc>https://pohoda.jp/en/development.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/en/og-default.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://pohoda.jp/about.html</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -722,17 +722,17 @@
   </url>
   <url>
     <loc>https://pohoda.jp/journal/app-kaihatsu-kikan.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pohoda.jp/journal/app-kaihatsu-kojin-irai.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://pohoda.jp/journal/iphone-app-kaihatsu-hiyou.html</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -747,7 +747,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/journal/app-hoshu-hiyou.html</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
