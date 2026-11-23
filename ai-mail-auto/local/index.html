@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メールを、社外に出さずに AI で。｜AI Mail Auto 社外に出さない版（準備中）</title>
+<meta name="description" content="社内に置く小さな箱（Mac mini）の中で AI が動き、メールの中身を社外に送らずに使える AI Mail Auto for Thunderbird の版を準備しています。ご相談・ご予約を受け付けています。">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico?v=3" sizes="any">
+<link rel="stylesheet" href="/styles.css?v=25">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/brand/pohoda-mark.svg" alt="" width="30" height="30"><span class="brand-word">Pohoda</span></a>
+    <nav class="nav">
+      <a href="/#apps">アプリ</a>
+      <a href="/business.html">法人の方へ</a>
+      <a href="/development.html">アプリ開発のご相談</a>
+      <a class="nav-sub" href="/journal/">読みもの</a>
+      <a href="/news.html">お知らせ</a>
+      <a href="/#about">Pohodaについて</a>
+    </nav>
+    <a class="nav-cta" href="#contact">相談・予約する</a>
+  </div>
+</header>
+
+<main class="marketing aima aima-local">
+  <section class="aima-hero">
+    <div class="wrap">
+      <div class="aima-copy">
+        <p class="aima-kind">準備中 ・ 会社向け ・ 社内に置く AI の箱</p>
+        <h1>メールを、<wbr>社外に出さずに AI で。</h1>
+        <p class="lead">社内に置く小さな箱（Mac mini）の中で AI が動き、メールの中身を社外に送らずに、返信の下書き・分類・AI 検索を使える版を準備しています。外部の AI にメールを送れない会社（官公庁・病院・士業・設計や製造の秘密を扱う会社など）向けです。</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="mailto:pohoda.inc@gmail.com?subject=AI%20Mail%20Auto%20%E7%A4%BE%E5%A4%96%E3%81%AB%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84%E7%89%88%E3%81%AE%E7%9B%B8%E8%AB%87">相談・予約する</a>
+          <a class="btn btn-ghost" href="#diff">いまの版との違い</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="diff">
+    <div class="wrap">
+      <div class="section-label">いまの版との違い</div>
+      <table class="aima-table loc-table">
+        <thead><tr><th></th><th>いまの版（クラウド）</th><th>社外に出さない版（準備中）</th></tr></thead>
+        <tbody>
+          <tr><th>AI の処理する場所</th><td>米国の Anthropic へ送る</td><td>社内の箱の中だけ</td></tr>
+          <tr><th>インターネット</th><td>要る</td><td>ライセンスの確認と更新だけ</td></tr>
+          <tr><th>文の質</th><td>Claude Haiku</td><td>手元で動くモデル。少し簡素になることがあります</td></tr>
+          <tr><th>料金</th><td>1人 月¥1,000</td><td>箱と買い切りのライセンス＋年間保守（予定）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-label">仕組み</div>
+      <svg class="loc-svg" viewBox="0 0 800 150" role="img" aria-label="社員の PC から、社内の箱（Mac mini・AI）へ。メールの中身は社外には出ない。">
+        <g font-size="13" fill="#1c1814">
+          <rect x="10" y="20" width="230" height="90" rx="12" fill="#fff" stroke="#d9d4cc"/>
+          <text x="28" y="48">社員の PC</text>
+          <text x="28" y="72" fill="#5c564d" font-size="12">Thunderbird とアドオン</text>
+          <rect x="285" y="20" width="230" height="90" rx="12" fill="#fff" stroke="#d9d4cc"/>
+          <text x="303" y="48">社内の箱（Mac mini・AI）</text>
+          <text x="303" y="72" fill="#5c564d" font-size="12">下書き・分類・AI 検索はここで処理</text>
+          <rect x="560" y="20" width="230" height="90" rx="12" fill="#fff" stroke="#d9d4cc" stroke-dasharray="5 4"/>
+          <text x="578" y="48">社外には出ない</text>
+          <text x="578" y="72" fill="#5c564d" font-size="12">メールの中身は外部の AI に送りません</text>
+          <path d="M240 65 H285" stroke="#1c1814" stroke-width="1.5" marker-end="url(#ar2)"/>
+          <path d="M515 65 H560" stroke="#8a847a" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <text x="535" y="58" fill="#5c564d" font-size="16" text-anchor="middle">×</text>
+          <text x="10" y="140" fill="#5c564d" font-size="12">ライセンスの確認と更新のときだけ、インターネットにつなぎます。</text>
+        </g>
+        <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1c1814"/></marker></defs>
+      </svg>
+      <p class="aima-note">送る前の確認（宛先の食い違いを止める）と検索は、クラウド版と同じです。これらは AI を使わず、社員の PC の中で動きます。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="plan">
+    <div class="wrap">
+      <div class="section-label">予定している内容</div>
+      <p class="aima-note">以下はすべて予定で、変わることがあります。</p>
+      <ul class="aima-list">
+        <li>箱は、お客さまがご購入の Mac mini（当方が推奨する機種）をお送りいただき、当方で設定してお返しします。設定済みの機種をご用意することもできます。</li>
+        <li>何人まで使えるかの目安は、実機で測ってから公開します。</li>
+        <li>価格の目安（税抜・予定）：10人前後まで 60万円〜（Mac mini・設定・買い切りライセンス込み）。それ以上の人数はご相談ください。</li>
+        <li>年間保守（モデルの入れ替え・遠隔の手伝い）を予定しています。</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-label">よくある質問</div>
+      <div class="faq">
+        <details><summary>インターネットに一切つながなくても使えますか？</summary><p>ライセンスの確認と更新のために、ときどきインターネットにつなぎます。メールの中身は送りません。完全に切り離す運用をご希望の場合は、ご相談ください。</p></details>
+        <details><summary>どのくらいの文の質ですか？</summary><p>クラウド版よりやや簡素になることがあります。実機での比べを、公開する予定です。</p></details>
+        <details><summary>いまのクラウド版から移れますか？</summary><p>移れる形で考えています。くわしい手順は、準備が進んだらお知らせします。</p></details>
+        <details><summary>箱が壊れたらどうなりますか？</summary><p>Mac mini のメーカー保証が使えます。設定は、当方でやり直します。</p></details>
+        <details><summary>いつから使えますか？</summary><p>ご相談・ご予約の状況を見て決めます。決まりしだい、ご連絡します。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="aima-trial">
+    <div class="wrap">
+      <div class="section-label">相談・予約</div>
+      <p class="aima-note">次の内容を書いて、メールでお送りください。メールでお返事します。</p>
+      <ul class="aima-list">
+        <li>会社名</li>
+        <li>使う人数</li>
+        <li>使っている Thunderbird の台数</li>
+        <li>社外に出せない理由（任意）</li>
+        <li>希望する時期</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="mailto:pohoda.inc@gmail.com?subject=AI%20Mail%20Auto%20%E7%A4%BE%E5%A4%96%E3%81%AB%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84%E7%89%88%E3%81%AE%E7%9B%B8%E8%AB%87">メールで相談・予約する</a>
+      </div>
+      <p class="aima-note">いまのクラウド版は、<a href="/ai-mail-auto/business/">会社で使う AI Mail Auto</a>へ。</p>
+    </div>
+  </section>
+</main>
+<style>
+.loc-table { max-width: 760px; }
+.loc-table tbody th { width: 24%; text-align: left; font-weight: 500; }
+.loc-svg { width: 100%; height: auto; margin: 12px 0 20px; }
+.aima-local .aima-hero .wrap { display: block; }
+@media (max-width: 600px) { .loc-table th, .loc-table td { padding: 10px 8px; font-size: 13px; } }
+</style>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>アプリ</h4>
+        <a href="/katachi.html">KATACHI</a>
+        <a href="/katachi-plus.html">KATACHI +</a>
+        <a href="/keep-in-touch.html">Keep In Touch</a>
+        <a href="/glidwell.html">Glidwell</a>
+        <a href="/graph.html">Graph</a>
+        <a href="/one-crm.html">One CRM</a>
+        <a href="/utility.html">Utility</a>
+        <a href="/costs.html">Costs</a>
+        <a href="/dayglyph.html">Dayglyph</a>
+        <a href="/dayday.html">DayDay</a>
+        <a href="/pre-interview.html">Pre Interview</a>
+      </div>
+      <div class="footer-col">
+        <h4>Web サービス</h4>
+        <a href="/ai-mail-auto/">AI Mail Auto</a>
+        <a href="/yane.html">YANE</a>
+        <a href="/insight.html">Insight</a>
+        <a href="/drivescape.html">DriveScape</a>
+      </div>
+      <div class="footer-col">
+        <h4>サポート・規約</h4>
+        <a href="/news.html">お知らせ</a>
+        <a href="/journal/">読みもの</a>
+        <a href="/request.html">要望箱</a>
+        <a href="/business.html">法人向けサービス</a>
+        <a href="/development.html">アプリ開発のご相談</a>
+        <a href="/legal/support.html">サポート</a>
+        <a href="/legal/privacy.html">プライバシーポリシー</a>
+        <a href="/legal/terms.html">利用規約</a>
+        <a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>
+      </div>
+      <div class="footer-col">
+        <h4>お問い合わせ</h4>
+        <a href="mailto:pohoda.inc@gmail.com">pohoda.inc@gmail.com</a>
+        <a href="/about.html" lang="en">About Pohoda (English)</a>
+        <a href="/en/" lang="en">Apps in English</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Pohoda（杉本 啓輔）</div>
+  </div>
+</footer>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0edf017e187e4defbdbfdf457f3a7f1a"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
