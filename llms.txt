@@ -32,6 +32,7 @@
   - 使い方：[使い方ガイド](https://pohoda.jp/ai-mail-auto/guide/)
   - 解説：[Thunderbird を便利にする設定とアドオン 2026（効率化の方法）](https://pohoda.jp/ai-mail-auto/articles/thunderbird-benri/)
   - 解説：[Thunderbird の誤送信を防ぐ設定とアドオン 2026](https://pohoda.jp/ai-mail-auto/articles/thunderbird-gososhin-boshi/)
+  - [AI Mail Auto 社外に出さない版（社内の箱）](https://pohoda.jp/ai-mail-auto/local/)：社内に置く Mac の中で AI が動き、メールの中身を社外に出さずに下書き・分類・検索を使える法人向けの仕組み。ライセンスは箱1台ごとの買い切り（Mac mini の箱 20万円・Mac Studio の箱 40万円、税抜）＋設定 10万円。最初の1年の更新とサポートを含み、2年目からは1年ごとに延長できます。Mac はお客さまがご購入。相談・申し込みはメール。
   - [AI Mail Auto 法人契約（会社でまとめて入れる手順）](https://pohoda.jp/ai-mail-auto/guide/kaisha/)：1人 ¥1,000/月（税込）・2人から・カードか請求書払い。管理者がドメインを登録すれば社員が自分で入れられ、policies.json でまとめて配ることもできます。管理者にもメールの中身は見えません。
 
 ## 読みもの・その他
