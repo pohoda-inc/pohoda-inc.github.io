@@ -27,7 +27,7 @@
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=25">
+<link rel="stylesheet" href="/styles.css?v=28">
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Mail Auto for Thunderbird", "alternateName": "Thunderbird の AI アドオン AI Mail Auto for Thunderbird", "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux (Thunderbird 128+)", "url": "https://pohoda.jp/ai-mail-auto/", "description": "Thunderbird のアドオン。日本語のメールを本文まで部分一致で探せる検索（無料）と、返信が必要なメールへの AI の下書き・自動の分類・修正からの学習。自動送信はしません。", "inLanguage": "ja", "softwareRequirements": "Thunderbird 128 以降", "offers": {"@type": "Offer", "price": "1000", "priceCurrency": "JPY", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "1000", "priceCurrency": "JPY", "billingDuration": "P1M", "unitCode": "MON", "valueAddedTaxIncluded": true}, "availability": "https://schema.org/InStock", "url": "https://pohoda.jp/ai-mail-auto/#trial"}, "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}}
 </script>
@@ -70,9 +70,9 @@
         </div>
         <dl class="cat-spec"><div><dt>対応</dt><dd>Thunderbird 128 以降（Windows・Mac・Linux）</dd></div><div><dt>料金</dt><dd>検索は無料。AI は月 ¥1,000（税込）</dd></div><div><dt>API キー</dt><dd>不要</dd></div></dl>
       </div>
-      <figure class="aima-shot">
-        <img src="/assets/ai-mail-auto/search-result.png" alt="AI Mail Auto の検索画面。本文にある語で探した結果が、差出人・件名・日付・該当箇所つきで並ぶ" width="1280" height="800" fetchpriority="high">
-        <figcaption>本文にだけ書かれた語でも、差出人・件名・日付と該当箇所つきで出ます。</figcaption>
+      <figure class="aima-fig">
+        <img src="/assets/ai-mail-auto/fig-search.jpg" alt="AI Mail Auto の検索。「12月」と入れると、件名に無くても本文に「12月」があるメールが、該当箇所に印がついて並ぶ" width="1200" height="1040" fetchpriority="high">
+        <figcaption>件名に無い語でも、本文から見つかります（無料）。</figcaption>
       </figure>
     </div>
   </section>
@@ -91,10 +91,18 @@
 
   <section id="screens">
     <div class="wrap">
-      <div class="section-label">画面</div>
-      <div class="aima-shots">
-        <figure><img src="/assets/ai-mail-auto/draft.png" alt="返信が必要なメールに AI が作った下書き。宛名と署名がつき、元のメールが引用されている" width="1280" height="800" loading="lazy"><figcaption>返信が必要なメールに、下書きができています。直して、送るのはあなたです。</figcaption></figure>
-        <figure><img src="/assets/ai-mail-auto/wizard.png" alt="初回の案内。今の整理を読み取り、AI をどこまで使うかを選ぶ画面" width="1280" height="800" loading="lazy"><figcaption>入れた直後は何も変えません。初回の案内で、選んだものだけが動きます。</figcaption></figure>
+      <div class="section-label">使うとこうなる</div>
+      <div class="aima-uses">
+        <div class="aima-use">
+          <h3>返信が必要なメールに、<wbr><span class="nw">下書きができています</span></h3>
+          <p>自分宛てで返信が必要なメールに、AI が下書きを作って「下書き」フォルダーに入れます。メルマガや自動配信には作りません。直して、送るのはあなたです。</p>
+          <figure class="aima-fig"><picture><source media="(max-width: 700px)" srcset="/assets/ai-mail-auto/fig-draft-sp.jpg" width="880" height="880"><img src="/assets/ai-mail-auto/fig-draft.jpg" alt="「下書き」フォルダーに、AI が作った返信の下書き。宛名から納期・見積書の送付日まで書かれている" width="1760" height="1000" loading="lazy"></picture></figure>
+        </div>
+        <div class="aima-use">
+          <h3>送る前に、<wbr><span class="nw">宛先の間違いで</span><wbr><span class="nw">止めます（無料）</span></h3>
+          <p>宛名と宛先の食い違いや、これまで一緒にやり取りしたことのない会社どうしが同じメールに入っているときだけ、送る前に止めて理由を見せます。問題がなければ、何も出さずに送ります。</p>
+          <figure class="aima-fig"><picture><source media="(max-width: 700px)" srcset="/assets/ai-mail-auto/fig-send-check-sp.jpg" width="880" height="880"><img src="/assets/ai-mail-auto/fig-send-check.jpg" alt="送る前の確認。一緒にやり取りした記録のない2社が同じメールに入っていると知らせ、「戻って直す」か「このまま送る」を選べる" width="1760" height="1000" loading="lazy"></picture></figure>
+        </div>
       </div>
     </div>
   </section>
