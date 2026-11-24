@@ -7,3 +7,5 @@ wrangler.jsonc
 .assetsignore
 worker.js
 .wrangler
+docs
+.gitignore
