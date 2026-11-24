@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>面接日程と選考の進捗を管理するアプリ｜複数社をひとつの画面に</title>
-<meta name="description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。">
+<meta name="description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考の段階を記録して一画面で見る方法と、なぜ日程を見失いやすいのか、記録を端末の中だけに残す Glidwell の設計を紹介します。">
 <meta name="author" content="杉本 啓輔">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html">
@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="面接日程と選考の進捗を管理するアプリ｜複数社をひとつの画面に">
-<meta property="og:description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。">
+<meta property="og:description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考の段階を記録して一画面で見る方法と、なぜ日程を見失いやすいのか、記録を端末の中だけに残す Glidwell の設計を紹介します。">
 <meta property="og:url" content="https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
 <meta property="og:image:width" content="1200">
@@ -24,14 +24,14 @@
 <meta property="article:section" content="転職活動の管理">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="面接日程と選考の進捗を管理するアプリ｜複数社をひとつの画面に">
-<meta name="twitter:description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。">
+<meta name="twitter:description" content="複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考の段階を記録して一画面で見る方法と、なぜ日程を見失いやすいのか、記録を端末の中だけに残す Glidwell の設計を紹介します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-glidwell.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="/styles.css?v=23">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"面接日程と選考の進捗管理をアプリでひとつに","description":"複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考フェーズを記録し、端末の中だけに残す Glidwell の設計を紹介します。","image":["https://pohoda.jp/assets/og/og-glidwell.png"],"datePublished":"2026-07-28","dateModified":"2026-11-07","inLanguage":"ja","articleSection":"転職活動の管理","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html"}}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"面接日程と選考の進捗管理をアプリでひとつに","description":"複数社の面接日程と選考の進捗がばらばらになると、次の面接がいつか分からなくなります。応募企業ごとに日程と選考の段階を記録して一画面で見る方法と、なぜ日程を見失いやすいのか、記録を端末の中だけに残す Glidwell の設計を紹介します。","image":["https://pohoda.jp/assets/og/og-glidwell.png"],"datePublished":"2026-07-28","dateModified":"2026-11-07","inLanguage":"ja","articleSection":"転職活動の管理","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/mensetsu-nittei-senko-shinchoku-kanri.html"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"転職活動の管理","item":"https://pohoda.jp/journal/#tenshoku"}]}

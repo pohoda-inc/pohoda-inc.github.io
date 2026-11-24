@@ -9,17 +9,23 @@
 - [KATACHI（体型記録・筋トレ記録）](https://pohoda.jp/katachi.html)：筋トレ・体重・体脂肪・体型写真をひとつに記録し、前回を超える次の目標と推移のグラフを見せる iPhone アプリ。
   - 比較：[筋トレ記録アプリの選び方と比較（2026）](https://pohoda.jp/journal/kintore-kiroku-app-erabikata.html)
 - [KATACHI +（パーソナルトレーナーの顧客管理）](https://pohoda.jp/katachi-plus.html)：パーソナルトレーナーと小規模ジム・スタジオ向けの顧客カルテとトレーニング記録。スタッフと店舗で共有、予約台帳・同意書の署名にも対応。iPhone・iPad・Mac。
+  - 比較：[パーソナルトレーナーの顧客管理アプリの選び方と比較（2026）](https://pohoda.jp/journal/trainer-kokyaku-kanri-app-erabikata.html)
 - [Keep In Touch（誕生日・連絡のリマインド）](https://pohoda.jp/keep-in-touch.html)：しばらく連絡していない大切な人をリマインドし、誕生日・記念日も知らせる iPhone アプリ。
   - 比較：[誕生日管理アプリの選び方と比較（2026）](https://pohoda.jp/journal/tanjoubi-kanri-app-erabikata.html)
 - [Glidwell（転職活動の選考管理）](https://pohoda.jp/glidwell.html)：複数の転職エージェントを併用する人向けに、選考のフェーズ・次にやること・書類をまとめる iPhone アプリ。
+  - 比較：[就活・転職の管理アプリの選び方と比較（2026）](https://pohoda.jp/journal/shukatsu-tenshoku-kanri-app-erabikata.html)
 - [Graph（数字の記録とグラフ）](https://pohoda.jp/graph.html)：体重・資産・収入・勉強時間・売上などの数字を2タップで記録し、自動でグラフにする iPhone アプリ。
   - 比較：[数字を記録してグラフにするアプリの選び方と比較（2026）](https://pohoda.jp/journal/kiroku-graph-app-erabikata.html)
 - [One CRM（個人事業主・サロンの顧客管理）](https://pohoda.jp/one-crm.html)：顧客と会ったことを記録すると、最後に連絡した日・回数・売上が自動で出る顧客台帳。個人客にも法人営業にも対応。iPhone・iPad・Mac。
+  - 比較：[顧客管理アプリの選び方と比較（2026）](https://pohoda.jp/journal/kokyaku-kanri-app-erabikata.html)
 - [Utility（メモ・ToDo・カレンダー・体重管理）](https://pohoda.jp/utility.html)：メモ・ToDo・カレンダー・体重や体脂肪率・歩数・BMI をひとつにまとめた、広告のないアプリ。iPhone・iPad・Mac。
+  - 比較：[体重記録アプリの選び方と比較（2026）](https://pohoda.jp/journal/taiju-kiroku-app-erabikata.html)
 - [Costs（固定費の家計簿）](https://pohoda.jp/costs.html)：家賃・サブスク・年払いなどの固定費を並べ、毎月いくら使っているかをひと目で見せる iPhone の家計簿。
   - 比較：[サブスク管理アプリの選び方と比較（2026）](https://pohoda.jp/journal/subsc-kanri-app-erabikata.html)
 - [Dayglyph（Apple Watch の今日の調子の目安）](https://pohoda.jp/dayglyph.html)：Apple Watch が記録した昨夜の睡眠・心拍変動・睡眠中の心拍数を本人のふだんと比べ、朝に文字盤の印をひとつ出す Apple Watch アプリ。数字や点数は出さず、健康データは Apple Watch の中だけに置く。
+  - 比較：[Apple Watch で体調を見るアプリの選び方と比較（2026）](https://pohoda.jp/journal/applewatch-taichou-app-erabikata.html)
 - [DayDay（音声日記・一日の報告）](https://pohoda.jp/dayday.html)：自分が参加する会話や独り言を Apple Watch・iPhone で録音し、日本語の文字起こしを iPhone の中で行って、一日の報告（一日のまとめと、時間ごとの話）にまとめる音声日記アプリ。音声は Pohoda のサーバーに送らない。
+  - 比較：[Apple Watch で録音するアプリの選び方と比較（2026）](https://pohoda.jp/journal/rokuon-lifelog-app-erabikata.html)
 - [Pre Interview（AI 面接練習）](https://pohoda.jp/pre-interview.html)：AI の面接官と声で模擬面接をする iPhone アプリ。転職・新卒就活・英語面接・小学校受験の保護者面接に対応。無料の練習（一問一答で5問・約7分、iPhone 15 Pro 以降・iOS 27 以上）から始められ、有料の本番形式（15分）は講評とやり直しのレッスンつき。
   - 比較：[面接練習アプリの選び方と比較（2026）](https://pohoda.jp/journal/mensetsu-renshu-app-erabikata.html)
 
