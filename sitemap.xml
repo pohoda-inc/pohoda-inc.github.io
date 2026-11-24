@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://pohoda.jp/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>1.0</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
@@ -527,7 +527,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/business.html</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://pohoda.jp/assets/og/og-default.png</image:loc></image:image>
   </url>
@@ -757,7 +757,7 @@
   </url>
   <url>
     <loc>https://pohoda.jp/ai-mail-auto/</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <priority>0.9</priority>
   </url>
   <url>

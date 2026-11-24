@@ -27,7 +27,7 @@
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
-<link rel="stylesheet" href="/styles.css?v=28">
+<link rel="stylesheet" href="/styles.css?v=29">
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Mail Auto for Thunderbird", "alternateName": "Thunderbird の AI アドオン AI Mail Auto for Thunderbird", "applicationCategory": "BusinessApplication", "operatingSystem": "Windows, macOS, Linux (Thunderbird 128+)", "url": "https://pohoda.jp/ai-mail-auto/", "description": "Thunderbird のアドオン。日本語のメールを本文まで部分一致で探せる検索（無料）と、返信が必要なメールへの AI の下書き・自動の分類・修正からの学習。自動送信はしません。", "inLanguage": "ja", "softwareRequirements": "Thunderbird 128 以降", "offers": {"@type": "Offer", "price": "1000", "priceCurrency": "JPY", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "1000", "priceCurrency": "JPY", "billingDuration": "P1M", "unitCode": "MON", "valueAddedTaxIncluded": true}, "availability": "https://schema.org/InStock", "url": "https://pohoda.jp/ai-mail-auto/#trial"}, "author": {"@type": "Person", "name": "杉本 啓輔", "url": "https://pohoda.jp/operator.html"}, "publisher": {"@type": "Organization", "name": "Pohoda", "url": "https://pohoda.jp/"}}
 </script>
@@ -68,6 +68,7 @@
           <a class="btn btn-primary" href="#trial">14日間ためす</a>
           <a class="btn btn-ghost" href="https://mail-ai.pohoda.jp/download?from=product" data-from-url>検索だけ使う（無料）</a>
         </div>
+        <p class="aima-note">メールを社外に出せない会社は、AI が社内で動く <a href="/ai-mail-auto/local/">社内サーバー</a> と <a href="/ai-mail-auto/pc/">パソコン</a> の形もあります（<a href="#ways">3つを比べる</a>）。</p>
         <dl class="cat-spec"><div><dt>対応</dt><dd>Thunderbird 128 以降（Windows・Mac・Linux）</dd></div><div><dt>料金</dt><dd>検索は無料。AI は月 ¥1,000（税込）</dd></div><div><dt>API キー</dt><dd>不要</dd></div></dl>
       </div>
       <figure class="aima-fig">
@@ -84,6 +85,17 @@
       <ul class="app-answer-who"><li>会社や自宅で Thunderbird を使っていて、検索が件名しか引っかからない・遅い人</li><li>返信の文面を毎日たくさん書いていて、下書きだけ先に用意してほしい人</li><li>ChatGPT などの API キーや契約を、自分では用意したくない人</li></ul>
       <p class="app-answer-meta"><b>向いていない人</b></p>
       <ul class="app-answer-who"><li>Thunderbird を使っていない人（アドオンです）</li><li>メールを自動で送ってほしい人（送信は必ず本人です）</li><li>iPhone の中で使いたい人（PC の Thunderbird 専用です）</li></ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="ways">
+    <div class="wrap">
+      <div class="section-label">使い方は3つ</div>
+      <h2 class="ways-h">メールを社外に出せない会社は、<wbr>AI が社内で動く形を選べます</h2>
+      <p class="aima-note" style="margin-top:8px">どれも Thunderbird で使い、送るのは本人です。違うのは、AI が動く場所です。</p>
+      <ul class="ways"><li><a href="/ai-mail-auto/" aria-current="page"><span class="wi"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 18.5h9.8a3.9 3.9 0 0 0 .5-7.8 5.6 5.6 0 0 0-10.8 1.1A3.4 3.4 0 0 0 7.5 18.5z"/></svg></span><span class="wn">AI Mail Auto for Thunderbird</span><span class="wh">クラウドの AI で、1人から</span><span class="wd">Thunderbird にアドオンを入れるだけで使えます。AI を使うときだけ、本文の一部を Anthropic（米国）へ送ります。</span><span class="wp">1人 月 ¥1,000（税込）・14日間お試し</span></a></li><li><a href="/ai-mail-auto/local/"><span class="wi"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="7" rx="1.5"/><rect x="4" y="13" width="16" height="7" rx="1.5"/><path d="M7.5 7.5h.01M7.5 16.5h.01M12 7.5h4.5M12 16.5h4.5"/></svg></span><span class="wn">AI Mail Auto 社内サーバー</span><span class="wh">社内に置く Mac の中で AI が動く</span><span class="wd">メールの中身を社外に出しません。使う人が多い会社（〜200人）向け。当方で設定してお返しします。</span><span class="wp">ライセンス 20万円〜＋設定 10万円（税抜・買い切り）</span></a></li><li><a href="/ai-mail-auto/pc/"><span class="wi"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M2.5 19h19"/></svg></span><span class="wn">AI Mail Auto for PC</span><span class="wh">社員のパソコンの中で AI が動く</span><span class="wd">メールの中身を社外に出しません。数人の会社・部署向け。メモリ32GBのパソコン（Windows・Mac）で、買う前に動作チェックできます。</span><span class="wp">15万円（税抜・買い切り）でパソコン5台まで</span></a></li></ul>
     </div>
   </section>
 
@@ -231,7 +243,7 @@
         </ul>
       </div>
       <p><a class="btn btn-primary" href="https://mail-ai.pohoda.jp/org/checkout">会社で申し込む</a></p>
-      <p class="aima-note">外部の AI にメールを送れない会社向けに、<a href="/ai-mail-auto/local/">社内サーバーで動かす版</a>と、<a href="/ai-mail-auto/pc/">パソコンの中で動かす版</a>も用意しています。<a href="/ai-mail-auto/business/">会社向けのくわしい説明（費用の目安・導入の流れ・情報セキュリティ）</a>をご覧ください。管理者の方向けの手順は<a href="/ai-mail-auto/guide/kaisha/">会社でまとめて入れる手順</a>に載せています。管理画面へのログインは<a href="https://mail-ai.pohoda.jp/admin/login">こちら</a>。条件の詳細は<a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>と<a href="/legal/terms.html">利用規約（第3条の4）</a>をご覧ください。</p>
+      <p class="aima-note">外部の AI にメールを送れない会社は、AI が社内で動く<a href="/ai-mail-auto/local/">社内サーバー</a>か<a href="/ai-mail-auto/pc/">AI Mail Auto for PC</a>を選べます（<a href="#ways">3つの使い方を比べる</a>）。<a href="/ai-mail-auto/business/">会社向けのくわしい説明（費用の目安・導入の流れ・情報セキュリティ）</a>をご覧ください。管理者の方向けの手順は<a href="/ai-mail-auto/guide/kaisha/">会社でまとめて入れる手順</a>に載せています。管理画面へのログインは<a href="https://mail-ai.pohoda.jp/admin/login">こちら</a>。条件の詳細は<a href="/legal/tokushoho.html">特定商取引法に基づく表記</a>と<a href="/legal/terms.html">利用規約（第3条の4）</a>をご覧ください。</p>
     </div>
   </section>
 
