@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChatGPT模擬面接のプロンプト例｜AIで練習する方法と声のコツ</title>
-<meta name="description" content="ChatGPTなど対話型AIで模擬面接をする方法。そのまま貼れる面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習で見落としやすい点、声に出して練習するコツを解説します。">
+<title>ChatGPTで面接練習するやり方｜プロンプト例と音声（ボイスモード）</title>
+<meta name="description" content="ChatGPTで面接練習するやり方。そのまま貼れる面接官役・深掘り・講評依頼のプロンプト例に加え、音声（ボイスモード）で声に出して練習する始め方と注意点、文字だけの練習で見落としやすい点を解説します。">
 <meta name="author" content="杉本 啓輔">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html">
@@ -12,32 +12,32 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pohoda">
 <meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="ChatGPT模擬面接のプロンプト例｜AIで練習する方法と声のコツ">
-<meta property="og:description" content="ChatGPTなど対話型AIで模擬面接をする方法。そのまま貼れる面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習で見落としやすい点、声に出して練習するコツを解説します。">
+<meta property="og:title" content="ChatGPTで面接練習するやり方｜プロンプト例と音声（ボイスモード）">
+<meta property="og:description" content="ChatGPTで面接練習するやり方。そのまま貼れる面接官役・深掘り・講評依頼のプロンプト例に加え、音声（ボイスモード）で声に出して練習する始め方と注意点、文字だけの練習で見落としやすい点を解説します。">
 <meta property="og:url" content="https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html">
 <meta property="og:image" content="https://pohoda.jp/assets/og/og-pre-interview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="article:published_time" content="2026-10-21">
-<meta property="article:modified_time" content="2026-10-30">
+<meta property="article:modified_time" content="2026-11-24">
 <meta property="article:author" content="https://pohoda.jp/operator.html">
 <meta property="article:section" content="面接の練習">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ChatGPT模擬面接のプロンプト例｜AIで練習する方法と声のコツ">
-<meta name="twitter:description" content="ChatGPTなど対話型AIで模擬面接をする方法。そのまま貼れる面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習で見落としやすい点、声に出して練習するコツを解説します。">
+<meta name="twitter:title" content="ChatGPTで面接練習するやり方｜プロンプト例と音声（ボイスモード）">
+<meta name="twitter:description" content="ChatGPTで面接練習するやり方。そのまま貼れる面接官役・深掘り・講評依頼のプロンプト例に加え、音声（ボイスモード）で声に出して練習する始め方と注意点、文字だけの練習で見落としやすい点を解説します。">
 <meta name="twitter:image" content="https://pohoda.jp/assets/og/og-pre-interview.png">
 <link rel="icon" href="/favicon.ico?v=3" sizes="any">
 <link rel="icon" href="/favicon-48.png?v=3" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3">
 <link rel="stylesheet" href="/styles.css?v=23">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"AIで模擬面接をする方法｜ChatGPTのプロンプト例と、声で練習するときのコツ","description":"ChatGPTなど対話型AIで模擬面接をする方法。そのまま貼れる面接官役・深掘り・フィードバック依頼のプロンプト例と、文字だけの練習で見落としやすい点、声に出して練習するコツを解説します。","image":["https://pohoda.jp/assets/og/og-pre-interview.png"],"datePublished":"2026-10-21","dateModified":"2026-11-16","inLanguage":"ja","articleSection":"面接の練習","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html"}}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"ChatGPTで面接練習するやり方｜プロンプト例と、音声（ボイスモード）で練習するコツ","description":"ChatGPTで面接練習するやり方。そのまま貼れる面接官役・深掘り・講評依頼のプロンプト例に加え、音声（ボイスモード）で声に出して練習する始め方と注意点、文字だけの練習で見落としやすい点を解説します。","image":["https://pohoda.jp/assets/og/og-pre-interview.png"],"datePublished":"2026-10-21","dateModified":"2026-11-24","inLanguage":"ja","articleSection":"面接の練習","author":{"@type":"Person","name":"杉本 啓輔","url":"https://pohoda.jp/operator.html"},"publisher":{"@type":"Organization","name":"Pohoda","url":"https://pohoda.jp/","logo":{"@type":"ImageObject","url":"https://pohoda.jp/apple-touch-icon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pohoda.jp/journal/ai-mogi-mensetsu-chatgpt.html"}}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://pohoda.jp/"},{"@type":"ListItem","position":2,"name":"読みもの","item":"https://pohoda.jp/journal/"},{"@type":"ListItem","position":3,"name":"面接の練習","item":"https://pohoda.jp/journal/#mensetsu"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ChatGPTで模擬面接をするには、どうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"最初に、役割と進め方をはっきり伝えるプロンプトを貼ります。ポイントは「質問は1回に1つ」「答えるまでアドバイスしない」の2つです。事前に、応募する職種と会社の種類、面接の段階、自分の経歴の要点をメモにしておくと、質問が具体的になります。"}},{"@type":"Question","name":"模擬面接のプロンプトには、どんな種類がありますか？","acceptedAnswer":{"@type":"Answer","text":"3つあります。面接官役になってもらうもの、回答に必ず1回は深掘りしてもらうもの、終わったあとに「発言を引用して」フィードバックをもらうものです。"}},{"@type":"Question","name":"ChatGPTの音声で、模擬面接はできますか？","acceptedAnswer":{"@type":"Answer","text":"ChatGPT のアプリには声で会話できる機能もあります（使える範囲はプランや時期で変わることがあります）。使えない場合も、AIが出した質問を読み上げ、スマホの録音アプリで声に出して答え、聞き返す方法で、声の練習を足せます。"}},{"@type":"Question","name":"AIで模擬面接をするとき、気をつけることはありますか？","acceptedAnswer":{"@type":"Answer","text":"講評は参考情報で、面接の結果を保証しません。AIが作った言い換えに経歴にない内容が混ざっていたら削る、志望先の傾向についてのAIの説明は推測なので公式情報で確認する、氏名・住所・勤務先名・社外秘の数字は入力しない、の3点です。"}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ChatGPTの音声（ボイスモード）で面接練習はできますか？","acceptedAnswer":{"@type":"Answer","text":"できます。ChatGPT のアプリで、メッセージ欄の Voice（音声）のアイコンを押すと、声で会話できます。最初に「面接官役になって、質問は1回に1つ」と伝え、終わったら講評を頼みます。使える時間や範囲はプランによって異なり、無料プランには上限があります。会話の内容は OpenAI に送られるため、氏名や勤務先名などは入れないでください。"}},{"@type":"Question","name":"ChatGPTで模擬面接をするには、どうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"最初に、役割と進め方をはっきり伝えるプロンプトを貼ります。ポイントは「質問は1回に1つ」「答えるまでアドバイスしない」の2つです。事前に、応募する職種と会社の種類、面接の段階、自分の経歴の要点をメモにしておくと、質問が具体的になります。"}},{"@type":"Question","name":"模擬面接のプロンプトには、どんな種類がありますか？","acceptedAnswer":{"@type":"Answer","text":"3つあります。面接官役になってもらうもの、回答に必ず1回は深掘りしてもらうもの、終わったあとに「発言を引用して」フィードバックをもらうものです。"}},{"@type":"Question","name":"ChatGPTの音声で、模擬面接はできますか？","acceptedAnswer":{"@type":"Answer","text":"ChatGPT のアプリには声で会話できる機能もあります（使える範囲はプランや時期で変わることがあります）。使えない場合も、AIが出した質問を読み上げ、スマホの録音アプリで声に出して答え、聞き返す方法で、声の練習を足せます。"}},{"@type":"Question","name":"AIで模擬面接をするとき、気をつけることはありますか？","acceptedAnswer":{"@type":"Answer","text":"講評は参考情報で、面接の結果を保証しません。AIが作った言い換えに経歴にない内容が混ざっていたら削る、志望先の傾向についてのAIの説明は推測なので公式情報で確認する、氏名・住所・勤務先名・社外秘の数字は入力しない、の3点です。"}}]}
 </script>
 </head>
 <body>
@@ -63,15 +63,15 @@
     <div class="jr-wrap">
       <nav class="jr-crumb" aria-label="パンくずリスト"><ol><li><a href="/">ホーム</a></li><li><a href="/journal/">読みもの</a></li><li><a href="/journal/#mensetsu">面接の練習</a></li></ol></nav>
       <div class="jr-tags"><a class="jr-app" href="/pre-interview.html"><img src="/assets/pre-interview-icon.png" alt="" width="22" height="22">AI面接練習 Pre Interview</a><span class="jr-theme">面接の練習</span></div>
-      <h1>AIで<wbr>模擬面接を<wbr>する方法｜ChatGPTの<wbr>プロンプト例と、<wbr>声で練習する<wbr>ときのコツ</h1>
+      <h1>ChatGPTで<wbr>面接練習する<wbr>やり方｜プロンプト例と、<wbr>音声（ボイスモード）で<wbr>練習するコツ</h1>
       <p class="jr-lead">面接の練習相手がいない。そんなとき、ChatGPT のような対話型AIを面接官役にして、模擬面接をする人が増えています。そのまま貼って使えるプロンプト例と、声に出して練習するときのコツを紹介します。</p>
-      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-10-21">2026年10月21日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-16">2026年11月16日</time></dd></div><div><dt>読む目安</dt><dd>約7分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
+      <dl class="jr-meta"><div><dt>公開</dt><dd><time datetime="2026-10-21">2026年10月21日</time></dd></div><div><dt>更新</dt><dd><time datetime="2026-11-24">2026年11月24日</time></dd></div><div><dt>読む目安</dt><dd>約7分</dd></div><div><dt>書いた人</dt><dd><a href="#author">杉本 啓輔</a></dd></div></dl>
     </div>
   </header>
 
   <div class="jr-wrap jr-body">
-<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><p class="jr-answer"><strong>ChatGPTで模擬面接をするには？</strong><br>最初に、役割と進め方を伝えるプロンプトを貼ります。「質問は1回に1つ」「答えるまでアドバイスしない」の2つを入れるのがポイントです。面接官役・深掘り・講評の3つを順に使えば、無料の範囲でも模擬面接ができます。</p><ol class="jr-steps"><li>職種・面接の段階・経歴の要点をメモにする</li><li>面接官役のプロンプトを貼り、質問に答える</li><li>深掘りの指示を足して、回答を掘り下げてもらう</li><li>「発言を引用して」と頼み、講評をもらう</li></ol><ul><li>面接官役・深掘り・フィードバックの3つのプロンプトを順に使えば、無料の範囲でも模擬面接ができる。要は「質問は1回に1つ」「答えるまでアドバイスしない」。</li><li>講評は「発言を引用して」と頼む。AIは頼まなくても話を盛ることがあるので、経歴にない内容は削る。</li><li>文字だけでは、話す速さ・言い淀み・間が分からない。最後は声に出す練習を足す。個人情報や社外秘は入力しない。</li></ul></aside>
-<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">AI で模擬面接をすると、何ができるのか</a></li><li><a href="#s2">始める前に決めておくこと</a></li><li><a href="#s3">プロンプト例1：面接官役になってもらう</a></li><li><a href="#s4">プロンプト例2：回答を深掘りしてもらう</a></li><li><a href="#s5">プロンプト例3：終わったあとにフィードバックをもらう</a></li><li><a href="#s6">文字だけの練習で、見落としやすいこと</a></li><li><a href="#s7">声に出す練習を足す方法</a></li><li><a href="#s8">練習のあとの振り返り方</a></li><li><a href="#s9">AI の使い方で気をつけたいこと</a></li><li><a href="#s10">声での練習に特化した、選択肢のひとつ</a></li></ol></nav>
+<aside class="jr-points" aria-label="この記事の要点"><p class="jr-box-title">この記事の要点</p><p class="jr-answer"><strong>ChatGPTで模擬面接をするには？</strong><br>最初に、役割と進め方を伝えるプロンプトを貼ります。「質問は1回に1つ」「答えるまでアドバイスしない」の2つを入れるのがポイントです。面接官役・深掘り・講評の3つを順に使えば、無料の範囲でも模擬面接ができます。ChatGPT のアプリの音声機能（Voice）を使えば、声に出して練習することもできます。</p><ol class="jr-steps"><li>職種・面接の段階・経歴の要点をメモにする</li><li>面接官役のプロンプトを貼り、質問に答える</li><li>深掘りの指示を足して、回答を掘り下げてもらう</li><li>「発言を引用して」と頼み、講評をもらう</li></ol><ul><li>面接官役・深掘り・フィードバックの3つのプロンプトを順に使えば、無料の範囲でも模擬面接ができる。要は「質問は1回に1つ」「答えるまでアドバイスしない」。</li><li>講評は「発言を引用して」と頼む。AIは頼まなくても話を盛ることがあるので、経歴にない内容は削る。</li><li>文字だけでは、話す速さ・言い淀み・間が分からない。最後は声に出す練習を足す。個人情報や社外秘は入力しない。</li></ul></aside>
+<nav class="jr-toc" aria-label="目次"><p class="jr-box-title">目次</p><ol><li><a href="#s1">AI で模擬面接をすると、何ができるのか</a></li><li><a href="#s2">始める前に決めておくこと</a></li><li><a href="#s3">プロンプト例1：面接官役になってもらう</a></li><li><a href="#s4">プロンプト例2：回答を深掘りしてもらう</a></li><li><a href="#s5">プロンプト例3：終わったあとにフィードバックをもらう</a></li><li><a href="#s6">文字だけの練習で、見落としやすいこと</a></li><li><a href="#voice">ChatGPT の音声（ボイスモード）で面接練習するやり方</a></li><li><a href="#s7">声に出す練習を足す方法</a></li><li><a href="#s8">練習のあとの振り返り方</a></li><li><a href="#s9">AI の使い方で気をつけたいこと</a></li><li><a href="#s10">声での練習に特化した、選択肢のひとつ</a></li></ol></nav>
 
 <h2 id="s1">AI で模擬面接をすると、何ができるのか</h2>
     <p>対話型 AI は、聞かれたことに文章で答える使い方が基本です。ChatGPT のアプリには、声で会話できる機能もあります（使える範囲はプランや時期で変わることがあります）。いずれにしても、無料で始められる手軽さは大きな利点です。面接の練習に使うと、次のようなことができます。</p>
@@ -133,6 +133,32 @@
 ただし、私の経歴にない事実や数字は付け加えないでください。</pre>
     <p>「発言を引用して」と頼むのがコツです。引用があると、どの回答のどこが課題なのかが分かり、直す箇所が絞れます。最後の「経歴にない事実を付け加えない」も大切です。AI は、頼まなくても話を盛った言い換えを作ることがあるためです。</p>
 
+    <h2 id="voice">ChatGPT の音声（ボイスモード）で面接練習するやり方</h2>
+    <p>ChatGPT のアプリには、声で会話できる Voice（音声）機能があります。面接官役の質問を耳で聞き、声で答えられるので、文字だけの練習より本番に近づきます。</p>
+    <h3>始め方（iPhone アプリ）</h3>
+    <ol>
+      <li>ChatGPT のアプリを開き、新しいチャットを開く</li>
+      <li>メッセージ欄にある Voice（音声）のアイコンを押す</li>
+      <li>マイクの使用を求められたら許可する。初めて使うときは、AI の声を選ぶ</li>
+      <li>話しかける。終わるときは、画面の終了のボタンを押す</li>
+    </ol>
+    <p>会話が終わると、やりとりの文字起こしがチャットに残ります。あとから読み返して、言い淀みや回答の長さを確かめられます。無料プランでは使える時間に上限があり、上限は変わることがあります。</p>
+    <h3>最初に話しかける一言</h3>
+    <p>音声を始めたら、最初に次のように伝えます。長い条件は声で言いにくいので、事前にチャットへ文字で貼ってから音声を始めてもかまいません。</p>
+    <pre>これから【業界・職種】の【一次面接】の模擬面接をお願いします。あなたは面接官役です。質問は1回に1つだけ、私が答えるまでアドバイスはしないでください。全部で8問、最初は自己紹介からお願いします。</pre>
+    <h3>深掘りしてもらう頼み方</h3>
+    <pre>私の回答のあとに、必ず1回は深掘りの質問をしてください。具体的な場面、自分の役割、うまくいかなかった点、そう判断した理由のどれかを聞いてください。</pre>
+    <h3>終わったあとに講評を頼む</h3>
+    <p>8問が終わったら、面接官役をやめてもらい、次のように頼みます。</p>
+    <pre>面接官の役は終わりです。私の回答を振り返って、良かった点を2つ、弱かった点を2つ、私の発言を引用して教えてください。私の経歴にない事実は付け足さないでください。</pre>
+    <h3>音声で練習するときの注意</h3>
+    <ul>
+      <li><strong>会話の内容は OpenAI に送られます。</strong>音声のやりとりは、文字起こしとともに保存されます。保存期間や学習への使われ方は、アプリの設定（データ管理）と公式ヘルプで確かめてください。</li>
+      <li><strong>個人情報や社外秘は話さない。</strong>氏名、住所、勤務先や取引先の名前、社外秘の数字は、「A社」「ある取引先」のように言い換えます。</li>
+      <li><strong>周りに人がいない場所で。</strong>声が聞こえる場所や、通信が不安定な場所は避けます。</li>
+      <li>音声の講評も参考情報です。経歴にない内容を AI が足していたら削ります。</li>
+    </ul>
+
     <h2 id="s6">文字だけの練習で、見落としやすいこと</h2>
     <p>ここまでのやり方で、答えの「中身」はかなり整理できます。ただ、文字で打つ練習には限界があります。</p>
     <ul>
@@ -186,7 +212,8 @@
   <div class="jr-appcard-shots"><span><img src="/assets/screens/pre-interview-interview.png" alt="Pre Interview の面接画面" width="880" height="1912" loading="lazy"></span><span><img src="/assets/screens/pre-interview-report.png" alt="Pre Interview の講評画面" width="880" height="1912" loading="lazy"></span></div>
 </aside>
 <aside class="jr-biz"><p class="jr-box-title">キャリア支援・転職エージェントの方へ</p><p>求職者の面接練習の回数を増やしたい方向けに、10セット分のコード（税込12,000円）をまとめて購入し、1つずつ配れます。購入者に見えるのは、各コードが使われたかどうかだけです。</p><a class="btn btn-ghost" href="/pre-interview-business.html">法人・団体向けのご案内</a></aside>
-<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>ChatGPTで模擬面接をするには、どうすればいいですか？</summary><p>最初に、役割と進め方をはっきり伝えるプロンプトを貼ります。ポイントは「質問は1回に1つ」「答えるまでアドバイスしない」の2つです。事前に、応募する職種と会社の種類、面接の段階、自分の経歴の要点をメモにしておくと、質問が具体的になります。</p></details><details><summary>模擬面接のプロンプトには、どんな種類がありますか？</summary><p>3つあります。面接官役になってもらうもの、回答に必ず1回は深掘りしてもらうもの、終わったあとに「発言を引用して」フィードバックをもらうものです。</p></details><details><summary>ChatGPTの音声で、模擬面接はできますか？</summary><p>ChatGPT のアプリには声で会話できる機能もあります（使える範囲はプランや時期で変わることがあります）。使えない場合も、AIが出した質問を読み上げ、スマホの録音アプリで声に出して答え、聞き返す方法で、声の練習を足せます。</p></details><details><summary>AIで模擬面接をするとき、気をつけることはありますか？</summary><p>講評は参考情報で、面接の結果を保証しません。AIが作った言い換えに経歴にない内容が混ざっていたら削る、志望先の傾向についてのAIの説明は推測なので公式情報で確認する、氏名・住所・勤務先名・社外秘の数字は入力しない、の3点です。</p></details></div></div>
+<div class="jr-faq" id="faq"><h2 class="jr-h2">よくある質問</h2><div class="faq"><details><summary>ChatGPTの音声（ボイスモード）で面接練習はできますか？</summary><p>できます。ChatGPT のアプリで、メッセージ欄の Voice（音声）のアイコンを押すと、声で会話できます。最初に「面接官役になって、質問は1回に1つ」と伝え、終わったら講評を頼みます。使える時間や範囲はプランによって異なり、無料プランには上限があります。会話の内容は OpenAI に送られるため、氏名や勤務先名などは入れないでください。</p></details><details><summary>ChatGPTで模擬面接をするには、どうすればいいですか？</summary><p>最初に、役割と進め方をはっきり伝えるプロンプトを貼ります。ポイントは「質問は1回に1つ」「答えるまでアドバイスしない」の2つです。事前に、応募する職種と会社の種類、面接の段階、自分の経歴の要点をメモにしておくと、質問が具体的になります。</p></details><details><summary>模擬面接のプロンプトには、どんな種類がありますか？</summary><p>3つあります。面接官役になってもらうもの、回答に必ず1回は深掘りしてもらうもの、終わったあとに「発言を引用して」フィードバックをもらうものです。</p></details><details><summary>ChatGPTの音声で、模擬面接はできますか？</summary><p>ChatGPT のアプリには声で会話できる機能もあります（使える範囲はプランや時期で変わることがあります）。使えない場合も、AIが出した質問を読み上げ、スマホの録音アプリで声に出して答え、聞き返す方法で、声の練習を足せます。</p></details><details><summary>AIで模擬面接をするとき、気をつけることはありますか？</summary><p>講評は参考情報で、面接の結果を保証しません。AIが作った言い換えに経歴にない内容が混ざっていたら削る、志望先の傾向についてのAIの説明は推測なので公式情報で確認する、氏名・住所・勤務先名・社外秘の数字は入力しない、の3点です。</p></details></div></div>
+<p>出典（2026年11月24日確認）：OpenAI ヘルプセンター「<a href="https://help.openai.com/en/articles/8400625-voice-mode-faq" rel="noopener">ChatGPT Voice FAQ</a>」（Voice の始め方、無料プランの上限、音声データの扱い）。</p>
 <aside class="jr-author" id="author" aria-label="この記事を書いた人">
   <div class="jr-author-mark"><img src="/assets/brand/pohoda-mark.svg" alt="" width="26" height="26" loading="lazy"></div>
   <div><p class="jr-author-name">杉本 啓輔（Pohoda）</p>

@@ -21,6 +21,7 @@
 - [Dayglyph（Apple Watch の今日の調子の目安）](https://pohoda.jp/dayglyph.html)：Apple Watch が記録した昨夜の睡眠・心拍変動・睡眠中の心拍数を本人のふだんと比べ、朝に文字盤の印をひとつ出す Apple Watch アプリ。数字や点数は出さず、健康データは Apple Watch の中だけに置く。
 - [DayDay（音声日記・一日の報告）](https://pohoda.jp/dayday.html)：自分が参加する会話や独り言を Apple Watch・iPhone で録音し、日本語の文字起こしを iPhone の中で行って、一日の報告（一日のまとめと、時間ごとの話）にまとめる音声日記アプリ。音声は Pohoda のサーバーに送らない。
 - [Pre Interview（AI 面接練習）](https://pohoda.jp/pre-interview.html)：AI の面接官と声で模擬面接をする iPhone アプリ。転職・新卒就活・英語面接・小学校受験の保護者面接に対応。無料の練習（一問一答で5問・約7分、iPhone 15 Pro 以降・iOS 27 以上）から始められ、有料の本番形式（15分）は講評とやり直しのレッスンつき。
+  - 比較：[面接練習アプリの選び方と比較（2026）](https://pohoda.jp/journal/mensetsu-renshu-app-erabikata.html)
 
 ## Web サービス
 
