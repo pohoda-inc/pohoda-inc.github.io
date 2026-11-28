@@ -1,0 +1,192 @@
+/* 法人向け SaaS の LP の型（One CRM・KATACHI +・One Inventory で共通）。
+   比べられる相手は SaaS（zaico・hacomono など）なので、作りも SaaS の LP に寄せる:
+   横長の製品画面・業種ごとの型・画面つきの機能・プラン表・比較・最後の申込み帯。
+   見た目の手本は Linear: 地は無彩色、文字は濃淡だけで太字なし（400 と 500 のみ）、
+   色は「できる」の小さな印（緑）と Pro の印（金）だけ。ライトのみ。
+   styles.css の上に重ねて読む。<body class="saas"> のときだけ効く。 */
+
+body.saas {
+  --bg: #fbfaf8;
+  --surface: #f2f1ed;
+  --card: #ffffff;
+  --ink: #1c1b19;
+  --ink-2: #5f5a52;
+  --muted: #8f897f;
+  --line: rgba(28, 27, 25, .09);
+  --line-2: rgba(28, 27, 25, .16);
+  --yes: #4f7360;
+  --pro: #a5854d;
+  --gold: var(--ink);
+  --gold-deep: #4a443c;
+  --wide: 1120px;
+  background: var(--bg);
+  color: var(--ink-2);
+}
+body.saas h1, body.saas h2, body.saas h3, body.saas h4,
+body.saas b, body.saas strong, body.saas th, body.saas summary,
+body.saas .nav-cta, body.saas .brand-word { font-weight: 500; }
+body.saas .footer-col h4 { font-weight: 500; letter-spacing: 0; text-transform: none; font-size: 13px; color: var(--ink); }
+
+.saas .lp { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
+.saas .lp a:not(.lp-btn) { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
+.saas .lp a:not(.lp-btn):hover { text-decoration-color: var(--ink); }
+.saas a:focus-visible, .saas summary:focus-visible, .saas label:focus-within { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+
+/* 製品のナビ（ページ内の目次と申込み） */
+.saas .lp-bar { border-bottom: 1px solid var(--line); }
+.saas .lp-bar .lp { display: flex; align-items: center; gap: 28px; height: 52px; font-size: 13.5px; overflow-x: auto; scrollbar-width: none; }
+.saas .lp-bar .lp::-webkit-scrollbar { display: none; }
+.saas .lp-bar b { display: flex; align-items: center; gap: 8px; color: var(--ink); white-space: nowrap; }
+.saas .lp-bar b img { width: 22px; height: 22px; border-radius: 6px; }
+.saas .lp-bar a:not(.lp-btn) { color: var(--ink-2) !important; text-decoration: none !important; white-space: nowrap; }
+.saas .lp-bar a:not(.lp-btn):hover { color: var(--ink) !important; }
+.saas .lp-bar .lp-btn { margin-left: auto; height: 32px; padding: 0 14px; font-size: 13px; }
+
+/* ボタン */
+.saas .lp-btn { display: inline-flex; align-items: center; justify-content: center; height: 46px; padding: 0 22px; border-radius: 10px; font-size: 15px; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.saas .lp-btn:hover { text-decoration: none; }
+.saas .lp-btn-main { background: var(--ink); color: #fbfaf8; }
+.saas .lp-btn-main:hover { background: var(--gold-deep); }
+.saas .lp-btn-sub { color: var(--ink); background: var(--card); border: 1px solid var(--line-2); }
+.saas .lp-btn-sub:hover { background: var(--surface); }
+
+/* 最初の画面: 文字は中央、その下に横長の製品画面 */
+.saas .lp-hero { text-align: center; padding: 80px 0 0; }
+.saas .lp-kind { font-size: 14px; color: var(--ink-2); margin: 0 0 20px; }
+.saas .lp-hero h1 { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.2; letter-spacing: -.03em; color: var(--ink); margin: 0 auto 22px; max-width: 14em; }
+.saas .lp-lead { max-width: 34em; margin: 0 auto 32px; font-size: 17px; line-height: 1.85; }
+.saas .lp-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.saas .lp-assure { margin: 16px 0 0; font-size: 13px; color: var(--muted); }
+.saas .lp-stage { position: relative; margin: 56px auto 0; max-width: 1040px; padding: 0 0 40px; }
+.saas .lp-stage .mac { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line-2); box-shadow: 0 40px 90px -40px rgba(28, 27, 25, .35); background: var(--card); }
+.saas .lp-stage .phone { position: absolute; right: -2%; bottom: 0; width: 19%; height: auto; border-radius: 28px; border: 6px solid #1c1b19; box-shadow: 0 30px 60px -20px rgba(28, 27, 25, .45); background: #1c1b19; }
+.saas .lp-stage figcaption { margin: 14px 0 0; font-size: 12.5px; color: var(--muted); text-align: left; }
+
+/* 節 */
+.saas .lp-sec { padding: 112px 0 0; }
+.saas .lp-head { max-width: 40em; margin: 0 0 40px; }
+.saas .lp-h2 { font-size: clamp(26px, 3.2vw, 36px); line-height: 1.35; letter-spacing: -.02em; color: var(--ink); margin: 0 0 14px; }
+.saas .lp-head p { font-size: 16px; line-height: 1.85; margin: 0; }
+
+/* 片づくこと（3つ） */
+.saas .lp-three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.saas .lp-three h3 { font-size: 18px; line-height: 1.5; color: var(--ink); margin: 0 0 10px; }
+.saas .lp-three p { font-size: 14.5px; line-height: 1.85; margin: 0; }
+.saas .lp-three .was { display: block; font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+
+/* 業種の型 */
+.saas .lp-kinds { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.saas .lp-kinds > div { padding: 24px; border-radius: 14px; background: var(--surface); }
+.saas .lp-kinds h3 { font-size: 16px; color: var(--ink); margin: 0 0 6px; }
+.saas .lp-kinds .who { font-size: 13px; color: var(--muted); margin: 0 0 14px; }
+.saas .lp-kinds p { font-size: 14px; line-height: 1.8; margin: 0 0 14px; }
+.saas .lp-kinds p:last-child { margin: 0; font-size: 13.5px; }
+
+/* 機能: 文と画面を交互に */
+.saas .lp-row { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 56px; align-items: center; margin: 0 0 88px; }
+.saas .lp-row.flip { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); }
+.saas .lp-row.flip > div { order: 2; }
+.saas .lp-row h3 { font-size: 22px; line-height: 1.45; letter-spacing: -.01em; color: var(--ink); margin: 0 0 12px; }
+.saas .lp-row p { font-size: 15px; line-height: 1.9; margin: 0 0 16px; }
+.saas .lp-row ul { list-style: none; margin: 0; padding: 0; }
+.saas .lp-row li { position: relative; padding: 0 0 0 18px; margin: 0 0 8px; font-size: 14px; line-height: 1.7; }
+.saas .lp-row li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--line-2); }
+.saas .lp-row img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line-2); box-shadow: 0 24px 60px -36px rgba(28, 27, 25, .35); }
+.saas .lp-more { columns: 3; column-gap: 40px; list-style: none; margin: 0; padding: 28px 0 0; border-top: 1px solid var(--line); }
+.saas .lp-more li { break-inside: avoid; position: relative; padding: 0 0 0 18px; margin: 0 0 10px; font-size: 14px; line-height: 1.7; }
+.saas .lp-more li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--line-2); }
+
+/* 料金: プラン表＋人数ごとの早見表 */
+.saas .lp-plans { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 12px; margin: 0 0 28px; }
+.saas .lp-plan { padding: 28px; border-radius: 16px; background: var(--card); border: 1px solid var(--line-2); }
+.saas .lp-plan.is-pro { border-color: var(--ink); }
+.saas .lp-plan h3 { font-size: 16px; color: var(--ink); margin: 0 0 14px; }
+.saas .lp-plan .amount { font-size: 40px; letter-spacing: -.02em; color: var(--ink); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.saas .lp-plan .amount small { font-size: 14px; color: var(--muted); letter-spacing: 0; margin-left: 4px; }
+.saas .lp-plan .sub { font-size: 13px; color: var(--muted); margin: 6px 0 20px; min-height: 1.6em; }
+.saas .lp-plan ul { list-style: none; margin: 20px 0 0; padding: 20px 0 0; border-top: 1px solid var(--line); }
+.saas .lp-plan li { position: relative; padding: 0 0 0 20px; margin: 0 0 8px; font-size: 14px; line-height: 1.7; }
+.saas .lp-plan li::before { content: ""; position: absolute; left: 2px; top: .6em; width: 7px; height: 7px; border-radius: 50%; background: var(--yes); }
+.saas .lp-plan .lp-btn { width: 100%; height: auto; min-height: 46px; padding: 10px 16px; white-space: normal; text-align: center; }
+.saas .lp-term { display: inline-flex; gap: 2px; padding: 3px; border-radius: 10px; background: var(--surface); margin: 0 0 18px; }
+.saas .lp-term label { cursor: pointer; padding: 6px 14px; border-radius: 8px; font-size: 13px; color: var(--ink-2); }
+.saas .lp-term input { position: absolute; opacity: 0; pointer-events: none; }
+.saas .lp-term label:has(input:checked) { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(28, 27, 25, .12); }
+.saas .lp-plan .t-year, .saas .lp-plan .t-life { display: none; }
+.saas .lp-plan:has(#t-year:checked) .t-month, .saas .lp-plan:has(#t-life:checked) .t-month { display: none; }
+.saas .lp-plan:has(#t-year:checked) .t-year, .saas .lp-plan:has(#t-life:checked) .t-life { display: block; }
+
+.saas .lp-table { width: 100%; border-collapse: collapse; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+.saas .lp-table caption { text-align: left; font-size: 15px; color: var(--ink); padding: 0 0 12px; }
+.saas .lp-table th, .saas .lp-table td { padding: 14px 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.7; }
+.saas .lp-table thead th { color: var(--muted); font-size: 13px; font-weight: 400; }
+.saas .lp-table tbody th { color: var(--ink); }
+.saas .lp-price td { color: var(--ink); white-space: nowrap; }
+.saas .lp-price td small { display: block; color: var(--muted); font-size: 12.5px; }
+.saas .lp-scroll { overflow-x: auto; margin: 0 -24px; padding: 0 24px; }
+.saas .lp-note { font-size: 13px; line-height: 1.8; color: var(--muted); margin: 18px 0 0; max-width: 50em; }
+.saas .pro { display: inline-block; font-size: 11.5px; line-height: 1; padding: 3px 6px; border-radius: 5px; color: var(--pro); border: 1px solid rgba(165, 133, 77, .45); vertical-align: 2px; margin-left: 6px; }
+
+/* 比較表 */
+.saas .lp-compare th:first-child { width: 20%; }
+.saas .lp-compare thead th:nth-child(2) { color: var(--ink); }
+.saas .lp-compare td:nth-child(2) { color: var(--ink); background: var(--surface); }
+.saas .yes::before, .saas .no::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 8px; vertical-align: 1px; }
+.saas .yes::before { background: var(--yes); }
+.saas .no::before { border: 1px solid var(--line-2); width: 5px; height: 5px; }
+
+/* データの置き場所 */
+.saas .lp-where { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.saas .lp-where div { padding: 24px; border-radius: 14px; background: var(--surface); }
+.saas .lp-where div.off { background: transparent; border: 1px dashed var(--line-2); }
+.saas .lp-where h3 { font-size: 15.5px; color: var(--ink); margin: 0 0 8px; }
+.saas .lp-where p { font-size: 14px; line-height: 1.8; margin: 0; }
+
+/* 導入の流れ（順番があるので番号を付ける） */
+.saas .lp-steps { list-style: none; margin: 0; padding: 0; counter-reset: st; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.saas .lp-steps li { counter-increment: st; border-top: 1px solid var(--ink); padding: 18px 0 0; }
+.saas .lp-steps li::before { content: counter(st); display: block; font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+.saas .lp-steps h3 { font-size: 16px; color: var(--ink); margin: 0 0 8px; }
+.saas .lp-steps p { font-size: 14px; line-height: 1.8; margin: 0; }
+
+/* よくある質問 */
+.saas .lp-faq { max-width: 48em; border-top: 1px solid var(--line); }
+.saas .lp-faq details { border-bottom: 1px solid var(--line); }
+.saas .lp-faq summary { cursor: pointer; list-style: none; padding: 18px 32px 18px 0; position: relative; color: var(--ink); font-size: 15px; line-height: 1.6; }
+.saas .lp-faq summary::-webkit-details-marker { display: none; }
+.saas .lp-faq summary::after { content: "+"; position: absolute; right: 4px; top: 16px; color: var(--muted); font-size: 18px; }
+.saas .lp-faq details[open] summary::after { content: "−"; }
+.saas .lp-faq details p { margin: 0 0 20px; font-size: 14.5px; line-height: 1.9; }
+
+/* 最後の申込み帯 */
+.saas .lp-final { margin: 112px 0 0; padding: 72px 24px; border-radius: 20px; background: var(--surface); text-align: center; }
+.saas .lp-final h2 { font-size: clamp(24px, 3vw, 34px); letter-spacing: -.02em; color: var(--ink); margin: 0 0 12px; }
+.saas .lp-final p { font-size: 15px; line-height: 1.85; margin: 0 auto 28px; max-width: 34em; }
+.saas .lp-final .lp-assure { margin-top: 18px; }
+
+/* 読みもの */
+.saas .lp-reads { list-style: none; margin: 0 0 104px; padding: 0; border-top: 1px solid var(--line); }
+.saas .lp-reads li { border-bottom: 1px solid var(--line); }
+.saas .lp-reads a { display: flex; justify-content: space-between; gap: 20px; padding: 16px 0; text-decoration: none !important; }
+.saas .lp-reads a span:first-child { color: var(--ink); }
+.saas .lp-reads a span:last-child { color: var(--muted); font-size: 13px; white-space: nowrap; }
+.saas .lp-reads a:hover span:first-child { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 860px) {
+  .saas .lp-hero { padding-top: 48px; }
+  .saas .lp-stage { margin-top: 40px; padding-bottom: 24px; }
+  .saas .lp-stage .phone { width: 26%; right: 0; border-width: 4px; border-radius: 18px; }
+  .saas .lp-three, .saas .lp-kinds, .saas .lp-where, .saas .lp-steps, .saas .lp-plans, .saas .lp-row { grid-template-columns: 1fr; }
+  .saas .lp-row { gap: 24px; margin-bottom: 64px; }
+  .saas .lp-row.flip { grid-template-columns: 1fr; }
+  .saas .lp-row.flip > div { order: 0; }
+  .saas .lp-three { gap: 28px; }
+  .saas .lp-more { columns: 1; }
+  .saas .lp-sec { padding-top: 80px; }
+  .saas .lp-table th, .saas .lp-table td { padding: 12px 10px; }
+  .saas .lp-compare { min-width: 680px; }
+  .saas .lp-final { padding: 56px 20px; }
+}
+
+/* サイト共通ヘッダーの申込みボタンは、製品のナビと重なるので隠す */
+.saas .site-header .nav-cta { display: none; }
