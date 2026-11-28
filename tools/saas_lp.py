@@ -24,12 +24,12 @@ def yen(n):
 ONE_CRM = dict(
     slug='one-crm', name='One CRM', app_id='6813791048', ct='pj-one-crm', icon='onecrm-icon.png',
     title='One CRM｜小さな会社・個人事業主の顧客管理（料金・機能・比較）',
-    description='One CRM は、顧客と会ったことを記録するだけで最後に連絡した日・回数・売上が自動で出る顧客管理。iPhone・iPad・Mac で使え、チームで共有できます。顧客10件まで無料、Pro は1人 月額1,000円・年額10,000円・買い切り19,800円。データは自分の iCloud に保存。',
+    description='One CRM は、顧客と会ったことを記録するだけで最後に連絡した日・回数・売上が自動で出る顧客管理。iPhone・iPad・Mac で使え、チームで共有できます。顧客10件まで無料、Pro は使う人1人ごとに買い切り980円（税込）。データは自分の iCloud に保存。',
     og_title='One CRM｜顧客・商談・案件を、ひとつの台帳に。',
     og_description='最後に連絡した日も売上も自動で計算。チームで共有でき、データは自分の iCloud に。',
     ld_description='小さな会社・個人事業主の顧客管理。最後に連絡した日・回数・売上を自動計算。チームで共有でき、データは自分の iCloud に保存。',
     free_offer='無料（顧客10件まで）',
-    price=dict(month=1000, year=10000, life=19800),
+    price=dict(life=980),
     kind='小さな会社と個人事業主の顧客管理',
     h1='顧客・商談・案件を、<br>ひとつの台帳に。',
     lead='会ったことを記録するだけで、最後に連絡した日・回数・売上が自動で出ます。iPhone・iPad・Mac で同じ台帳を使い、チームで共有できます。顧客のデータは Pohoda のサーバーを通らず、自分の iCloud に置かれます。',
@@ -40,7 +40,7 @@ ONE_CRM = dict(
     solve=[
         ('「あの人、最後に会ったのいつだっけ」', '最後に連絡した日が、自動で出る', '会った日を記録するだけで、最後に連絡した日・回数・今月の売上・累計が顧客ごとに出ます。しばらく連絡していない人はホームに並びます。'),
         ('「外の会社に顧客の情報を預けたくない」', 'データは自分の iCloud に', 'Pohoda はサーバーを持たないので、顧客のデータを受け取ることも見ることもできません。端末と、ご自身の iCloud にだけ置かれます。'),
-        ('「数人の会社には、大きな CRM は高い」', '1人 月額1,000円。買い切りも', '料金は使う人1人ごと。月額・年額のほかに買い切り19,800円もあるので、毎月の費用を増やさずに導入できます。'),
+        ('「数人の会社には、大きな CRM は高い」', '1人980円の買い切りだけ', '料金は使う人1人ごとに、980円を一度だけ。毎月の費用はかからず、何人で使っても増えるのは人数分だけです。'),
     ],
     kinds_title='商売の形に合わせた型から始める',
     kinds_intro='最初に型を選ぶと、項目と呼び名がその形に合わせて入ります。あとから自由に作り替えられます。',
@@ -64,16 +64,16 @@ ONE_CRM = dict(
     more=['メンバーを招待して同じ台帳を使う<span class="pro">Pro</span>', '参加した人を外す・共有をやめるのはオーナーだけ', 'iPhone・iPad・Mac で同じ内容に同期',
           'Face ID でアプリにロック', 'バックアップの書き出しと復元', 'CSV の書き出し（Excel で開ける）',
           '取引先に担当者を何人でも紐付け', 'ライト・ダークの表示', '広告・追跡なし'],
-    pricing_intro='料金は使う人1人ごとです。チームで使うときは、オーナーも参加する人もそれぞれ Pro にします。月額・年額・買い切りは人ごとに選べます。',
+    pricing_intro='料金は買い切りだけです。チームで使うときは、オーナーも参加する人もそれぞれ Pro を一度だけ購入します。毎月・毎年の支払いはありません。',
     free_items=['顧客は全ビジネス合計で10件まで', '記録・通知・アプリロック', 'バックアップと CSV の書き出し・取り込み', 'iPhone・iPad・Mac で同期'],
     free_name='無料', pro_name='Pro', pro_btn='無料ではじめて、アプリから Pro に',
-    life_sub='以後の支払いなし・今後の機能も含む',
+    life_sub='使う人それぞれ1回・以後の支払いなし・今後の機能も含む',
     pro_items=['顧客・コレクション・項目・自動計算の上限なし', 'チームで同じ台帳を使う（日本の App Store）', '顧客ごとの分析', '無料の機能はすべて含む'],
-    price_note='価格は税込です。お支払いは App Store（Apple ID）で、請求書払いはありません。月額・年額は自動更新で、期間終了の24時間前までに App Store で解約しない限り更新されます。詳しくは<a href="./legal/tokushoho.html">特定商取引法に基づく表記</a>へ。',
+    price_note='価格は税込です。お支払いは App Store（Apple ID）で一度だけ、請求書払いはありません。すでに月額・年額で登録している方は、解約するまでそのまま使えます。詳しくは<a href="./legal/tokushoho.html">特定商取引法に基づく表記</a>へ。',
     compare_intro='大手のクラウド CRM（Salesforce・HubSpot など）と、表計算（Excel・スプレッドシート）で顧客を管理する場合と比べました。One CRM にないものも書いています。',
     compare_cols=['大手のクラウド CRM', '表計算'],
     compare=[
-        ('料金の形', '10件まで無料。Pro は1人 月額1,000円・年額10,000円・買い切り19,800円', '1人ごとの月額が中心。無料の版があるものも', '表計算ソフトの料金だけ'),
+        ('料金の形', '10件まで無料。Pro は1人 買い切り980円（毎月の費用なし）', '1人ごとの月額が中心。無料の版があるものも', '表計算ソフトの料金だけ'),
         ('始めるまで', 'y|入れてすぐ。アカウント登録なし', '会社のアカウントを作り、初期設定をする', '列と関数を自分で作る'),
         ('スマホで記録', 'y|iPhone・iPad・Mac のアプリ', 'y|アプリあり', 'n|小さい画面では入力しにくい'),
         ('最後に連絡した日・売上の集計', 'y|記録するだけで自動', 'y|設定すれば出せる', 'n|関数を自分で組む'),
@@ -100,7 +100,7 @@ ONE_CRM = dict(
     faq=[
         ('One CRM はどんなサービスですか？', '小さな会社や個人事業主のための顧客管理です。顧客の名前と会ったことを記録すると、最後に連絡した日・回数・今月の売上・累計が自動で出ます。iPhone・iPad・Mac のアプリで使い、チームで同じ台帳を共有できます。'),
         ('無料で使えますか？', 'はい。顧客は全ビジネス合計で10件まで無料です。記録・通知・バックアップ・CSV の書き出しと取り込み・アプリロックは無料のまま使えます。無料の間はカードの登録もありません。Pro にすると、登録件数や項目などの上限がなくなり、顧客ごとの分析とチームでの共有が使えます。'),
-        ('チームで使うと、料金はどうなりますか？', 'オーナーも参加する人も、それぞれ Pro が必要です。3人なら月額3,000円です。1人ずつ買い切りにすれば合計59,400円で、以後の支払いはありません。月額・年額・買い切りは人ごとに選べます。チームでの共有は日本の App Store で使えます。'),
+        ('チームで使うと、料金はどうなりますか？', 'オーナーも参加する人も、それぞれ Pro（買い切り980円）を一度だけ購入します。3人なら合計2,940円で、以後の支払いはありません。チームでの共有は日本の App Store で使えます。'),
         ('データはどこに保存されますか？', '端末と、ご自身の iCloud です（同期は初期設定でオン・オフにもできます）。Pohoda はサーバーを持たず、データを受け取ることも見ることもできません。アカウント登録も不要で、Face ID でロックをかけられます。'),
         ('エクセルや他の顧客管理から移せますか？', 'はい。CSV で取り込めます。Excel で保存した CSV をそのまま読め（UTF-8・Shift_JIS）、1行目の項目名と同じ名前の項目に自動で割り当てます。金額は「1,000」「¥1,000」「1000円」、日付は「2026/1/5」「2026年1月5日」なども読めます。'),
         ('請求書払いはできますか？', 'できません。お支払いは App Store（Apple ID）だけです。領収書は Apple から届くメールか、App Store の購入履歴から出せます。'),
@@ -121,12 +121,12 @@ ONE_CRM = dict(
 KATACHI_PLUS = dict(
     slug='katachi-plus', name='KATACHI +', app_id='6815231799', ct='pj-katachi-plus', icon='katachi-plus-icon.png',
     title='パーソナルジム・スタジオの顧客管理 KATACHI +｜カルテ・予約台帳・料金・比較',
-    description='KATACHI + は、パーソナルトレーナーと小さなジム・スタジオの顧客カルテ・セッション記録・予約台帳・分析。スタッフを招待して店舗で共有でき、記録はオーナーの iCloud に保存。1人・顧客5人まで無料、1人 月額1,000円・年額10,000円・買い切り19,800円。',
+    description='KATACHI + は、パーソナルトレーナーと小さなジム・スタジオの顧客カルテ・セッション記録・予約台帳・分析。スタッフを招待して店舗で共有でき、記録はオーナーの iCloud に保存。1人・顧客5人まで無料、使う人1人ごとに買い切り980円（税込）。',
     og_title='KATACHI +｜顧客カルテと予約台帳を、店舗のみんなで。',
     og_description='記録は Pohoda のサーバーを通らず、オーナーの iCloud に。スタッフを招待して店舗で共有。',
     ld_description='パーソナルトレーナーと小さなジム・スタジオの顧客カルテ・セッション記録・予約台帳・分析。スタッフと店舗で共有でき、記録はオーナーの iCloud に保存。',
     free_offer='無料（1人・顧客5人まで）',
-    price=dict(month=1000, year=10000, life=19800),
+    price=dict(life=980),
     kind='パーソナルジム・スタジオの顧客カルテと予約台帳',
     h1='顧客カルテと予約台帳を、<br>店舗のみんなで。',
     lead='パーソナルトレーナーと小さなジム・スタジオのための、顧客カルテ・セッション記録・予約台帳・分析。スタッフを招待して店舗で共有できます。顧客の記録は Pohoda のサーバーを通らず、オーナーの iCloud に置かれます。',
@@ -137,7 +137,7 @@ KATACHI_PLUS = dict(
     solve=[
         ('「担当が替わると、前回の内容が分からない」', 'カルテと申し送りを店舗で共有', '指導方針と引き継ぎメモがカルテのいちばん上に。前回の記録を見ながら、セットを数タップで足せます。'),
         ('「同意書とカウンセリングシートの紙が溜まる」', '同意書もカウンセリングも iPad で', '人体図をタップして気になる部位を記録。同意書はその場で署名してもらい、PDF で残ります。'),
-        ('「予約システムは高く、記録は別のノート」', '1人 月額1,000円。買い切りも', '予約の受付は今の LINE・電話・予約サービスのまま。受けた予約を台帳に入れ、そのままセッションの記録へ進めます。'),
+        ('「予約システムは高く、記録は別のノート」', '1人980円の買い切りだけ', '予約の受付は今の LINE・電話・予約サービスのまま。受けた予約を台帳に入れ、そのままセッションの記録へ進めます。'),
     ],
     kinds_title='業種を選ぶと、記録の入力欄が変わる',
     kinds_intro='店舗を作るときに業種を選ぶと、種目・記録の入力欄・カウンセリングの質問がその業種に合わせて入ります。',
@@ -147,7 +147,7 @@ KATACHI_PLUS = dict(
         ('ヨガ', 'ヨガスタジオ・プライベートレッスン', 'ポーズごとの呼吸数・左右・バリエーションを記録します。', 'personal-gym-counseling-sheet.html', 'カウンセリングシートのテンプレート'),
         ('ストレッチ', 'ストレッチ専門店・整体', '保持時間・方法・強さを記録し、柔軟性を前後で比べられます。', 'trainer-kokyaku-kanri-app-erabikata.html', 'トレーナーの顧客管理の選び方'),
     ],
-    feats_intro='カルテ・記録・予約台帳・分析をひとつに。<span class="pro">契約</span> の印があるものは、使う人ごとの契約で使えます。',
+    feats_intro='カルテ・記録・予約台帳・分析をひとつに。<span class="pro">購入</span> の印があるものは、使う人ごとに買い切りを購入すると使えます。',
     rows=[
         ('カルテに、方針と申し送り', '顧客を選ぶと、指導方針・引き継ぎメモ・これまでのセッションが1画面に並びます。書いた人と日時が残り、店舗のスタッフ全員が見られます。',
          ['顧客台帳（顔写真・連絡先・生年月日・目的・担当・配慮事項）', 'カウンセリングシート（人体図をタップして部位を記録）', 'iPad でその場で署名する同意書（PDF で保存）'],
@@ -162,24 +162,24 @@ KATACHI_PLUS = dict(
          ['顧客数と新しく増えた人数の推移', '担当者ごとの顧客数とセッション数', '前月との比較'],
          ('katachi-plus-mac-bunseki.jpg', 1280, 800, '分析の画面。顧客数・セッション数の推移と担当者ごとの数字')),
     ],
-    more=['スタッフを招待して店舗で共有<span class="pro">契約</span>', '退職したスタッフを外すと、その人の端末から店舗の記録が消える', '2つ目以降の店舗<span class="pro">契約</span>',
-          'お客さまの KATACHI とつなぎ、自主練の記録を受け取る', 'CSV の書き出し', 'CSV の取り込み・バックアップの復元<span class="pro">契約</span>',
+    more=['スタッフを招待して店舗で共有<span class="pro">購入</span>', '退職したスタッフを外すと、その人の端末から店舗の記録が消える', '2つ目以降の店舗<span class="pro">購入</span>',
+          'お客さまの KATACHI とつなぎ、自主練の記録を受け取る', 'CSV の書き出し', 'CSV の取り込み・バックアップの復元<span class="pro">購入</span>',
           '端末内の自動バックアップ（7世代）', 'Face ID・パスコードでアプリにロック', 'iPhone・iPad・Mac で使える'],
-    pricing_intro='1人で使う分は無料です。顧客を6人以上記録する、スタッフを招待して店舗で共有するときは、使う人それぞれが契約します。店舗に参加するスタッフも、それぞれ必要です。',
+    pricing_intro='1人で使う分は無料です。顧客を6人以上記録する、スタッフを招待して店舗で共有するときは、使う人それぞれが買い切り（980円）を一度だけ購入します。店舗に参加するスタッフも、それぞれ必要です。',
     free_items=['自分の店舗1つで、顧客5人まで', 'セッション・予約・同意書・体組成・写真の記録', '顧客へのレポート・CSV の書き出し・バックアップ', 'お客さまの KATACHI との連携'],
-    free_name='1人で使う', pro_name='顧客6人から・スタッフと共有', pro_btn='無料ではじめて、必要になったら契約',
-    life_sub='1人分・以後の支払いなし',
+    free_name='1人で使う', pro_name='顧客6人から・スタッフと共有', pro_btn='無料ではじめて、必要になったら購入',
+    life_sub='使う人それぞれ1回・以後の支払いなし',
     pro_items=['顧客の人数の上限なし', 'スタッフの招待と、店舗への参加', '2つ目以降の店舗', 'CSV の取り込み・バックアップの復元'],
-    price_note='価格は税込です。お支払いは App Store（Apple ID）で、請求書払いはありません。月額・年額は自動更新で、期間終了の24時間以上前に App Store で解約しない限り更新されます。契約が終わっても、記録の閲覧と書き出しは続けて使えます。詳しくは<a href="./legal/katachi-plus-terms.html">利用規約</a>へ。',
+    price_note='価格は税込です。お支払いは App Store（Apple ID）で一度だけ、請求書払いはありません。すでに月額・年額で登録している方は、解約するまでそのまま使えます。詳しくは<a href="./legal/tokushoho.html">特定商取引法に基づく表記</a>・<a href="./legal/katachi-plus-terms.html">利用規約</a>へ。',
     compare_intro='予約・会員管理のシステム（hacomono・STORES 予約など）と、紙や表計算のカルテと比べました。KATACHI + にないものも書いています。',
     compare_cols=['予約・会員管理のシステム', '紙・表計算'],
     compare=[
-        ('料金の形', '1人・顧客5人まで無料。1人 月額1,000円・年額10,000円・買い切り19,800円', '店舗ごとの月額が中心。初期費用がかかるものも', '紙代と表計算ソフトの料金だけ'),
+        ('料金の形', '1人・顧客5人まで無料。1人 買い切り980円（毎月の費用なし）', '店舗ごとの月額が中心。初期費用がかかるものも', '紙代と表計算ソフトの料金だけ'),
         ('顧客が自分で予約', 'n|ない（受けた予約を台帳に記録）', 'y|できる', 'n|ない'),
         ('オンライン決済・回数券', 'n|ない', 'y|ある', 'n|ない'),
         ('トレーニングの記録', 'y|業種ごとの入力欄（重量×回数・マシン・ポーズなど）', '製品による', '書き方を自分で決める'),
         ('カウンセリング・同意書', 'y|iPad で記録・署名して PDF に', '製品による', '紙で保管'),
-        ('スタッフで共有', 'y|招待した人だけ（日本・使う人ごとに契約）', 'y|できる', '紙は1冊、表計算はファイルの共有で'),
+        ('スタッフで共有', 'y|招待した人だけ（日本・使う人ごとに購入）', 'y|できる', '紙は1冊、表計算はファイルの共有で'),
         ('データの置き場所', '端末とオーナーの iCloud', '提供会社のサーバー', '店舗の棚・パソコン'),
         ('ブラウザ・Android', 'n|使えない', 'y|使える', 'y|使える'),
     ],
@@ -195,12 +195,12 @@ KATACHI_PLUS = dict(
     steps=[
         ('店舗を作る', 'App Store から入れて、業種（筋トレ・ピラティス・ヨガ・ストレッチ）と店舗名を決めます。アカウント登録はありません。'),
         ('顧客を入れて記録する', '顧客を足して、カウンセリングとセッションを記録します。顧客5人までは無料で試せます。'),
-        ('スタッフを招待する', '契約して、店舗の設定の「スタッフを招待」から LINE やメールで招待を送ります。参加するスタッフもそれぞれ契約します。'),
+        ('スタッフを招待する', '買い切りを購入して、店舗の設定の「スタッフを招待」から LINE やメールで招待を送ります。参加するスタッフもそれぞれ購入します。'),
     ],
     guide='katachi-plus-guide.html',
     faq=[
         ('KATACHI + はどんなサービスですか？', 'パーソナルトレーナーと小さなジム・スタジオのための、顧客カルテとトレーニング記録のサービスです。顧客台帳、カウンセリングシート、セッションの記録、予約台帳、分析、同意書への署名までをひとつにまとめ、同じ店舗のスタッフ全員で見て記録できます。iPhone・iPad・Mac のアプリで使います。'),
-        ('料金はいくらですか？', '1人で使う分は無料で、自分の店舗1つで顧客5人まで記録できます。顧客を6人以上記録する、スタッフを招待して店舗で共有するときは、使う人それぞれの契約（月額1,000円・年額10,000円・買い切り19,800円）が要ります。トレーナー3人の店舗なら月額3,000円です。'),
+        ('料金はいくらですか？', '1人で使う分は無料で、自分の店舗1つで顧客5人まで記録できます。顧客を6人以上記録する、スタッフを招待して店舗で共有するときは、使う人それぞれが買い切り（980円）を一度だけ購入します。トレーナー3人の店舗なら合計2,940円で、以後の支払いはありません。'),
         ('顧客の記録はどこに保存されますか？', '端末と、オーナーの iCloud にだけ保存されます。Pohoda はサーバーを持たず、記録を受け取ることも見ることもできません。Face ID やパスコードでアプリにロックをかけられます。'),
         ('顧客が自分で予約できますか？', 'できません。予約台帳は、LINE や電話、外部の予約サービスで受けた予約を店舗側が記録するものです。顧客への通知もありません。店舗の予約ページのリンクを登録して、顧客に送ることはできます。'),
         ('お客さまの KATACHI とつなぐと、何が届きますか？', 'お客さまが個人用の KATACHI でつけた自主練の記録（筋トレの種目・重量・回数、有酸素の時間・速度・傾斜）が、カルテに届きます。送る項目はお客さまが選びます。体組成・体調・メモ・写真は届きません。店舗で記録したセッションとメニューをお客さまに見せるかは、店舗の設定で選べます。'),
@@ -246,9 +246,8 @@ def render(p):
     footer = old[old.index('<footer class="site-footer">'):].replace('<script defer src="/carousel.js"></script>\n', '')
 
     pro_word = p['pro_name']
-    offers = [{"@type": "Offer", "name": p['free_offer'], "price": "0", "priceCurrency": "JPY"}] + [
-        {"@type": "Offer", "name": f'{p["name"]} {k}（1人）', "price": str(pr[key]), "priceCurrency": "JPY"}
-        for k, key in (('月額', 'month'), ('年額', 'year'), ('買い切り', 'life'))]
+    offers = [{"@type": "Offer", "name": p['free_offer'], "price": "0", "priceCurrency": "JPY"},
+              {"@type": "Offer", "name": f'{p["name"]} 買い切り（1人）', "price": str(pr['life']), "priceCurrency": "JPY"}]
     ld = [
         {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": p['name'], "operatingSystem": "iOS, iPadOS, macOS",
          "applicationCategory": "BusinessApplication", "url": url, "downloadUrl": f'https://apps.apple.com/jp/app/id{p["app_id"]}',
@@ -304,10 +303,6 @@ def render(p):
     more = ''.join(f'<li>{x}</li>' for x in p['more'])
     free_items = ''.join(f'<li>{x}</li>' for x in p['free_items'])
     pro_items = ''.join(f'<li>{x}</li>' for x in p['pro_items'])
-    ptable = ''.join(
-        f'<tr><th scope="row">{n}人</th><td>{yen(pr["month"] * n)}<small>毎月</small></td>'
-        f'<td>{yen(pr["year"] * n)}<small>毎年（月あたり {yen(round(pr["year"] * n / 12))}）</small></td>'
-        f'<td>{yen(pr["life"] * n)}<small>一度だけ</small></td></tr>' for n in (1, 2, 3, 5, 10))
     ctable = ''.join(f'<tr><th scope="row">{r[0]}</th>' + ''.join(f'<td>{cell(c)}</td>' for c in r[1:]) + '</tr>' for r in p['compare'])
     where = ''.join(f'<div{" class=" + chr(34) + "off" + chr(34) if i == 2 else ""}><h3>{h}</h3><p>{t}</p></div>' for i, (h, t) in enumerate(p['where']))
     steps = ''.join(f'<li><h3>{h}</h3><p>{t}</p></li>' for h, t in p['steps'])
@@ -370,24 +365,10 @@ def render(p):
       </div>
       <div class="lp-plan is-pro">
         <h3>{pro_word}<span class="pro">1人あたり</span></h3>
-        <div class="lp-term" role="radiogroup" aria-label="支払い方">
-          <label><input type="radio" name="term" id="t-month" checked>月額</label>
-          <label><input type="radio" name="term" id="t-year">年額</label>
-          <label><input type="radio" name="term" id="t-life">買い切り</label>
-        </div>
-        <div class="t-month"><div class="amount">{yen(pr["month"])}<small>/ 月</small></div><p class="sub">いつでも解約できます</p></div>
-        <div class="t-year"><div class="amount">{yen(pr["year"])}<small>/ 年</small></div><p class="sub">月あたり約{round(pr["year"] / 12):,}円</p></div>
-        <div class="t-life"><div class="amount">{yen(pr["life"])}<small>一度だけ</small></div><p class="sub">{p["life_sub"]}</p></div>
+        <div class="amount">{yen(pr["life"])}<small>一度だけ</small></div><p class="sub">{p["life_sub"]}</p>
         <a class="lp-btn lp-btn-main" href="{app}">{p["pro_btn"]}</a>
         <ul>{pro_items}</ul>
       </div>
-    </div>
-    <div class="lp-scroll">
-      <table class="lp-table lp-price">
-        <caption>人数ごとの料金</caption>
-        <thead><tr><th scope="col">使う人</th><th scope="col">月額</th><th scope="col">年額</th><th scope="col">買い切り</th></tr></thead>
-        <tbody>{ptable}</tbody>
-      </table>
     </div>
     <p class="lp-note">{p["price_note"]}</p>
   </section>
@@ -474,7 +455,7 @@ def render_sheet(p):
     feats = ''.join(f'<li>{h}</li>' for h, *_ in p['rows']) + ''.join(
         f'<li>{x.split("<span")[0]}</li>' for x in p['more'][:4])
     solve = ''.join(f'<li><b>{h}</b> {t.split("。")[0]}。</li>' for _, h, t in p['solve'])
-    prow = ''.join(f'<tr><th>{n}人</th><td>{yen(pr["month"] * n)}</td><td>{yen(pr["year"] * n)}</td><td>{yen(pr["life"] * n)}</td></tr>' for n in (1, 3, 5))
+    prow = ''.join(f'<tr><th>{n}人</th><td>{yen(pr["life"] * n)}</td><td>以後の支払いなし</td></tr>' for n in (1, 3, 5))
     where = ''.join(f'<li><b>{h}</b> {t.split("。")[0]}。</li>' for h, t in p['where'])
     steps = ''.join(f'<li><b>{i}. {h}</b> {t.split("。")[0]}。</li>' for i, (h, t) in enumerate(p['steps'], 1))
     return f"""<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><title>{p['name']} 資料</title><style>{SHEET_CSS}</style></head><body>
@@ -484,8 +465,8 @@ def render_sheet(p):
 <img class="shot" src="{ROOT}/assets/screens/{mac[0]}" alt="">
 <div class="grid">
   <div><h2>片づくこと</h2><ul>{solve}</ul></div>
-  <div><h2>料金（税込・使う人1人ごと）</h2>
-    <table><thead><tr><th>使う人</th><th>月額</th><th>年額</th><th>買い切り</th></tr></thead><tbody>{prow}</tbody></table>
+  <div><h2>料金（税込・買い切りだけ）</h2>
+    <table><thead><tr><th>使う人</th><th>買い切り（合計）</th><th></th></tr></thead><tbody>{prow}</tbody></table>
     <p class="note">{p['assure'].split('・カード')[0]}（カードの登録なし）。お支払いは App Store（Apple ID）。請求書払いはありません。</p></div>
   <div><h2>主な機能</h2><ul>{feats}</ul></div>
   <div><h2>データの置き場所</h2><ul>{where}</ul></div>
