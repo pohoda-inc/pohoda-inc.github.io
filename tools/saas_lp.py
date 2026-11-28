@@ -236,7 +236,7 @@ def img(src, w, h, alt, extra=''):
 def render(p):
     url = f'https://pohoda.jp/{p["slug"]}.html'
     app = f'https://apps.apple.com/jp/app/id{p["app_id"]}?pt=128987033&amp;ct={p["ct"]}&amp;mt=8'
-    pdf = f'./assets/docs/{p["slug"]}.pdf'
+    pdf = f'./assets/{p["slug"]}-shiryo.pdf'
     og = f'https://pohoda.jp/assets/og/og-{p["slug"]}.png'
     pr = p['price']
     mail = f'mailto:{MAIL}?subject={p["name"].replace(" ", "%20").replace("+", "%2B")}%20%E3%81%AE%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B'
@@ -506,8 +506,7 @@ if __name__ == '__main__':
         (ROOT / f'{slug}.html').write_text(render(p))
         with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False) as f:
             f.write(render_sheet(p))
-        out = ROOT / 'assets' / 'docs' / f'{slug}.pdf'
-        out.parent.mkdir(exist_ok=True)
+        out = ROOT / 'assets' / f'{slug}-shiryo.pdf'  # assets/docs は .assetsignore の docs で配信されない
         subprocess.run([CHROME, '--headless=new', '--disable-gpu', '--no-pdf-header-footer', '--allow-file-access-from-files',
                         f'--print-to-pdf={out}', f'file://{f.name}'], check=True, capture_output=True)
         print('wrote', slug, out.relative_to(ROOT))
